@@ -4,13 +4,19 @@ const currentChain = 'mainnet';
 const fs = require('fs-extra');
 const web3 = require('./web3.js');
 const userbase = require('./userbase/' + currentChain + '/users.json');
-const { tokens, symbols } = require('./tokens.json');
+const { tokens, symbols } = require('./tokens/' +
+  currentChain +
+  '/tokens.json');
 const { abi, address } = require('./deployments/' +
   currentChain +
   '/UserPositions.json');
 
 const strategies = ['0', '1']; // 2 strategies, SAAL.main and SAAL.gnb
 const users = userbase.users; // user addresses
+
+function isEmpty(obj) {
+  return Object.keys(obj).length === 0;
+}
 
 const extract = async () => {
   console.log('getting web3 provider accounts...\n');
@@ -29,7 +35,7 @@ const extract = async () => {
       .getUserBalances(users[user], strategies, tokens)
       .call();
 
-    balances = {};
+    const balances = {};
     data = result[1];
 
     for (item in data) {
@@ -41,8 +47,9 @@ const extract = async () => {
     }
 
     console.log(balances);
-
-    UserBalances[users[user]] = balances;
+    if (Object.keys(balances).length != 0) {
+      UserBalances[users[user]] = balances;
+    }
   }
   console.log('\nStore user balances...\n');
   fs.writeFile(
