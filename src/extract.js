@@ -23,21 +23,26 @@ const extract = async () => {
   const UserBalances = {};
 
   for (user in users) {
+    console.log('\nCheck user balances for ' + users[user]);
+
     const result = await UserPosition.methods
       .getUserBalances(users[user], strategies, tokens)
       .call();
 
-    const balances = result[1];
-    console.log('Check user balances for ' + users[user]);
-    for (balance in balances) {
-      UserBalances[users[user]] = balances;
+    balances = {};
+    data = result[1];
 
-      token = balances[balance].token;
-      balance = balances[balance].balance;
-      if (balance != 0) {
-        console.log('   ' + token + ' : ' + balance);
+    for (item in data) {
+      token = data[item].token;
+      balance = data[item].balance;
+      if (balance != '0') {
+        balances[token] = balance;
       }
     }
+
+    console.log(balances);
+
+    UserBalances[users[user]] = balances;
   }
   console.log('\nStore user balances...\n');
   fs.writeFile(
