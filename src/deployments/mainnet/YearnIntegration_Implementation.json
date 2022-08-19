@@ -1,0 +1,580 @@
+{
+  "address": "0x3ED2974d2e649db84F22F43e75Cd2600a7eec26A",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deploy",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "HarvestYield",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdraw",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "addController",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "controllers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "deploy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllControllers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "currentControllers",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getAvailableYieldInShares",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getPendingYield",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getPricePerShare",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getVaultAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getVaultWithdrawableAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "harvestYield",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "controllers_",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "moduleMap_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "yearnRegistryAddress_",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "isController",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "moduleMap",
+      "outputs": [
+        {
+          "internalType": "contract IModuleMap",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "retrievePrincipal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xbd2faf1cc612901ff1514655c490ec2038c1eeb5607cd4fd2940fccb74f52485",
+  "receipt": {
+    "to": null,
+    "from": "0xBf98f6DF65dfa2f2b50d4a806cF134A209C7D364",
+    "contractAddress": "0x3ED2974d2e649db84F22F43e75Cd2600a7eec26A",
+    "transactionIndex": 60,
+    "gasUsed": "1557687",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x19014cbd797654366e083f999a028b87f4ce24cd7cad9fa0be8e86770bfd6eeb",
+    "transactionHash": "0xbd2faf1cc612901ff1514655c490ec2038c1eeb5607cd4fd2940fccb74f52485",
+    "logs": [],
+    "blockNumber": 14831782,
+    "cumulativeGasUsed": "6904106",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "9e1b0628549e14d8a16ede02d30b58a0",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Deploy\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Deposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"HarvestYield\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Withdraw\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"addController\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"controllers\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"deploy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"deposit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllControllers\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"currentControllers\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getAvailableYieldInShares\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getPendingYield\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getPricePerShare\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getVaultAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"}],\"name\":\"getVaultWithdrawableAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"harvestYield\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"controllers_\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"moduleMap_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"yearnRegistryAddress_\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"isController\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"status\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"moduleMap\",\"outputs\":[{\"internalType\":\"contract IModuleMap\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"retrievePrincipal\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"deposit(address,uint256)\":{\"params\":{\"amount\":\"The amount of the token being deposited\",\"tokenAddress\":\"The address of the deposited token\"}},\"getAvailableYieldInShares(address)\":{\"params\":{\"token\":\"The address of the deposited token\"},\"returns\":{\"_0\":\"The amount of available yield to be harvested in value of the share token\"}},\"getBalance(address)\":{\"details\":\"This returns the total amount of the underlying token thathas been deposited to the integration contract\",\"params\":{\"token\":\"The address of the deployed token\"},\"returns\":{\"_0\":\"The amount of the underlying token that can be withdrawn\"}},\"getPendingYield(address)\":{\"details\":\"Returns total amount of pending yield for the specified token in Yearn\",\"params\":{\"token\":\"The of the token to check for available yield\"},\"returns\":{\"_0\":\"Amount of yield available for harvest\"}},\"getPricePerShare(address)\":{\"params\":{\"token\":\"The address of the deposited token\"},\"returns\":{\"_0\":\"The price per vault share in the underlying asset\"}},\"getVaultAddress(address)\":{\"params\":{\"token\":\"The address of the token\"},\"returns\":{\"_0\":\"The address of the vault for the specified token\"}},\"getVaultWithdrawableAmount(address)\":{\"params\":{\"token\":\"The address of the deposited token\"},\"returns\":{\"_0\":\"The amount of the deposited token that can be withdrawn from the vault\"}},\"initialize(address[],address,address)\":{\"params\":{\"controllers_\":\"The addresses of the controlling contracts\",\"moduleMap_\":\"The address of the module map contract\",\"yearnRegistryAddress_\":\"The address of the Yearn registry contract\"}},\"retrievePrincipal(address)\":{\"params\":{\"tokenAddress\":\"The address of the underlying token to withdraw\"}},\"withdraw(address,uint256)\":{\"params\":{\"amount\":\"The amoutn of the token to withdraw\",\"tokenAddress\":\"The address of the underlying token to withdraw\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"deploy()\":{\"notice\":\"Deploys all available tokens to Aave\"},\"harvestYield()\":{\"notice\":\"Harvests all token yield from the Aave lending pool\"},\"retrievePrincipal(address)\":{\"notice\":\"Withdraws ALL the tokens from the integration\"},\"withdraw(address,uint256)\":{\"notice\":\"Withdraws token from the integration\"}},\"notice\":\"Integrates 0x Nodes to Yearn v2 vaults\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/yield-integrations/YearnIntegration.sol\":\"YearnIntegration\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (proxy/utils/Initializable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../utils/AddressUpgradeable.sol\\\";\\n\\n/**\\n * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\\n * behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an\\n * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\\n * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\\n *\\n * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\\n * possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\\n *\\n * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\\n * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\\n *\\n * [CAUTION]\\n * ====\\n * Avoid leaving a contract uninitialized.\\n *\\n * An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation\\n * contract, which may impact the proxy. To initialize the implementation contract, you can either invoke the\\n * initializer manually, or you can include a constructor to automatically mark it as initialized when it is deployed:\\n *\\n * [.hljs-theme-light.nopadding]\\n * ```\\n * /// @custom:oz-upgrades-unsafe-allow constructor\\n * constructor() initializer {}\\n * ```\\n * ====\\n */\\nabstract contract Initializable {\\n    /**\\n     * @dev Indicates that the contract has been initialized.\\n     */\\n    bool private _initialized;\\n\\n    /**\\n     * @dev Indicates that the contract is in the process of being initialized.\\n     */\\n    bool private _initializing;\\n\\n    /**\\n     * @dev Modifier to protect an initializer function from being invoked twice.\\n     */\\n    modifier initializer() {\\n        // If the contract is initializing we ignore whether _initialized is set in order to support multiple\\n        // inheritance patterns, but we only do this in the context of a constructor, because in other contexts the\\n        // contract may have been reentered.\\n        require(_initializing ? _isConstructor() : !_initialized, \\\"Initializable: contract is already initialized\\\");\\n\\n        bool isTopLevelCall = !_initializing;\\n        if (isTopLevelCall) {\\n            _initializing = true;\\n            _initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            _initializing = false;\\n        }\\n    }\\n\\n    /**\\n     * @dev Modifier to protect an initialization function so that it can only be invoked by functions with the\\n     * {initializer} modifier, directly or indirectly.\\n     */\\n    modifier onlyInitializing() {\\n        require(_initializing, \\\"Initializable: contract is not initializing\\\");\\n        _;\\n    }\\n\\n    function _isConstructor() private view returns (bool) {\\n        return !AddressUpgradeable.isContract(address(this));\\n    }\\n}\\n\",\"keccak256\":\"0x372b0bc04e3b4c074559bbbfb1317afddb56de5504158ca25a7f9cd403980445\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20Upgradeable {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0x6777f3fccb5dab95a9088ef62c41bee0198fd92e50d7c94f0e3733788af4079e\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20Upgradeable.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20MetadataUpgradeable is IERC20Upgradeable {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x605434219ebbe4653f703640f06969faa5a1d78f0bfef878e5ddbb1ca369ceeb\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/utils/SafeERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20Upgradeable.sol\\\";\\nimport \\\"../../../utils/AddressUpgradeable.sol\\\";\\n\\n/**\\n * @title SafeERC20\\n * @dev Wrappers around ERC20 operations that throw on failure (when the token\\n * contract returns false). Tokens that return no value (and instead revert or\\n * throw on failure) are also supported, non-reverting calls are assumed to be\\n * successful.\\n * To use this library you can add a `using SafeERC20 for IERC20;` statement to your contract,\\n * which allows you to call the safe operations as `token.safeTransfer(...)`, etc.\\n */\\nlibrary SafeERC20Upgradeable {\\n    using AddressUpgradeable for address;\\n\\n    function safeTransfer(\\n        IERC20Upgradeable token,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        _callOptionalReturn(token, abi.encodeWithSelector(token.transfer.selector, to, value));\\n    }\\n\\n    function safeTransferFrom(\\n        IERC20Upgradeable token,\\n        address from,\\n        address to,\\n        uint256 value\\n    ) internal {\\n        _callOptionalReturn(token, abi.encodeWithSelector(token.transferFrom.selector, from, to, value));\\n    }\\n\\n    /**\\n     * @dev Deprecated. This function has issues similar to the ones found in\\n     * {IERC20-approve}, and its usage is discouraged.\\n     *\\n     * Whenever possible, use {safeIncreaseAllowance} and\\n     * {safeDecreaseAllowance} instead.\\n     */\\n    function safeApprove(\\n        IERC20Upgradeable token,\\n        address spender,\\n        uint256 value\\n    ) internal {\\n        // safeApprove should only be called when setting an initial allowance,\\n        // or when resetting it to zero. To increase and decrease it, use\\n        // 'safeIncreaseAllowance' and 'safeDecreaseAllowance'\\n        require(\\n            (value == 0) || (token.allowance(address(this), spender) == 0),\\n            \\\"SafeERC20: approve from non-zero to non-zero allowance\\\"\\n        );\\n        _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, value));\\n    }\\n\\n    function safeIncreaseAllowance(\\n        IERC20Upgradeable token,\\n        address spender,\\n        uint256 value\\n    ) internal {\\n        uint256 newAllowance = token.allowance(address(this), spender) + value;\\n        _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));\\n    }\\n\\n    function safeDecreaseAllowance(\\n        IERC20Upgradeable token,\\n        address spender,\\n        uint256 value\\n    ) internal {\\n        unchecked {\\n            uint256 oldAllowance = token.allowance(address(this), spender);\\n            require(oldAllowance >= value, \\\"SafeERC20: decreased allowance below zero\\\");\\n            uint256 newAllowance = oldAllowance - value;\\n            _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));\\n        }\\n    }\\n\\n    /**\\n     * @dev Imitates a Solidity high-level call (i.e. a regular function call to a contract), relaxing the requirement\\n     * on the return value: the return value is optional (but if data is returned, it must not be false).\\n     * @param token The token targeted by the call.\\n     * @param data The call data (encoded using abi.encode or one of its variants).\\n     */\\n    function _callOptionalReturn(IERC20Upgradeable token, bytes memory data) private {\\n        // We need to perform a low level call here, to bypass Solidity's return data size checking mechanism, since\\n        // we're implementing it ourselves. We use {Address.functionCall} to perform this call, which verifies that\\n        // the target address contains contract code and also asserts for success in the low-level call.\\n\\n        bytes memory returndata = address(token).functionCall(data, \\\"SafeERC20: low-level call failed\\\");\\n        if (returndata.length > 0) {\\n            // Return data is optional\\n            require(abi.decode(returndata, (bool)), \\\"SafeERC20: ERC20 operation did not succeed\\\");\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x3e26a49d2fa5ef8338b8a9467c91e54f417cb07e849b1cc0f4ebc4d2a147938e\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (utils/Address.sol)\\n\\npragma solidity ^0.8.1;\\n\\n/**\\n * @dev Collection of functions related to the address type\\n */\\nlibrary AddressUpgradeable {\\n    /**\\n     * @dev Returns true if `account` is a contract.\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * It is unsafe to assume that an address for which this function returns\\n     * false is an externally-owned account (EOA) and not a contract.\\n     *\\n     * Among others, `isContract` will return false for the following\\n     * types of addresses:\\n     *\\n     *  - an externally-owned account\\n     *  - a contract in construction\\n     *  - an address where a contract will be created\\n     *  - an address where a contract lived, but was destroyed\\n     * ====\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * You shouldn't rely on `isContract` to protect against flash loan attacks!\\n     *\\n     * Preventing calls from contracts is highly discouraged. It breaks composability, breaks support for smart wallets\\n     * like Gnosis Safe, and does not provide security since it can be circumvented by calling from a contract\\n     * constructor.\\n     * ====\\n     */\\n    function isContract(address account) internal view returns (bool) {\\n        // This method relies on extcodesize/address.code.length, which returns 0\\n        // for contracts in construction, since the code is only stored at the end\\n        // of the constructor execution.\\n\\n        return account.code.length > 0;\\n    }\\n\\n    /**\\n     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to\\n     * `recipient`, forwarding all available gas and reverting on errors.\\n     *\\n     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost\\n     * of certain opcodes, possibly making contracts go over the 2300 gas limit\\n     * imposed by `transfer`, making them unable to receive funds via\\n     * `transfer`. {sendValue} removes this limitation.\\n     *\\n     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].\\n     *\\n     * IMPORTANT: because control is transferred to `recipient`, care must be\\n     * taken to not create reentrancy vulnerabilities. Consider using\\n     * {ReentrancyGuard} or the\\n     * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].\\n     */\\n    function sendValue(address payable recipient, uint256 amount) internal {\\n        require(address(this).balance >= amount, \\\"Address: insufficient balance\\\");\\n\\n        (bool success, ) = recipient.call{value: amount}(\\\"\\\");\\n        require(success, \\\"Address: unable to send value, recipient may have reverted\\\");\\n    }\\n\\n    /**\\n     * @dev Performs a Solidity function call using a low level `call`. A\\n     * plain `call` is an unsafe replacement for a function call: use this\\n     * function instead.\\n     *\\n     * If `target` reverts with a revert reason, it is bubbled up by this\\n     * function (like regular Solidity function calls).\\n     *\\n     * Returns the raw returned data. To convert to the expected return value,\\n     * use https://solidity.readthedocs.io/en/latest/units-and-global-variables.html?highlight=abi.decode#abi-encoding-and-decoding-functions[`abi.decode`].\\n     *\\n     * Requirements:\\n     *\\n     * - `target` must be a contract.\\n     * - calling `target` with `data` must not revert.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(address target, bytes memory data) internal returns (bytes memory) {\\n        return functionCall(target, data, \\\"Address: low-level call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with\\n     * `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, 0, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but also transferring `value` wei to `target`.\\n     *\\n     * Requirements:\\n     *\\n     * - the calling contract must have an ETH balance of at least `value`.\\n     * - the called Solidity function must be `payable`.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, value, \\\"Address: low-level call with value failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but\\n     * with `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        require(address(this).balance >= value, \\\"Address: insufficient balance for call\\\");\\n        require(isContract(target), \\\"Address: call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\\n        return functionStaticCall(target, data, \\\"Address: low-level static call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal view returns (bytes memory) {\\n        require(isContract(target), \\\"Address: static call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.staticcall(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Tool to verifies that a low level call was successful, and revert if it wasn't, either by bubbling the\\n     * revert reason using the provided one.\\n     *\\n     * _Available since v4.3._\\n     */\\n    function verifyCallResult(\\n        bool success,\\n        bytes memory returndata,\\n        string memory errorMessage\\n    ) internal pure returns (bytes memory) {\\n        if (success) {\\n            return returndata;\\n        } else {\\n            // Look for revert reason and bubble it up if present\\n            if (returndata.length > 0) {\\n                // The easiest way to bubble the revert reason is using memory via assembly\\n\\n                assembly {\\n                    let returndata_size := mload(returndata)\\n                    revert(add(32, returndata), returndata_size)\\n                }\\n            } else {\\n                revert(errorMessage);\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x55cf2bd9fc76704ddcdc19834cd288b7de00fc0f298a40ea16a954ae8991db2d\",\"license\":\"MIT\"},\"contracts/core/Controlled.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"./ModuleMapConsumer.sol\\\";\\nimport \\\"../interfaces/IKernel.sol\\\";\\n\\nabstract contract Controlled is Initializable, ModuleMapConsumer {\\n    // controller address => is a controller\\n    mapping(address => bool) internal _controllers;\\n    address[] public controllers;\\n\\n    function __Controlled_init(address[] memory controllers_, address moduleMap_) internal onlyInitializing {\\n        require(moduleMap_ != address(0), \\\"bad address\\\");\\n        for (uint256 i; i < controllers_.length; ++i) {\\n            require(controllers_[i] != address(0), \\\"bad address\\\");\\n        }\\n        for (uint256 i; i < controllers_.length; ++i) {\\n            _controllers[controllers_[i]] = true;\\n        }\\n        controllers = controllers_;\\n        __ModuleMapConsumer_init(moduleMap_);\\n    }\\n\\n    function addController(address controller) external onlyOwner {\\n        _controllers[controller] = true;\\n        bool added;\\n        for (uint256 i; i < controllers.length; ++i) {\\n            if (controller == controllers[i]) {\\n                added = true;\\n            }\\n        }\\n        if (!added) {\\n            controllers.push(controller);\\n        }\\n    }\\n\\n    modifier onlyOwner() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isOwner(msg.sender),\\n            \\\"Controlled::onlyOwner: Caller is not owner\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyManager() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isManager(msg.sender),\\n            \\\"Controlled::onlyManager: Caller is not manager\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyController() {\\n        require(_controllers[msg.sender], \\\"Controlled::onlyController: Caller is not controller\\\");\\n        _;\\n    }\\n\\n    function isController(address controller) external view returns (bool status) {\\n        status = _controllers[controller];\\n    }\\n\\n    function getAllControllers() external view returns (address[] memory currentControllers) {\\n        return controllers;\\n    }\\n}\\n\",\"keccak256\":\"0xed017271d8ba30d80b8449946ed9ed3c6192d59980f343d26580070da40ede47\",\"license\":\"GPL-2.0\"},\"contracts/core/ModuleMapConsumer.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"../interfaces/IModuleMap.sol\\\";\\n\\nabstract contract ModuleMapConsumer is Initializable {\\n    IModuleMap public moduleMap;\\n\\n    function __ModuleMapConsumer_init(address moduleMap_) internal onlyInitializing {\\n        moduleMap = IModuleMap(moduleMap_);\\n    }\\n}\\n\",\"keccak256\":\"0x562431546443640c950a15ccce0cffedeced3e414c41cc2758bf489f4525d1df\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IIntegration.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IIntegration {\\n    event Deploy(address token, uint256 amount);\\n    event HarvestYield(address token, uint256 amount);\\n    event Deposit(address token, uint256 amount);\\n    event Withdraw(address token, uint256 amount);\\n\\n    /**\\n     * Used by YieldManager to deposit funds.\\n     * @param tokenAddress The address of the deposited token\\n     * @param amount The amount being deposited\\n     */\\n    function deposit(address tokenAddress, uint256 amount) external;\\n\\n    /**\\n     * Used by YieldManager to withdraw funds.\\n     * @param tokenAddress The address of the withdrawal token\\n     * @param amount The amount being withdrawn\\n     */\\n    function withdraw(address tokenAddress, uint256 amount) external;\\n\\n    /**\\n     * Used by YieldManager to deploy funds.\\n     * @dev Deploys all tokens held in the integration contract to the integrated protocol\\n     */\\n    function deploy() external;\\n\\n    /**\\n     * Used by YieldManager to harvest funds.\\n     * @dev Harvests token yield from the integration\\n     */\\n    function harvestYield() external;\\n\\n    /**\\n     * Get the integration's balance of a token.\\n     * @dev has been deposited to the integration contract\\n     * @dev This returns the total amount of the underlying token that\\n     * @param tokenAddress The address of the deployed token\\n     * @return The amount of the underlying token that can be withdrawn\\n     */\\n    function getBalance(address tokenAddress) external view returns (uint256);\\n\\n    /**\\n     * Returns the total amount of yield awaing to be harvested\\n     * using the relevant integration's own function\\n     * @param tokenAddress The token to get the pending yield for\\n     * @return amount The amount of available yield for the specified token\\n     */\\n    function getPendingYield(address tokenAddress) external view returns (uint256 amount);\\n}\\n\",\"keccak256\":\"0x5f1c0946f3def553313e240f568096ccf9090659b52c51deed14f56d7559f8b8\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IIntegrationMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"../libraries/TokenConfigs.sol\\\";\\n\\ninterface IIntegrationMap {\\n    event TokenSettingToggled(\\n        address indexed token,\\n        TokenConfigs.TokenSettingName indexed settingName,\\n        bool indexed newValue\\n    );\\n\\n    event TokenSettingUpdated(\\n        address indexed token,\\n        TokenConfigs.TokenSettingName indexed settingName,\\n        uint256 indexed newValue\\n    );\\n\\n    event BiosAddressUpdated(address newAddress, address oldAddress);\\n\\n    struct Integration {\\n        bool added;\\n        string name;\\n    }\\n\\n    struct Token {\\n        uint256 id;\\n        bool added;\\n        bool acceptingDeposits;\\n        bool acceptingWithdrawals;\\n        bool acceptingLping;\\n        bool acceptingBridging;\\n        uint256 biosRewardWeight;\\n        uint256 reserveRatioNumerator;\\n        uint256 targetLiquidityRatioNumerator;\\n        uint256 transferFeeKValueNumerator;\\n        uint256 transferFeePlatformRatioNumerator;\\n    }\\n\\n    /// @param contractAddress The address of the integration contract\\n    /// @param name The name of the protocol being integrated to\\n    function addIntegration(address contractAddress, string memory name) external;\\n\\n    /// @param tokenAddress The address of the ERC20 token contract\\n    /// @param acceptingDeposits Whether token deposits are enabled\\n    /// @param acceptingWithdrawals Whether token withdrawals are enabled\\n    /// @param acceptingLping Whether LPing is enabled\\n    /// @param acceptingBridging Whether bridging is enabled\\n    /// @param biosRewardWeight Token weight for BIOS rewards\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    /// @param targetLiquidityRatioNumerator Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\\n    /// @param transferFeeKValueNumerator Number that gets divided by transfer fee K-value denominator to get K-value\\n    /// @param transferFeePlatformRatioNumerator Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\\n    function addToken(\\n        address tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenDeposits(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenDeposits(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenWithdrawals(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenWithdrawals(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenLping(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenLping(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenBridging(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenBridging(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @param rewardWeight The updated token BIOS reward weight\\n    function updateTokenRewardWeight(address tokenAddress, uint256 rewardWeight) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    function updateTokenReserveRatioNumerator(address tokenAddress, uint256 reserveRatioNumerator) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param targetLiquidityRatioNumerator Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\\n    function updateTokenTargetLiquidityRatioNumerator(address tokenAddress, uint256 targetLiquidityRatioNumerator)\\n        external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeeKValueNumerator Number that gets divided by transfer fee K-value denominator to get K-value\\n    function updateTokenTransferFeeKValueNumerator(address tokenAddress, uint256 transferFeeKValueNumerator) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeePlatformRatioNumerator Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\\n    function updateTokenTransferFeePlatformRatioNumerator(\\n        address tokenAddress,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external;\\n\\n    /// @param integrationId The ID of the integration\\n    /// @return The address of the integration contract\\n    function getIntegrationAddress(uint256 integrationId) external view returns (address);\\n\\n    /// @param integrationAddress The address of the integration contract\\n    /// @return The name of the of the protocol being integrated to\\n    function getIntegrationName(address integrationAddress) external view returns (string memory);\\n\\n    /// @return The address of the WETH token\\n    function getWethTokenAddress() external view returns (address);\\n\\n    /// @return The address of the BIOS token\\n    function getBiosTokenAddress() external view returns (address);\\n\\n    /// @param tokenId The ID of the token\\n    /// @return The address of the token ERC20 contract\\n    function getTokenAddress(uint256 tokenId) external view returns (address);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The index of the token in the tokens array\\n    function getTokenId(address tokenAddress) external view returns (uint256);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The token BIOS reward weight\\n    function getTokenBiosRewardWeight(address tokenAddress) external view returns (uint256);\\n\\n    /// @return rewardWeightSum reward weight of depositable tokens\\n    function getBiosRewardWeightSum() external view returns (uint256 rewardWeightSum);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether depositing this token is currently enabled\\n    function getTokenAcceptingDeposits(address tokenAddress) external view returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether withdrawing this token is currently enabled\\n    function getTokenAcceptingWithdrawals(address tokenAddress) external view returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether Lping this token is currently enabled\\n    function getTokenAcceptingLping(address tokenAddress) external view returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether bridging this token is currently enabled\\n    function getTokenAcceptingBridging(address tokenAddress) external view returns (bool);\\n\\n    // @param tokenAddress The address of the token ERC20 contract\\n    // @return bool indicating whether the token has been added\\n    function getIsTokenAdded(address tokenAddress) external view returns (bool);\\n\\n    // @param integrationAddress The address of the integration contract\\n    // @return bool indicating whether the integration has been added\\n    function getIsIntegrationAdded(address tokenAddress) external view returns (bool);\\n\\n    /// @notice get the length of supported tokens\\n    /// @return The quantity of tokens added\\n    function getTokenAddressesLength() external view returns (uint256);\\n\\n    /// @notice get the length of supported integrations\\n    /// @return The quantity of integrations added\\n    function getIntegrationAddressesLength() external view returns (uint256);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by reserve ratio denominator\\n    function getTokenReserveRatioNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The reserve ratio denominator\\n    function getReserveRatioDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by target liquidity ratio denominator\\n    function getTokenTargetLiquidityRatioNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The target liquidity ratio denominator\\n    function getTargetLiquidityRatioDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee K-value denominator\\n    function getTokenTransferFeeKValueNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The transfer fee K-value denominator\\n    function getTransferFeeKValueDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee platform ratio denominator\\n    function getTokenTransferFeePlatformRatioNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The transfer fee platform ratio denominator\\n    function getTransferFeePlatformRatioDenominator() external view returns (uint32);\\n}\\n\",\"keccak256\":\"0x44303b43f04ccfdbbc2cdd156b4b6b8062f27c73c286f2092411edb90b57871b\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IKernel.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IKernel {\\n    struct WithdrawAllAndClaimResponse {\\n        uint256[] tokenAmounts;\\n        uint256 ethWithdrawn;\\n        uint256 ethClaimed;\\n        uint256 biosClaimed;\\n    }\\n    event Withdraw(address indexed user, address[] tokens, uint256[] tokenAmounts, uint256 ethAmount);\\n    event ClaimEthRewards(address indexed user, uint256[] strategies, uint256 ethRewards);\\n    event ClaimBiosRewards(address indexed user, uint256 biosRewards);\\n    event WithdrawAllAndClaim(\\n        address indexed user,\\n        address[] tokens,\\n        uint256[] strategies,\\n        bool withdrawWethAsEth,\\n        uint256[] tokenAmounts,\\n        uint256 ethWithdrawn,\\n        uint256 ethRewards,\\n        uint256 biosRewards\\n    );\\n    event TokenAdded(\\n        address indexed tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    );\\n\\n    event GasAccountUpdated(address gasAccount);\\n    event TreasuryAccountUpdated(address treasuryAccount);\\n    event IntegrationAdded(address indexed contractAddress, string name);\\n    event SetBiosRewardsDuration(uint32 biosRewardsDuration);\\n    event SeedBiosRewards(uint256 biosAmount);\\n    event Deploy();\\n    event HarvestYield();\\n    event DistributeEth();\\n    event BiosBuyBack();\\n    event EthDistributionWeightsUpdated(\\n        uint32 biosBuyBackEthWeight,\\n        uint32 treasuryEthWeight,\\n        uint32 protocolFeeEthWeight,\\n        uint32 rewardsEthWeight,\\n        uint32 syntheticPoolSupplementWeight\\n    );\\n    event GasAccountTargetEthBalanceUpdated(uint256 gasAccountTargetEthBalance);\\n\\n    /// @param account The address of the account to check if they are a manager\\n    /// @return Bool indicating whether the account is a manger\\n    function isManager(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are an owner\\n    /// @return Bool indicating whether the account is an owner\\n    function isOwner(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are a liquidity provider\\n    /// @return Bool indicating whether the account is a liquidity provider\\n    function isLiquidityProvider(address account) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x6f4529412860cc773b26bca59c78fd12bc066323470b07501c0d1e9e2de0f54a\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IModuleMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nenum Modules {\\n    Kernel, // 0\\n    UserPositions, // 1\\n    YieldManager, // 2\\n    IntegrationMap, // 3\\n    BiosRewards, // 4\\n    EtherRewards, // 5\\n    Strategy1155, // 6\\n    SyntheticMap, // 7\\n    StrategyMap, // 8\\n    StrategyManager, // 9\\n    Interconnects, // 10\\n    SwapManager, // 11\\n    Unwrapper, // 12\\n    BiosEmitter // 13\\n}\\n\\ninterface IModuleMap {\\n    function getModuleAddress(Modules key) external view returns (address);\\n}\\n\",\"keccak256\":\"0x9c79bb5822bea9209419b3c6eaefc40a8fd950184ff4445eb5745f70460f5310\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/ISwapManager.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface ISwapManager {\\n    /**\\n     * @dev Executes swap only for amountIn which will not significantly imbalance the pool and returns this amountIn\\n     * @param _tokenIn The address of the input token\\n     * @param _tokenOut The address of the output token\\n     * @param _ratioIn The left part of the ratio tokenA : tokenB which we will stick to\\n     * @param _ratioOut The right part of the ratio tokenA : tokenB which we will stick to\\n     * @param _recipient The address of the token out recipient\\n     * @param _desiredAmountIn Requested amountIn\\n     * @param _desiredMinAmountOut Like usual minAmountOut, but will decrease proportionally with decreasing _desiredAmountIn\\n     * @return spendedAmountIn_ <= _desiredAmountOut spended for the swap\\n     **/\\n    function gentleSwapExactIn(\\n        address _tokenIn,\\n        address _tokenOut,\\n        uint32 _ratioIn,\\n        uint32 _ratioOut,\\n        address _recipient,\\n        uint256 _desiredAmountIn,\\n        uint256 _desiredMinAmountOut\\n    ) external returns (uint256 spendedAmountIn_);\\n\\n    /**\\n     * @param _tokenIn The address of the input token\\n     * @param _tokenOut The address of the output token\\n     * @param _recipient The address of the token out recipient\\n     * @param _amountIn The exact amount of the input to swap\\n     * @param _minAmountOut The minimum amount of _tokenOut to receive\\n     * @return tradeSuccess_ Indicates whether the swap succeeded\\n     **/\\n    function swapExactIn(\\n        address _tokenIn,\\n        address _tokenOut,\\n        address _recipient,\\n        uint256 _amountIn,\\n        uint256 _minAmountOut\\n    ) external returns (bool tradeSuccess_);\\n\\n    /**\\n     * @param _tokenIn The address of the input token\\n     * @param _tokenOut The address of the output token\\n     * @param _recipient The address of the token out recipient\\n     * @param _amountIn The exact amount of the input to swap\\n     * @return tradeSuccess_ Indicates whether the swap succeeded\\n     **/\\n    function swapExactIn(\\n        address _tokenIn,\\n        address _tokenOut,\\n        address _recipient,\\n        uint256 _amountIn\\n    ) external returns (bool tradeSuccess_);\\n\\n    /**\\n     * @notice Swaps all WETH held in this contract for BIOS and sends to the kernel\\n     * @param ratioX1000 BIOS/WETH ratio for front runner protection\\n     * @return Bool indicating whether the trade succeeded\\n     **/\\n    function biosBuyBack(uint256 ratioX1000) external returns (bool);\\n\\n    /**\\n     * @param _tokenIn The address of the input token\\n     * @param _tokenOut The address of the output token\\n     * @param _amountIn The exact amount of the input to swap\\n     * @return isPoolExist_ Can we swap these tokens via added traders?\\n     * @return bestPrice_ Best amount out from all traders\\n     **/\\n    function getBestAmountOut(\\n        address _tokenIn,\\n        address _tokenOut,\\n        uint256 _amountIn\\n    ) external view returns (bool isPoolExist_, uint256 bestPrice_);\\n}\\n\",\"keccak256\":\"0x26bc0edfa24ff4491cb9f679ea1810af47b3aa21200a72c1341d0c2b946baa4a\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IYearnRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IYearnRegistry {\\n    /// @notice Gets the vault to use for the specified token\\n    /// @param token The address of the token\\n    /// @return The address of the vault\\n    function latestVault(address token) external view returns (address);\\n}\\n\",\"keccak256\":\"0x0de2c563bd4ced874e6ed9452f5b8be480fff8ec2d35c6ac5ed04804bc037dc0\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IYearnVault.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IYearnVault {\\n    function deposit(uint256 amount, address recipient) external returns (uint256 shares);\\n\\n    function withdraw(uint256 shares) external;\\n\\n    function pricePerShare() external view returns (uint256);\\n}\\n\",\"keccak256\":\"0xaf12bedb38d43d18f5b31fe6ee5a5a30dfc4e634dfabae7dfaa747aea78e71ed\",\"license\":\"GPL-2.0\"},\"contracts/libraries/TokenConfigs.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.7.6;\\n\\n/// @title TokenConfigs contains enum and events for the different token settings used in events in Kernel and IntegrationMap\\nlibrary TokenConfigs {\\n    enum TokenSettingName {\\n        rewardWeight,\\n        reserveRatioNumerator,\\n        targetLiquidityRatioNumerator,\\n        transferFeeKValueNumerator,\\n        transferFeePlatformRatioNumerator,\\n        deposit,\\n        withdraw,\\n        lp,\\n        bridge\\n    }\\n\\n    event TokenSettingUpdated(address indexed token, TokenSettingName indexed settingName, uint256 indexed newValue);\\n\\n    event TokenSettingToggled(address indexed token, TokenSettingName indexed settingName, bool indexed newValue);\\n}\\n\",\"keccak256\":\"0x1e10d6652aa09a586757c89df6c6c380db109589bb9f9d6e625711a153b1461e\",\"license\":\"GPL-2.0-or-later\"},\"contracts/yield-integrations/YearnIntegration.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol\\\";\\nimport \\\"@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol\\\";\\nimport \\\"../core/Controlled.sol\\\";\\nimport \\\"../interfaces/IIntegration.sol\\\";\\nimport \\\"../interfaces/IIntegrationMap.sol\\\";\\nimport \\\"../interfaces/IYearnRegistry.sol\\\";\\nimport \\\"../interfaces/IYearnVault.sol\\\";\\nimport \\\"../interfaces/ISwapManager.sol\\\";\\nimport \\\"../core/ModuleMapConsumer.sol\\\";\\n\\n/// @notice Integrates 0x Nodes to Yearn v2 vaults\\ncontract YearnIntegration is Initializable, ModuleMapConsumer, Controlled, IIntegration {\\n    using SafeERC20Upgradeable for IERC20MetadataUpgradeable;\\n\\n    address private yearnRegistryAddress;\\n    mapping(address => uint256) private balances;\\n\\n    /// @param controllers_ The addresses of the controlling contracts\\n    /// @param moduleMap_ The address of the module map contract\\n    /// @param yearnRegistryAddress_ The address of the Yearn registry contract\\n    function initialize(\\n        address[] memory controllers_,\\n        address moduleMap_,\\n        address yearnRegistryAddress_\\n    ) external initializer {\\n        require(yearnRegistryAddress_ != address(0), \\\"bad address\\\");\\n        __Controlled_init(controllers_, moduleMap_);\\n        yearnRegistryAddress = yearnRegistryAddress_;\\n    }\\n\\n    /// @param tokenAddress The address of the deposited token\\n    /// @param amount The amount of the token being deposited\\n    function deposit(address tokenAddress, uint256 amount) external override onlyController {\\n        balances[tokenAddress] += amount;\\n        emit Deposit(tokenAddress, amount);\\n    }\\n\\n    /// @notice Withdraws token from the integration\\n    /// @param tokenAddress The address of the underlying token to withdraw\\n    /// @param amount The amoutn of the token to withdraw\\n    function withdraw(address tokenAddress, uint256 amount) public override onlyController {\\n        // Bypass this for now...\\n        // require(\\n        //     amount <= balances[tokenAddress],\\n        //     \\\"YearnIntegration::withdraw: Withdraw amount exceeds balance\\\"\\n        // );\\n        _withdraw(tokenAddress, amount);\\n    }\\n\\n    /// @notice Withdraws ALL the tokens from the integration\\n    /// @param tokenAddress The address of the underlying token to withdraw\\n    function retrievePrincipal(address tokenAddress) external onlyManager {\\n        _withdraw(tokenAddress, getVaultWithdrawableAmount(tokenAddress));\\n    }\\n\\n    /// @notice Withdraws token from the integration\\n    /// @param tokenAddress The address of the underlying token to withdraw\\n    /// @param amount The amoutn of the token to withdraw\\n    function _withdraw(address tokenAddress, uint256 amount) internal {\\n        address vaultAddress = getVaultAddress(tokenAddress);\\n        IERC20MetadataUpgradeable token = IERC20MetadataUpgradeable(tokenAddress);\\n\\n        if (token.balanceOf(address(this)) < amount) {\\n            // Need to withdraw tokens from Yearn vault\\n            uint256 vaultWithdrawableAmount = getVaultWithdrawableAmount(tokenAddress);\\n            if (vaultWithdrawableAmount > 0) {\\n                // Add 1% to shares amount to withdraw to account for fees\\n                uint256 sharesAmount = (101 *\\n                    amount *\\n                    IERC20MetadataUpgradeable(vaultAddress).balanceOf(address(this))) /\\n                    vaultWithdrawableAmount /\\n                    100;\\n\\n                if (sharesAmount > IERC20MetadataUpgradeable(vaultAddress).balanceOf(address(this))) {\\n                    sharesAmount = IERC20MetadataUpgradeable(vaultAddress).balanceOf(address(this));\\n                }\\n\\n                try IYearnVault(vaultAddress).withdraw(sharesAmount) {} catch {}\\n            }\\n        }\\n\\n        // If there still isn't enough of the withdrawn token, change\\n        // The withdraw amount to the balance of this contract\\n        if (token.balanceOf(address(this)) < amount) {\\n            amount = token.balanceOf(address(this));\\n        }\\n\\n        // balances are too low so need to allow the tokens to leave\\n        if (balances[tokenAddress] != 0) {\\n            if (amount > balances[tokenAddress]) {\\n                balances[tokenAddress] = 0;\\n            } else {\\n                balances[tokenAddress] -= amount;\\n            }\\n        }\\n\\n        token.safeTransfer(moduleMap.getModuleAddress(Modules.Kernel), amount);\\n        emit Withdraw(tokenAddress, amount);\\n    }\\n\\n    /// @notice Deploys all available tokens to Aave\\n    function deploy() external override onlyController {\\n        //     IIntegrationMap integrationMap = IIntegrationMap(\\n        //         moduleMap.getModuleAddress(Modules.IntegrationMap)\\n        //     );\\n        //     uint256 tokenCount = integrationMap.getTokenAddressesLength();\\n        //     for (uint256 tokenId = 0; tokenId < tokenCount; tokenId++) {\\n        //         IERC20MetadataUpgradeable token = IERC20MetadataUpgradeable(\\n        //             integrationMap.getTokenAddress(tokenId)\\n        //         );\\n        //         uint256 tokenAmount = token.balanceOf(address(this));\\n        //         address vaultAddress = getVaultAddress(address(token));\\n        //         // Check if a vault for this token exists\\n        //         if (vaultAddress != address(0)) {\\n        //             if (token.allowance(address(this), vaultAddress) == 0) {\\n        //                 token.safeApprove(vaultAddress, type(uint256).max);\\n        //             }\\n        //             if (tokenAmount > 0) {\\n        //                 try\\n        //                     IYearnVault(vaultAddress).deposit(\\n        //                         tokenAmount,\\n        //                         address(this)\\n        //                     )\\n        //                 {} catch {}\\n        //             }\\n        //         }\\n        //     }\\n    }\\n\\n    /// @notice Harvests all token yield from the Aave lending pool\\n    function harvestYield() external override onlyController {\\n        //     IIntegrationMap integrationMap = IIntegrationMap(\\n        //         moduleMap.getModuleAddress(Modules.IntegrationMap)\\n        //     );\\n        //     uint256 tokenCount = integrationMap.getTokenAddressesLength();\\n        //     for (uint256 tokenId = 0; tokenId < tokenCount; tokenId++) {\\n        //         IERC20MetadataUpgradeable token = IERC20MetadataUpgradeable(\\n        //             integrationMap.getTokenAddress(tokenId)\\n        //         );\\n        //         address vaultAddress = getVaultAddress(address(token));\\n        //         // Check if a vault exists for the current token\\n        //         if (vaultAddress != address(0)) {\\n        //             uint256 availableYieldInShares = getAvailableYieldInShares(\\n        //                 address(token)\\n        //             );\\n        //             if (availableYieldInShares > 0) {\\n        //                 uint256 balanceBefore = token.balanceOf(address(this));\\n        //                 // Harvest the available yield from Yearn vault\\n        //                 try\\n        //                     IYearnVault(getVaultAddress(address(token))).withdraw(\\n        //                         availableYieldInShares\\n        //                     )\\n        //                 {\\n        //                     uint256 harvestedAmount = token.balanceOf(\\n        //                         address(this)\\n        //                     ) - balanceBefore;\\n        //                     if (harvestedAmount > 0) {\\n        //                         // Yield has been harvested, transfer it to the Yield Manager\\n        //                         token.safeTransfer(\\n        //                             moduleMap.getModuleAddress(\\n        //                                 Modules.YieldManager\\n        //                             ),\\n        //                             harvestedAmount\\n        //                         );\\n        //                     }\\n        //                 } catch {}\\n        //             }\\n        //         }\\n        //     }\\n    }\\n\\n    /// @dev This returns the total amount of the underlying token that\\n    /// @dev has been deposited to the integration contract\\n    /// @param token The address of the deployed token\\n    /// @return The amount of the underlying token that can be withdrawn\\n    function getBalance(address token) external view override returns (uint256) {\\n        return balances[token];\\n    }\\n\\n    /// @param token The address of the token\\n    /// @return The address of the vault for the specified token\\n    function getVaultAddress(address token) public view returns (address) {\\n        if (token == address(0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48)) {\\n            return address(0x5f18C75AbDAe578b483E5F43f12a39cF75b973a9);\\n        }\\n\\n        try IYearnRegistry(yearnRegistryAddress).latestVault(token) returns (address vaultAddress) {\\n            return vaultAddress;\\n        } catch {\\n            return address(0);\\n        }\\n    }\\n\\n    /// @param token The address of the deposited token\\n    /// @return The price per vault share in the underlying asset\\n    function getPricePerShare(address token) public view returns (uint256) {\\n        return IYearnVault(getVaultAddress(token)).pricePerShare();\\n    }\\n\\n    /// @param token The address of the deposited token\\n    /// @return The amount of available yield to be harvested in value of the share token\\n    function getAvailableYieldInShares(address token) public view returns (uint256) {\\n        uint256 vaultWithdrawableAmount = getVaultWithdrawableAmount(token);\\n\\n        if (vaultWithdrawableAmount > balances[token]) {\\n            return vaultWithdrawableAmount - balances[token];\\n        } else {\\n            return 0;\\n        }\\n    }\\n\\n    /// @param token The address of the deposited token\\n    /// @return The amount of the deposited token that can be withdrawn from the vault\\n    function getVaultWithdrawableAmount(address token) public view returns (uint256) {\\n        IERC20MetadataUpgradeable shareToken = IERC20MetadataUpgradeable(getVaultAddress(token));\\n\\n        return (getPricePerShare(token) * shareToken.balanceOf(address(this))) / (10**shareToken.decimals());\\n    }\\n\\n    /// @dev Returns total amount of pending yield for the specified token in Yearn\\n    /// @param token The of the token to check for available yield\\n    /// @return Amount of yield available for harvest\\n    function getPendingYield(address token) external view override returns (uint256) {\\n        return getAvailableYieldInShares(token);\\n    }\\n}\\n\",\"keccak256\":\"0xf2e88c007a46ac0c17d7ab5f105024e472b3211aad5ea521266df9f06ed3701a\",\"license\":\"GPL-2.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50611b37806100206000396000f3fe608060405234801561001057600080fd5b50600436106100db5760003560e01c80630f0a1c6f146100e0578063337993cb1461010f57806347e7ef2414610124578063537bb13714610139578063714f583b1461015a578063775c300c1461016d57806390482d72146101755780639067820614610188578063a7fc7a071461019b578063b429afeb146101ae578063d27d806b146101ea578063e8d991d11461016d578063e94b0dd2146101fd578063ec422afd14610210578063ef88c31e14610223578063f3fef3a314610236578063f8b2cb4f14610249575b600080fd5b6000546100f9906201000090046001600160a01b031681565b6040516101069190611784565b60405180910390f35b610117610272565b60405161010691906117b1565b6101376101323660046115e4565b6102d4565b005b61014c6101473660046115ac565b610377565b604051908152602001610106565b6101376101683660046115ac565b610388565b610137610500565b61013761018336600461160f565b610531565b61014c6101963660046115ac565b61063c565b6101376101a93660046115ac565b610766565b6101da6101bc3660046115ac565b6001600160a01b031660009081526001602052604090205460ff1690565b6040519015158152602001610106565b61014c6101f83660046115ac565b6109a1565b6100f961020b366004611717565b6109fc565b61014c61021e3660046115ac565b610a26565b6100f96102313660046115ac565b610aa1565b6101376102443660046115e4565b610b6c565b61014c6102573660046115ac565b6001600160a01b031660009081526004602052604090205490565b606060028054806020026020016040519081016040528092919081815260200182805480156102ca57602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116102ac575b5050505050905090565b3360009081526001602052604090205460ff1661030c5760405162461bcd60e51b81526004016103039061187e565b60405180910390fd5b6001600160a01b0382166000908152600460205260408120805483929061033490849061191d565b90915550506040517fe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c9061036b9084908490611798565b60405180910390a15050565b6000610382826109a1565b92915050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916103bd91906004016117fe565b60206040518083038186803b1580156103d557600080fd5b505afa1580156103e9573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061040d91906115c8565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016104389190611784565b60206040518083038186803b15801561045057600080fd5b505afa158015610464573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061048891906116f7565b6104eb5760405162461bcd60e51b815260206004820152602e60248201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060448201526d34b9903737ba1036b0b730b3b2b960911b6064820152608401610303565b6104fd816104f88361063c565b610ba1565b50565b3360009081526001602052604090205460ff1661052f5760405162461bcd60e51b81526004016103039061187e565b565b600054610100900460ff1661054c5760005460ff1615610554565b6105546110b5565b6105b75760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b6064820152608401610303565b600054610100900460ff161580156105d9576000805461ffff19166101011790555b6001600160a01b0382166105ff5760405162461bcd60e51b815260040161030390611859565b61060984846110c6565b600380546001600160a01b0319166001600160a01b0384161790558015610636576000805461ff00191690555b50505050565b60008061064883610aa1565b9050806001600160a01b031663313ce5676040518163ffffffff1660e01b815260040160206040518083038186803b15801561068357600080fd5b505afa158015610697573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106bb9190611747565b6106c690600a611998565b6040516370a0823160e01b81526001600160a01b038316906370a08231906106f2903090600401611784565b60206040518083038186803b15801561070a57600080fd5b505afa15801561071e573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610742919061172f565b61074b85610a26565b6107559190611a43565b61075f9190611935565b9392505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161079b91906004016117fe565b60206040518083038186803b1580156107b357600080fd5b505afa1580156107c7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107eb91906115c8565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016108169190611784565b60206040518083038186803b15801561082e57600080fd5b505afa158015610842573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061086691906116f7565b6108c55760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b6064820152608401610303565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b60025481101561094b576002818154811061091757634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561093b57600191505b61094481611aa5565b90506108ec565b508061099d57600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b6000806109ad8361063c565b6001600160a01b0384166000908152600460205260409020549091508111156109f3576001600160a01b03831660009081526004602052604090205461075f9082611a62565b50600092915050565b60028181548110610a0c57600080fd5b6000918252602090912001546001600160a01b0316905081565b6000610a3182610aa1565b6001600160a01b03166399530b066040518163ffffffff1660e01b815260040160206040518083038186803b158015610a6957600080fd5b505afa158015610a7d573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610382919061172f565b60006001600160a01b03821673a0b86991c6218b36c1d19d4a2e9eb0ce3606eb481415610ae35750735f18c75abdae578b483e5f43f12a39cf75b973a9919050565b600354604051630e177dc760e41b81526001600160a01b039091169063e177dc7090610b13908590600401611784565b60206040518083038186803b158015610b2b57600080fd5b505afa925050508015610b5b575060408051601f3d908101601f19168201909252610b58918101906115c8565b60015b61038257506000919050565b919050565b3360009081526001602052604090205460ff16610b9b5760405162461bcd60e51b81526004016103039061187e565b61099d82825b6000610bac83610aa1565b6040516370a0823160e01b8152909150839083906001600160a01b038316906370a0823190610bdf903090600401611784565b60206040518083038186803b158015610bf757600080fd5b505afa158015610c0b573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610c2f919061172f565b1015610e4f576000610c408561063c565b90508015610e4d576000606482856001600160a01b03166370a08231306040518263ffffffff1660e01b8152600401610c799190611784565b60206040518083038186803b158015610c9157600080fd5b505afa158015610ca5573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610cc9919061172f565b610cd4886065611a43565b610cde9190611a43565b610ce89190611935565b610cf29190611935565b6040516370a0823160e01b81529091506001600160a01b038516906370a0823190610d21903090600401611784565b60206040518083038186803b158015610d3957600080fd5b505afa158015610d4d573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d71919061172f565b811115610df7576040516370a0823160e01b81526001600160a01b038516906370a0823190610da4903090600401611784565b60206040518083038186803b158015610dbc57600080fd5b505afa158015610dd0573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610df4919061172f565b90505b604051632e1a7d4d60e01b8152600481018290526001600160a01b03851690632e1a7d4d90602401600060405180830381600087803b158015610e3957600080fd5b505af1925050508015610e4a575060015b50505b505b6040516370a0823160e01b815283906001600160a01b038316906370a0823190610e7d903090600401611784565b60206040518083038186803b158015610e9557600080fd5b505afa158015610ea9573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610ecd919061172f565b1015610f52576040516370a0823160e01b81526001600160a01b038216906370a0823190610eff903090600401611784565b60206040518083038186803b158015610f1757600080fd5b505afa158015610f2b573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f4f919061172f565b92505b6001600160a01b03841660009081526004602052604090205415610fdc576001600160a01b038416600090815260046020526040902054831115610fae576001600160a01b038416600090815260046020526040812055610fdc565b6001600160a01b03841660009081526004602052604081208054859290610fd6908490611a62565b90915550505b600080546040516337c61fc560e11b815261107692620100009092046001600160a01b031691636f8c3f8a9161101591906004016117fe565b60206040518083038186803b15801561102d57600080fd5b505afa158015611041573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061106591906115c8565b6001600160a01b038316908561121b565b7f884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a942436484846040516110a7929190611798565b60405180910390a150505050565b60006110c030611276565b15905090565b600054610100900460ff166110ed5760405162461bcd60e51b8152600401610303906118d2565b6001600160a01b0381166111135760405162461bcd60e51b815260040161030390611859565b60005b82518110156111895760006001600160a01b031683828151811061114a57634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b031614156111795760405162461bcd60e51b815260040161030390611859565b61118281611aa5565b9050611116565b5060005b82518110156111fd5760018060008584815181106111bb57634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff19169115159190911790556111f681611aa5565b905061118d565b508151611211906002906020850190611527565b5061099d81611285565b6112718363a9059cbb60e01b848460405160240161123a929190611798565b60408051601f198184030181529190526020810180516001600160e01b03166001600160e01b0319909316929092179091526112d6565b505050565b6001600160a01b03163b151590565b600054610100900460ff166112ac5760405162461bcd60e51b8152600401610303906118d2565b600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b600061132b826040518060400160405280602081526020017f5361666545524332303a206c6f772d6c6576656c2063616c6c206661696c6564815250856001600160a01b03166113a89092919063ffffffff16565b805190915015611271578080602001905181019061134991906116f7565b6112715760405162461bcd60e51b815260206004820152602a60248201527f5361666545524332303a204552433230206f7065726174696f6e20646964206e6044820152691bdd081cdd58d8d9595960b21b6064820152608401610303565b60606113b784846000856113bf565b949350505050565b6060824710156114205760405162461bcd60e51b815260206004820152602660248201527f416464726573733a20696e73756666696369656e742062616c616e636520666f6044820152651c8818d85b1b60d21b6064820152608401610303565b61142985611276565b6114755760405162461bcd60e51b815260206004820152601d60248201527f416464726573733a2063616c6c20746f206e6f6e2d636f6e74726163740000006044820152606401610303565b600080866001600160a01b031685876040516114919190611768565b60006040518083038185875af1925050503d80600081146114ce576040519150601f19603f3d011682016040523d82523d6000602084013e6114d3565b606091505b50915091506114e38282866114ee565b979650505050505050565b606083156114fd57508161075f565b82511561150d5782518084602001fd5b8160405162461bcd60e51b81526004016103039190611826565b82805482825590600052602060002090810192821561157c579160200282015b8281111561157c57825182546001600160a01b0319166001600160a01b03909116178255602090920191600190910190611547565b5061158892915061158c565b5090565b5b80821115611588576000815560010161158d565b8035610b6781611aec565b6000602082840312156115bd578081fd5b813561075f81611aec565b6000602082840312156115d9578081fd5b815161075f81611aec565b600080604083850312156115f6578081fd5b823561160181611aec565b946020939093013593505050565b600080600060608486031215611623578081fd5b83356001600160401b0380821115611639578283fd5b818601915086601f83011261164c578283fd5b813560208282111561166057611660611ad6565b8160051b604051601f19603f8301168101818110868211171561168557611685611ad6565b604052838152828101945085830182870184018c10156116a3578788fd5b8796505b848710156116cc576116b8816115a1565b8652600196909601959483019483016116a7565b5097506116dc90508882016115a1565b9550505050506116ee604085016115a1565b90509250925092565b600060208284031215611708578081fd5b8151801515811461075f578182fd5b600060208284031215611728578081fd5b5035919050565b600060208284031215611740578081fd5b5051919050565b600060208284031215611758578081fd5b815160ff8116811461075f578182fd5b6000825161177a818460208701611a79565b9190910192915050565b6001600160a01b0391909116815260200190565b6001600160a01b03929092168252602082015260400190565b6020808252825182820181905260009190848201906040850190845b818110156117f25783516001600160a01b0316835292840192918401916001016117cd565b50909695505050505050565b60208101600e831061182057634e487b7160e01b600052602160045260246000fd5b91905290565b6020815260008251806020840152611845816040850160208701611a79565b601f01601f19169190910160400192915050565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b6020808252602b908201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960408201526a6e697469616c697a696e6760a81b606082015260800190565b6000821982111561193057611930611ac0565b500190565b60008261195057634e487b7160e01b81526012600452602481fd5b500490565b600181815b8085111561199057816000190482111561197657611976611ac0565b8085161561198357918102915b93841c939080029061195a565b509250929050565b600061075f60ff8416836000826119b157506001610382565b816119be57506000610382565b81600181146119d457600281146119de576119fa565b6001915050610382565b60ff8411156119ef576119ef611ac0565b50506001821b610382565b5060208310610133831016604e8410600b8410161715611a1d575081810a610382565b611a278383611955565b8060001904821115611a3b57611a3b611ac0565b029392505050565b6000816000190483118215151615611a5d57611a5d611ac0565b500290565b600082821015611a7457611a74611ac0565b500390565b60005b83811015611a94578181015183820152602001611a7c565b838111156106365750506000910152565b6000600019821415611ab957611ab9611ac0565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b6001600160a01b03811681146104fd57600080fdfea2646970667358221220170c034c978150071c72b1508ba5c9f842c7b2cdb81fdfdcc828c8bea9e429de64736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100db5760003560e01c80630f0a1c6f146100e0578063337993cb1461010f57806347e7ef2414610124578063537bb13714610139578063714f583b1461015a578063775c300c1461016d57806390482d72146101755780639067820614610188578063a7fc7a071461019b578063b429afeb146101ae578063d27d806b146101ea578063e8d991d11461016d578063e94b0dd2146101fd578063ec422afd14610210578063ef88c31e14610223578063f3fef3a314610236578063f8b2cb4f14610249575b600080fd5b6000546100f9906201000090046001600160a01b031681565b6040516101069190611784565b60405180910390f35b610117610272565b60405161010691906117b1565b6101376101323660046115e4565b6102d4565b005b61014c6101473660046115ac565b610377565b604051908152602001610106565b6101376101683660046115ac565b610388565b610137610500565b61013761018336600461160f565b610531565b61014c6101963660046115ac565b61063c565b6101376101a93660046115ac565b610766565b6101da6101bc3660046115ac565b6001600160a01b031660009081526001602052604090205460ff1690565b6040519015158152602001610106565b61014c6101f83660046115ac565b6109a1565b6100f961020b366004611717565b6109fc565b61014c61021e3660046115ac565b610a26565b6100f96102313660046115ac565b610aa1565b6101376102443660046115e4565b610b6c565b61014c6102573660046115ac565b6001600160a01b031660009081526004602052604090205490565b606060028054806020026020016040519081016040528092919081815260200182805480156102ca57602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116102ac575b5050505050905090565b3360009081526001602052604090205460ff1661030c5760405162461bcd60e51b81526004016103039061187e565b60405180910390fd5b6001600160a01b0382166000908152600460205260408120805483929061033490849061191d565b90915550506040517fe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c9061036b9084908490611798565b60405180910390a15050565b6000610382826109a1565b92915050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916103bd91906004016117fe565b60206040518083038186803b1580156103d557600080fd5b505afa1580156103e9573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061040d91906115c8565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016104389190611784565b60206040518083038186803b15801561045057600080fd5b505afa158015610464573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061048891906116f7565b6104eb5760405162461bcd60e51b815260206004820152602e60248201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060448201526d34b9903737ba1036b0b730b3b2b960911b6064820152608401610303565b6104fd816104f88361063c565b610ba1565b50565b3360009081526001602052604090205460ff1661052f5760405162461bcd60e51b81526004016103039061187e565b565b600054610100900460ff1661054c5760005460ff1615610554565b6105546110b5565b6105b75760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b6064820152608401610303565b600054610100900460ff161580156105d9576000805461ffff19166101011790555b6001600160a01b0382166105ff5760405162461bcd60e51b815260040161030390611859565b61060984846110c6565b600380546001600160a01b0319166001600160a01b0384161790558015610636576000805461ff00191690555b50505050565b60008061064883610aa1565b9050806001600160a01b031663313ce5676040518163ffffffff1660e01b815260040160206040518083038186803b15801561068357600080fd5b505afa158015610697573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106bb9190611747565b6106c690600a611998565b6040516370a0823160e01b81526001600160a01b038316906370a08231906106f2903090600401611784565b60206040518083038186803b15801561070a57600080fd5b505afa15801561071e573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610742919061172f565b61074b85610a26565b6107559190611a43565b61075f9190611935565b9392505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161079b91906004016117fe565b60206040518083038186803b1580156107b357600080fd5b505afa1580156107c7573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107eb91906115c8565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016108169190611784565b60206040518083038186803b15801561082e57600080fd5b505afa158015610842573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061086691906116f7565b6108c55760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b6064820152608401610303565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b60025481101561094b576002818154811061091757634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561093b57600191505b61094481611aa5565b90506108ec565b508061099d57600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b6000806109ad8361063c565b6001600160a01b0384166000908152600460205260409020549091508111156109f3576001600160a01b03831660009081526004602052604090205461075f9082611a62565b50600092915050565b60028181548110610a0c57600080fd5b6000918252602090912001546001600160a01b0316905081565b6000610a3182610aa1565b6001600160a01b03166399530b066040518163ffffffff1660e01b815260040160206040518083038186803b158015610a6957600080fd5b505afa158015610a7d573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610382919061172f565b60006001600160a01b03821673a0b86991c6218b36c1d19d4a2e9eb0ce3606eb481415610ae35750735f18c75abdae578b483e5f43f12a39cf75b973a9919050565b600354604051630e177dc760e41b81526001600160a01b039091169063e177dc7090610b13908590600401611784565b60206040518083038186803b158015610b2b57600080fd5b505afa925050508015610b5b575060408051601f3d908101601f19168201909252610b58918101906115c8565b60015b61038257506000919050565b919050565b3360009081526001602052604090205460ff16610b9b5760405162461bcd60e51b81526004016103039061187e565b61099d82825b6000610bac83610aa1565b6040516370a0823160e01b8152909150839083906001600160a01b038316906370a0823190610bdf903090600401611784565b60206040518083038186803b158015610bf757600080fd5b505afa158015610c0b573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610c2f919061172f565b1015610e4f576000610c408561063c565b90508015610e4d576000606482856001600160a01b03166370a08231306040518263ffffffff1660e01b8152600401610c799190611784565b60206040518083038186803b158015610c9157600080fd5b505afa158015610ca5573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610cc9919061172f565b610cd4886065611a43565b610cde9190611a43565b610ce89190611935565b610cf29190611935565b6040516370a0823160e01b81529091506001600160a01b038516906370a0823190610d21903090600401611784565b60206040518083038186803b158015610d3957600080fd5b505afa158015610d4d573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d71919061172f565b811115610df7576040516370a0823160e01b81526001600160a01b038516906370a0823190610da4903090600401611784565b60206040518083038186803b158015610dbc57600080fd5b505afa158015610dd0573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610df4919061172f565b90505b604051632e1a7d4d60e01b8152600481018290526001600160a01b03851690632e1a7d4d90602401600060405180830381600087803b158015610e3957600080fd5b505af1925050508015610e4a575060015b50505b505b6040516370a0823160e01b815283906001600160a01b038316906370a0823190610e7d903090600401611784565b60206040518083038186803b158015610e9557600080fd5b505afa158015610ea9573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610ecd919061172f565b1015610f52576040516370a0823160e01b81526001600160a01b038216906370a0823190610eff903090600401611784565b60206040518083038186803b158015610f1757600080fd5b505afa158015610f2b573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f4f919061172f565b92505b6001600160a01b03841660009081526004602052604090205415610fdc576001600160a01b038416600090815260046020526040902054831115610fae576001600160a01b038416600090815260046020526040812055610fdc565b6001600160a01b03841660009081526004602052604081208054859290610fd6908490611a62565b90915550505b600080546040516337c61fc560e11b815261107692620100009092046001600160a01b031691636f8c3f8a9161101591906004016117fe565b60206040518083038186803b15801561102d57600080fd5b505afa158015611041573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061106591906115c8565b6001600160a01b038316908561121b565b7f884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a942436484846040516110a7929190611798565b60405180910390a150505050565b60006110c030611276565b15905090565b600054610100900460ff166110ed5760405162461bcd60e51b8152600401610303906118d2565b6001600160a01b0381166111135760405162461bcd60e51b815260040161030390611859565b60005b82518110156111895760006001600160a01b031683828151811061114a57634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b031614156111795760405162461bcd60e51b815260040161030390611859565b61118281611aa5565b9050611116565b5060005b82518110156111fd5760018060008584815181106111bb57634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff19169115159190911790556111f681611aa5565b905061118d565b508151611211906002906020850190611527565b5061099d81611285565b6112718363a9059cbb60e01b848460405160240161123a929190611798565b60408051601f198184030181529190526020810180516001600160e01b03166001600160e01b0319909316929092179091526112d6565b505050565b6001600160a01b03163b151590565b600054610100900460ff166112ac5760405162461bcd60e51b8152600401610303906118d2565b600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b600061132b826040518060400160405280602081526020017f5361666545524332303a206c6f772d6c6576656c2063616c6c206661696c6564815250856001600160a01b03166113a89092919063ffffffff16565b805190915015611271578080602001905181019061134991906116f7565b6112715760405162461bcd60e51b815260206004820152602a60248201527f5361666545524332303a204552433230206f7065726174696f6e20646964206e6044820152691bdd081cdd58d8d9595960b21b6064820152608401610303565b60606113b784846000856113bf565b949350505050565b6060824710156114205760405162461bcd60e51b815260206004820152602660248201527f416464726573733a20696e73756666696369656e742062616c616e636520666f6044820152651c8818d85b1b60d21b6064820152608401610303565b61142985611276565b6114755760405162461bcd60e51b815260206004820152601d60248201527f416464726573733a2063616c6c20746f206e6f6e2d636f6e74726163740000006044820152606401610303565b600080866001600160a01b031685876040516114919190611768565b60006040518083038185875af1925050503d80600081146114ce576040519150601f19603f3d011682016040523d82523d6000602084013e6114d3565b606091505b50915091506114e38282866114ee565b979650505050505050565b606083156114fd57508161075f565b82511561150d5782518084602001fd5b8160405162461bcd60e51b81526004016103039190611826565b82805482825590600052602060002090810192821561157c579160200282015b8281111561157c57825182546001600160a01b0319166001600160a01b03909116178255602090920191600190910190611547565b5061158892915061158c565b5090565b5b80821115611588576000815560010161158d565b8035610b6781611aec565b6000602082840312156115bd578081fd5b813561075f81611aec565b6000602082840312156115d9578081fd5b815161075f81611aec565b600080604083850312156115f6578081fd5b823561160181611aec565b946020939093013593505050565b600080600060608486031215611623578081fd5b83356001600160401b0380821115611639578283fd5b818601915086601f83011261164c578283fd5b813560208282111561166057611660611ad6565b8160051b604051601f19603f8301168101818110868211171561168557611685611ad6565b604052838152828101945085830182870184018c10156116a3578788fd5b8796505b848710156116cc576116b8816115a1565b8652600196909601959483019483016116a7565b5097506116dc90508882016115a1565b9550505050506116ee604085016115a1565b90509250925092565b600060208284031215611708578081fd5b8151801515811461075f578182fd5b600060208284031215611728578081fd5b5035919050565b600060208284031215611740578081fd5b5051919050565b600060208284031215611758578081fd5b815160ff8116811461075f578182fd5b6000825161177a818460208701611a79565b9190910192915050565b6001600160a01b0391909116815260200190565b6001600160a01b03929092168252602082015260400190565b6020808252825182820181905260009190848201906040850190845b818110156117f25783516001600160a01b0316835292840192918401916001016117cd565b50909695505050505050565b60208101600e831061182057634e487b7160e01b600052602160045260246000fd5b91905290565b6020815260008251806020840152611845816040850160208701611a79565b601f01601f19169190910160400192915050565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b6020808252602b908201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960408201526a6e697469616c697a696e6760a81b606082015260800190565b6000821982111561193057611930611ac0565b500190565b60008261195057634e487b7160e01b81526012600452602481fd5b500490565b600181815b8085111561199057816000190482111561197657611976611ac0565b8085161561198357918102915b93841c939080029061195a565b509250929050565b600061075f60ff8416836000826119b157506001610382565b816119be57506000610382565b81600181146119d457600281146119de576119fa565b6001915050610382565b60ff8411156119ef576119ef611ac0565b50506001821b610382565b5060208310610133831016604e8410600b8410161715611a1d575081810a610382565b611a278383611955565b8060001904821115611a3b57611a3b611ac0565b029392505050565b6000816000190483118215151615611a5d57611a5d611ac0565b500290565b600082821015611a7457611a74611ac0565b500390565b60005b83811015611a94578181015183820152602001611a7c565b838111156106365750506000910152565b6000600019821415611ab957611ab9611ac0565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b6001600160a01b03811681146104fd57600080fdfea2646970667358221220170c034c978150071c72b1508ba5c9f842c7b2cdb81fdfdcc828c8bea9e429de64736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "deposit(address,uint256)": {
+        "params": {
+          "amount": "The amount of the token being deposited",
+          "tokenAddress": "The address of the deposited token"
+        }
+      },
+      "getAvailableYieldInShares(address)": {
+        "params": {
+          "token": "The address of the deposited token"
+        },
+        "returns": {
+          "_0": "The amount of available yield to be harvested in value of the share token"
+        }
+      },
+      "getBalance(address)": {
+        "details": "This returns the total amount of the underlying token thathas been deposited to the integration contract",
+        "params": {
+          "token": "The address of the deployed token"
+        },
+        "returns": {
+          "_0": "The amount of the underlying token that can be withdrawn"
+        }
+      },
+      "getPendingYield(address)": {
+        "details": "Returns total amount of pending yield for the specified token in Yearn",
+        "params": {
+          "token": "The of the token to check for available yield"
+        },
+        "returns": {
+          "_0": "Amount of yield available for harvest"
+        }
+      },
+      "getPricePerShare(address)": {
+        "params": {
+          "token": "The address of the deposited token"
+        },
+        "returns": {
+          "_0": "The price per vault share in the underlying asset"
+        }
+      },
+      "getVaultAddress(address)": {
+        "params": {
+          "token": "The address of the token"
+        },
+        "returns": {
+          "_0": "The address of the vault for the specified token"
+        }
+      },
+      "getVaultWithdrawableAmount(address)": {
+        "params": {
+          "token": "The address of the deposited token"
+        },
+        "returns": {
+          "_0": "The amount of the deposited token that can be withdrawn from the vault"
+        }
+      },
+      "initialize(address[],address,address)": {
+        "params": {
+          "controllers_": "The addresses of the controlling contracts",
+          "moduleMap_": "The address of the module map contract",
+          "yearnRegistryAddress_": "The address of the Yearn registry contract"
+        }
+      },
+      "retrievePrincipal(address)": {
+        "params": {
+          "tokenAddress": "The address of the underlying token to withdraw"
+        }
+      },
+      "withdraw(address,uint256)": {
+        "params": {
+          "amount": "The amoutn of the token to withdraw",
+          "tokenAddress": "The address of the underlying token to withdraw"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "deploy()": {
+        "notice": "Deploys all available tokens to Aave"
+      },
+      "harvestYield()": {
+        "notice": "Harvests all token yield from the Aave lending pool"
+      },
+      "retrievePrincipal(address)": {
+        "notice": "Withdraws ALL the tokens from the integration"
+      },
+      "withdraw(address,uint256)": {
+        "notice": "Withdraws token from the integration"
+      }
+    },
+    "notice": "Integrates 0x Nodes to Yearn v2 vaults",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 702,
+        "contract": "contracts/yield-integrations/YearnIntegration.sol:YearnIntegration",
+        "label": "_initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 705,
+        "contract": "contracts/yield-integrations/YearnIntegration.sol:YearnIntegration",
+        "label": "_initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 15684,
+        "contract": "contracts/yield-integrations/YearnIntegration.sol:YearnIntegration",
+        "label": "moduleMap",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_contract(IModuleMap)29669"
+      },
+      {
+        "astId": 9016,
+        "contract": "contracts/yield-integrations/YearnIntegration.sol:YearnIntegration",
+        "label": "_controllers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 9019,
+        "contract": "contracts/yield-integrations/YearnIntegration.sol:YearnIntegration",
+        "label": "controllers",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 74946,
+        "contract": "contracts/yield-integrations/YearnIntegration.sol:YearnIntegration",
+        "label": "yearnRegistryAddress",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_address"
+      },
+      {
+        "astId": 74950,
+        "contract": "contracts/yield-integrations/YearnIntegration.sol:YearnIntegration",
+        "label": "balances",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_mapping(t_address,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(IModuleMap)29669": {
+        "encoding": "inplace",
+        "label": "contract IModuleMap",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

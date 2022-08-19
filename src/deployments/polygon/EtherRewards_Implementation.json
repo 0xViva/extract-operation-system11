@@ -1,0 +1,667 @@
+{
+  "address": "0xA736ecAe16468Aaf75A6eDA28ba6E77F18bc4e49",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "controllers_",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "moduleMap_",
+          "type": "address"
+        }
+      ],
+      "name": "__Controlled_init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "addController",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "ids",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "claimEthRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "ethRewards",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "controllers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "strategyId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "decreaseUserRewards",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getEthRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "strategyId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getStrategyInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "rewardPerShare",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalRewards",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IEtherRewards.StrategyInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalClaimedEthRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "ids",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "getTotalUserClaimedEthByStrategy",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getTotalUserClaimedEthRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserEthRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "strategyId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "int256",
+              "name": "rewardDebt",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "claimedRewards",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IEtherRewards.UserInfo",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "strategyId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserStrategyRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "ethRewards",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "strategyId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "ethRewardsAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseEthRewards",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "strategyId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "increaseUserRewards",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "controllers_",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "moduleMap_",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "moduleMap",
+      "outputs": [
+        {
+          "internalType": "contract IModuleMap",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6e45563d3a81840536cf8d1472f2b6c12e26dd82171dc104570d39069716ae78",
+  "receipt": {
+    "to": null,
+    "from": "0x34B3A62aD391052B8A4d8FAB59cDFF8C2A249701",
+    "contractAddress": "0xA736ecAe16468Aaf75A6eDA28ba6E77F18bc4e49",
+    "transactionIndex": 48,
+    "gasUsed": "1517602",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000001000008000000000000000000000000000000080000000000000000000000000800000000000000000000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000080000200000000000000000000000000000000000000000000800000000000000004000000000000000000001000000000000000000000000000000100100000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0x5458d9272e6663d907d0f7c64e041074a7c31480ae721235e9d94198e4482353",
+    "transactionHash": "0x6e45563d3a81840536cf8d1472f2b6c12e26dd82171dc104570d39069716ae78",
+    "logs": [
+      {
+        "transactionIndex": 48,
+        "blockNumber": 23509531,
+        "transactionHash": "0x6e45563d3a81840536cf8d1472f2b6c12e26dd82171dc104570d39069716ae78",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x00000000000000000000000034b3a62ad391052b8a4d8fab59cdff8c2a249701",
+          "0x000000000000000000000000f0245f6251bef9447a08766b9da2b07b28ad80b0"
+        ],
+        "data": "0x00000000000000000000000000000000000000000000000000a1bf87839cd80000000000000000000000000000000000000000000000000273e275519ef5b2f40000000000000000000000000000000000000000000005446b2e96f35960352b0000000000000000000000000000000000000000000000027340b5ca1b58daf40000000000000000000000000000000000000000000005446bd0567adcfd0d2b",
+        "logIndex": 250,
+        "blockHash": "0x5458d9272e6663d907d0f7c64e041074a7c31480ae721235e9d94198e4482353"
+      }
+    ],
+    "blockNumber": 23509531,
+    "cumulativeGasUsed": "9162441",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "95f752398cd2db7b9438ee5be3183efd",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"controllers_\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"moduleMap_\",\"type\":\"address\"}],\"name\":\"__Controlled_init\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"addController\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"claimEthRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ethRewards\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"controllers\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"strategyId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"decreaseUserRewards\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getEthRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"strategyId\",\"type\":\"uint256\"}],\"name\":\"getStrategyInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"rewardPerShare\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"totalRewards\",\"type\":\"uint256\"}],\"internalType\":\"struct IEtherRewards.StrategyInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTotalClaimedEthRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"getTotalUserClaimedEthByStrategy\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"getTotalUserClaimedEthRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getUserEthRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"strategyId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getUserInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"int256\",\"name\":\"rewardDebt\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"claimedRewards\",\"type\":\"uint256\"}],\"internalType\":\"struct IEtherRewards.UserInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"strategyId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getUserStrategyRewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ethRewards\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"strategyId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"ethRewardsAmount\",\"type\":\"uint256\"}],\"name\":\"increaseEthRewards\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"strategyId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"increaseUserRewards\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"controllers_\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"moduleMap_\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"moduleMap\",\"outputs\":[{\"internalType\":\"contract IModuleMap\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"claimEthRewards(address,uint256[])\":{\"params\":{\"ids\":\"An array of strategyIds to claim rewards for\",\"user\":\"The address of the user\"},\"returns\":{\"ethRewards\":\"The amount of Ether claimed\"}},\"decreaseUserRewards(uint256,uint256,address)\":{\"params\":{\"amount\":\"Amount of token entered into strategy\",\"strategyId\":\"Strategy the user entered into\",\"user\":\"The address of the user\"}},\"getEthRewards()\":{\"returns\":{\"_0\":\"The total amount of Ether rewards\"}},\"getTotalClaimedEthRewards()\":{\"returns\":{\"_0\":\"The total value of ETH claimed by users\"}},\"getTotalUserClaimedEthRewards(address)\":{\"returns\":{\"_0\":\"The total value of ETH claimed by a user\"}},\"getUserEthRewards(address)\":{\"params\":{\"user\":\"The address of the user\"},\"returns\":{\"_0\":\"ethRewards The amount of Ether claimed\"}},\"getUserStrategyRewards(uint256,address)\":{\"params\":{\"strategyId\":\"The ID of the strategy\",\"user\":\"The address of the user\"},\"returns\":{\"ethRewards\":\"The amount of Ether claimed\"}},\"increaseEthRewards(uint256,uint256)\":{\"details\":\"strategyId = 0 for BIOS PFA!\",\"params\":{\"ethRewardsAmount\":\"The amount of Ether rewards to add\",\"strategyId\":\"The strategyId of the strategy to increase rewards for\"}},\"increaseUserRewards(uint256,uint256,address)\":{\"params\":{\"amount\":\"Amount of token entered into strategy\",\"strategyId\":\"Strategy the user entered into\",\"user\":\"The address of the user\"}},\"initialize(address[],address)\":{\"params\":{\"controllers_\":\"The array of controllers for this contract\",\"moduleMap_\":\"The address of the ModuleMap contract\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/core/EtherRewards.sol\":\"EtherRewards\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (proxy/utils/Initializable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../utils/AddressUpgradeable.sol\\\";\\n\\n/**\\n * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\\n * behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an\\n * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\\n * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\\n *\\n * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\\n * possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\\n *\\n * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\\n * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\\n *\\n * [CAUTION]\\n * ====\\n * Avoid leaving a contract uninitialized.\\n *\\n * An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation\\n * contract, which may impact the proxy. To initialize the implementation contract, you can either invoke the\\n * initializer manually, or you can include a constructor to automatically mark it as initialized when it is deployed:\\n *\\n * [.hljs-theme-light.nopadding]\\n * ```\\n * /// @custom:oz-upgrades-unsafe-allow constructor\\n * constructor() initializer {}\\n * ```\\n * ====\\n */\\nabstract contract Initializable {\\n    /**\\n     * @dev Indicates that the contract has been initialized.\\n     */\\n    bool private _initialized;\\n\\n    /**\\n     * @dev Indicates that the contract is in the process of being initialized.\\n     */\\n    bool private _initializing;\\n\\n    /**\\n     * @dev Modifier to protect an initializer function from being invoked twice.\\n     */\\n    modifier initializer() {\\n        // If the contract is initializing we ignore whether _initialized is set in order to support multiple\\n        // inheritance patterns, but we only do this in the context of a constructor, because in other contexts the\\n        // contract may have been reentered.\\n        require(_initializing ? _isConstructor() : !_initialized, \\\"Initializable: contract is already initialized\\\");\\n\\n        bool isTopLevelCall = !_initializing;\\n        if (isTopLevelCall) {\\n            _initializing = true;\\n            _initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            _initializing = false;\\n        }\\n    }\\n\\n    /**\\n     * @dev Modifier to protect an initialization function so that it can only be invoked by functions with the\\n     * {initializer} modifier, directly or indirectly.\\n     */\\n    modifier onlyInitializing() {\\n        require(_initializing, \\\"Initializable: contract is not initializing\\\");\\n        _;\\n    }\\n\\n    function _isConstructor() private view returns (bool) {\\n        return !AddressUpgradeable.isContract(address(this));\\n    }\\n}\\n\",\"keccak256\":\"0x68861bcc80cacbd498efde75aab6c74a486cc48262660d326c8d7530d9752097\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/Address.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Collection of functions related to the address type\\n */\\nlibrary AddressUpgradeable {\\n    /**\\n     * @dev Returns true if `account` is a contract.\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * It is unsafe to assume that an address for which this function returns\\n     * false is an externally-owned account (EOA) and not a contract.\\n     *\\n     * Among others, `isContract` will return false for the following\\n     * types of addresses:\\n     *\\n     *  - an externally-owned account\\n     *  - a contract in construction\\n     *  - an address where a contract will be created\\n     *  - an address where a contract lived, but was destroyed\\n     * ====\\n     */\\n    function isContract(address account) internal view returns (bool) {\\n        // This method relies on extcodesize, which returns 0 for contracts in\\n        // construction, since the code is only stored at the end of the\\n        // constructor execution.\\n\\n        uint256 size;\\n        assembly {\\n            size := extcodesize(account)\\n        }\\n        return size > 0;\\n    }\\n\\n    /**\\n     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to\\n     * `recipient`, forwarding all available gas and reverting on errors.\\n     *\\n     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost\\n     * of certain opcodes, possibly making contracts go over the 2300 gas limit\\n     * imposed by `transfer`, making them unable to receive funds via\\n     * `transfer`. {sendValue} removes this limitation.\\n     *\\n     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].\\n     *\\n     * IMPORTANT: because control is transferred to `recipient`, care must be\\n     * taken to not create reentrancy vulnerabilities. Consider using\\n     * {ReentrancyGuard} or the\\n     * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].\\n     */\\n    function sendValue(address payable recipient, uint256 amount) internal {\\n        require(address(this).balance >= amount, \\\"Address: insufficient balance\\\");\\n\\n        (bool success, ) = recipient.call{value: amount}(\\\"\\\");\\n        require(success, \\\"Address: unable to send value, recipient may have reverted\\\");\\n    }\\n\\n    /**\\n     * @dev Performs a Solidity function call using a low level `call`. A\\n     * plain `call` is an unsafe replacement for a function call: use this\\n     * function instead.\\n     *\\n     * If `target` reverts with a revert reason, it is bubbled up by this\\n     * function (like regular Solidity function calls).\\n     *\\n     * Returns the raw returned data. To convert to the expected return value,\\n     * use https://solidity.readthedocs.io/en/latest/units-and-global-variables.html?highlight=abi.decode#abi-encoding-and-decoding-functions[`abi.decode`].\\n     *\\n     * Requirements:\\n     *\\n     * - `target` must be a contract.\\n     * - calling `target` with `data` must not revert.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(address target, bytes memory data) internal returns (bytes memory) {\\n        return functionCall(target, data, \\\"Address: low-level call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with\\n     * `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, 0, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but also transferring `value` wei to `target`.\\n     *\\n     * Requirements:\\n     *\\n     * - the calling contract must have an ETH balance of at least `value`.\\n     * - the called Solidity function must be `payable`.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, value, \\\"Address: low-level call with value failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but\\n     * with `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        require(address(this).balance >= value, \\\"Address: insufficient balance for call\\\");\\n        require(isContract(target), \\\"Address: call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\\n        return functionStaticCall(target, data, \\\"Address: low-level static call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal view returns (bytes memory) {\\n        require(isContract(target), \\\"Address: static call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.staticcall(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Tool to verifies that a low level call was successful, and revert if it wasn't, either by bubbling the\\n     * revert reason using the provided one.\\n     *\\n     * _Available since v4.3._\\n     */\\n    function verifyCallResult(\\n        bool success,\\n        bytes memory returndata,\\n        string memory errorMessage\\n    ) internal pure returns (bytes memory) {\\n        if (success) {\\n            return returndata;\\n        } else {\\n            // Look for revert reason and bubble it up if present\\n            if (returndata.length > 0) {\\n                // The easiest way to bubble the revert reason is using memory via assembly\\n\\n                assembly {\\n                    let returndata_size := mload(returndata)\\n                    revert(add(32, returndata), returndata_size)\\n                }\\n            } else {\\n                revert(errorMessage);\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x3f0f878c796dfc7feba6d3c4e3e526c14c7deae8b7bfc71088e3f38fab0d77b3\",\"license\":\"MIT\"},\"contracts/core/Controlled.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"./ModuleMapConsumer.sol\\\";\\nimport \\\"../interfaces/IKernel.sol\\\";\\n\\nabstract contract Controlled is Initializable, ModuleMapConsumer {\\n    // controller address => is a controller\\n    mapping(address => bool) internal _controllers;\\n    address[] public controllers;\\n\\n    function __Controlled_init(\\n        address[] memory controllers_,\\n        address moduleMap_\\n    ) public initializer {\\n        for (uint256 i; i < controllers_.length; i++) {\\n            _controllers[controllers_[i]] = true;\\n        }\\n        controllers = controllers_;\\n        __ModuleMapConsumer_init(moduleMap_);\\n    }\\n\\n    function addController(address controller) external onlyOwner {\\n        _controllers[controller] = true;\\n        bool added;\\n        for (uint256 i; i < controllers.length; i++) {\\n            if (controller == controllers[i]) {\\n                added = true;\\n            }\\n        }\\n        if (!added) {\\n            controllers.push(controller);\\n        }\\n    }\\n\\n    modifier onlyOwner() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isOwner(\\n                msg.sender\\n            ),\\n            \\\"Controlled::onlyOwner: Caller is not owner\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyManager() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isManager(\\n                msg.sender\\n            ),\\n            \\\"Controlled::onlyManager: Caller is not manager\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyController() {\\n        require(\\n            _controllers[msg.sender],\\n            \\\"Controlled::onlyController: Caller is not controller\\\"\\n        );\\n        _;\\n    }\\n}\\n\",\"keccak256\":\"0x9d695827316f9115bdeefad43183295fe65948c7ca5489ba6718fbbb01bfbcb8\",\"license\":\"GPL-2.0\"},\"contracts/core/EtherRewards.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"../interfaces/IEtherRewards.sol\\\";\\nimport \\\"../interfaces/IIntegrationMap.sol\\\";\\nimport \\\"../interfaces/IUserPositions.sol\\\";\\nimport \\\"../interfaces/IStrategyMap.sol\\\";\\nimport \\\"./Controlled.sol\\\";\\nimport \\\"./ModuleMapConsumer.sol\\\";\\n\\n// https://solmaz.io/2019/02/24/scalable-reward-changing/\\n// https://github.com/sushiswap/sushiswap/blob/canary/contracts/MasterChefV2.sol\\ncontract EtherRewards is\\n    Initializable,\\n    ModuleMapConsumer,\\n    Controlled,\\n    IEtherRewards\\n{\\n    uint256 private totalEthRewards;\\n    uint256 private totalClaimedEthRewards;\\n    mapping(address => uint256) private totalUserClaimedEthRewards;\\n\\n    // user => strategyId => UserInfo\\n    mapping(address => mapping(uint256 => UserInfo)) private users;\\n\\n    // strategyId => StrategyInfo\\n    mapping(uint256 => StrategyInfo) private strategies;\\n\\n    // Used for accounting precision\\n    uint256 private constant ACC_PRECISION = 1e12;\\n\\n    /// @param controllers_ The array of controllers for this contract\\n    /// @param moduleMap_ The address of the ModuleMap contract\\n    function initialize(address[] memory controllers_, address moduleMap_)\\n        public\\n        initializer\\n    {\\n        __Controlled_init(controllers_, moduleMap_);\\n    }\\n\\n    /// @param strategyId Strategy the user entered into\\n    /// @param amount Amount of token entered into strategy\\n    /// @param user The address of the user\\n    function increaseUserRewards(\\n        uint256 strategyId,\\n        uint256 amount,\\n        address user\\n    ) external override onlyController {\\n        // Increase reward debt so users don't get back credited\\n        users[user][strategyId].rewardDebt += int256(\\n            (amount * strategies[strategyId].rewardPerShare) / ACC_PRECISION\\n        );\\n    }\\n\\n    /// @param strategyId Strategy the user entered into\\n    /// @param amount Amount of token entered into strategy\\n    /// @param user The address of the user\\n    function decreaseUserRewards(\\n        uint256 strategyId,\\n        uint256 amount,\\n        address user\\n    ) external override onlyController {\\n        // Decrease reward debt so users don't lose rewards already earned\\n        users[user][strategyId].rewardDebt -= int256(\\n            (amount * strategies[strategyId].rewardPerShare) / ACC_PRECISION\\n        );\\n    }\\n\\n    /// @dev strategyId = 0 for BIOS PFA!\\n    /// @param strategyId The strategyId of the strategy to increase rewards for\\n    /// @param ethRewardsAmount The amount of Ether rewards to add\\n    function increaseEthRewards(uint256 strategyId, uint256 ethRewardsAmount)\\n        external\\n        override\\n        onlyController\\n    {\\n        StrategyInfo storage strategy = strategies[strategyId];\\n\\n        IIntegrationMap integrationMap = IIntegrationMap(\\n            moduleMap.getModuleAddress(Modules.IntegrationMap)\\n        );\\n\\n        // BIOS is special and just uses deposits, not strategy balance\\n        uint256 tokenTotalAmount = strategyId == 0\\n            ? IUserPositions(moduleMap.getModuleAddress(Modules.UserPositions))\\n                .totalTokenBalance(integrationMap.getBiosTokenAddress())\\n            : IStrategyMap(moduleMap.getModuleAddress(Modules.StrategyMap))\\n                .getStrategyTokenBalance(\\n                    strategyId,\\n                    integrationMap.getWethTokenAddress()\\n                );\\n        require(tokenTotalAmount > 0, \\\"EtherRewards::tokenNotDeposited\\\");\\n\\n        // Update strategy rate and total\\n        strategy.rewardPerShare +=\\n            (ethRewardsAmount * ACC_PRECISION) /\\n            tokenTotalAmount;\\n        strategy.totalRewards += ethRewardsAmount;\\n\\n        // Update global rewards\\n        totalEthRewards += ethRewardsAmount;\\n    }\\n\\n    /// @param user The address of the user\\n    /// @param ids An array of strategyIds to claim rewards for\\n    /// @return ethRewards The amount of Ether claimed\\n    function claimEthRewards(address user, uint256[] calldata ids)\\n        external\\n        override\\n        onlyController\\n        returns (uint256 ethRewards)\\n    {\\n        for (uint256 i; i < ids.length; ++i) {\\n            ethRewards += _claimStrategyRewards(ids[i], user);\\n        }\\n    }\\n\\n    /// @param strategyId The strategy to claim rewards from\\n    /// @param user The address of the user\\n    /// @return ethRewards The amount of Ether claimed\\n    function _claimStrategyRewards(uint256 strategyId, address user)\\n        private\\n        returns (uint256)\\n    {\\n        (uint256 ethRewards, uint256 userAmount) = _getUserStrategyRewards(\\n            strategyId,\\n            user\\n        );\\n\\n        if (ethRewards > 0) {\\n            // User accounting\\n            users[user][strategyId].rewardDebt = int256(\\n                (strategies[strategyId].rewardPerShare * userAmount) /\\n                    ACC_PRECISION\\n            );\\n\\n            // Global accounting\\n            totalClaimedEthRewards += ethRewards;\\n            totalUserClaimedEthRewards[user] += ethRewards;\\n        }\\n\\n        return ethRewards;\\n    }\\n\\n    /// @param strategyId The ID of the strategy\\n    /// @param user The address of the user\\n    /// @return ethRewards The amount of Ether claimed\\n    function getUserStrategyRewards(uint256 strategyId, address user)\\n        external\\n        view\\n        override\\n        returns (uint256 ethRewards)\\n    {\\n        (ethRewards, ) = _getUserStrategyRewards(strategyId, user);\\n    }\\n\\n    function _getUserStrategyRewards(uint256 strategyId, address user)\\n        private\\n        view\\n        returns (uint256 ethRewards, uint256 userAmount)\\n    {\\n        UserInfo memory userInfo = users[user][strategyId];\\n        IIntegrationMap integrationMap = IIntegrationMap(\\n            moduleMap.getModuleAddress(Modules.IntegrationMap)\\n        );\\n        IUserPositions userPositions = IUserPositions(\\n            moduleMap.getModuleAddress(Modules.UserPositions)\\n        );\\n\\n        // Fetch balances. BIOS is special and has no strategy\\n        userAmount = strategyId == 0\\n            ? userPositions.userTokenBalance(\\n                integrationMap.getBiosTokenAddress(),\\n                user\\n            )\\n            : userPositions.getUserStrategyBalanceByToken(\\n                strategyId,\\n                integrationMap.getWethTokenAddress(),\\n                user\\n            );\\n\\n        ethRewards = _subtractDebt(\\n            ((strategies[strategyId].rewardPerShare * userAmount) /\\n                ACC_PRECISION),\\n            userInfo.rewardDebt\\n        );\\n    }\\n\\n    /// @param user The address of the user\\n    /// @return ethRewards The amount of Ether claimed\\n    function getUserEthRewards(address user)\\n        external\\n        view\\n        override\\n        returns (uint256)\\n    {\\n        IStrategyMap strategyMap = IStrategyMap(\\n            moduleMap.getModuleAddress(Modules.StrategyMap)\\n        );\\n\\n        uint256 totalRewards;\\n\\n        // We purposefully check 0 for BIOS (PFA)\\n        for (uint256 i; i <= strategyMap.idCounter(); ++i) {\\n            (uint256 rewards, ) = _getUserStrategyRewards(i, user);\\n            totalRewards += rewards;\\n        }\\n\\n        return totalRewards;\\n    }\\n\\n    /// @return The total value of ETH claimed by users\\n    function getTotalClaimedEthRewards()\\n        external\\n        view\\n        override\\n        returns (uint256)\\n    {\\n        return totalClaimedEthRewards;\\n    }\\n\\n    /// @return The total value of ETH claimed by a user\\n    function getTotalUserClaimedEthRewards(address account)\\n        external\\n        view\\n        override\\n        returns (uint256)\\n    {\\n        return totalUserClaimedEthRewards[account];\\n    }\\n\\n    function getTotalUserClaimedEthByStrategy(\\n        address user,\\n        uint256[] calldata ids\\n    ) external view returns (uint256[] memory) {\\n        uint256[] memory claimed = new uint256[](ids.length);\\n        for (uint256 i; i < ids.length; ++i) {\\n            claimed[i] = users[user][ids[i]].claimedRewards;\\n        }\\n        return claimed;\\n    }\\n\\n    /// @return The total amount of Ether rewards\\n    function getEthRewards() external view override returns (uint256) {\\n        return totalEthRewards;\\n    }\\n\\n    function getStrategyInfo(uint256 strategyId)\\n        external\\n        view\\n        returns (StrategyInfo memory)\\n    {\\n        return strategies[strategyId];\\n    }\\n\\n    function getUserInfo(uint256 strategyId, address user)\\n        external\\n        view\\n        returns (UserInfo memory)\\n    {\\n        return users[user][strategyId];\\n    }\\n\\n    /// @notice Helper function for math between uint and int\\n    function _subtractDebt(uint256 rewards, int256 debt)\\n        private\\n        pure\\n        returns (uint256)\\n    {\\n        if (debt < 0) {\\n            return rewards + uint256(debt * -1);\\n        } else {\\n            return rewards - uint256(debt);\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x2f97704fed5fb601d7ab16215f89631e3d047e9f0a7007a0697b3e4e18368c9c\",\"license\":\"GPL-2.0\"},\"contracts/core/ModuleMapConsumer.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"../interfaces/IModuleMap.sol\\\";\\n\\nabstract contract ModuleMapConsumer is Initializable {\\n    IModuleMap public moduleMap;\\n\\n    function __ModuleMapConsumer_init(address moduleMap_) internal initializer {\\n        moduleMap = IModuleMap(moduleMap_);\\n    }\\n}\\n\",\"keccak256\":\"0xb229e8c09ab0a6b5f517c3537adfe08d26a46fc3ea46031ace67a00fb1900840\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IEtherRewards.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IEtherRewards {\\n    // structs\\n    struct UserInfo {\\n        // rewardDebt uses MCV2 technology, it can be negative!\\n        int256 rewardDebt;\\n        uint256 claimedRewards;\\n    }\\n\\n    struct StrategyInfo {\\n        uint256 rewardPerShare; // rewardPerShare * 1e12\\n        uint256 totalRewards;\\n    }\\n\\n    /// @param strategyId The strategy the user entered\\n    /// @param amount The amount of token entered by the user\\n    /// @param user The address of the user\\n    function increaseUserRewards(\\n        uint256 strategyId,\\n        uint256 amount,\\n        address user\\n    ) external;\\n\\n    /// @param strategyId The strategy the user exited\\n    /// @param amount The amount of token exited by the user\\n    /// @param user The address of the user\\n    function decreaseUserRewards(\\n        uint256 strategyId,\\n        uint256 amount,\\n        address user\\n    ) external;\\n\\n    /// @param strategyId The strategy to the rewards are for\\n    /// @param ethRewardsAmount The amount of Ether rewards to add\\n    function increaseEthRewards(uint256 strategyId, uint256 ethRewardsAmount)\\n        external;\\n\\n    /// @param user The address of the user\\n    /// @param ids An array of strategyIds to claim rewards for\\n    /// @return ethRewards The amount of Ether claimed\\n    function claimEthRewards(address user, uint256[] calldata ids)\\n        external\\n        returns (uint256 ethRewards);\\n\\n    /// @param strategyId The ID of the strategy\\n    /// @param user The address of the user\\n    /// @return ethRewards The amount of Ether claimed\\n    function getUserStrategyRewards(uint256 strategyId, address user)\\n        external\\n        view\\n        returns (uint256 ethRewards);\\n\\n    /// @param user The address of the user\\n    /// @return ethRewards The amount of Ether claimed\\n    function getUserEthRewards(address user)\\n        external\\n        view\\n        returns (uint256 ethRewards);\\n\\n    /// @return The total value of ETH claimed by users\\n    function getTotalClaimedEthRewards() external view returns (uint256);\\n\\n    /// @return The total value of ETH claimed by a user\\n    function getTotalUserClaimedEthRewards(address user)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @return The total amount of Ether rewards\\n    function getEthRewards() external view returns (uint256);\\n}\\n\",\"keccak256\":\"0xdd2b15ab146f688ca2caf9bc0a7a4d139e0138234563b1abdb7181249e000eb8\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IIntegration.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IIntegration {\\n    /// @param tokenAddress The address of the deposited token\\n    /// @param amount The amount of the token being deposited\\n    function deposit(address tokenAddress, uint256 amount) external;\\n\\n    /// @param tokenAddress The address of the withdrawal token\\n    /// @param amount The amount of the token to withdraw\\n    function withdraw(address tokenAddress, uint256 amount) external;\\n\\n    /// @dev Deploys all tokens held in the integration contract to the integrated protocol\\n    function deploy() external;\\n\\n    /// @dev Harvests token yield from the integration\\n    function harvestYield() external;\\n\\n    /// @dev This returns the total amount of the underlying token that\\n    /// @dev has been deposited to the integration contract\\n    /// @param tokenAddress The address of the deployed token\\n    /// @return The amount of the underlying token that can be withdrawn\\n    function getBalance(address tokenAddress) external view returns (uint256);\\n\\n    /// @dev Returns the total amount of yield awaiting to be harvested\\n    /// @dev using the relevant integration's own function\\n    /// @param amount The amount of available yield for the specified token\\n    function getPendingYield(address) external view returns (uint256 amount);\\n}\\n\",\"keccak256\":\"0xd92f51a22cbda8f9cbf06a31f798a76d946b82e82b1074cf7ade968125f58e01\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IIntegrationMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"../libraries/TokenSettings.sol\\\";\\n\\ninterface IIntegrationMap {\\n    event TokenSettingToggled(\\n        address indexed token,\\n        TokenSettings.TokenSettingName indexed settingName,\\n        bool indexed newValue\\n    );\\n\\n    struct Integration {\\n        bool added;\\n        string name;\\n    }\\n\\n    struct Token {\\n        uint256 id;\\n        bool added;\\n        bool acceptingDeposits;\\n        bool acceptingWithdrawals;\\n        bool acceptingLping;\\n        bool acceptingBridging;\\n        uint256 biosRewardWeight;\\n        uint256 reserveRatioNumerator;\\n        uint256 targetLiquidityRatioNumerator;\\n        uint256 transferFeeKValueNumerator;\\n        uint256 transferFeePlatformRatioNumerator;\\n    }\\n\\n    /// @param contractAddress The address of the integration contract\\n    /// @param name The name of the protocol being integrated to\\n    function addIntegration(address contractAddress, string memory name)\\n        external;\\n\\n    /// @param tokenAddress The address of the ERC20 token contract\\n    /// @param acceptingDeposits Whether token deposits are enabled\\n    /// @param acceptingWithdrawals Whether token withdrawals are enabled\\n    /// @param acceptingLping Whether LPing is enabled\\n    /// @param acceptingBridging Whether bridging is enabled\\n    /// @param biosRewardWeight Token weight for BIOS rewards\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    /// @param targetLiquidityRatioNumerator Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\\n    /// @param transferFeeKValueNumerator Number that gets divided by transfer fee K-value denominator to get K-value\\n    /// @param transferFeePlatformRatioNumerator Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\\n    function addToken(\\n        address tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenDeposits(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenDeposits(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenWithdrawals(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenWithdrawals(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenLping(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenLping(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenBridging(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenBridging(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @param rewardWeight The updated token BIOS reward weight\\n    function updateTokenRewardWeight(address tokenAddress, uint256 rewardWeight)\\n        external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    function updateTokenReserveRatioNumerator(\\n        address tokenAddress,\\n        uint256 reserveRatioNumerator\\n    ) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param targetLiquidityRatioNumerator Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\\n    function updateTokenTargetLiquidityRatioNumerator(\\n        address tokenAddress,\\n        uint256 targetLiquidityRatioNumerator\\n    ) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeeKValueNumerator Number that gets divided by transfer fee K-value denominator to get K-value\\n    function updateTokenTransferFeeKValueNumerator(\\n        address tokenAddress,\\n        uint256 transferFeeKValueNumerator\\n    ) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeePlatformRatioNumerator Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\\n    function updateTokenTransferFeePlatformRatioNumerator(\\n        address tokenAddress,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external;\\n\\n    /// @param integrationId The ID of the integration\\n    /// @return The address of the integration contract\\n    function getIntegrationAddress(uint256 integrationId)\\n        external\\n        view\\n        returns (address);\\n\\n    /// @param integrationAddress The address of the integration contract\\n    /// @return The name of the of the protocol being integrated to\\n    function getIntegrationName(address integrationAddress)\\n        external\\n        view\\n        returns (string memory);\\n\\n    /// @return The address of the WETH token\\n    function getWethTokenAddress() external view returns (address);\\n\\n    /// @return The address of the BIOS token\\n    function getBiosTokenAddress() external view returns (address);\\n\\n    /// @param tokenId The ID of the token\\n    /// @return The address of the token ERC20 contract\\n    function getTokenAddress(uint256 tokenId) external view returns (address);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The index of the token in the tokens array\\n    function getTokenId(address tokenAddress) external view returns (uint256);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The token BIOS reward weight\\n    function getTokenBiosRewardWeight(address tokenAddress)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @return rewardWeightSum reward weight of depositable tokens\\n    function getBiosRewardWeightSum()\\n        external\\n        view\\n        returns (uint256 rewardWeightSum);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether depositing this token is currently enabled\\n    function getTokenAcceptingDeposits(address tokenAddress)\\n        external\\n        view\\n        returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether withdrawing this token is currently enabled\\n    function getTokenAcceptingWithdrawals(address tokenAddress)\\n        external\\n        view\\n        returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether Lping this token is currently enabled\\n    function getTokenAcceptingLping(address tokenAddress)\\n        external\\n        view\\n        returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether bridging this token is currently enabled\\n    function getTokenAcceptingBridging(address tokenAddress)\\n        external\\n        view\\n        returns (bool);\\n\\n    // @param tokenAddress The address of the token ERC20 contract\\n    // @return bool indicating whether the token has been added\\n    function getIsTokenAdded(address tokenAddress) external view returns (bool);\\n\\n    // @param integrationAddress The address of the integration contract\\n    // @return bool indicating whether the integration has been added\\n    function getIsIntegrationAdded(address tokenAddress)\\n        external\\n        view\\n        returns (bool);\\n\\n    /// @notice get the length of supported tokens\\n    /// @return The quantity of tokens added\\n    function getTokenAddressesLength() external view returns (uint256);\\n\\n    /// @notice get the length of supported integrations\\n    /// @return The quantity of integrations added\\n    function getIntegrationAddressesLength() external view returns (uint256);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by reserve ratio denominator\\n    function getTokenReserveRatioNumerator(address tokenAddress)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @return The reserve ratio denominator\\n    function getReserveRatioDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by target liquidity ratio denominator\\n    function getTokenTargetLiquidityRatioNumerator(address tokenAddress)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @return The target liquidity ratio denominator\\n    function getTargetLiquidityRatioDenominator()\\n        external\\n        view\\n        returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee K-value denominator\\n    function getTokenTransferFeeKValueNumerator(address tokenAddress)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @return The transfer fee K-value denominator\\n    function getTransferFeeKValueDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee platform ratio denominator\\n    function getTokenTransferFeePlatformRatioNumerator(address tokenAddress)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @return The transfer fee platform ratio denominator\\n    function getTransferFeePlatformRatioDenominator()\\n        external\\n        view\\n        returns (uint32);\\n}\\n\",\"keccak256\":\"0x4a57712bb45de506f0e58f5d04714af48bfd391d8ae251ab9f599b02a081f410\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IKernel.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"../libraries/TokenSettings.sol\\\";\\n\\ninterface IKernel {\\n    event Withdraw(\\n        address indexed user,\\n        address[] tokens,\\n        uint256[] tokenAmounts,\\n        uint256 ethAmount\\n    );\\n    event ClaimEthRewards(\\n        address indexed user,\\n        uint256[] strategies,\\n        uint256 ethRewards\\n    );\\n    event ClaimBiosRewards(address indexed user, uint256 biosRewards);\\n    event WithdrawAllAndClaim(\\n        address indexed user,\\n        address[] tokens,\\n        uint256[] strategies,\\n        bool withdrawWethAsEth,\\n        uint256[] tokenAmounts,\\n        uint256 ethWithdrawn,\\n        uint256 ethRewards,\\n        uint256 biosRewards\\n    );\\n    event TokenAdded(\\n        address indexed tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    );\\n\\n    event TokenSettingUpdated(\\n        address indexed token,\\n        TokenSettings.TokenSettingName indexed settingName,\\n        uint256 indexed newValue\\n    );\\n    event GasAccountUpdated(address gasAccount);\\n    event TreasuryAccountUpdated(address treasuryAccount);\\n    event IntegrationAdded(address indexed contractAddress, string name);\\n    event SetBiosRewardsDuration(uint32 biosRewardsDuration);\\n    event SeedBiosRewards(uint256 biosAmount);\\n    event Deploy();\\n    event HarvestYield();\\n    event DistributeEth();\\n    event BiosBuyBack();\\n    event EthDistributionWeightsUpdated(\\n        uint32 biosBuyBackEthWeight,\\n        uint32 treasuryEthWeight,\\n        uint32 protocolFeeEthWeight,\\n        uint32 rewardsEthWeight\\n    );\\n    event GasAccountTargetEthBalanceUpdated(uint256 gasAccountTargetEthBalance);\\n\\n    /// @param account The address of the account to check if they are a manager\\n    /// @return Bool indicating whether the account is a manger\\n    function isManager(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are an owner\\n    /// @return Bool indicating whether the account is an owner\\n    function isOwner(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are a liquidity provider\\n    /// @return Bool indicating whether the account is a liquidity provider\\n    function isLiquidityProvider(address account) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x4c32ebb01ca3954a657bce49ffaa7e5f2415f4a0e56bb50bbe201072644fa526\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IModuleMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nenum Modules {\\n    Kernel, // 0\\n    UserPositions, // 1\\n    YieldManager, // 2\\n    IntegrationMap, // 3\\n    BiosRewards, // 4\\n    EtherRewards, // 5\\n    SushiSwapTrader, // 6\\n    UniswapTrader, // 7\\n    StrategyMap, // 8\\n    StrategyManager, // 9\\n    Interconnects, // 10\\n    SwapManager // 11\\n}\\n\\ninterface IModuleMap {\\n    function getModuleAddress(Modules key) external view returns (address);\\n}\\n\",\"keccak256\":\"0xd39d052a3b0788f77f806435622f4cef19d8b3c0c734d44d8a3f3b85bd3b48a3\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IStrategyMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"../interfaces/IIntegration.sol\\\";\\nimport \\\"./IUserPositions.sol\\\";\\n\\ninterface IStrategyMap {\\n    // #### Structs\\n    struct Integration {\\n        address integration;\\n        uint32 ammPoolID;\\n    }\\n    struct Token {\\n        uint256 integrationPairIdx;\\n        address token;\\n        uint32 weight;\\n    }\\n\\n    struct TokenDeploy {\\n        address integration;\\n        uint32 ammPoolID;\\n        address token;\\n        uint256 amount;\\n    }\\n\\n    struct Strategy {\\n        string name;\\n        Integration[] integrations;\\n        Token[] tokens;\\n        mapping(address => bool) availableTokens;\\n        mapping(address => uint256) maximumCap;\\n    }\\n\\n    struct StrategySummary {\\n        string name;\\n        Integration[] integrations;\\n        Token[] tokens;\\n    }\\n\\n    struct StrategyBalance {\\n        uint256 strategyID;\\n        GeneralBalance[] tokens;\\n    }\\n\\n    struct GeneralBalance {\\n        address token;\\n        uint256 balance;\\n    }\\n\\n    struct ClosablePosition {\\n        address integration;\\n        uint32 ammPoolID;\\n        uint256 amount;\\n    }\\n\\n    // #### Events\\n    // NewStrategy, UpdateName, UpdateStrategy, DeleteStrategy\\n    event NewStrategy(\\n        uint256 indexed id,\\n        Integration[] integrations,\\n        Token[] tokens,\\n        string name\\n    );\\n    event UpdateName(uint256 indexed id, string name);\\n    event UpdateStrategy(\\n        uint256 indexed id,\\n        Integration[] integrations,\\n        Token[] tokens\\n    );\\n    event DeleteStrategy(uint256 indexed id);\\n\\n    // #### Functions\\n    /**\\n     @notice Adds a new strategy to the list of available strategies\\n     @param name  the name of the new strategy\\n     @param integrations  the integrations and weights that form the strategy\\n     @param maxCap  The maximum amount investable in a strategy\\n     */\\n    function addStrategy(\\n        string calldata name,\\n        Integration[] calldata integrations,\\n        Token[] calldata tokens,\\n        uint256[] memory maxCap\\n    ) external;\\n\\n    /**\\n    @notice Updates the strategy name\\n    @param name  the new name\\n     */\\n    function updateName(uint256 id, string calldata name) external;\\n\\n    /**\\n    @notice Updates a strategy's integrations and tokens\\n    @param id  the strategy to update\\n    @param integrations  the new integrations that will be used\\n    @param tokens  the tokens accepted for new entries\\n    */\\n    function updateStrategy(\\n        uint256 id,\\n        Integration[] calldata integrations,\\n        Token[] calldata tokens,\\n        uint256[] memory maxCap\\n    ) external;\\n\\n    /**\\n    @notice Deletes a strategy\\n    @dev This can only be called successfully if the strategy being deleted doesn't have any assets invested in it.\\n    @dev To delete a strategy with funds deployed in it, first update the strategy so that the existing tokens are no longer available in the strategy, then delete the strategy. This will unwind the users positions, and they will be able to withdraw their funds.\\n    @param id  the strategy to delete\\n     */\\n    function deleteStrategy(uint256 id) external;\\n\\n    /**\\n    @notice Increases the amount of a set of tokens in a strategy\\n    @param id  the strategy to deposit into\\n    @param tokens  the tokens to deposit\\n     */\\n    function increaseStrategy(\\n        uint256 id,\\n        IUserPositions.TokenMovement[] calldata tokens\\n    ) external;\\n\\n    /**\\n    @notice Decreases the amount of a set of tokens invested in a strategy\\n    @param id  the strategy to withdraw assets from\\n    @param tokens  details of the tokens being deposited\\n     */\\n    function decreaseStrategy(\\n        uint256 id,\\n        IUserPositions.TokenMovement[] calldata tokens\\n    ) external;\\n\\n    /**\\n    @notice Getter function to return the nested arrays as well as the name\\n    @param id  the strategy to return\\n     */\\n    function getStrategy(uint256 id)\\n        external\\n        view\\n        returns (StrategySummary memory);\\n\\n    /**\\n    @notice Decreases the deployable amount after a deployment/withdrawal\\n    @param integration  the integration that was changed\\n    @param poolID  the pool within the integration that handled the tokens\\n    @param token  the token to decrease for\\n    @param amount  the amount to reduce the vector by\\n     */\\n    function decreaseDeployAmountChange(\\n        address integration,\\n        uint32 poolID,\\n        address token,\\n        uint256 amount\\n    ) external;\\n\\n    /**\\n    @notice Returns the amount of a given token currently invested in a strategy\\n    @param id  the strategy id to check\\n    @param token  The token to retrieve the balance for\\n    @return amount  the amount of token that is invested in the strategy\\n     */\\n    function getStrategyTokenBalance(uint256 id, address token)\\n        external\\n        view\\n        returns (uint256 amount);\\n\\n    /**\\n    @notice Returns the total amount of a token invested across all strategies\\n    @param token  the token to fetch the balance for\\n    @return amount  the amount of the token currently invested\\n    */\\n    function getTokenTotalBalance(address token)\\n        external\\n        view\\n        returns (uint256 amount);\\n\\n    /**\\n    @notice Returns the current amount awaiting deployment\\n    @param integration  the integration to deploy to\\n    @param poolID  the pool within the integration that should receive the tokens\\n    @param token  the token to be deployed\\n    @return the pending deploy amount\\n     */\\n    function getDeployAmount(\\n        address integration,\\n        uint32 poolID,\\n        address token\\n    ) external view returns (int256);\\n\\n    /**\\n    @notice Returns balances per strategy, and total invested balances\\n    @param _strategies  The strategies to retrieve balances for\\n    @param _tokens  The tokens to retrieve\\n     */\\n    function getStrategyBalances(\\n        uint256[] calldata _strategies,\\n        address[] calldata _tokens\\n    )\\n        external\\n        view\\n        returns (\\n            StrategyBalance[] memory strategyBalances,\\n            GeneralBalance[] memory generalBalances\\n        );\\n\\n    /**\\n  @notice Returns 1 or more strategies in a single call.\\n  @param ids  The ids of the strategies to return.\\n   */\\n    function getMultipleStrategies(uint256[] calldata ids)\\n        external\\n        view\\n        returns (StrategySummary[] memory);\\n\\n    /// @notice autogenerated getter definition\\n    function idCounter() external view returns (uint256);\\n\\n    /**\\n    @notice returns the length of the tokens array in a strategy\\n    @param strategy  the strategy to look up\\n    @return the length\\n    */\\n    function getStrategyTokenLength(uint256 strategy)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /**\\n    @notice Clears the list of positions that can be closed to supply a token\\n    @param tokens  The list of tokens to clear\\n     */\\n    function clearClosablePositions(address[] calldata tokens) external;\\n\\n    /**\\n    @notice Closes enough positions to provide a requested amount of a token\\n    @param token  the token to source\\n    @param amount  the amount to source\\n     */\\n    function closePositionsForWithdrawal(address token, uint256 amount)\\n        external;\\n\\n    /**\\n@notice Increases strategy balances without increasing the deploy amount\\n@param id  The strategy id\\n@param tokens  the tokens and amounts \\n */\\n    function increaseTokenBalance(\\n        uint256 id,\\n        IUserPositions.TokenMovement[] calldata tokens\\n    ) external;\\n\\n    /// @notice Sets the maximum investment cap for a strategy and token pair\\n    /// @param id The strategy id\\n    /// @param token  the token address\\n    /// @param maxCap  The maximum amount of funds that can be invested\\n    function setMaximumCap(\\n        uint256 id,\\n        address token,\\n        uint256 maxCap\\n    ) external;\\n\\n    /// @notice Retrieves the maximum cap for a strategy/token pair\\n    /// @param id  the strategy id\\n    /// @param token  the token address\\n    /// @return cap  the maximum cap for the strategy/token pair\\n    function getMaximumCap(uint256 id, address token)\\n        external\\n        view\\n        returns (uint256 cap);\\n}\\n\",\"keccak256\":\"0x7b0f7b120fc3b721b862d47962673691324bb57dea73d64af4bc875afedea32b\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IUserPositions.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"./IStrategyMap.sol\\\";\\n\\ninterface IUserPositions {\\n    // ##### Structs\\n    struct TokenMovement {\\n        address token;\\n        uint256 amount;\\n    }\\n\\n    struct StrategyRecord {\\n        uint256 strategyId;\\n        uint256 timestamp;\\n    }\\n    struct MigrateStrategy {\\n        address user;\\n        TokenMovement[] tokens;\\n    }\\n    // ##### Events\\n    event EnterStrategy(\\n        uint256 indexed id,\\n        address indexed user,\\n        TokenMovement[] tokens\\n    );\\n    event ExitStrategy(\\n        uint256 indexed id,\\n        address indexed user,\\n        TokenMovement[] tokens\\n    );\\n    event Deposit(\\n        address indexed user,\\n        address[] tokens,\\n        uint256[] tokenAmounts,\\n        uint256 ethAmount\\n    );\\n\\n    // ##### Functions\\n\\n    /// @notice User is allowed to deposit whitelisted tokens\\n    /// @param depositor Address of the account depositing\\n    /// @param tokens Array of token the token addresses\\n    /// @param amounts Array of token amounts\\n    /// @param ethAmount The amount of ETH sent with the deposit\\n    /// @param migration flag if this is a migration from the old system\\n    function deposit(\\n        address depositor,\\n        address[] memory tokens,\\n        uint256[] memory amounts,\\n        uint256 ethAmount,\\n        bool migration\\n    ) external;\\n\\n    /// @notice User is allowed to withdraw tokens\\n    /// @param recipient The address of the user withdrawing\\n    /// @param tokens Array of token the token addresses\\n    /// @param amounts Array of token amounts\\n    /// @param withdrawWethAsEth Boolean indicating whether should receive WETH balance as ETH\\n    function withdraw(\\n        address recipient,\\n        address[] memory tokens,\\n        uint256[] memory amounts,\\n        bool withdrawWethAsEth\\n    ) external returns (uint256 ethWithdrawn);\\n\\n    /// @notice Allows a user to withdraw entire balances of the specified tokens and claim rewards\\n    /// @param recipient The address of the user withdrawing tokens\\n    /// @param tokens Array of token address that user is exiting positions from\\n    /// @param strategies Array of strategy IDs that user is claiming rewards from\\n    /// @param withdrawWethAsEth Boolean indicating whether should receive WETH balance as ETH\\n    /// @return tokenAmounts The amounts of each token being withdrawn\\n    /// @return ethWithdrawn The amount of ETH being withdrawn\\n    /// @return ethClaimed The amount of ETH being claimed from rewards\\n    /// @return biosClaimed The amount of BIOS being claimed from rewards\\n    function withdrawAllAndClaim(\\n        address recipient,\\n        address[] memory tokens,\\n        uint256[] calldata strategies,\\n        bool withdrawWethAsEth\\n    )\\n        external\\n        returns (\\n            uint256[] memory tokenAmounts,\\n            uint256 ethWithdrawn,\\n            uint256 ethClaimed,\\n            uint256 biosClaimed\\n        );\\n\\n    /// @param user The address of the user claiming ETH rewards\\n    /// @param strategies An array of strategyIDs to claim rewards for\\n    function claimEthRewards(address user, uint256[] calldata strategies)\\n        external\\n        returns (uint256 ethClaimed);\\n\\n    /// @param asset Address of the ERC20 token contract\\n    /// @return The total balance of the asset deposited in the system\\n    function totalTokenBalance(address asset) external view returns (uint256);\\n\\n    /// @notice Returns the amount that a user has deposited locally, but that isn't in a strategy\\n    /// @param asset Address of the ERC20 token contract\\n    /// @param account Address of the user account\\n    function userTokenBalance(address asset, address account)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @notice Returns the amount that a user can use for strategies (local balance + interconnect balance - deployed)\\n    /// @param asset Address of the ERC20 token contract\\n    /// @param account Address of the user account\\n    function userDeployableBalance(address asset, address account)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /// @notice Returns the amount that a user has interconnected\\n    /// @param asset Address of the ERC20 token contract\\n    /// @param account Address of the user account\\n    function userInterconnectBalance(address asset, address account)\\n        external\\n        view\\n        returns (uint256);\\n\\n    /**\\n    @notice Adds a user's funds to a strategy to be deployed\\n    @param strategyID  The strategy to enter\\n    @param tokens  The tokens and amounts to enter into the strategy\\n     */\\n    function enterStrategy(uint256 strategyID, TokenMovement[] calldata tokens)\\n        external;\\n\\n    /**\\n    @notice Marks a user's funds as withdrawable\\n    @param strategyID  The strategy to withdrawfrom\\n    @param tokens  The tokens and amounts to withdraw\\n     */\\n    function exitStrategy(uint256 strategyID, TokenMovement[] calldata tokens)\\n        external;\\n\\n    /**\\n    @notice Updates a user's local balance. Only called by controlled contracts or relayer\\n    @param assets list of tokens to update\\n    @param account user \\n    @param amounts list of amounts to update \\n     */\\n    function updateUserTokenBalances(\\n        address[] memory assets,\\n        address account,\\n        uint256[] memory amounts,\\n        bool[] memory add\\n    ) external;\\n\\n    /**\\n    @notice Updates a user's interconnected balance. Only called by controlled contracts or relayer\\n    @param assets list of tokens to update\\n    @param account user \\n    @param amounts list of amounts to update \\n     */\\n    function updateUserInterconnectBalances(\\n        address[] memory assets,\\n        address account,\\n        uint256[] memory amounts,\\n        bool[] memory add\\n    ) external;\\n\\n    /**\\n    @notice returns the amount of a given token a user has invested in a given strategy\\n    @param id  the strategy id\\n    @param token  the token address\\n    @param user  the user who holds the funds\\n    @return amount  the amount of token that the user has invested in the strategy \\n     */\\n    function getUserStrategyBalanceByToken(\\n        uint256 id,\\n        address token,\\n        address user\\n    ) external view returns (uint256 amount);\\n\\n    /**\\n    @notice Returns the amount of a given token that a user has invested across all strategies\\n    @param token  the token address\\n    @param user  the user holding the funds\\n    @return amount  the amount of tokens the user has invested across all strategies\\n     */\\n    function getUserInvestedAmountByToken(address token, address user)\\n        external\\n        view\\n        returns (uint256 amount);\\n\\n    /**\\n    @notice Returns a user's balances for requested strategies, and the users total invested amounts for each token requested\\n    @param user  the user to request for\\n    @param _strategies  the strategies to get balances for\\n    @param _tokens  the tokens to get balances for\\n    @return userStrategyBalances  The user's invested funds in the strategies\\n    @return userBalance  User total token balances\\n     */\\n    function getUserBalances(\\n        address user,\\n        uint256[] calldata _strategies,\\n        address[] calldata _tokens\\n    )\\n        external\\n        view\\n        returns (\\n            IStrategyMap.StrategyBalance[] memory userStrategyBalances,\\n            IStrategyMap.GeneralBalance[] memory userBalance\\n        );\\n\\n    /**\\n    @notice Migrates user strategy positions to the new system\\n    @param users  the user data to add to the strategy\\n     */\\n    function migrateUser(uint256 strategyId, MigrateStrategy[] calldata users)\\n        external;\\n}\\n\",\"keccak256\":\"0xa35a4f92eef76af84853779a4a722bc2aa0fef0e3b29e0ebd6ce4da2ad2a9271\",\"license\":\"GPL-2.0\"},\"contracts/libraries/TokenSettings.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.7.6;\\n\\n/// @title TokenSettings contains enum and events for the different token settings used in events in Kernel and IntegrationMap\\nlibrary TokenSettings {\\n    enum TokenSettingName {\\n        rewardWeight,\\n        reserveRatioNumerator,\\n        targetLiquidityRatioNumerator,\\n        transferFeeKValueNumerator,\\n        transferFeePlatformRatioNumerator,\\n        deposit,\\n        withdraw,\\n        lp,\\n        bridge\\n    }\\n\\n    event TokenSettingUpdated(\\n        address indexed token,\\n        TokenSettingName indexed settingName,\\n        uint256 indexed newValue\\n    );\\n\\n    event TokenSettingToggled(\\n        address indexed token,\\n        TokenSettingName indexed settingName,\\n        bool indexed newValue\\n    );\\n}\\n\",\"keccak256\":\"0xa610706ba9d4134cf5afd5b23dc7db0aefff042c75c7d0aadd616e0bb50fc461\",\"license\":\"GPL-2.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50611a80806100206000396000f3fe608060405234801561001057600080fd5b50600436106100db5760003560e01c80630c52b797146100e05780630f0a1c6f146100f75780631069f3b51461011d57806313cf6b001461014b578063462d0b2e1461016057806354ed0e59146101735780636500d90f1461018657806398c671ce146101af578063a22aecd1146101c2578063a7fc7a07146101d5578063c3b2a7f4146101e8578063d390c73a146101fb578063db089e791461021b578063e87e88dc14610267578063e94b0dd21461026f578063ebfd2da414610282578063f4f104b514610295575b600080fd5b6004545b6040519081526020015b60405180910390f35b600054610110906201000090046001600160a01b031681565b6040516100ee9190611758565b61013061012b3660046116d0565b6102a8565b604080518251815260209283015192810192909252016100ee565b61015e610159366004611720565b6102f4565b005b61015e61016e3660046115a8565b610393565b6100e46101813660046114e7565b610411565b6100e46101943660046114e7565b6001600160a01b031660009081526005602052604090205490565b61015e6101bd3660046115a8565b61054b565b61015e6101d0366004611720565b61063b565b61015e6101e33660046114e7565b6106c7565b6100e46101f6366004611526565b610904565b61020e610209366004611526565b61098a565b6040516100ee919061176c565b6101306102293660046116a0565b604080518082019091526000808252602082015250600090815260076020908152604091829020825180840190935280548352600101549082015290565b6003546100e4565b61011061027d3660046116a0565b610a81565b6100e46102903660046116d0565b610aab565b61015e6102a33660046116ff565b610ab7565b604080518082018252600080825260209182018190526001600160a01b038416815260068252828120858252825282902082518084019093528054835260010154908201525b92915050565b3360009081526001602052604090205460ff1661032c5760405162461bcd60e51b815260040161032390611826565b60405180910390fd5b60008381526007602052604090205464e8d4a510009061034c9084611976565b61035691906118d3565b6001600160a01b03821660009081526006602090815260408083208784529091528120805490919061038990849061187a565b9091555050505050565b600054610100900460ff166103ae5760005460ff16156103b2565b303b155b6103ce5760405162461bcd60e51b8152600401610323906117d8565b600054610100900460ff161580156103f0576000805461ffff19166101011790555b6103fa838361054b565b801561040c576000805461ff00191690555b505050565b600080546040516337c61fc560e11b815282916201000090046001600160a01b031690636f8c3f8a90610449906008906004016117b0565b60206040518083038186803b15801561046157600080fd5b505afa158015610475573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610499919061150a565b90506000805b826001600160a01b031663eb08ab286040518163ffffffff1660e01b815260040160206040518083038186803b1580156104d857600080fd5b505afa1580156104ec573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061051091906116b8565b81116105435760006105228287610f3d565b50905061052f81846118bb565b9250508061053c906119eb565b905061049f565b509392505050565b600054610100900460ff166105665760005460ff161561056a565b303b155b6105865760405162461bcd60e51b8152600401610323906117d8565b600054610100900460ff161580156105a8576000805461ffff19166101011790555b60005b835181101561061d5760018060008684815181106105d957634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff191691151591909117905580610615816119eb565b9150506105ab565b50825161063190600290602086019061145d565b506103fa826112e0565b3360009081526001602052604090205460ff1661066a5760405162461bcd60e51b815260040161032390611826565b60008381526007602052604090205464e8d4a510009061068a9084611976565b61069491906118d3565b6001600160a01b038216600090815260066020908152604080832087845290915281208054909190610389908490611995565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916106fc91906004016117b0565b60206040518083038186803b15801561071457600080fd5b505afa158015610728573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061074c919061150a565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016107779190611758565b60206040518083038186803b15801561078f57600080fd5b505afa1580156107a3573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107c79190611680565b6108265760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b6064820152608401610323565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b6002548110156108ae576002818154811061087857634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561089c57600191505b806108a6816119eb565b91505061084d565b508061090057600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b3360009081526001602052604081205460ff166109335760405162461bcd60e51b815260040161032390611826565b60005b828110156105435761096e84848381811061096157634e487b7160e01b600052603260045260246000fd5b9050602002013586611374565b61097890836118bb565b9150610983816119eb565b9050610936565b60606000826001600160401b038111156109b457634e487b7160e01b600052604160045260246000fd5b6040519080825280602002602001820160405280156109dd578160200160208202803683370190505b50905060005b83811015610a78576001600160a01b038616600090815260066020526040812090868684818110610a2457634e487b7160e01b600052603260045260246000fd5b90506020020135815260200190815260200160002060010154828281518110610a5d57634e487b7160e01b600052603260045260246000fd5b6020908102919091010152610a71816119eb565b90506109e3565b50949350505050565b60028181548110610a9157600080fd5b6000918252602090912001546001600160a01b0316905081565b60006105438383610f3d565b3360009081526001602052604090205460ff16610ae65760405162461bcd60e51b815260040161032390611826565b600082815260076020526040808220825491516337c61fc560e11b81529092916201000090046001600160a01b031690636f8c3f8a90610b2b906003906004016117b0565b60206040518083038186803b158015610b4357600080fd5b505afa158015610b57573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b7b919061150a565b905060008415610d0d576000546040516337c61fc560e11b8152620100009091046001600160a01b031690636f8c3f8a90610bbb906008906004016117b0565b60206040518083038186803b158015610bd357600080fd5b505afa158015610be7573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610c0b919061150a565b6001600160a01b0316639d6eaec286846001600160a01b0316638b9c94896040518163ffffffff1660e01b815260040160206040518083038186803b158015610c5357600080fd5b505afa158015610c67573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610c8b919061150a565b6040516001600160e01b031960e085901b16815260048101929092526001600160a01b0316602482015260440160206040518083038186803b158015610cd057600080fd5b505afa158015610ce4573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d0891906116b8565b610e7e565b6000546040516337c61fc560e11b8152620100009091046001600160a01b031690636f8c3f8a90610d43906001906004016117b0565b60206040518083038186803b158015610d5b57600080fd5b505afa158015610d6f573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d93919061150a565b6001600160a01b031663f5465992836001600160a01b03166344fc9b566040518163ffffffff1660e01b815260040160206040518083038186803b158015610dda57600080fd5b505afa158015610dee573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e12919061150a565b6040518263ffffffff1660e01b8152600401610e2e9190611758565b60206040518083038186803b158015610e4657600080fd5b505afa158015610e5a573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e7e91906116b8565b905060008111610ed05760405162461bcd60e51b815260206004820152601f60248201527f4574686572526577617264733a3a746f6b656e4e6f744465706f7369746564006044820152606401610323565b80610ee064e8d4a5100086611976565b610eea91906118d3565b836000016000828254610efd91906118bb565b9250508190555083836001016000828254610f1891906118bb565b925050819055508360036000828254610f3191906118bb565b90915550505050505050565b6001600160a01b0380821660009081526006602090815260408083208684528252808320815180830183528154815260019091015492810192909252825490516337c61fc560e11b815292938493849262010000900490911690636f8c3f8a90610fac906003906004016117b0565b60206040518083038186803b158015610fc457600080fd5b505afa158015610fd8573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610ffc919061150a565b600080546040516337c61fc560e11b81529293509091620100009091046001600160a01b031690636f8c3f8a90611038906001906004016117b0565b60206040518083038186803b15801561105057600080fd5b505afa158015611064573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611088919061150a565b9050861561119c57806001600160a01b03166341127a6788846001600160a01b0316638b9c94896040518163ffffffff1660e01b815260040160206040518083038186803b1580156110d957600080fd5b505afa1580156110ed573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611111919061150a565b6040516001600160e01b031960e085901b16815260048101929092526001600160a01b0390811660248301528916604482015260640160206040518083038186803b15801561115f57600080fd5b505afa158015611173573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061119791906116b8565b61129b565b806001600160a01b031663b47064c8836001600160a01b03166344fc9b566040518163ffffffff1660e01b815260040160206040518083038186803b1580156111e457600080fd5b505afa1580156111f8573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061121c919061150a565b6040516001600160e01b031960e084901b1681526001600160a01b039182166004820152908916602482015260440160206040518083038186803b15801561126357600080fd5b505afa158015611277573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061129b91906116b8565b6000888152600760205260409020549094506112d49064e8d4a51000906112c3908790611976565b6112cd91906118d3565b845161142c565b94505050509250929050565b600054610100900460ff166112fb5760005460ff16156112ff565b303b155b61131b5760405162461bcd60e51b8152600401610323906117d8565b600054610100900460ff1615801561133d576000805461ffff19166101011790555b6000805462010000600160b01b031916620100006001600160a01b038516021790558015610900576000805461ff00191690555050565b60008060006113838585610f3d565b909250905081156105435760008581526007602052604090205464e8d4a51000906113af908390611976565b6113b991906118d3565b6001600160a01b0385166000908152600660209081526040808320898452909152812091909155600480548492906113f29084906118bb565b90915550506001600160a01b0384166000908152600560205260408120805484929061141f9084906118bb565b9091555050509392505050565b60008082121561145357611442826000196118f3565b61144c90846118bb565b90506102ee565b61144c82846119d4565b8280548282559060005260206000209081019282156114b2579160200282015b828111156114b257825182546001600160a01b0319166001600160a01b0390911617825560209092019160019091019061147d565b506114be9291506114c2565b5090565b5b808211156114be57600081556001016114c3565b80356114e281611a32565b919050565b6000602082840312156114f8578081fd5b813561150381611a32565b9392505050565b60006020828403121561151b578081fd5b815161150381611a32565b60008060006040848603121561153a578182fd5b833561154581611a32565b925060208401356001600160401b0380821115611560578384fd5b818601915086601f830112611573578384fd5b813581811115611581578485fd5b8760208260051b8501011115611595578485fd5b6020830194508093505050509250925092565b600080604083850312156115ba578182fd5b82356001600160401b03808211156115d0578384fd5b818501915085601f8301126115e3578384fd5b81356020828211156115f7576115f7611a1c565b8160051b604051601f19603f8301168101818110868211171561161c5761161c611a1c565b604052838152828101945085830182870184018b101561163a578889fd5b8896505b848710156116635761164f816114d7565b86526001969096019594830194830161163e565b50965061167390508782016114d7565b9450505050509250929050565b600060208284031215611691578081fd5b81518015158114611503578182fd5b6000602082840312156116b1578081fd5b5035919050565b6000602082840312156116c9578081fd5b5051919050565b600080604083850312156116e2578182fd5b8235915060208301356116f481611a32565b809150509250929050565b60008060408385031215611711578182fd5b50508035926020909101359150565b600080600060608486031215611734578283fd5b8335925060208401359150604084013561174d81611a32565b809150509250925092565b6001600160a01b0391909116815260200190565b6020808252825182820181905260009190848201906040850190845b818110156117a457835183529284019291840191600101611788565b50909695505050505050565b60208101600c83106117d257634e487b7160e01b600052602160045260246000fd5b91905290565b6020808252602e908201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160408201526d191e481a5b9a5d1a585b1a5e995960921b606082015260800190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b600080821280156001600160ff1b038490038513161561189c5761189c611a06565b600160ff1b83900384128116156118b5576118b5611a06565b50500190565b600082198211156118ce576118ce611a06565b500190565b6000826118ee57634e487b7160e01b81526012600452602481fd5b500490565b60006001600160ff1b038184138284138082168684048611161561191957611919611a06565b600160ff1b8487128281168783058912161561193757611937611a06565b85871292508782058712848416161561195257611952611a06565b8785058712818416161561196857611968611a06565b505050929093029392505050565b600081600019048311821515161561199057611990611a06565b500290565b60008083128015600160ff1b8501841216156119b3576119b3611a06565b6001600160ff1b03840183138116156119ce576119ce611a06565b50500390565b6000828210156119e6576119e6611a06565b500390565b60006000198214156119ff576119ff611a06565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b6001600160a01b0381168114611a4757600080fd5b5056fea26469706673582212207414871503d0e18b3295059bbed12d2d271cc406a684877773d4ebbf6639b64564736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100db5760003560e01c80630c52b797146100e05780630f0a1c6f146100f75780631069f3b51461011d57806313cf6b001461014b578063462d0b2e1461016057806354ed0e59146101735780636500d90f1461018657806398c671ce146101af578063a22aecd1146101c2578063a7fc7a07146101d5578063c3b2a7f4146101e8578063d390c73a146101fb578063db089e791461021b578063e87e88dc14610267578063e94b0dd21461026f578063ebfd2da414610282578063f4f104b514610295575b600080fd5b6004545b6040519081526020015b60405180910390f35b600054610110906201000090046001600160a01b031681565b6040516100ee9190611758565b61013061012b3660046116d0565b6102a8565b604080518251815260209283015192810192909252016100ee565b61015e610159366004611720565b6102f4565b005b61015e61016e3660046115a8565b610393565b6100e46101813660046114e7565b610411565b6100e46101943660046114e7565b6001600160a01b031660009081526005602052604090205490565b61015e6101bd3660046115a8565b61054b565b61015e6101d0366004611720565b61063b565b61015e6101e33660046114e7565b6106c7565b6100e46101f6366004611526565b610904565b61020e610209366004611526565b61098a565b6040516100ee919061176c565b6101306102293660046116a0565b604080518082019091526000808252602082015250600090815260076020908152604091829020825180840190935280548352600101549082015290565b6003546100e4565b61011061027d3660046116a0565b610a81565b6100e46102903660046116d0565b610aab565b61015e6102a33660046116ff565b610ab7565b604080518082018252600080825260209182018190526001600160a01b038416815260068252828120858252825282902082518084019093528054835260010154908201525b92915050565b3360009081526001602052604090205460ff1661032c5760405162461bcd60e51b815260040161032390611826565b60405180910390fd5b60008381526007602052604090205464e8d4a510009061034c9084611976565b61035691906118d3565b6001600160a01b03821660009081526006602090815260408083208784529091528120805490919061038990849061187a565b9091555050505050565b600054610100900460ff166103ae5760005460ff16156103b2565b303b155b6103ce5760405162461bcd60e51b8152600401610323906117d8565b600054610100900460ff161580156103f0576000805461ffff19166101011790555b6103fa838361054b565b801561040c576000805461ff00191690555b505050565b600080546040516337c61fc560e11b815282916201000090046001600160a01b031690636f8c3f8a90610449906008906004016117b0565b60206040518083038186803b15801561046157600080fd5b505afa158015610475573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610499919061150a565b90506000805b826001600160a01b031663eb08ab286040518163ffffffff1660e01b815260040160206040518083038186803b1580156104d857600080fd5b505afa1580156104ec573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061051091906116b8565b81116105435760006105228287610f3d565b50905061052f81846118bb565b9250508061053c906119eb565b905061049f565b509392505050565b600054610100900460ff166105665760005460ff161561056a565b303b155b6105865760405162461bcd60e51b8152600401610323906117d8565b600054610100900460ff161580156105a8576000805461ffff19166101011790555b60005b835181101561061d5760018060008684815181106105d957634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff191691151591909117905580610615816119eb565b9150506105ab565b50825161063190600290602086019061145d565b506103fa826112e0565b3360009081526001602052604090205460ff1661066a5760405162461bcd60e51b815260040161032390611826565b60008381526007602052604090205464e8d4a510009061068a9084611976565b61069491906118d3565b6001600160a01b038216600090815260066020908152604080832087845290915281208054909190610389908490611995565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916106fc91906004016117b0565b60206040518083038186803b15801561071457600080fd5b505afa158015610728573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061074c919061150a565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016107779190611758565b60206040518083038186803b15801561078f57600080fd5b505afa1580156107a3573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107c79190611680565b6108265760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b6064820152608401610323565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b6002548110156108ae576002818154811061087857634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561089c57600191505b806108a6816119eb565b91505061084d565b508061090057600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b3360009081526001602052604081205460ff166109335760405162461bcd60e51b815260040161032390611826565b60005b828110156105435761096e84848381811061096157634e487b7160e01b600052603260045260246000fd5b9050602002013586611374565b61097890836118bb565b9150610983816119eb565b9050610936565b60606000826001600160401b038111156109b457634e487b7160e01b600052604160045260246000fd5b6040519080825280602002602001820160405280156109dd578160200160208202803683370190505b50905060005b83811015610a78576001600160a01b038616600090815260066020526040812090868684818110610a2457634e487b7160e01b600052603260045260246000fd5b90506020020135815260200190815260200160002060010154828281518110610a5d57634e487b7160e01b600052603260045260246000fd5b6020908102919091010152610a71816119eb565b90506109e3565b50949350505050565b60028181548110610a9157600080fd5b6000918252602090912001546001600160a01b0316905081565b60006105438383610f3d565b3360009081526001602052604090205460ff16610ae65760405162461bcd60e51b815260040161032390611826565b600082815260076020526040808220825491516337c61fc560e11b81529092916201000090046001600160a01b031690636f8c3f8a90610b2b906003906004016117b0565b60206040518083038186803b158015610b4357600080fd5b505afa158015610b57573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b7b919061150a565b905060008415610d0d576000546040516337c61fc560e11b8152620100009091046001600160a01b031690636f8c3f8a90610bbb906008906004016117b0565b60206040518083038186803b158015610bd357600080fd5b505afa158015610be7573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610c0b919061150a565b6001600160a01b0316639d6eaec286846001600160a01b0316638b9c94896040518163ffffffff1660e01b815260040160206040518083038186803b158015610c5357600080fd5b505afa158015610c67573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610c8b919061150a565b6040516001600160e01b031960e085901b16815260048101929092526001600160a01b0316602482015260440160206040518083038186803b158015610cd057600080fd5b505afa158015610ce4573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d0891906116b8565b610e7e565b6000546040516337c61fc560e11b8152620100009091046001600160a01b031690636f8c3f8a90610d43906001906004016117b0565b60206040518083038186803b158015610d5b57600080fd5b505afa158015610d6f573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610d93919061150a565b6001600160a01b031663f5465992836001600160a01b03166344fc9b566040518163ffffffff1660e01b815260040160206040518083038186803b158015610dda57600080fd5b505afa158015610dee573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e12919061150a565b6040518263ffffffff1660e01b8152600401610e2e9190611758565b60206040518083038186803b158015610e4657600080fd5b505afa158015610e5a573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e7e91906116b8565b905060008111610ed05760405162461bcd60e51b815260206004820152601f60248201527f4574686572526577617264733a3a746f6b656e4e6f744465706f7369746564006044820152606401610323565b80610ee064e8d4a5100086611976565b610eea91906118d3565b836000016000828254610efd91906118bb565b9250508190555083836001016000828254610f1891906118bb565b925050819055508360036000828254610f3191906118bb565b90915550505050505050565b6001600160a01b0380821660009081526006602090815260408083208684528252808320815180830183528154815260019091015492810192909252825490516337c61fc560e11b815292938493849262010000900490911690636f8c3f8a90610fac906003906004016117b0565b60206040518083038186803b158015610fc457600080fd5b505afa158015610fd8573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610ffc919061150a565b600080546040516337c61fc560e11b81529293509091620100009091046001600160a01b031690636f8c3f8a90611038906001906004016117b0565b60206040518083038186803b15801561105057600080fd5b505afa158015611064573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611088919061150a565b9050861561119c57806001600160a01b03166341127a6788846001600160a01b0316638b9c94896040518163ffffffff1660e01b815260040160206040518083038186803b1580156110d957600080fd5b505afa1580156110ed573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611111919061150a565b6040516001600160e01b031960e085901b16815260048101929092526001600160a01b0390811660248301528916604482015260640160206040518083038186803b15801561115f57600080fd5b505afa158015611173573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061119791906116b8565b61129b565b806001600160a01b031663b47064c8836001600160a01b03166344fc9b566040518163ffffffff1660e01b815260040160206040518083038186803b1580156111e457600080fd5b505afa1580156111f8573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061121c919061150a565b6040516001600160e01b031960e084901b1681526001600160a01b039182166004820152908916602482015260440160206040518083038186803b15801561126357600080fd5b505afa158015611277573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061129b91906116b8565b6000888152600760205260409020549094506112d49064e8d4a51000906112c3908790611976565b6112cd91906118d3565b845161142c565b94505050509250929050565b600054610100900460ff166112fb5760005460ff16156112ff565b303b155b61131b5760405162461bcd60e51b8152600401610323906117d8565b600054610100900460ff1615801561133d576000805461ffff19166101011790555b6000805462010000600160b01b031916620100006001600160a01b038516021790558015610900576000805461ff00191690555050565b60008060006113838585610f3d565b909250905081156105435760008581526007602052604090205464e8d4a51000906113af908390611976565b6113b991906118d3565b6001600160a01b0385166000908152600660209081526040808320898452909152812091909155600480548492906113f29084906118bb565b90915550506001600160a01b0384166000908152600560205260408120805484929061141f9084906118bb565b9091555050509392505050565b60008082121561145357611442826000196118f3565b61144c90846118bb565b90506102ee565b61144c82846119d4565b8280548282559060005260206000209081019282156114b2579160200282015b828111156114b257825182546001600160a01b0319166001600160a01b0390911617825560209092019160019091019061147d565b506114be9291506114c2565b5090565b5b808211156114be57600081556001016114c3565b80356114e281611a32565b919050565b6000602082840312156114f8578081fd5b813561150381611a32565b9392505050565b60006020828403121561151b578081fd5b815161150381611a32565b60008060006040848603121561153a578182fd5b833561154581611a32565b925060208401356001600160401b0380821115611560578384fd5b818601915086601f830112611573578384fd5b813581811115611581578485fd5b8760208260051b8501011115611595578485fd5b6020830194508093505050509250925092565b600080604083850312156115ba578182fd5b82356001600160401b03808211156115d0578384fd5b818501915085601f8301126115e3578384fd5b81356020828211156115f7576115f7611a1c565b8160051b604051601f19603f8301168101818110868211171561161c5761161c611a1c565b604052838152828101945085830182870184018b101561163a578889fd5b8896505b848710156116635761164f816114d7565b86526001969096019594830194830161163e565b50965061167390508782016114d7565b9450505050509250929050565b600060208284031215611691578081fd5b81518015158114611503578182fd5b6000602082840312156116b1578081fd5b5035919050565b6000602082840312156116c9578081fd5b5051919050565b600080604083850312156116e2578182fd5b8235915060208301356116f481611a32565b809150509250929050565b60008060408385031215611711578182fd5b50508035926020909101359150565b600080600060608486031215611734578283fd5b8335925060208401359150604084013561174d81611a32565b809150509250925092565b6001600160a01b0391909116815260200190565b6020808252825182820181905260009190848201906040850190845b818110156117a457835183529284019291840191600101611788565b50909695505050505050565b60208101600c83106117d257634e487b7160e01b600052602160045260246000fd5b91905290565b6020808252602e908201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160408201526d191e481a5b9a5d1a585b1a5e995960921b606082015260800190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b600080821280156001600160ff1b038490038513161561189c5761189c611a06565b600160ff1b83900384128116156118b5576118b5611a06565b50500190565b600082198211156118ce576118ce611a06565b500190565b6000826118ee57634e487b7160e01b81526012600452602481fd5b500490565b60006001600160ff1b038184138284138082168684048611161561191957611919611a06565b600160ff1b8487128281168783058912161561193757611937611a06565b85871292508782058712848416161561195257611952611a06565b8785058712818416161561196857611968611a06565b505050929093029392505050565b600081600019048311821515161561199057611990611a06565b500290565b60008083128015600160ff1b8501841216156119b3576119b3611a06565b6001600160ff1b03840183138116156119ce576119ce611a06565b50500390565b6000828210156119e6576119e6611a06565b500390565b60006000198214156119ff576119ff611a06565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b6001600160a01b0381168114611a4757600080fd5b5056fea26469706673582212207414871503d0e18b3295059bbed12d2d271cc406a684877773d4ebbf6639b64564736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "claimEthRewards(address,uint256[])": {
+        "params": {
+          "ids": "An array of strategyIds to claim rewards for",
+          "user": "The address of the user"
+        },
+        "returns": {
+          "ethRewards": "The amount of Ether claimed"
+        }
+      },
+      "decreaseUserRewards(uint256,uint256,address)": {
+        "params": {
+          "amount": "Amount of token entered into strategy",
+          "strategyId": "Strategy the user entered into",
+          "user": "The address of the user"
+        }
+      },
+      "getEthRewards()": {
+        "returns": {
+          "_0": "The total amount of Ether rewards"
+        }
+      },
+      "getTotalClaimedEthRewards()": {
+        "returns": {
+          "_0": "The total value of ETH claimed by users"
+        }
+      },
+      "getTotalUserClaimedEthRewards(address)": {
+        "returns": {
+          "_0": "The total value of ETH claimed by a user"
+        }
+      },
+      "getUserEthRewards(address)": {
+        "params": {
+          "user": "The address of the user"
+        },
+        "returns": {
+          "_0": "ethRewards The amount of Ether claimed"
+        }
+      },
+      "getUserStrategyRewards(uint256,address)": {
+        "params": {
+          "strategyId": "The ID of the strategy",
+          "user": "The address of the user"
+        },
+        "returns": {
+          "ethRewards": "The amount of Ether claimed"
+        }
+      },
+      "increaseEthRewards(uint256,uint256)": {
+        "details": "strategyId = 0 for BIOS PFA!",
+        "params": {
+          "ethRewardsAmount": "The amount of Ether rewards to add",
+          "strategyId": "The strategyId of the strategy to increase rewards for"
+        }
+      },
+      "increaseUserRewards(uint256,uint256,address)": {
+        "params": {
+          "amount": "Amount of token entered into strategy",
+          "strategyId": "Strategy the user entered into",
+          "user": "The address of the user"
+        }
+      },
+      "initialize(address[],address)": {
+        "params": {
+          "controllers_": "The array of controllers for this contract",
+          "moduleMap_": "The address of the ModuleMap contract"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 723,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "_initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 726,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "_initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 9727,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "moduleMap",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_contract(IModuleMap)19935"
+      },
+      {
+        "astId": 4667,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "_controllers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 4670,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "controllers",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 4828,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "totalEthRewards",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 4830,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "totalClaimedEthRewards",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 4834,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "totalUserClaimedEthRewards",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 4841,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "users",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(UserInfo)18812_storage))"
+      },
+      {
+        "astId": 4846,
+        "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+        "label": "strategies",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_mapping(t_uint256,t_struct(StrategyInfo)18817_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(IModuleMap)19935": {
+        "encoding": "inplace",
+        "label": "contract IModuleMap",
+        "numberOfBytes": "20"
+      },
+      "t_int256": {
+        "encoding": "inplace",
+        "label": "int256",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_address,t_mapping(t_uint256,t_struct(UserInfo)18812_storage))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(uint256 => struct IEtherRewards.UserInfo))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_uint256,t_struct(UserInfo)18812_storage)"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_mapping(t_uint256,t_struct(StrategyInfo)18817_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct IEtherRewards.StrategyInfo)",
+        "numberOfBytes": "32",
+        "value": "t_struct(StrategyInfo)18817_storage"
+      },
+      "t_mapping(t_uint256,t_struct(UserInfo)18812_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct IEtherRewards.UserInfo)",
+        "numberOfBytes": "32",
+        "value": "t_struct(UserInfo)18812_storage"
+      },
+      "t_struct(StrategyInfo)18817_storage": {
+        "encoding": "inplace",
+        "label": "struct IEtherRewards.StrategyInfo",
+        "members": [
+          {
+            "astId": 18814,
+            "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+            "label": "rewardPerShare",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 18816,
+            "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+            "label": "totalRewards",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_struct(UserInfo)18812_storage": {
+        "encoding": "inplace",
+        "label": "struct IEtherRewards.UserInfo",
+        "members": [
+          {
+            "astId": 18809,
+            "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+            "label": "rewardDebt",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_int256"
+          },
+          {
+            "astId": 18811,
+            "contract": "contracts/core/EtherRewards.sol:EtherRewards",
+            "label": "claimedRewards",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

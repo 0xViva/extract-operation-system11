@@ -1,0 +1,1125 @@
+{
+  "address": "0xce079345300E093a1f4D2Fb59389fF264A9DC9B6",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "addController",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_desiredLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "name": "adjustLiquidityAccordingToUnderlyingDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "_underlyingLiquidity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_syntheticLiquidity",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "syntheticSpended",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "underlyingReceived",
+          "type": "uint256"
+        }
+      ],
+      "name": "changePoolDebt",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "controllers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "subtractedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseAllowance",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "distributeAccordingToStrategiesDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "hold_",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "underlyingInToSwap_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllControllers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "currentControllers",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAndDeleteDelayedRedemptionOfSynthetic",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAndDeleteStrategiesPoolDebt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "debt_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getDebts",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getHedgeDeployArgs",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "integration_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "ammPoolID_",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "syntheticToken_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getHedgePercent",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "numerator_",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "denominator_",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPoolLimit",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "underlying_",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "synthetic_",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "addedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseAllowance",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseRedemptionOfSynthetic",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "isController",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "migrate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "moduleMap",
+      "outputs": [
+        {
+          "internalType": "contract IModuleMap",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "_newAMMPoolID",
+          "type": "uint32"
+        }
+      ],
+      "name": "setAMMPoolID",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint128",
+              "name": "numerator",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "denominator",
+              "type": "uint128"
+            }
+          ],
+          "internalType": "struct ISyntheticERC20.Float",
+          "name": "_value",
+          "type": "tuple"
+        }
+      ],
+      "name": "setHedgePercent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_integration",
+          "type": "address"
+        }
+      ],
+      "name": "setIntegration",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "underlying",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "synthetic",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct ISyntheticERC20.PoolRatioLimit",
+          "name": "_poolRatioLimit",
+          "type": "tuple"
+        }
+      ],
+      "name": "setPoolRatioLimit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_integration",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "_ammPoolID",
+          "type": "uint32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint32",
+              "name": "underlying",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "synthetic",
+              "type": "uint32"
+            }
+          ],
+          "internalType": "struct ISyntheticERC20.PoolRatioLimit",
+          "name": "_poolRatioLimit",
+          "type": "tuple"
+        }
+      ],
+      "name": "setupCrvPool",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xb4c45cae92fc149f13ea16d963e3882291cf0564ea1383622c5f84b08dfba653",
+  "receipt": {
+    "to": null,
+    "from": "0xB22031425cbC6F09e3D9a87DC5294DCbe788C2A4",
+    "contractAddress": "0xce079345300E093a1f4D2Fb59389fF264A9DC9B6",
+    "transactionIndex": 0,
+    "gasUsed": "2329335",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x2bc072467625ff47044a4cba24a3a600fe382f68ab296f3a4d1b668040af1566",
+    "transactionHash": "0xb4c45cae92fc149f13ea16d963e3882291cf0564ea1383622c5f84b08dfba653",
+    "logs": [],
+    "blockNumber": 2528592,
+    "cumulativeGasUsed": "2329335",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "4290d5bdb7d07b535aef4dff2e9f9e7b",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"addController\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_desiredLiquidity\",\"type\":\"uint256\"}],\"name\":\"adjustLiquidityAccordingToUnderlyingDebt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"_underlyingLiquidity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_syntheticLiquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"syntheticSpended\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"underlyingReceived\",\"type\":\"uint256\"}],\"name\":\"changePoolDebt\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"controllers\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"subtractedValue\",\"type\":\"uint256\"}],\"name\":\"decreaseAllowance\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"distributeAccordingToStrategiesDebt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"hold_\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"underlyingInToSwap_\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllControllers\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"currentControllers\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAndDeleteDelayedRedemptionOfSynthetic\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAndDeleteStrategiesPoolDebt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"debt_\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getDebts\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getHedgeDeployArgs\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"integration_\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"ammPoolID_\",\"type\":\"uint32\"},{\"internalType\":\"address\",\"name\":\"syntheticToken_\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getHedgePercent\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"numerator_\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"denominator_\",\"type\":\"uint128\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getPoolLimit\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"underlying_\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"synthetic_\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"addedValue\",\"type\":\"uint256\"}],\"name\":\"increaseAllowance\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"increaseRedemptionOfSynthetic\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"isController\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"status\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"migrate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"moduleMap\",\"outputs\":[{\"internalType\":\"contract IModuleMap\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_newAMMPoolID\",\"type\":\"uint32\"}],\"name\":\"setAMMPoolID\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint128\",\"name\":\"numerator\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"denominator\",\"type\":\"uint128\"}],\"internalType\":\"struct ISyntheticERC20.Float\",\"name\":\"_value\",\"type\":\"tuple\"}],\"name\":\"setHedgePercent\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_integration\",\"type\":\"address\"}],\"name\":\"setIntegration\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint32\",\"name\":\"underlying\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"synthetic\",\"type\":\"uint32\"}],\"internalType\":\"struct ISyntheticERC20.PoolRatioLimit\",\"name\":\"_poolRatioLimit\",\"type\":\"tuple\"}],\"name\":\"setPoolRatioLimit\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_integration\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"_ammPoolID\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"underlying\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"synthetic\",\"type\":\"uint32\"}],\"internalType\":\"struct ISyntheticERC20.PoolRatioLimit\",\"name\":\"_poolRatioLimit\",\"type\":\"tuple\"}],\"name\":\"setupCrvPool\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This contract allows YieldManager and UserPositions to sustain synthetic and undelying flow presented below: Conventions: x - hedge percent, y = 1 - x, z = 1 + x, n/m \\u2261 n [underlying]/ m [synthetic] n/m \\u2208 account123 means that account123 has n undelying and m synthetic at it's balance \\u25cf User calls enterStrategy: x/x goes to hedge pool, y/0 goes to actual strategy, 0/y goes to kernel, -1/0 goes to user     BALANCES: x/x \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/y \\u2208 kernel, -1/0 \\u2208 user ... \\u25cf User calls withdraw, kernel has no drifting money: swap synthetic for underlying via hedge pool: -1/1 goes to hedge pool, 0/0 goes to actual strategy, 0/-1 goes to kernel, 1/0 goes to user     BALANCES: -y/z \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/-x \\u2208 kernel, 0/0 \\u2208 user \\u25cf Admin calls YieldManager::deploy(), part 1: withdraw y/0 from the actual strategy and swap underlying for synthetic via hedge pool: y/-y goes to hedge pool, -y/0 goes to actual strategy, 0/y goes to kernel     BALANCES: 0/2 \\u2208 hedge pool*x, 0/0 \\u2208 actual strategy, 0/y-x \\u2208 kernel \\u25cf Admin calls YieldManager::deploy(), part 2: withdraw 0/2*x from the hedge pool, 0/2*x goes to kernel     BALANCES: 0/0 \\u2208 hedge pool, 0/1 \\u2208 kernel*\",\"kind\":\"dev\",\"methods\":{\"adjustLiquidityAccordingToUnderlyingDebt(uint256)\":{\"details\":\"When we execute UserPositions._findMoney -> SwapManager.gentleSwapExactIn for x synETH: 1) If received x ETH: do not change debt 2) Else if we received x + y ETH: debt -= y 3) Else if we received x - y ETH: debt += y In order to pay this debt before deploy to hedgeIntegration we should adjust deposit amount For example we want to provide z liquidity to hedge pool and we have y underlying debt (z > y): 1) If y == 0:          underlyingDeposit = z          syntheticDeposit = z 2) Else if y > 0:          underlyingDeposit = z - y          syntheticDeposit = z 3) Else if y < 0:          underlyingDeposit = z          syntheticDeposit = z - y*\"},\"allowance(address,address)\":{\"details\":\"See {IERC20-allowance}.\"},\"approve(address,uint256)\":{\"details\":\"See {IERC20-approve}. NOTE: If `amount` is the maximum `uint256`, the allowance is not updated on `transferFrom`. This is semantically equivalent to an infinite approval. Requirements: - `spender` cannot be the zero address.\"},\"changePoolDebt(uint256,uint256)\":{\"details\":\"After using hedge pool for deploy we will earn 2 debts: 1) Underlying: y = swap(synthetic, underlying, x), y != x 2) StrategiesDebt:     a) SD.swapBackSynthetic: underlying amount holded by actual strategy,         we have to withdraw that amount from integrations and swap it back for synthetic     b) SD.withdrawSynthetic: synthetic amount deposited earlier to the synthetic pool as \\\"hedge percent\\\",         we have to withdraw it from the pool*\"},\"decimals()\":{\"details\":\"Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless this function is overridden; NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}.\"},\"decreaseAllowance(address,uint256)\":{\"details\":\"Atomically decreases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`.\"},\"distributeAccordingToStrategiesDebt(uint256)\":{\"details\":\"When we perform negative deploy we have to pay our debts to synthetic pool if have any\"},\"getAndDeleteDelayedRedemptionOfSynthetic()\":{\"details\":\"After perfoming delayed swap in YieldManager::deploy() function (check this.increaseRedemptionOfSynthetic description)\"},\"getAndDeleteStrategiesPoolDebt()\":{\"details\":\"Conventions: x - hedge percent, y = 1 - x, z = 1 + x, n/m \\u2261 (n [underlying]/ m [synthetic]) n/m \\u2208 account123 means that account123 has n undelying and m synthetic at it's balance \\u25cf User calls enterStrategy: x/x goes to hedge pool, y/0 goes to actual strategy, 0/y goes to kernel, -1/0 goes to user     BALANCES: x/x \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/y \\u2208 kernel, -1/0 \\u2208 user ... \\u25cf User calls withdraw, kernel has no drifting money: swap synthetic for underlying via hedge pool: -1/1 goes to hedge pool, 0/0 goes to actual strategy, 0/-1 goes to kernel, 1/0 goes to user     BALANCES: -y/z \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/-x \\u2208 kernel, 0/0 \\u2208 user \\u25cf Admin calls YieldManager::deploy(), part 1: withdraw y/0 from the actual strategy and swap underlying for synthetic via hedge pool: y/-y goes to hedge pool, -y/0 goes to actual strategy, 0/y goes to kernel     BALANCES: 0/2 \\u2208 hedge pool*x, 0/0 \\u2208 actual strategy, 0/y-x \\u2208 kernel \\u25cf Admin calls YieldManager::deploy(), part 2: withdraw 0/2*x from the hedge pool, 0/2*x goes to kernel     BALANCES: 0/0 \\u2208 hedge pool, 0/1 \\u2208 kernel 0/1 kernel will hold until next enterStrategy in order to don't do unnecessary burn(kernel, x), mint(kernel, x) We increase strategiesDebt.withdrawSynthetic by x, but at the last step pool will has 0/2*x, that is why we multiplystrategiesDebt.withdrawSynthetic by 2 below*\"},\"getHedgeDeployArgs()\":{\"details\":\"Get info about hedgeIntegration for deploy (check YieldManager.deploy)\"},\"getPoolLimit()\":{\"details\":\"Get info about limit ratio for synthetic pool (check UserPositions._findMoney) Ratio must take decimals into account, so if desired pool ratio is x:y and tokens decimals is x:18 and y:6 then poolRatioLimit should be x*1e18:y*1e6*\"},\"increaseAllowance(address,uint256)\":{\"details\":\"Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address.\"},\"increaseRedemptionOfSynthetic(uint256)\":{\"details\":\"When we use hedge pool when user withdraws his funds, we earn strategies debt and negative deployAmount This debt can be paid two ways: 1) YieldManager::deploy(): move debt from actual strategy to hedge pool 2) Another user enters any strategy and his deposit can be used to pay this debt Problem: in the 2 option we will increase strategy and therefore will rid of negative deployAmount, without paying debt (due to absence of negative deployAmount we can't relay on 1 option), so user have to pay this debt and swap undelying for synthetic, but in order to make enterStrategy function cheaper we will delay this swap until next deploy function*\"},\"name()\":{\"details\":\"Returns the name of the token.\"},\"setPoolRatioLimit((uint32,uint32))\":{\"details\":\"Ratio must take decimals into account, so if desired pool ratio is x:y and tokens decimals is x:18 and y:6 then poolRatioLimit should be x*1e18:y*1e6*\"},\"symbol()\":{\"details\":\"Returns the symbol of the token, usually a shorter version of the name.\"},\"transfer(address,uint256)\":{\"details\":\"See {IERC20-transfer}. Requirements: - `to` cannot be the zero address. - the caller must have a balance of at least `amount`.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}. NOTE: Does not update the allowance if the current allowance is the maximum `uint256`. Requirements: - `from` and `to` cannot be the zero address. - `from` must have a balance of at least `amount`. - the caller must have allowance for ``from``'s tokens of at least `amount`.\"}},\"title\":\"ERC20 + additional debt accounting for hedge pool\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"migrate(address,uint256)\":{\"notice\":\"Migration*\"},\"mint(address,uint256)\":{\"notice\":\"Default ERC20*\"},\"setupCrvPool(address,uint32,(uint32,uint32))\":{\"notice\":\"Admin functions*\"}},\"notice\":\"Synthetic pool used to get a credit for user withdrawal\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/clones/SyntheticERC20.sol\":\"SyntheticERC20\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (proxy/utils/Initializable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../utils/AddressUpgradeable.sol\\\";\\n\\n/**\\n * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\\n * behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an\\n * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\\n * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\\n *\\n * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\\n * possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\\n *\\n * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\\n * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\\n *\\n * [CAUTION]\\n * ====\\n * Avoid leaving a contract uninitialized.\\n *\\n * An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation\\n * contract, which may impact the proxy. To initialize the implementation contract, you can either invoke the\\n * initializer manually, or you can include a constructor to automatically mark it as initialized when it is deployed:\\n *\\n * [.hljs-theme-light.nopadding]\\n * ```\\n * /// @custom:oz-upgrades-unsafe-allow constructor\\n * constructor() initializer {}\\n * ```\\n * ====\\n */\\nabstract contract Initializable {\\n    /**\\n     * @dev Indicates that the contract has been initialized.\\n     */\\n    bool private _initialized;\\n\\n    /**\\n     * @dev Indicates that the contract is in the process of being initialized.\\n     */\\n    bool private _initializing;\\n\\n    /**\\n     * @dev Modifier to protect an initializer function from being invoked twice.\\n     */\\n    modifier initializer() {\\n        // If the contract is initializing we ignore whether _initialized is set in order to support multiple\\n        // inheritance patterns, but we only do this in the context of a constructor, because in other contexts the\\n        // contract may have been reentered.\\n        require(_initializing ? _isConstructor() : !_initialized, \\\"Initializable: contract is already initialized\\\");\\n\\n        bool isTopLevelCall = !_initializing;\\n        if (isTopLevelCall) {\\n            _initializing = true;\\n            _initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            _initializing = false;\\n        }\\n    }\\n\\n    /**\\n     * @dev Modifier to protect an initialization function so that it can only be invoked by functions with the\\n     * {initializer} modifier, directly or indirectly.\\n     */\\n    modifier onlyInitializing() {\\n        require(_initializing, \\\"Initializable: contract is not initializing\\\");\\n        _;\\n    }\\n\\n    function _isConstructor() private view returns (bool) {\\n        return !AddressUpgradeable.isContract(address(this));\\n    }\\n}\\n\",\"keccak256\":\"0x372b0bc04e3b4c074559bbbfb1317afddb56de5504158ca25a7f9cd403980445\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/ERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./IERC20Upgradeable.sol\\\";\\nimport \\\"./extensions/IERC20MetadataUpgradeable.sol\\\";\\nimport \\\"../../utils/ContextUpgradeable.sol\\\";\\nimport \\\"../../proxy/utils/Initializable.sol\\\";\\n\\n/**\\n * @dev Implementation of the {IERC20} interface.\\n *\\n * This implementation is agnostic to the way tokens are created. This means\\n * that a supply mechanism has to be added in a derived contract using {_mint}.\\n * For a generic mechanism see {ERC20PresetMinterPauser}.\\n *\\n * TIP: For a detailed writeup see our guide\\n * https://forum.zeppelin.solutions/t/how-to-implement-erc20-supply-mechanisms/226[How\\n * to implement supply mechanisms].\\n *\\n * We have followed general OpenZeppelin Contracts guidelines: functions revert\\n * instead returning `false` on failure. This behavior is nonetheless\\n * conventional and does not conflict with the expectations of ERC20\\n * applications.\\n *\\n * Additionally, an {Approval} event is emitted on calls to {transferFrom}.\\n * This allows applications to reconstruct the allowance for all accounts just\\n * by listening to said events. Other implementations of the EIP may not emit\\n * these events, as it isn't required by the specification.\\n *\\n * Finally, the non-standard {decreaseAllowance} and {increaseAllowance}\\n * functions have been added to mitigate the well-known issues around setting\\n * allowances. See {IERC20-approve}.\\n */\\ncontract ERC20Upgradeable is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20MetadataUpgradeable {\\n    mapping(address => uint256) private _balances;\\n\\n    mapping(address => mapping(address => uint256)) private _allowances;\\n\\n    uint256 private _totalSupply;\\n\\n    string private _name;\\n    string private _symbol;\\n\\n    /**\\n     * @dev Sets the values for {name} and {symbol}.\\n     *\\n     * The default value of {decimals} is 18. To select a different value for\\n     * {decimals} you should overload it.\\n     *\\n     * All two of these values are immutable: they can only be set once during\\n     * construction.\\n     */\\n    function __ERC20_init(string memory name_, string memory symbol_) internal onlyInitializing {\\n        __ERC20_init_unchained(name_, symbol_);\\n    }\\n\\n    function __ERC20_init_unchained(string memory name_, string memory symbol_) internal onlyInitializing {\\n        _name = name_;\\n        _symbol = symbol_;\\n    }\\n\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() public view virtual override returns (string memory) {\\n        return _name;\\n    }\\n\\n    /**\\n     * @dev Returns the symbol of the token, usually a shorter version of the\\n     * name.\\n     */\\n    function symbol() public view virtual override returns (string memory) {\\n        return _symbol;\\n    }\\n\\n    /**\\n     * @dev Returns the number of decimals used to get its user representation.\\n     * For example, if `decimals` equals `2`, a balance of `505` tokens should\\n     * be displayed to a user as `5.05` (`505 / 10 ** 2`).\\n     *\\n     * Tokens usually opt for a value of 18, imitating the relationship between\\n     * Ether and Wei. This is the value {ERC20} uses, unless this function is\\n     * overridden;\\n     *\\n     * NOTE: This information is only used for _display_ purposes: it in\\n     * no way affects any of the arithmetic of the contract, including\\n     * {IERC20-balanceOf} and {IERC20-transfer}.\\n     */\\n    function decimals() public view virtual override returns (uint8) {\\n        return 18;\\n    }\\n\\n    /**\\n     * @dev See {IERC20-totalSupply}.\\n     */\\n    function totalSupply() public view virtual override returns (uint256) {\\n        return _totalSupply;\\n    }\\n\\n    /**\\n     * @dev See {IERC20-balanceOf}.\\n     */\\n    function balanceOf(address account) public view virtual override returns (uint256) {\\n        return _balances[account];\\n    }\\n\\n    /**\\n     * @dev See {IERC20-transfer}.\\n     *\\n     * Requirements:\\n     *\\n     * - `to` cannot be the zero address.\\n     * - the caller must have a balance of at least `amount`.\\n     */\\n    function transfer(address to, uint256 amount) public virtual override returns (bool) {\\n        address owner = _msgSender();\\n        _transfer(owner, to, amount);\\n        return true;\\n    }\\n\\n    /**\\n     * @dev See {IERC20-allowance}.\\n     */\\n    function allowance(address owner, address spender) public view virtual override returns (uint256) {\\n        return _allowances[owner][spender];\\n    }\\n\\n    /**\\n     * @dev See {IERC20-approve}.\\n     *\\n     * NOTE: If `amount` is the maximum `uint256`, the allowance is not updated on\\n     * `transferFrom`. This is semantically equivalent to an infinite approval.\\n     *\\n     * Requirements:\\n     *\\n     * - `spender` cannot be the zero address.\\n     */\\n    function approve(address spender, uint256 amount) public virtual override returns (bool) {\\n        address owner = _msgSender();\\n        _approve(owner, spender, amount);\\n        return true;\\n    }\\n\\n    /**\\n     * @dev See {IERC20-transferFrom}.\\n     *\\n     * Emits an {Approval} event indicating the updated allowance. This is not\\n     * required by the EIP. See the note at the beginning of {ERC20}.\\n     *\\n     * NOTE: Does not update the allowance if the current allowance\\n     * is the maximum `uint256`.\\n     *\\n     * Requirements:\\n     *\\n     * - `from` and `to` cannot be the zero address.\\n     * - `from` must have a balance of at least `amount`.\\n     * - the caller must have allowance for ``from``'s tokens of at least\\n     * `amount`.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) public virtual override returns (bool) {\\n        address spender = _msgSender();\\n        _spendAllowance(from, spender, amount);\\n        _transfer(from, to, amount);\\n        return true;\\n    }\\n\\n    /**\\n     * @dev Atomically increases the allowance granted to `spender` by the caller.\\n     *\\n     * This is an alternative to {approve} that can be used as a mitigation for\\n     * problems described in {IERC20-approve}.\\n     *\\n     * Emits an {Approval} event indicating the updated allowance.\\n     *\\n     * Requirements:\\n     *\\n     * - `spender` cannot be the zero address.\\n     */\\n    function increaseAllowance(address spender, uint256 addedValue) public virtual returns (bool) {\\n        address owner = _msgSender();\\n        _approve(owner, spender, _allowances[owner][spender] + addedValue);\\n        return true;\\n    }\\n\\n    /**\\n     * @dev Atomically decreases the allowance granted to `spender` by the caller.\\n     *\\n     * This is an alternative to {approve} that can be used as a mitigation for\\n     * problems described in {IERC20-approve}.\\n     *\\n     * Emits an {Approval} event indicating the updated allowance.\\n     *\\n     * Requirements:\\n     *\\n     * - `spender` cannot be the zero address.\\n     * - `spender` must have allowance for the caller of at least\\n     * `subtractedValue`.\\n     */\\n    function decreaseAllowance(address spender, uint256 subtractedValue) public virtual returns (bool) {\\n        address owner = _msgSender();\\n        uint256 currentAllowance = _allowances[owner][spender];\\n        require(currentAllowance >= subtractedValue, \\\"ERC20: decreased allowance below zero\\\");\\n        unchecked {\\n            _approve(owner, spender, currentAllowance - subtractedValue);\\n        }\\n\\n        return true;\\n    }\\n\\n    /**\\n     * @dev Moves `amount` of tokens from `sender` to `recipient`.\\n     *\\n     * This internal function is equivalent to {transfer}, and can be used to\\n     * e.g. implement automatic token fees, slashing mechanisms, etc.\\n     *\\n     * Emits a {Transfer} event.\\n     *\\n     * Requirements:\\n     *\\n     * - `from` cannot be the zero address.\\n     * - `to` cannot be the zero address.\\n     * - `from` must have a balance of at least `amount`.\\n     */\\n    function _transfer(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) internal virtual {\\n        require(from != address(0), \\\"ERC20: transfer from the zero address\\\");\\n        require(to != address(0), \\\"ERC20: transfer to the zero address\\\");\\n\\n        _beforeTokenTransfer(from, to, amount);\\n\\n        uint256 fromBalance = _balances[from];\\n        require(fromBalance >= amount, \\\"ERC20: transfer amount exceeds balance\\\");\\n        unchecked {\\n            _balances[from] = fromBalance - amount;\\n        }\\n        _balances[to] += amount;\\n\\n        emit Transfer(from, to, amount);\\n\\n        _afterTokenTransfer(from, to, amount);\\n    }\\n\\n    /** @dev Creates `amount` tokens and assigns them to `account`, increasing\\n     * the total supply.\\n     *\\n     * Emits a {Transfer} event with `from` set to the zero address.\\n     *\\n     * Requirements:\\n     *\\n     * - `account` cannot be the zero address.\\n     */\\n    function _mint(address account, uint256 amount) internal virtual {\\n        require(account != address(0), \\\"ERC20: mint to the zero address\\\");\\n\\n        _beforeTokenTransfer(address(0), account, amount);\\n\\n        _totalSupply += amount;\\n        _balances[account] += amount;\\n        emit Transfer(address(0), account, amount);\\n\\n        _afterTokenTransfer(address(0), account, amount);\\n    }\\n\\n    /**\\n     * @dev Destroys `amount` tokens from `account`, reducing the\\n     * total supply.\\n     *\\n     * Emits a {Transfer} event with `to` set to the zero address.\\n     *\\n     * Requirements:\\n     *\\n     * - `account` cannot be the zero address.\\n     * - `account` must have at least `amount` tokens.\\n     */\\n    function _burn(address account, uint256 amount) internal virtual {\\n        require(account != address(0), \\\"ERC20: burn from the zero address\\\");\\n\\n        _beforeTokenTransfer(account, address(0), amount);\\n\\n        uint256 accountBalance = _balances[account];\\n        require(accountBalance >= amount, \\\"ERC20: burn amount exceeds balance\\\");\\n        unchecked {\\n            _balances[account] = accountBalance - amount;\\n        }\\n        _totalSupply -= amount;\\n\\n        emit Transfer(account, address(0), amount);\\n\\n        _afterTokenTransfer(account, address(0), amount);\\n    }\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the `owner` s tokens.\\n     *\\n     * This internal function is equivalent to `approve`, and can be used to\\n     * e.g. set automatic allowances for certain subsystems, etc.\\n     *\\n     * Emits an {Approval} event.\\n     *\\n     * Requirements:\\n     *\\n     * - `owner` cannot be the zero address.\\n     * - `spender` cannot be the zero address.\\n     */\\n    function _approve(\\n        address owner,\\n        address spender,\\n        uint256 amount\\n    ) internal virtual {\\n        require(owner != address(0), \\\"ERC20: approve from the zero address\\\");\\n        require(spender != address(0), \\\"ERC20: approve to the zero address\\\");\\n\\n        _allowances[owner][spender] = amount;\\n        emit Approval(owner, spender, amount);\\n    }\\n\\n    /**\\n     * @dev Spend `amount` form the allowance of `owner` toward `spender`.\\n     *\\n     * Does not update the allowance amount in case of infinite allowance.\\n     * Revert if not enough allowance is available.\\n     *\\n     * Might emit an {Approval} event.\\n     */\\n    function _spendAllowance(\\n        address owner,\\n        address spender,\\n        uint256 amount\\n    ) internal virtual {\\n        uint256 currentAllowance = allowance(owner, spender);\\n        if (currentAllowance != type(uint256).max) {\\n            require(currentAllowance >= amount, \\\"ERC20: insufficient allowance\\\");\\n            unchecked {\\n                _approve(owner, spender, currentAllowance - amount);\\n            }\\n        }\\n    }\\n\\n    /**\\n     * @dev Hook that is called before any transfer of tokens. This includes\\n     * minting and burning.\\n     *\\n     * Calling conditions:\\n     *\\n     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens\\n     * will be transferred to `to`.\\n     * - when `from` is zero, `amount` tokens will be minted for `to`.\\n     * - when `to` is zero, `amount` of ``from``'s tokens will be burned.\\n     * - `from` and `to` are never both zero.\\n     *\\n     * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].\\n     */\\n    function _beforeTokenTransfer(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) internal virtual {}\\n\\n    /**\\n     * @dev Hook that is called after any transfer of tokens. This includes\\n     * minting and burning.\\n     *\\n     * Calling conditions:\\n     *\\n     * - when `from` and `to` are both non-zero, `amount` of ``from``'s tokens\\n     * has been transferred to `to`.\\n     * - when `from` is zero, `amount` tokens have been minted for `to`.\\n     * - when `to` is zero, `amount` of ``from``'s tokens have been burned.\\n     * - `from` and `to` are never both zero.\\n     *\\n     * To learn more about hooks, head to xref:ROOT:extending-contracts.adoc#using-hooks[Using Hooks].\\n     */\\n    function _afterTokenTransfer(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) internal virtual {}\\n\\n    /**\\n     * @dev This empty reserved space is put in place to allow future versions to add new\\n     * variables without shifting down storage in the inheritance chain.\\n     * See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps\\n     */\\n    uint256[45] private __gap;\\n}\\n\",\"keccak256\":\"0x7160017c8d2373a33a6d7e45368d60d7d582ea1695a098de8356c94dab2ec3ce\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20Upgradeable {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0x6777f3fccb5dab95a9088ef62c41bee0198fd92e50d7c94f0e3733788af4079e\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20Upgradeable.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20MetadataUpgradeable is IERC20Upgradeable {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x605434219ebbe4653f703640f06969faa5a1d78f0bfef878e5ddbb1ca369ceeb\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (utils/Address.sol)\\n\\npragma solidity ^0.8.1;\\n\\n/**\\n * @dev Collection of functions related to the address type\\n */\\nlibrary AddressUpgradeable {\\n    /**\\n     * @dev Returns true if `account` is a contract.\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * It is unsafe to assume that an address for which this function returns\\n     * false is an externally-owned account (EOA) and not a contract.\\n     *\\n     * Among others, `isContract` will return false for the following\\n     * types of addresses:\\n     *\\n     *  - an externally-owned account\\n     *  - a contract in construction\\n     *  - an address where a contract will be created\\n     *  - an address where a contract lived, but was destroyed\\n     * ====\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * You shouldn't rely on `isContract` to protect against flash loan attacks!\\n     *\\n     * Preventing calls from contracts is highly discouraged. It breaks composability, breaks support for smart wallets\\n     * like Gnosis Safe, and does not provide security since it can be circumvented by calling from a contract\\n     * constructor.\\n     * ====\\n     */\\n    function isContract(address account) internal view returns (bool) {\\n        // This method relies on extcodesize/address.code.length, which returns 0\\n        // for contracts in construction, since the code is only stored at the end\\n        // of the constructor execution.\\n\\n        return account.code.length > 0;\\n    }\\n\\n    /**\\n     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to\\n     * `recipient`, forwarding all available gas and reverting on errors.\\n     *\\n     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost\\n     * of certain opcodes, possibly making contracts go over the 2300 gas limit\\n     * imposed by `transfer`, making them unable to receive funds via\\n     * `transfer`. {sendValue} removes this limitation.\\n     *\\n     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].\\n     *\\n     * IMPORTANT: because control is transferred to `recipient`, care must be\\n     * taken to not create reentrancy vulnerabilities. Consider using\\n     * {ReentrancyGuard} or the\\n     * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].\\n     */\\n    function sendValue(address payable recipient, uint256 amount) internal {\\n        require(address(this).balance >= amount, \\\"Address: insufficient balance\\\");\\n\\n        (bool success, ) = recipient.call{value: amount}(\\\"\\\");\\n        require(success, \\\"Address: unable to send value, recipient may have reverted\\\");\\n    }\\n\\n    /**\\n     * @dev Performs a Solidity function call using a low level `call`. A\\n     * plain `call` is an unsafe replacement for a function call: use this\\n     * function instead.\\n     *\\n     * If `target` reverts with a revert reason, it is bubbled up by this\\n     * function (like regular Solidity function calls).\\n     *\\n     * Returns the raw returned data. To convert to the expected return value,\\n     * use https://solidity.readthedocs.io/en/latest/units-and-global-variables.html?highlight=abi.decode#abi-encoding-and-decoding-functions[`abi.decode`].\\n     *\\n     * Requirements:\\n     *\\n     * - `target` must be a contract.\\n     * - calling `target` with `data` must not revert.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(address target, bytes memory data) internal returns (bytes memory) {\\n        return functionCall(target, data, \\\"Address: low-level call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with\\n     * `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, 0, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but also transferring `value` wei to `target`.\\n     *\\n     * Requirements:\\n     *\\n     * - the calling contract must have an ETH balance of at least `value`.\\n     * - the called Solidity function must be `payable`.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, value, \\\"Address: low-level call with value failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but\\n     * with `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        require(address(this).balance >= value, \\\"Address: insufficient balance for call\\\");\\n        require(isContract(target), \\\"Address: call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\\n        return functionStaticCall(target, data, \\\"Address: low-level static call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal view returns (bytes memory) {\\n        require(isContract(target), \\\"Address: static call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.staticcall(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Tool to verifies that a low level call was successful, and revert if it wasn't, either by bubbling the\\n     * revert reason using the provided one.\\n     *\\n     * _Available since v4.3._\\n     */\\n    function verifyCallResult(\\n        bool success,\\n        bytes memory returndata,\\n        string memory errorMessage\\n    ) internal pure returns (bytes memory) {\\n        if (success) {\\n            return returndata;\\n        } else {\\n            // Look for revert reason and bubble it up if present\\n            if (returndata.length > 0) {\\n                // The easiest way to bubble the revert reason is using memory via assembly\\n\\n                assembly {\\n                    let returndata_size := mload(returndata)\\n                    revert(add(32, returndata), returndata_size)\\n                }\\n            } else {\\n                revert(errorMessage);\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x55cf2bd9fc76704ddcdc19834cd288b7de00fc0f298a40ea16a954ae8991db2d\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\nimport \\\"../proxy/utils/Initializable.sol\\\";\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract ContextUpgradeable is Initializable {\\n    function __Context_init() internal onlyInitializing {\\n    }\\n\\n    function __Context_init_unchained() internal onlyInitializing {\\n    }\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n\\n    /**\\n     * @dev This empty reserved space is put in place to allow future versions to add new\\n     * variables without shifting down storage in the inheritance chain.\\n     * See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps\\n     */\\n    uint256[50] private __gap;\\n}\\n\",\"keccak256\":\"0x963ea7f0b48b032eef72fe3a7582edf78408d6f834115b9feadd673a4d5bd149\",\"license\":\"MIT\"},\"contracts/clones/SyntheticERC20.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol\\\";\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\n\\nimport \\\"../interfaces/ISyntheticERC20.sol\\\";\\nimport \\\"../interfaces/IUserPositions.sol\\\";\\nimport \\\"../interfaces/IGenericInitializable.sol\\\";\\n\\nimport \\\"../core/Controlled.sol\\\";\\nimport \\\"../core/ModuleMapConsumer.sol\\\";\\n\\n/**\\n * @title ERC20 + additional debt accounting for hedge pool\\n * @notice Synthetic pool used to get a credit for user withdrawal\\n * @dev This contract allows YieldManager and UserPositions to sustain synthetic and undelying flow presented below:\\n * Conventions: x - hedge percent, y = 1 - x, z = 1 + x, n/m \\u2261 n [underlying]/ m [synthetic]\\n * n/m \\u2208 account123 means that account123 has n undelying and m synthetic at it's balance\\n *\\n * \\u25cf User calls enterStrategy: x/x goes to hedge pool, y/0 goes to actual strategy, 0/y goes to kernel, -1/0 goes to user\\n *     BALANCES: x/x \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/y \\u2208 kernel, -1/0 \\u2208 user\\n * ...\\n * \\u25cf User calls withdraw, kernel has no drifting money: swap synthetic for underlying via hedge pool:\\n * -1/1 goes to hedge pool, 0/0 goes to actual strategy, 0/-1 goes to kernel, 1/0 goes to user\\n *     BALANCES: -y/z \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/-x \\u2208 kernel, 0/0 \\u2208 user\\n * \\u25cf Admin calls YieldManager::deploy(), part 1: withdraw y/0 from the actual strategy and swap underlying\\n * for synthetic via hedge pool: y/-y goes to hedge pool, -y/0 goes to actual strategy, 0/y goes to kernel\\n *     BALANCES: 0/2 \\u2208 hedge pool*x, 0/0 \\u2208 actual strategy, 0/y-x \\u2208 kernel\\n * \\u25cf Admin calls YieldManager::deploy(), part 2: withdraw 0/2*x from the hedge pool, 0/2*x goes to kernel\\n *     BALANCES: 0/0 \\u2208 hedge pool, 0/1 \\u2208 kernel\\n **/\\ncontract SyntheticERC20 is\\n    Initializable,\\n    ModuleMapConsumer,\\n    Controlled,\\n    ERC20Upgradeable,\\n    ISyntheticERC20,\\n    IGenericInitializable\\n{\\n    // Percent of enter strategy value that will go to the synthetic pool\\n    Float hedgePercent;\\n\\n    // Synthetic pool hedgeIntegration and pool id\\n    address private hedgeIntegration;\\n    uint32 private ammPoolID;\\n\\n    // Limit that will be not exeeded via SwapManager::gentleSwapExactIn\\n    PoolRatioLimit poolRatioLimit;\\n\\n    // When we execute UserPositions._findMoney -> SwapManager.gentleSwapExactIn for x synETH:\\n    // 1) If received x ETH: do not change debt\\n    // 2) Else if we received x + y ETH: decrease debt by y\\n    // 3) Else if we received x - y ETH: increase debt by y\\n    int256 underlyingDebt;\\n\\n    // When we use synthetic pool for withdraw, we earn a debt,\\n    // that will be paid on the next YieldManager::deploy() call\\n    StrategiesDebt strategiesDebt;\\n\\n    // When user enter to strategy and cover some negative deploy amount, we should pay strategies debt and swap synthetic back\\n    // but for beter user experience we delay it until YieldManager::deploy() call\\n    uint256 delayedRedemptionOfSynthetic;\\n\\n    // When burning if kernel don't have enough money it will get burnDebt, which will be repaid in the next mint call\\n    // This debt has nothing to do with the debts earned by swaping via a hedge pool\\n    uint256 kernelBurnDebt;\\n\\n    function initialize(bytes calldata _data) external override initializer {\\n        (\\n            string memory name,\\n            string memory symbol,\\n            address[] memory controllers_,\\n            address moduleMap_,\\n            Float memory _hedgePercent\\n        ) = abi.decode(_data, (string, string, address[], address, Float));\\n\\n        __ERC20_init(name, symbol);\\n        __Controlled_init(controllers_, moduleMap_);\\n        hedgePercent = _hedgePercent;\\n    }\\n\\n    /**\\n     *\\n     *\\n     * Admin functions\\n     *\\n     *\\n     **/\\n\\n    function setupCrvPool(\\n        address _integration,\\n        uint32 _ammPoolID,\\n        PoolRatioLimit calldata _poolRatioLimit\\n    ) external onlyManager {\\n        hedgeIntegration = _integration;\\n        ammPoolID = _ammPoolID;\\n        poolRatioLimit.underlying = _poolRatioLimit.underlying;\\n        poolRatioLimit.synthetic = _poolRatioLimit.synthetic;\\n    }\\n\\n    function setIntegration(address _integration) external onlyManager {\\n        hedgeIntegration = _integration;\\n    }\\n\\n    function setAMMPoolID(uint32 _newAMMPoolID) external onlyManager {\\n        ammPoolID = _newAMMPoolID;\\n    }\\n\\n    /**\\n     * @dev\\n     * Ratio must take decimals into account, so if desired pool ratio is x:y\\n     * and tokens decimals is x:18 and y:6 then poolRatioLimit should be x*1e18:y*1e6\\n     **/\\n    function setPoolRatioLimit(PoolRatioLimit calldata _poolRatioLimit) external onlyManager {\\n        poolRatioLimit.underlying = _poolRatioLimit.underlying;\\n        poolRatioLimit.synthetic = _poolRatioLimit.synthetic;\\n    }\\n\\n    function setHedgePercent(Float calldata _value) external onlyManager {\\n        hedgePercent = _value;\\n    }\\n\\n    /**\\n     *\\n     *\\n     * Default ERC20\\n     *\\n     *\\n     **/\\n\\n    // We assume that mint and burn functions will be called only for kernel account\\n    function mint(address _account, uint256 _amount) external override onlyController {\\n        uint256 burnDebt = kernelBurnDebt;\\n        if (burnDebt > 0) {\\n            if (_amount > burnDebt) {\\n                _mint(_account, _amount - burnDebt);\\n                kernelBurnDebt = 0;\\n            } else {\\n                kernelBurnDebt -= _amount;\\n            }\\n        } else {\\n            _mint(_account, _amount);\\n        }\\n    }\\n\\n    // We assume that mint and burn functions will be called only for kernel account\\n    function burn(address _account, uint256 _amount) external override onlyController {\\n        uint256 balance = balanceOf(_account);\\n        if (_amount > balance) {\\n            kernelBurnDebt += _amount - balance;\\n            _amount = balance;\\n        }\\n        _burn(_account, _amount);\\n    }\\n\\n    function balanceOf(address account) public view override(ISyntheticERC20, ERC20Upgradeable) returns (uint256) {\\n        return ERC20Upgradeable.balanceOf(account);\\n    }\\n\\n    function totalSupply() public view override(ERC20Upgradeable, ISyntheticERC20) returns (uint256) {\\n        return ERC20Upgradeable.totalSupply();\\n    }\\n\\n    /**\\n     *\\n     *\\n     * Synthetic pool debt management\\n     *\\n     *\\n     **/\\n\\n    /**\\n     * @dev\\n     * After using hedge pool for deploy we will earn 2 debts:\\n     * 1) Underlying: y = swap(synthetic, underlying, x), y != x\\n     * 2) StrategiesDebt:\\n     *     a) SD.swapBackSynthetic: underlying amount holded by actual strategy,\\n     *         we have to withdraw that amount from integrations and swap it back for synthetic\\n     *     b) SD.withdrawSynthetic: synthetic amount deposited earlier to the synthetic pool as \\\"hedge percent\\\",\\n     *         we have to withdraw it from the pool\\n     **/\\n    function changePoolDebt(uint256 syntheticSpended, uint256 underlyingReceived) external override onlyController {\\n        if (syntheticSpended > underlyingReceived) {\\n            underlyingDebt += int256(syntheticSpended - underlyingReceived);\\n        } else if (syntheticSpended < underlyingReceived) {\\n            underlyingDebt -= int256(underlyingReceived - syntheticSpended);\\n        }\\n        uint256 poolDebt = (underlyingReceived * hedgePercent.numerator) / hedgePercent.denominator;\\n        uint256 integrationDebt = underlyingReceived - poolDebt;\\n\\n        strategiesDebt.swapBackSynthetic += uint128(integrationDebt);\\n        strategiesDebt.withdrawSynthetic += uint128(poolDebt);\\n    }\\n\\n    /**\\n     * @dev\\n     * When we use hedge pool when user withdraws his funds, we earn strategies debt and negative deployAmount\\n     * This debt can be paid two ways:\\n     * 1) YieldManager::deploy(): move debt from actual strategy to hedge pool\\n     * 2) Another user enters any strategy and his deposit can be used to pay this debt\\n     *\\n     * Problem: in the 2 option we will increase strategy and therefore will rid of negative deployAmount,\\n     * without paying debt (due to absence of negative deployAmount we can't relay on 1 option),\\n     * so user have to pay this debt and swap undelying for synthetic, but in order to make enterStrategy function\\n     * cheaper we will delay this swap until next deploy function\\n     **/\\n    function increaseRedemptionOfSynthetic(uint256 _amount) external override onlyController {\\n        delayedRedemptionOfSynthetic += _amount;\\n    }\\n\\n    /// @dev After perfoming delayed swap in YieldManager::deploy() function (check this.increaseRedemptionOfSynthetic description)\\n    function getAndDeleteDelayedRedemptionOfSynthetic() external override onlyController returns (uint256 _amount) {\\n        _amount = delayedRedemptionOfSynthetic;\\n        delete delayedRedemptionOfSynthetic;\\n    }\\n\\n    /**\\n     * @dev\\n     * When we execute UserPositions._findMoney -> SwapManager.gentleSwapExactIn for x synETH:\\n     * 1) If received x ETH: do not change debt\\n     * 2) Else if we received x + y ETH: debt -= y\\n     * 3) Else if we received x - y ETH: debt += y\\n     *\\n     * In order to pay this debt before deploy to hedgeIntegration we should adjust deposit amount\\n     * For example we want to provide z liquidity to hedge pool and we have y underlying debt (z > y):\\n     * 1) If y == 0:\\n     *          underlyingDeposit = z\\n     *          syntheticDeposit = z\\n     * 2) Else if y > 0:\\n     *          underlyingDeposit = z - y\\n     *          syntheticDeposit = z\\n     * 3) Else if y < 0:\\n     *          underlyingDeposit = z\\n     *          syntheticDeposit = z - y\\n     **/\\n    function adjustLiquidityAccordingToUnderlyingDebt(uint256 _desiredLiquidity)\\n        external\\n        override\\n        onlyController\\n        returns (uint256 _underlyingLiquidity, uint256 _syntheticLiquidity)\\n    {\\n        _underlyingLiquidity = _desiredLiquidity;\\n        _syntheticLiquidity = _desiredLiquidity;\\n\\n        if (underlyingDebt > 0) {\\n            _underlyingLiquidity = safeSubtract(_desiredLiquidity, abs(underlyingDebt));\\n            underlyingDebt -= int256(_desiredLiquidity - _underlyingLiquidity);\\n        } else if (underlyingDebt < 0) {\\n            _syntheticLiquidity = safeSubtract(_desiredLiquidity, abs(underlyingDebt));\\n            underlyingDebt += int256(_desiredLiquidity - _syntheticLiquidity);\\n        }\\n    }\\n\\n    /// @dev When we perform negative deploy we have to pay our debts to synthetic pool if have any\\n    function distributeAccordingToStrategiesDebt(uint256 _amount)\\n        external\\n        override\\n        onlyController\\n        returns (uint256 hold_, uint256 underlyingInToSwap_)\\n    {\\n        hold_ = _amount;\\n\\n        if (strategiesDebt.swapBackSynthetic > 0) {\\n            hold_ = safeSubtract(_amount, strategiesDebt.swapBackSynthetic);\\n            underlyingInToSwap_ = _amount - hold_;\\n\\n            strategiesDebt.swapBackSynthetic -= uint128(underlyingInToSwap_);\\n        }\\n    }\\n\\n    /**\\n     * @dev\\n     * Conventions: x - hedge percent, y = 1 - x, z = 1 + x, n/m \\u2261 (n [underlying]/ m [synthetic])\\n     * n/m \\u2208 account123 means that account123 has n undelying and m synthetic at it's balance\\n     *\\n     * \\u25cf User calls enterStrategy: x/x goes to hedge pool, y/0 goes to actual strategy, 0/y goes to kernel, -1/0 goes to user\\n     *     BALANCES: x/x \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/y \\u2208 kernel, -1/0 \\u2208 user\\n     * ...\\n     * \\u25cf User calls withdraw, kernel has no drifting money: swap synthetic for underlying via hedge pool:\\n     * -1/1 goes to hedge pool, 0/0 goes to actual strategy, 0/-1 goes to kernel, 1/0 goes to user\\n     *     BALANCES: -y/z \\u2208 hedge pool, y/0 \\u2208 actual strategy, 0/-x \\u2208 kernel, 0/0 \\u2208 user\\n     * \\u25cf Admin calls YieldManager::deploy(), part 1: withdraw y/0 from the actual strategy and swap underlying\\n     * for synthetic via hedge pool: y/-y goes to hedge pool, -y/0 goes to actual strategy, 0/y goes to kernel\\n     *     BALANCES: 0/2 \\u2208 hedge pool*x, 0/0 \\u2208 actual strategy, 0/y-x \\u2208 kernel\\n     * \\u25cf Admin calls YieldManager::deploy(), part 2: withdraw 0/2*x from the hedge pool, 0/2*x goes to kernel\\n     *     BALANCES: 0/0 \\u2208 hedge pool, 0/1 \\u2208 kernel\\n     *\\n     * 0/1 kernel will hold until next enterStrategy in order to don't do unnecessary burn(kernel, x), mint(kernel, x)\\n     *\\n     * We increase strategiesDebt.withdrawSynthetic by x, but at the last step pool will has 0/2*x,\\n     * that is why we multiplystrategiesDebt.withdrawSynthetic by 2 below\\n     **/\\n    function getAndDeleteStrategiesPoolDebt() external override onlyController returns (uint256 debt_) {\\n        debt_ = strategiesDebt.withdrawSynthetic * 2;\\n        delete strategiesDebt.withdrawSynthetic;\\n    }\\n\\n    function safeSubtract(uint256 _minuend, uint256 _subtrahend) private pure returns (uint256 _result) {\\n        if (_subtrahend > _minuend) {\\n            _result = 0;\\n        } else {\\n            _result = _minuend - _subtrahend;\\n        }\\n    }\\n\\n    function abs(int256 val) private pure returns (uint256) {\\n        return uint256(val >= 0 ? val : -val);\\n    }\\n\\n    /**\\n     *\\n     *\\n     * Getters\\n     *\\n     *\\n     **/\\n\\n    /// @dev Get info about hedgeIntegration for deploy (check YieldManager.deploy)\\n    function getHedgeDeployArgs()\\n        external\\n        view\\n        override\\n        returns (\\n            address integration_,\\n            uint32 ammPoolID_,\\n            address syntheticToken_\\n        )\\n    {\\n        integration_ = hedgeIntegration;\\n        ammPoolID_ = ammPoolID;\\n        syntheticToken_ = address(this);\\n    }\\n\\n    function getHedgePercent() external view override returns (uint128 numerator_, uint128 denominator_) {\\n        numerator_ = hedgePercent.numerator;\\n        denominator_ = hedgePercent.denominator;\\n    }\\n\\n    /**\\n     * @dev\\n     * Get info about limit ratio for synthetic pool (check UserPositions._findMoney)\\n     * Ratio must take decimals into account, so if desired pool ratio is x:y\\n     * and tokens decimals is x:18 and y:6 then poolRatioLimit should be x*1e18:y*1e6\\n     **/\\n    function getPoolLimit() external view override returns (uint32 underlying_, uint32 synthetic_) {\\n        underlying_ = poolRatioLimit.underlying;\\n        synthetic_ = poolRatioLimit.synthetic;\\n    }\\n\\n    function getDebts() external view returns (int256, uint256) {\\n        return (underlyingDebt, kernelBurnDebt);\\n    }\\n\\n    /**\\n     *\\n     *\\n     * Migration\\n     *\\n     *\\n     **/\\n\\n    function migrate(address _recipient, uint256 _amount) external onlyManager {\\n        _mint(_recipient, _amount);\\n    }\\n}\\n\",\"keccak256\":\"0x55415434c928417788fc5b9cabc86e8d12ed8615ff6bc09b45e9658b3280a585\",\"license\":\"GPL-2.0\"},\"contracts/core/Controlled.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"./ModuleMapConsumer.sol\\\";\\nimport \\\"../interfaces/IKernel.sol\\\";\\n\\nabstract contract Controlled is Initializable, ModuleMapConsumer {\\n    // controller address => is a controller\\n    mapping(address => bool) internal _controllers;\\n    address[] public controllers;\\n\\n    function __Controlled_init(address[] memory controllers_, address moduleMap_) internal onlyInitializing {\\n        require(moduleMap_ != address(0), \\\"bad address\\\");\\n        for (uint256 i; i < controllers_.length; ++i) {\\n            require(controllers_[i] != address(0), \\\"bad address\\\");\\n        }\\n        for (uint256 i; i < controllers_.length; ++i) {\\n            _controllers[controllers_[i]] = true;\\n        }\\n        controllers = controllers_;\\n        __ModuleMapConsumer_init(moduleMap_);\\n    }\\n\\n    function addController(address controller) external onlyOwner {\\n        _controllers[controller] = true;\\n        bool added;\\n        for (uint256 i; i < controllers.length; ++i) {\\n            if (controller == controllers[i]) {\\n                added = true;\\n            }\\n        }\\n        if (!added) {\\n            controllers.push(controller);\\n        }\\n    }\\n\\n    modifier onlyOwner() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isOwner(msg.sender),\\n            \\\"Controlled::onlyOwner: Caller is not owner\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyManager() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isManager(msg.sender),\\n            \\\"Controlled::onlyManager: Caller is not manager\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyController() {\\n        require(_controllers[msg.sender], \\\"Controlled::onlyController: Caller is not controller\\\");\\n        _;\\n    }\\n\\n    function isController(address controller) external view returns (bool status) {\\n        status = _controllers[controller];\\n    }\\n\\n    function getAllControllers() external view returns (address[] memory currentControllers) {\\n        return controllers;\\n    }\\n}\\n\",\"keccak256\":\"0xed017271d8ba30d80b8449946ed9ed3c6192d59980f343d26580070da40ede47\",\"license\":\"GPL-2.0\"},\"contracts/core/ModuleMapConsumer.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"../interfaces/IModuleMap.sol\\\";\\n\\nabstract contract ModuleMapConsumer is Initializable {\\n    IModuleMap public moduleMap;\\n\\n    function __ModuleMapConsumer_init(address moduleMap_) internal onlyInitializing {\\n        moduleMap = IModuleMap(moduleMap_);\\n    }\\n}\\n\",\"keccak256\":\"0x562431546443640c950a15ccce0cffedeced3e414c41cc2758bf489f4525d1df\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IGenericInitializable.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IGenericInitializable {\\n    function initialize(bytes calldata _data) external;\\n}\\n\",\"keccak256\":\"0x557f8aadc0b0650c68137884cfc906a99cc546d588337470334db12115aae7e4\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IIntegration.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IIntegration {\\n    event Deploy(address token, uint256 amount);\\n    event HarvestYield(address token, uint256 amount);\\n    event Deposit(address token, uint256 amount);\\n    event Withdraw(address token, uint256 amount);\\n\\n    /**\\n     * Used by YieldManager to deposit funds.\\n     * @param tokenAddress The address of the deposited token\\n     * @param amount The amount being deposited\\n     */\\n    function deposit(address tokenAddress, uint256 amount) external;\\n\\n    /**\\n     * Used by YieldManager to withdraw funds.\\n     * @param tokenAddress The address of the withdrawal token\\n     * @param amount The amount being withdrawn\\n     */\\n    function withdraw(address tokenAddress, uint256 amount) external;\\n\\n    /**\\n     * Used by YieldManager to deploy funds.\\n     * @dev Deploys all tokens held in the integration contract to the integrated protocol\\n     */\\n    function deploy() external;\\n\\n    /**\\n     * Used by YieldManager to harvest funds.\\n     * @dev Harvests token yield from the integration\\n     */\\n    function harvestYield() external;\\n\\n    /**\\n     * Get the integration's balance of a token.\\n     * @dev has been deposited to the integration contract\\n     * @dev This returns the total amount of the underlying token that\\n     * @param tokenAddress The address of the deployed token\\n     * @return The amount of the underlying token that can be withdrawn\\n     */\\n    function getBalance(address tokenAddress) external view returns (uint256);\\n\\n    /**\\n     * Returns the total amount of yield awaing to be harvested\\n     * using the relevant integration's own function\\n     * @param tokenAddress The token to get the pending yield for\\n     * @return amount The amount of available yield for the specified token\\n     */\\n    function getPendingYield(address tokenAddress) external view returns (uint256 amount);\\n}\\n\",\"keccak256\":\"0x5f1c0946f3def553313e240f568096ccf9090659b52c51deed14f56d7559f8b8\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IKernel.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IKernel {\\n    struct WithdrawAllAndClaimResponse {\\n        uint256[] tokenAmounts;\\n        uint256 ethWithdrawn;\\n        uint256 ethClaimed;\\n        uint256 biosClaimed;\\n    }\\n    event Withdraw(address indexed user, address[] tokens, uint256[] tokenAmounts, uint256 ethAmount);\\n    event ClaimEthRewards(address indexed user, uint256[] strategies, uint256 ethRewards);\\n    event ClaimBiosRewards(address indexed user, uint256 biosRewards);\\n    event WithdrawAllAndClaim(\\n        address indexed user,\\n        address[] tokens,\\n        uint256[] strategies,\\n        bool withdrawWethAsEth,\\n        uint256[] tokenAmounts,\\n        uint256 ethWithdrawn,\\n        uint256 ethRewards,\\n        uint256 biosRewards\\n    );\\n    event TokenAdded(\\n        address indexed tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    );\\n\\n    event GasAccountUpdated(address gasAccount);\\n    event TreasuryAccountUpdated(address treasuryAccount);\\n    event IntegrationAdded(address indexed contractAddress, string name);\\n    event SetBiosRewardsDuration(uint32 biosRewardsDuration);\\n    event SeedBiosRewards(uint256 biosAmount);\\n    event Deploy();\\n    event HarvestYield();\\n    event DistributeEth();\\n    event BiosBuyBack();\\n    event EthDistributionWeightsUpdated(\\n        uint32 biosBuyBackEthWeight,\\n        uint32 treasuryEthWeight,\\n        uint32 protocolFeeEthWeight,\\n        uint32 rewardsEthWeight,\\n        uint32 syntheticPoolSupplementWeight\\n    );\\n    event GasAccountTargetEthBalanceUpdated(uint256 gasAccountTargetEthBalance);\\n\\n    /// @param account The address of the account to check if they are a manager\\n    /// @return Bool indicating whether the account is a manger\\n    function isManager(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are an owner\\n    /// @return Bool indicating whether the account is an owner\\n    function isOwner(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are a liquidity provider\\n    /// @return Bool indicating whether the account is a liquidity provider\\n    function isLiquidityProvider(address account) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x6f4529412860cc773b26bca59c78fd12bc066323470b07501c0d1e9e2de0f54a\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IModuleMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nenum Modules {\\n    Kernel, // 0\\n    UserPositions, // 1\\n    YieldManager, // 2\\n    IntegrationMap, // 3\\n    BiosRewards, // 4\\n    EtherRewards, // 5\\n    Strategy1155, // 6\\n    SyntheticMap, // 7\\n    StrategyMap, // 8\\n    StrategyManager, // 9\\n    Interconnects, // 10\\n    SwapManager, // 11\\n    Unwrapper, // 12\\n    BiosEmitter // 13\\n}\\n\\ninterface IModuleMap {\\n    function getModuleAddress(Modules key) external view returns (address);\\n}\\n\",\"keccak256\":\"0x9c79bb5822bea9209419b3c6eaefc40a8fd950184ff4445eb5745f70460f5310\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IStrategyMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"./IIntegration.sol\\\";\\nimport \\\"./IUserPositions.sol\\\";\\n\\ninterface IStrategyMap {\\n    /**\\n     *\\n     * structs\\n     *\\n     **/\\n\\n    struct DeployAmount {\\n        int128 deploy;\\n        uint128 hedge;\\n    }\\n\\n    struct Integration {\\n        address integration;\\n        uint32 ammPoolID;\\n    }\\n    struct Token {\\n        uint256 integrationPairIdx;\\n        address token;\\n        uint32 weight;\\n    }\\n\\n    struct Strategy {\\n        string name;\\n        Integration[] integrations;\\n        Token[] tokens;\\n        mapping(address => bool) availableTokens;\\n        mapping(address => uint256) maximumCap;\\n    }\\n\\n    struct StrategySummary {\\n        string name;\\n        Integration[] integrations;\\n        Token[] tokens;\\n    }\\n\\n    struct TokenFunds {\\n        uint256 totalBalance;\\n        // strategy token => strategy balance\\n        mapping(address => uint256) strategyBalance;\\n    }\\n\\n    struct ClosablePosition {\\n        address integration;\\n        uint32 ammPoolID;\\n        uint256 amount;\\n    }\\n\\n    struct ReplaceIntegrationParams {\\n        Integration newIntegration;\\n        address token;\\n        uint256 oldIntegrationIndex;\\n        uint32[] weightAmounts;\\n        uint256[] weightTokenIndexes;\\n    }\\n\\n    /**\\n     *\\n     *\\n     * events\\n     *\\n     *\\n     **/\\n\\n    event NewStrategy(uint256 indexed strategyId, Integration[] integrations, Token[] tokens, string name);\\n\\n    event UpdateName(uint256 indexed strategyId, string name);\\n\\n    event UpdateStrategy(uint256 indexed strategyId, Integration[] integrations, Token[] tokens);\\n\\n    event DeleteStrategy(uint256 indexed strategyId);\\n\\n    event IntegrationWeightAdjustment(\\n        uint256 strategyId,\\n        uint256 sourceIndex,\\n        uint256 destinationIndex,\\n        uint32 amount,\\n        bool rebalance\\n    );\\n\\n    event RemoveIntegration(uint256 strategyId, uint256 integrationIndex, address token);\\n\\n    event AddIntegration(uint256 strategyId, Integration integration, address token);\\n\\n    /**\\n     *\\n     *\\n     * manager's functions\\n     *\\n     *\\n     **/\\n\\n    /**\\n     @notice Adds a new strategy to the list of available strategies\\n     @param name  the name of the new strategy\\n     @param integrations  the integrations and weights that form the strategy\\n     @param maxCap  The maximum amount investable in a strategy\\n     */\\n    function addStrategy(\\n        string calldata name,\\n        Integration[] calldata integrations,\\n        Token[] calldata tokens,\\n        uint256[] memory maxCap\\n    ) external;\\n\\n    /**\\n    @notice Updates the strategy name\\n    @param name  the new name\\n     */\\n    function updateName(uint256 strategyId, string calldata name) external;\\n\\n    function addPairToStrategy(\\n        uint256 strategyId,\\n        Integration calldata integration,\\n        address token\\n    ) external;\\n\\n    /**\\n    @dev Changes weights of integrations,optionally rebalancing the integrations\\n        so that current fund allocation reflects new weights\\n     */\\n    function movePairWeight(\\n        uint256 strategyId,\\n        uint256 sourceIndex,\\n        uint256 destinationIndex,\\n        int256 vectorAmount,\\n        uint32 amount,\\n        bool rebalance\\n    ) external;\\n\\n    function removePairFromStrategy(\\n        uint256 strategyId,\\n        uint256 integrationIndex,\\n        address token\\n    ) external;\\n\\n    /**\\n    @notice Deletes a strategy\\n    @dev This can only be called successfully if the strategy being deleted doesn't have any assets invested in it.\\n    @dev To delete a strategy with funds deployed in it,\\n        first update the strategy so that the existing tokens are no longer available in the strategy,\\n        then delete the strategy. This will unwind the users positions,\\n        and they will be able to withdraw their funds.\\n    @param strategyId  the strategy to delete\\n     */\\n    function deleteStrategy(uint256 strategyId) external;\\n\\n    /**\\n    @notice Sets availability status for the token\\n    @param strategyId The strategy strategyId\\n    @param token The token address\\n    @param available An availability status. Velue \\\"true\\\" will enable token and vice versa\\n    */\\n    function setAvailableTokens(\\n        uint256 strategyId,\\n        address token,\\n        bool available\\n    ) external;\\n\\n    /**\\n    @notice Sets the maximum investment cap for a strategy and token pair\\n    @param strategyId The strategy strategyId\\n    @param token the token address\\n    @param maxCap The maximum amount of funds that can be invested\\n    */\\n    function setMaximumCap(\\n        uint256 strategyId,\\n        address token,\\n        uint256 maxCap\\n    ) external;\\n\\n    /**\\n     *\\n     *\\n     * strategy flow\\n     *\\n     *\\n     **/\\n\\n    /**\\n    @notice Increases the amount of a set of tokens in a strategy\\n    @param strategyId  the strategy to deposit into\\n    @param token Token address\\n    @param amount Amount of the token\\n    @return strategyDebtClosed_ How much negative deploy amount was increased (-x [deploy] + y [amount] = y - x [deploy])\\n     */\\n    function increaseStrategy(\\n        uint256 strategyId,\\n        address token,\\n        uint256 amount\\n    ) external returns (uint256 strategyDebtClosed_);\\n\\n    /**\\n    @notice Decreases the amount of a set of tokens invested in a strategy\\n    @param strategyId  the strategy to withdraw assets from\\n    @param amount  amount of lp token that user have burned\\n     */\\n    function decreaseStrategy(uint256 strategyId, uint256 amount) external;\\n\\n    /**\\n     *\\n     *\\n     * deploy flow\\n     *\\n     *\\n     **/\\n\\n    /**\\n    @notice Decreases the deployable amount after a deployment/withdrawal\\n    @param integration  the integration that was changed\\n    @param poolID  the pool within the integration that handled the tokens\\n    @param token  the token to decrease for\\n    @param deployAmount Amount that went to the corresponding pool\\n    @param hedgeAmount Amount that went to the synthetic pool\\n     */\\n    function decreaseDeployAmountChange(\\n        address integration,\\n        uint32 poolID,\\n        address token,\\n        uint256 deployAmount,\\n        uint256 hedgeAmount\\n    ) external;\\n\\n    /**\\n     *\\n     *\\n     * getters\\n     *\\n     *\\n     **/\\n\\n    /**\\n    @notice Getter function to return the nested arrays as well as the name\\n    @param strategyId  the strategy to return\\n     */\\n    function getStrategy(uint256 strategyId) external view returns (StrategySummary memory);\\n\\n    /**\\n    @notice Returns 1 or more strategies in a single call.\\n    @param strategyIds to return.\\n    */\\n    function getMultipleStrategies(uint256[] calldata strategyIds) external view returns (StrategySummary[] memory);\\n\\n    /**\\n    @notice Returns the amount of a given token currently invested in a strategy\\n    @param strategyId  the strategy strategyId to check\\n    @param token  The token to retrieve the balance for\\n    @return amount  the amount of token that is invested in the strategy\\n     */\\n    function getStrategyTokenBalance(uint256 strategyId, address token) external view returns (uint256 amount);\\n\\n    /**\\n    @notice Returns the total amount of a token invested across all strategies\\n    @param token  the token to fetch the balance for\\n    @param strategies An array of strategies in which total balance will be calculated\\n    @return amount  the amount of the token currently invested\\n    */\\n    function getTokenTotalBalance(address token, uint256[] calldata strategies) external view returns (uint256 amount);\\n\\n    /**\\n    @notice Returns the current amount awaiting deployment\\n    @param integration  the integration to deploy to\\n    @param poolID  the pool within the integration that should receive the tokens\\n    @param token  the token to be deployed\\n    @return deployAmount An amount that should be deployed to the corresponding integration\\n    @return hedgeAmount An amount that should be deployed to the synthetic pool \\n     */\\n    function getDeployAmount(\\n        address integration,\\n        uint32 poolID,\\n        address token\\n    ) external view returns (int256 deployAmount, uint256 hedgeAmount);\\n\\n    /// @notice autogenerated getter definition\\n    function idCounter() external view returns (uint256);\\n\\n    /**\\n    @notice returns the length of the tokens array in a strategy\\n    @param strategy  the strategy to look up\\n    @return the length\\n    */\\n    function getStrategyTokenLength(uint256 strategy) external view returns (uint256);\\n\\n    /// @notice Retrieves the maximum cap for a strategy/token pair\\n    /// @param strategyId  the strategy strategyId\\n    /// @param token  the token address\\n    /// @return cap  the maximum cap for the strategy/token pair\\n    function getMaximumCap(uint256 strategyId, address token) external view returns (uint256 cap);\\n}\\n\",\"keccak256\":\"0x4c029270bde792eec1344723c6303ceb27e969751b3de246c9bdc30d3bd83283\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/ISyntheticERC20.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface ISyntheticERC20 {\\n    struct PoolRatioLimit {\\n        uint32 underlying;\\n        uint32 synthetic;\\n    }\\n\\n    struct Float {\\n        uint128 numerator;\\n        uint128 denominator;\\n    }\\n\\n    struct StrategiesDebt {\\n        uint128 swapBackSynthetic;\\n        uint128 withdrawSynthetic;\\n    }\\n\\n    /**\\n     *\\n     *\\n     * Default ERC20\\n     *\\n     *\\n     **/\\n\\n    function balanceOf(address _account) external view returns (uint256);\\n\\n    function totalSupply() external view returns (uint256);\\n\\n    function mint(address _account, uint256 _amount) external;\\n\\n    function burn(address _account, uint256 _amount) external;\\n\\n    /**\\n     *\\n     *\\n     * Synthetic pool debt management\\n     *\\n     *\\n     **/\\n\\n    /**\\n     * @param syntheticSpended How much synthetic was spended to the swap\\n     * @param underlyingReceived How much underlying was received from the swap\\n     **/\\n    function changePoolDebt(uint256 syntheticSpended, uint256 underlyingReceived) external;\\n\\n    function increaseRedemptionOfSynthetic(uint256 _amount) external;\\n\\n    function getAndDeleteDelayedRedemptionOfSynthetic() external returns (uint256 _amount);\\n\\n    /**\\n     * @dev\\n     * When we execute UserPositions._findMoney -> SwapManager.gentleSwapExactIn for x synETH:\\n     * 1) If received x ETH: do not change debt\\n     * 2) Else if we received x + y ETH: debt -= y\\n     * 3) Else if we received x - y ETH: debt += y\\n     *\\n     * In order to pay this debt before deploy to hedge integration we should adjust deposit amount\\n     * For example we want to provide z liquidity to hedge pool and we have y underlying debt (z > y):\\n     * 1) If y == 0:\\n     *          underlyingDeposit = z\\n     *          syntheticDeposit = z\\n     * 2) Else if y > 0:\\n     *          underlyingDeposit = z - y\\n     *          syntheticDeposit = z\\n     * 3) Else if y < 0:\\n     *          underlyingDeposit = z\\n     *          syntheticDeposit = z - y\\n     **/\\n    function adjustLiquidityAccordingToUnderlyingDebt(uint256 _desiredLiquidity)\\n        external\\n        returns (uint256 _underlyingLiquidity, uint256 _syntheticLiquidity);\\n\\n    /**\\n     * @dev\\n     * When we use synthetic pool for withdraw, we eanr a debt that will be paid on the next deploy call.\\n     * This method will calculate how much underlying have to be deposited to synthetic pool and reduce debt\\n     **/\\n    function distributeAccordingToStrategiesDebt(uint256 _gotFromWithdrawal)\\n        external\\n        returns (uint256 hold_, uint256 depositToPool_);\\n\\n    function getAndDeleteStrategiesPoolDebt() external returns (uint256);\\n\\n    /**\\n     *\\n     *\\n     * Getters\\n     *\\n     *\\n     **/\\n\\n    /**\\n     * @return integration_ Integration in which hedge funds will go\\n     * @return ammPoolID_ Integration AMM pool ID\\n     * @return syntheticToken_ Address of the SyntheticERC20 contract on the chain\\n     **/\\n    function getHedgeDeployArgs()\\n        external\\n        view\\n        returns (\\n            address integration_,\\n            uint32 ammPoolID_,\\n            address syntheticToken_\\n        );\\n\\n    function getHedgePercent() external view returns (uint128 numerator_, uint128 denominator_);\\n\\n    /**\\n     * @dev Kernel will be able to withdraw underlying from crv pool\\n     * until pool reach (underlying_ : synthetic_) ratio\\n     **/\\n    function getPoolLimit() external view returns (uint32 underlying_, uint32 synthetic_);\\n}\\n\",\"keccak256\":\"0xcdc0f515fe09a7a9ea133209b29936893cf062d39f988fe7b2724d97ba36baef\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IUserPositions.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"./IStrategyMap.sol\\\";\\n\\ninterface IUserPositions {\\n    // ##### Structs\\n    struct TokenMovement {\\n        address token;\\n        uint256 amount;\\n    }\\n\\n    struct StrategyRecord {\\n        uint256 strategyId;\\n        uint256 timestamp;\\n    }\\n    struct WithdrawAllAndClaimResponse {\\n        uint256[] tokenAmounts;\\n        uint256 ethWithdrawn;\\n        uint256 ethClaimed;\\n        uint256 biosClaimed;\\n    }\\n\\n    // ##### Events\\n    event EnterStrategy(uint256 indexed strategyId, address indexed user, uint256 amount);\\n    event ExitStrategy(uint256 indexed strategyId, address indexed user, uint256 tokenBurned);\\n    event Deposit(address indexed user, address[] tokens, uint256[] tokenAmounts, uint256 ethAmount);\\n    event Pause(bool isPaused);\\n\\n    /**\\n     *\\n     *\\n     *\\n     * user cycle\\n     *\\n     *\\n     *\\n     **/\\n\\n    /**\\n     * @notice User is allowed to deposit whitelisted tokens\\n     * @param depositor Address of the account depositing\\n     * @param tokens Array of token the token addresses\\n     * @param amounts Array of token amounts\\n     * @param ethAmount The amount of ETH sent with the deposit\\n     * @param migration flag if this is a migration from the old system\\n     **/\\n    function deposit(\\n        address depositor,\\n        address[] memory tokens,\\n        uint256[] memory amounts,\\n        uint256 ethAmount,\\n        bool migration\\n    ) external;\\n\\n    /**\\n     * @notice Adds a user's funds to a strategy to be deployed\\n     * @param strategyId  The strategy to enter\\n     * @param amount Amount of native coin\\n     **/\\n    function enterStrategy(uint256 strategyId, uint256 amount) external;\\n\\n    /**\\n     * @param user The address of the user claiming ETH rewards\\n     * @param strategies An array of ids to claim rewards for\\n     **/\\n    function claimEthRewards(address user, uint256[] calldata strategies) external returns (uint256 ethClaimed);\\n\\n    /**\\n     * @notice Marks a user's funds as withdrawable\\n     * @param strategyId  The strategy to withdrawfrom\\n     * @param amount strategyId amount to burn\\n     **/\\n    function exitStrategy(uint256 strategyId, uint256 amount) external;\\n\\n    /**\\n     * @notice User is allowed to withdraw tokens\\n     * @param recipient The address of the user withdrawing\\n     * @param tokens Array of token the token addresses\\n     * @param amounts Array of token amounts\\n     * @param withdrawWethAsEth Boolean indicating whether should receive WETH balance as ETH\\n     **/\\n    function withdraw(\\n        address recipient,\\n        address[] memory tokens,\\n        uint256[] memory amounts,\\n        bool withdrawWethAsEth\\n    ) external returns (uint256 ethWithdrawn);\\n\\n    /**\\n     * @notice Allows a user to withdraw entire balances of the specified tokens and claim rewards\\n     * @param recipient The address of the user withdrawing tokens\\n     * @param tokens Array of token address that user is exiting positions from\\n     * @param strategies Array of strategy IDs that user is claiming rewards from\\n     * @param withdrawWethAsEth Boolean indicating whether should receive WETH balance as ETH\\n     * @return _withdrawAllAndClaimResponse\\n     * /// WithdrawAllAndClaimResponse.tokenAmounts The amounts of each token being withdrawn\\n     * /// WithdrawAllAndClaimResponse.ethWithdrawn The amount of ETH being withdrawn\\n     * /// WithdrawAllAndClaimResponse.ethClaimed The amount of ETH being claimed from rewards\\n     * /// WithdrawAllAndClaimResponse.biosClaimed The amount of BIOS being claimed from rewards\\n     **/\\n    function withdrawAllAndClaim(\\n        address recipient,\\n        address[] memory tokens,\\n        uint256[] calldata strategies,\\n        bool withdrawWethAsEth\\n    ) external returns (WithdrawAllAndClaimResponse memory _withdrawAllAndClaimResponse);\\n\\n    /**\\n     *\\n     *\\n     *\\n     * getters\\n     *\\n     *\\n     *\\n     **/\\n\\n    /**\\n     * @param asset Address of the ERC20 token contract\\n     * @return The total balance of the asset that is not in the strategy\\n     **/\\n    function totalTokenBalance(address asset) external view returns (uint256);\\n\\n    /**\\n     * @notice Returns the amount that a user has deposited locally, but that isn't in a strategy\\n     * @param asset Address of the ERC20 token contract\\n     * @param account Address of the user account\\n     * @return The amount that a user has deposited locally, but that isn't in the strategy\\n     **/\\n    function userTokenBalance(address asset, address account) external view returns (uint256);\\n\\n    /**\\n     * @param strategyId An id of the strategy\\n     * @dev A passthrough to Strategy1155.totalSupply(strategyId);\\n     **/\\n    function totalStrategyBalance(uint256 strategyId) external view returns (uint256);\\n\\n    /**\\n     * @param account An address of the user\\n     * @param strategyId An id of the strategy\\n     * @dev A passthrough to Strategy1155.balanceOf(account, strategyId)\\n     **/\\n    function userStrategyBalance(address account, uint256 strategyId) external view returns (uint256);\\n\\n    /**\\n     * @notice Returns the amount that a user can use for strategies (local balance + interconnect balance - deployed)\\n     * @param asset Address of the ERC20 token contract\\n     * @param account Address of the user account\\n     **/\\n    function userDeployableBalance(address asset, address account) external view returns (uint256);\\n\\n    /**\\n     * @notice Returns the amount that a user has interconnected\\n     * @param asset Address of the ERC20 token contract\\n     * @param account Address of the user account\\n     **/\\n    function userInterconnectBalance(address asset, address account) external view returns (uint256);\\n\\n    /**\\n     *\\n     *\\n     *\\n     * interconnections\\n     *\\n     *\\n     *\\n     **/\\n\\n    function _remoteStrategyExecution(\\n        uint256 strategyID,\\n        address user,\\n        address token,\\n        uint256 amount,\\n        bool enterStrat // true to enter, false to exit\\n    ) external;\\n\\n    /**\\n     * @notice Updates a user's local balance. Only called by controlled contracts or relayer\\n     * @param assets list of tokens to update\\n     * @param account user\\n     * @param amounts list of amounts to update\\n     **/\\n    function updateUserTokenBalances(\\n        address[] calldata assets,\\n        address account,\\n        uint256[] calldata amounts,\\n        bool[] memory add\\n    ) external;\\n\\n    /**\\n     * @notice Updates a user's interconnected balance. Only called by controlled contracts or relayer\\n     * @param assets list of tokens to update\\n     * @param account user\\n     * @param amounts list of amounts to update\\n     **/\\n    function updateUserInterconnectBalances(\\n        address[] memory assets,\\n        address account,\\n        uint256[] memory amounts,\\n        bool[] memory add\\n    ) external;\\n}\\n\",\"keccak256\":\"0xcb4fd1f1d39f045138f9e727a31da165f99d212b4ef7a8cd0e28f3c7a83c8081\",\"license\":\"GPL-2.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061292b806100206000396000f3fe608060405234801561001057600080fd5b50600436106101a15760003560e01c806306fdde03146101a6578063095ea7b3146101c45780630f0a1c6f146101e757806318160ddd1461020d57806323b872dd146102235780632a45438714610236578063313ce5671461024b57806332eb76ed1461025a578063337993cb1461028d57806339509351146102a25780633f98a191146102b557806340c10f19146102c8578063439fab91146102db57806352291e1c146102ee5780635749fd5714610301578063610d7ea71461030957806370a0823114610331578063755be92d1461034457806395d89b41146103575780639dc29fac1461035f578063a457c2d714610372578063a7fc7a0714610385578063a9059cbb14610398578063ad68ebf7146103ab578063add63359146103be578063b429afeb146103d1578063c373a6c3146103fd578063c6be05a514610405578063c836ef2e14610418578063c866cd3f14610423578063dabd9a0a14610436578063dd62ed3e14610449578063e94b0dd21461045c578063f7a54c801461046f578063fabe384714610496575b600080fd5b6101ae6104c0565b6040516101bb91906124cb565b60405180910390f35b6101d76101d23660046121bd565b610552565b60405190151581526020016101bb565b600054610200906201000090046001600160a01b031681565b6040516101bb9190612442565b61021561056c565b6040519081526020016101bb565b6101d761023136600461217d565b61057c565b6102496102443660046121e8565b6105a0565b005b604051601281526020016101bb565b606854604080516001600160a01b0383168152600160a01b90920463ffffffff16602083015230908201526060016101bb565b610295610751565b6040516101bb9190612456565b6101d76102b03660046121bd565b6107b2565b6102496102c33660046123d4565b6107f1565b6102496102d63660046121bd565b61091f565b6102496102e936600461224d565b6109a3565b6102496102fc36600461210d565b610ab2565b610215610bf0565b61031c6103173660046123ef565b610c55565b604080519283526020830191909152016101bb565b61021561033f36600461210d565b610d15565b6102496103523660046123ef565b610d33565b6101ae610d7c565b61024961036d3660046121bd565b610d8b565b6101d76103803660046121bd565b610dff565b61024961039336600461210d565b610e91565b6101d76103a63660046121bd565b6110cc565b6102496103b93660046121bd565b6110da565b6102496103cc366004612428565b611200565b6101d76103df36600461210d565b6001600160a01b031660009081526001602052604090205460ff1690565b610215611342565b6102496104133660046123d4565b61137f565b606a54606d5461031c565b61031c6104313660046123ef565b6114fa565b610249610444366004612407565b6115ab565b610215610457366004612145565b611701565b61020061046a3660046123ef565b61172c565b6069546040805163ffffffff8084168252600160201b9093049092166020830152016101bb565b606754604080516001600160801b038084168252600160801b9093049092166020830152016101bb565b6060603880546104cf906127d0565b80601f01602080910402602001604051908101604052809291908181526020018280546104fb906127d0565b80156105485780601f1061051d57610100808354040283529160200191610548565b820191906000526020600020905b81548152906001019060200180831161052b57829003601f168201915b5050505050905090565b600033610560818585611756565b60019150505b92915050565b600061057760375490565b905090565b60003361058a85828561187a565b6105958585856118f4565b506001949350505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916105d591906004016124a3565b60206040518083038186803b1580156105ed57600080fd5b505afa158015610601573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106259190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016106509190612442565b60206040518083038186803b15801561066857600080fd5b505afa15801561067c573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106a0919061222d565b6106c55760405162461bcd60e51b81526004016106bc90612543565b60405180910390fd5b6068805463ffffffff8416600160a01b026001600160c01b03199091166001600160a01b038616171790556106fd6020820182612428565b6069805463ffffffff191663ffffffff929092169190911790556107276040820160208301612428565b6069805463ffffffff92909216600160201b0263ffffffff60201b19909216919091179055505050565b6060600280548060200260200160405190810160405280929190818152602001828054801561054857602002820191906000526020600020905b81546001600160a01b0316815260019091019060200180831161078b575050505050905090565b3360008181526036602090815260408083206001600160a01b038716845290915281205490919061056090829086906107ec9087906126cc565b611756565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161082691906004016124a3565b60206040518083038186803b15801561083e57600080fd5b505afa158015610852573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108769190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016108a19190612442565b60206040518083038186803b1580156108b957600080fd5b505afa1580156108cd573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108f1919061222d565b61090d5760405162461bcd60e51b81526004016106bc90612543565b80606761091a8282612866565b505050565b3360009081526001602052604090205460ff1661094e5760405162461bcd60e51b81526004016106bc90612591565b606d548015610999578082111561097c576109728361096d83856127b9565b611ab0565b6000606d55505050565b81606d600082825461098e91906127b9565b9091555061091a9050565b61091a8383611ab0565b600054610100900460ff166109be5760005460ff16156109c2565b303b155b610a255760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b60648201526084016106bc565b600054610100900460ff16158015610a47576000805461ffff19166101011790555b600080808080610a59878901896122b9565b94509450945094509450610a6d8585611b7d565b610a778383611bae565b80516020909101516001600160801b03908116600160801b0291161760675550508215915061091a9050576000805461ff0019169055505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610ae791906004016124a3565b60206040518083038186803b158015610aff57600080fd5b505afa158015610b13573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b379190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401610b629190612442565b60206040518083038186803b158015610b7a57600080fd5b505afa158015610b8e573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610bb2919061222d565b610bce5760405162461bcd60e51b81526004016106bc90612543565b606880546001600160a01b0319166001600160a01b0392909216919091179055565b3360009081526001602052604081205460ff16610c1f5760405162461bcd60e51b81526004016106bc90612591565b606b54610c3d90600160801b90046001600160801b03166002612704565b606b80546001600160801b0390811690915516919050565b33600090815260016020526040812054819060ff16610c865760405162461bcd60e51b81526004016106bc90612591565b8291508290506000606a541315610cd357610cab83610ca6606a54611d03565b611d1f565b9150610cb782846127b9565b606a6000828254610cc89190612752565b90915550610d109050565b6000606a541215610d1057610ced83610ca6606a54611d03565b9050610cf981846127b9565b606a6000828254610d0a9190612660565b90915550505b915091565b6001600160a01b038116600090815260356020526040812054610566565b3360009081526001602052604090205460ff16610d625760405162461bcd60e51b81526004016106bc90612591565b80606c6000828254610d7491906126cc565b909155505050565b6060603980546104cf906127d0565b3360009081526001602052604090205460ff16610dba5760405162461bcd60e51b81526004016106bc90612591565b6000610dc583610d15565b905080821115610df557610dd981836127b9565b606d6000828254610dea91906126cc565b925050819055508091505b61091a8383611d42565b3360008181526036602090815260408083206001600160a01b038716845290915281205490919083811015610e845760405162461bcd60e51b815260206004820152602560248201527f45524332303a2064656372656173656420616c6c6f77616e63652062656c6f77604482015264207a65726f60d81b60648201526084016106bc565b6105958286868403611756565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610ec691906004016124a3565b60206040518083038186803b158015610ede57600080fd5b505afa158015610ef2573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f169190612129565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b8152600401610f419190612442565b60206040518083038186803b158015610f5957600080fd5b505afa158015610f6d573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f91919061222d565b610ff05760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b60648201526084016106bc565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b600254811015611076576002818154811061104257634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561106657600191505b61106f81612805565b9050611017565b50806110c857600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b6000336105608185856118f4565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161110f91906004016124a3565b60206040518083038186803b15801561112757600080fd5b505afa15801561113b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061115f9190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161118a9190612442565b60206040518083038186803b1580156111a257600080fd5b505afa1580156111b6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906111da919061222d565b6111f65760405162461bcd60e51b81526004016106bc90612543565b6110c88282611ab0565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161123591906004016124a3565b60206040518083038186803b15801561124d57600080fd5b505afa158015611261573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906112859190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016112b09190612442565b60206040518083038186803b1580156112c857600080fd5b505afa1580156112dc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611300919061222d565b61131c5760405162461bcd60e51b81526004016106bc90612543565b6068805463ffffffff909216600160a01b0263ffffffff60a01b19909216919091179055565b3360009081526001602052604081205460ff166113715760405162461bcd60e51b81526004016106bc90612591565b606c549050606c6000905590565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916113b491906004016124a3565b60206040518083038186803b1580156113cc57600080fd5b505afa1580156113e0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906114049190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161142f9190612442565b60206040518083038186803b15801561144757600080fd5b505afa15801561145b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061147f919061222d565b61149b5760405162461bcd60e51b81526004016106bc90612543565b6114a86020820182612428565b6069805463ffffffff191663ffffffff929092169190911790556114d26040820160208301612428565b6069805463ffffffff92909216600160201b0263ffffffff60201b1990921691909117905550565b33600090815260016020526040812054819060ff1661152b5760405162461bcd60e51b81526004016106bc90612591565b606b548392506001600160801b031615610d1057606b546115569084906001600160801b0316611d1f565b915061156282846127b9565b606b805491925082916000906115829084906001600160801b0316612791565b92506101000a8154816001600160801b0302191690836001600160801b03160217905550915091565b3360009081526001602052604090205460ff166115da5760405162461bcd60e51b81526004016106bc90612591565b80821115611608576115ec81836127b9565b606a60008282546115fd9190612660565b909155506116319050565b808210156116315761161a82826127b9565b606a600082825461162b9190612752565b90915550505b6067546000906001600160801b03600160801b8204811691611654911684612733565b61165e91906126e4565b9050600061166c82846127b9565b606b8054919250829160009061168c9084906001600160801b03166126a1565b92506101000a8154816001600160801b0302191690836001600160801b0316021790555081606b60000160108282829054906101000a90046001600160801b03166116d791906126a1565b92506101000a8154816001600160801b0302191690836001600160801b0316021790555050505050565b6001600160a01b03918216600090815260366020908152604080832093909416825291909152205490565b6002818154811061173c57600080fd5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b0383166117b85760405162461bcd60e51b8152602060048201526024808201527f45524332303a20617070726f76652066726f6d20746865207a65726f206164646044820152637265737360e01b60648201526084016106bc565b6001600160a01b0382166118195760405162461bcd60e51b815260206004820152602260248201527f45524332303a20617070726f766520746f20746865207a65726f206164647265604482015261737360f01b60648201526084016106bc565b6001600160a01b0383811660008181526036602090815260408083209487168084529482529182902085905590518481527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925910160405180910390a3505050565b60006118868484611701565b905060001981146118ee57818110156118e15760405162461bcd60e51b815260206004820152601d60248201527f45524332303a20696e73756666696369656e7420616c6c6f77616e636500000060448201526064016106bc565b6118ee8484848403611756565b50505050565b6001600160a01b0383166119585760405162461bcd60e51b815260206004820152602560248201527f45524332303a207472616e736665722066726f6d20746865207a65726f206164604482015264647265737360d81b60648201526084016106bc565b6001600160a01b0382166119ba5760405162461bcd60e51b815260206004820152602360248201527f45524332303a207472616e7366657220746f20746865207a65726f206164647260448201526265737360e81b60648201526084016106bc565b6001600160a01b03831660009081526035602052604090205481811015611a325760405162461bcd60e51b815260206004820152602660248201527f45524332303a207472616e7366657220616d6f756e7420657863656564732062604482015265616c616e636560d01b60648201526084016106bc565b6001600160a01b03808516600090815260356020526040808220858503905591851681529081208054849290611a699084906126cc565b92505081905550826001600160a01b0316846001600160a01b03166000805160206128d683398151915284604051611aa391815260200190565b60405180910390a36118ee565b6001600160a01b038216611b065760405162461bcd60e51b815260206004820152601f60248201527f45524332303a206d696e7420746f20746865207a65726f20616464726573730060448201526064016106bc565b8060376000828254611b1891906126cc565b90915550506001600160a01b03821660009081526035602052604081208054839290611b459084906126cc565b90915550506040518181526001600160a01b038316906000906000805160206128d68339815191529060200160405180910390a35050565b600054610100900460ff16611ba45760405162461bcd60e51b81526004016106bc906125e5565b6110c88282611e7e565b600054610100900460ff16611bd55760405162461bcd60e51b81526004016106bc906125e5565b6001600160a01b038116611bfb5760405162461bcd60e51b81526004016106bc9061251e565b60005b8251811015611c715760006001600160a01b0316838281518110611c3257634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b03161415611c615760405162461bcd60e51b81526004016106bc9061251e565b611c6a81612805565b9050611bfe565b5060005b8251811015611ce5576001806000858481518110611ca357634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff1916911515919091179055611cde81612805565b9050611c75565b508151611cf9906002906020850190611f1d565b506110c881611ecc565b600080821215611d1b57611d1682612820565b610566565b5090565b600082821115611d3157506000610566565b611d3b82846127b9565b9392505050565b6001600160a01b038216611da25760405162461bcd60e51b815260206004820152602160248201527f45524332303a206275726e2066726f6d20746865207a65726f206164647265736044820152607360f81b60648201526084016106bc565b6001600160a01b03821660009081526035602052604090205481811015611e165760405162461bcd60e51b815260206004820152602260248201527f45524332303a206275726e20616d6f756e7420657863656564732062616c616e604482015261636560f01b60648201526084016106bc565b6001600160a01b0383166000908152603560205260408120838303905560378054849290611e459084906127b9565b90915550506040518281526000906001600160a01b038516906000805160206128d68339815191529060200160405180910390a3505050565b600054610100900460ff16611ea55760405162461bcd60e51b81526004016106bc906125e5565b8151611eb8906038906020850190611f7e565b50805161091a906039906020840190611f7e565b600054610100900460ff16611ef35760405162461bcd60e51b81526004016106bc906125e5565b600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b828054828255906000526020600020908101928215611f72579160200282015b82811115611f7257825182546001600160a01b0319166001600160a01b03909116178255602090920191600190910190611f3d565b50611d1b929150611ff2565b828054611f8a906127d0565b90600052602060002090601f016020900481019282611fac5760008555611f72565b82601f10611fc557805160ff1916838001178555611f72565b82800160010185558215611f72579182015b82811115611f72578251825591602001919060010190611fd7565b5b80821115611d1b5760008155600101611ff3565b8035612012816128a8565b919050565b600082601f830112612027578081fd5b81356001600160401b0381111561204057612040612850565b612053601f8201601f1916602001612630565b818152846020838601011115612067578283fd5b816020850160208301379081016020019190915292915050565b600060408284031215612092578081fd5b50919050565b6000604082840312156120a9578081fd5b604080519081016001600160401b03811182821017156120cb576120cb612850565b60405290508082356120dc816128c0565b815260208301356120ec816128c0565b6020919091015292915050565b803563ffffffff8116811461201257600080fd5b60006020828403121561211e578081fd5b8135611d3b816128a8565b60006020828403121561213a578081fd5b8151611d3b816128a8565b60008060408385031215612157578081fd5b8235612162816128a8565b91506020830135612172816128a8565b809150509250929050565b600080600060608486031215612191578081fd5b833561219c816128a8565b925060208401356121ac816128a8565b929592945050506040919091013590565b600080604083850312156121cf578182fd5b82356121da816128a8565b946020939093013593505050565b6000806000608084860312156121fc578283fd5b8335612207816128a8565b9250612215602085016120f9565b91506122248560408601612081565b90509250925092565b60006020828403121561223e578081fd5b81518015158114611d3b578182fd5b6000806020838503121561225f578182fd5b82356001600160401b0380821115612275578384fd5b818501915085601f830112612288578384fd5b813581811115612296578485fd5b8660208285010111156122a7578485fd5b60209290920196919550909350505050565b600080600080600060c086880312156122d0578081fd5b85356001600160401b03808211156122e6578283fd5b6122f289838a01612017565b9650602091508188013581811115612308578384fd5b6123148a828b01612017565b965050604088013581811115612328578384fd5b8801601f81018a13612338578384fd5b80358281111561234a5761234a612850565b8060051b925061235b848401612630565b8181528481019083860185850187018e1015612375578788fd5b8795505b838610156123a3578035945061238e856128a8565b84835260019590950194918601918601612379565b508098505050505050506123b960608701612007565b91506123c88760808801612098565b90509295509295909350565b6000604082840312156123e5578081fd5b611d3b8383612081565b600060208284031215612400578081fd5b5035919050565b60008060408385031215612419578182fd5b50508035926020909101359150565b600060208284031215612439578081fd5b611d3b826120f9565b6001600160a01b0391909116815260200190565b6020808252825182820181905260009190848201906040850190845b818110156124975783516001600160a01b031683529284019291840191600101612472565b50909695505050505050565b60208101600e83106124c557634e487b7160e01b600052602160045260246000fd5b91905290565b6000602080835283518082850152825b818110156124f7578581018301518582016040015282016124db565b818111156125085783604083870101525b50601f01601f1916929092016040019392505050565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b6020808252602e908201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060408201526d34b9903737ba1036b0b730b3b2b960911b606082015260800190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b6020808252602b908201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960408201526a6e697469616c697a696e6760a81b606082015260800190565b604051601f8201601f191681016001600160401b038111828210171561265857612658612850565b604052919050565b600080821280156001600160ff1b03849003851316156126825761268261283a565b600160ff1b839003841281161561269b5761269b61283a565b50500190565b60006001600160801b038281168482168083038211156126c3576126c361283a565b01949350505050565b600082198211156126df576126df61283a565b500190565b6000826126ff57634e487b7160e01b81526012600452602481fd5b500490565b60006001600160801b038281168482168115158284048211161561272a5761272a61283a565b02949350505050565b600081600019048311821515161561274d5761274d61283a565b500290565b60008083128015600160ff1b8501841216156127705761277061283a565b6001600160ff1b038401831381161561278b5761278b61283a565b50500390565b60006001600160801b03838116908316818110156127b1576127b161283a565b039392505050565b6000828210156127cb576127cb61283a565b500390565b600181811c908216806127e457607f821691505b6020821081141561209257634e487b7160e01b600052602260045260246000fd5b60006000198214156128195761281961283a565b5060010190565b6000600160ff1b8214156128365761283661283a565b0390565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b8135612871816128c0565b81546001600160801b03199081166001600160801b03929092169182178355602084013561289e816128c0565b60801b1617905550565b6001600160a01b03811681146128bd57600080fd5b50565b6001600160801b03811681146128bd57600080fdfeddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3efa2646970667358221220b0f2ff5c4e5ea2ce9eec19a56d6bd8260582945440b7774b244b9c280fb917ff64736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101a15760003560e01c806306fdde03146101a6578063095ea7b3146101c45780630f0a1c6f146101e757806318160ddd1461020d57806323b872dd146102235780632a45438714610236578063313ce5671461024b57806332eb76ed1461025a578063337993cb1461028d57806339509351146102a25780633f98a191146102b557806340c10f19146102c8578063439fab91146102db57806352291e1c146102ee5780635749fd5714610301578063610d7ea71461030957806370a0823114610331578063755be92d1461034457806395d89b41146103575780639dc29fac1461035f578063a457c2d714610372578063a7fc7a0714610385578063a9059cbb14610398578063ad68ebf7146103ab578063add63359146103be578063b429afeb146103d1578063c373a6c3146103fd578063c6be05a514610405578063c836ef2e14610418578063c866cd3f14610423578063dabd9a0a14610436578063dd62ed3e14610449578063e94b0dd21461045c578063f7a54c801461046f578063fabe384714610496575b600080fd5b6101ae6104c0565b6040516101bb91906124cb565b60405180910390f35b6101d76101d23660046121bd565b610552565b60405190151581526020016101bb565b600054610200906201000090046001600160a01b031681565b6040516101bb9190612442565b61021561056c565b6040519081526020016101bb565b6101d761023136600461217d565b61057c565b6102496102443660046121e8565b6105a0565b005b604051601281526020016101bb565b606854604080516001600160a01b0383168152600160a01b90920463ffffffff16602083015230908201526060016101bb565b610295610751565b6040516101bb9190612456565b6101d76102b03660046121bd565b6107b2565b6102496102c33660046123d4565b6107f1565b6102496102d63660046121bd565b61091f565b6102496102e936600461224d565b6109a3565b6102496102fc36600461210d565b610ab2565b610215610bf0565b61031c6103173660046123ef565b610c55565b604080519283526020830191909152016101bb565b61021561033f36600461210d565b610d15565b6102496103523660046123ef565b610d33565b6101ae610d7c565b61024961036d3660046121bd565b610d8b565b6101d76103803660046121bd565b610dff565b61024961039336600461210d565b610e91565b6101d76103a63660046121bd565b6110cc565b6102496103b93660046121bd565b6110da565b6102496103cc366004612428565b611200565b6101d76103df36600461210d565b6001600160a01b031660009081526001602052604090205460ff1690565b610215611342565b6102496104133660046123d4565b61137f565b606a54606d5461031c565b61031c6104313660046123ef565b6114fa565b610249610444366004612407565b6115ab565b610215610457366004612145565b611701565b61020061046a3660046123ef565b61172c565b6069546040805163ffffffff8084168252600160201b9093049092166020830152016101bb565b606754604080516001600160801b038084168252600160801b9093049092166020830152016101bb565b6060603880546104cf906127d0565b80601f01602080910402602001604051908101604052809291908181526020018280546104fb906127d0565b80156105485780601f1061051d57610100808354040283529160200191610548565b820191906000526020600020905b81548152906001019060200180831161052b57829003601f168201915b5050505050905090565b600033610560818585611756565b60019150505b92915050565b600061057760375490565b905090565b60003361058a85828561187a565b6105958585856118f4565b506001949350505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916105d591906004016124a3565b60206040518083038186803b1580156105ed57600080fd5b505afa158015610601573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106259190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016106509190612442565b60206040518083038186803b15801561066857600080fd5b505afa15801561067c573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106a0919061222d565b6106c55760405162461bcd60e51b81526004016106bc90612543565b60405180910390fd5b6068805463ffffffff8416600160a01b026001600160c01b03199091166001600160a01b038616171790556106fd6020820182612428565b6069805463ffffffff191663ffffffff929092169190911790556107276040820160208301612428565b6069805463ffffffff92909216600160201b0263ffffffff60201b19909216919091179055505050565b6060600280548060200260200160405190810160405280929190818152602001828054801561054857602002820191906000526020600020905b81546001600160a01b0316815260019091019060200180831161078b575050505050905090565b3360008181526036602090815260408083206001600160a01b038716845290915281205490919061056090829086906107ec9087906126cc565b611756565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161082691906004016124a3565b60206040518083038186803b15801561083e57600080fd5b505afa158015610852573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108769190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016108a19190612442565b60206040518083038186803b1580156108b957600080fd5b505afa1580156108cd573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108f1919061222d565b61090d5760405162461bcd60e51b81526004016106bc90612543565b80606761091a8282612866565b505050565b3360009081526001602052604090205460ff1661094e5760405162461bcd60e51b81526004016106bc90612591565b606d548015610999578082111561097c576109728361096d83856127b9565b611ab0565b6000606d55505050565b81606d600082825461098e91906127b9565b9091555061091a9050565b61091a8383611ab0565b600054610100900460ff166109be5760005460ff16156109c2565b303b155b610a255760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b60648201526084016106bc565b600054610100900460ff16158015610a47576000805461ffff19166101011790555b600080808080610a59878901896122b9565b94509450945094509450610a6d8585611b7d565b610a778383611bae565b80516020909101516001600160801b03908116600160801b0291161760675550508215915061091a9050576000805461ff0019169055505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610ae791906004016124a3565b60206040518083038186803b158015610aff57600080fd5b505afa158015610b13573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b379190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401610b629190612442565b60206040518083038186803b158015610b7a57600080fd5b505afa158015610b8e573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610bb2919061222d565b610bce5760405162461bcd60e51b81526004016106bc90612543565b606880546001600160a01b0319166001600160a01b0392909216919091179055565b3360009081526001602052604081205460ff16610c1f5760405162461bcd60e51b81526004016106bc90612591565b606b54610c3d90600160801b90046001600160801b03166002612704565b606b80546001600160801b0390811690915516919050565b33600090815260016020526040812054819060ff16610c865760405162461bcd60e51b81526004016106bc90612591565b8291508290506000606a541315610cd357610cab83610ca6606a54611d03565b611d1f565b9150610cb782846127b9565b606a6000828254610cc89190612752565b90915550610d109050565b6000606a541215610d1057610ced83610ca6606a54611d03565b9050610cf981846127b9565b606a6000828254610d0a9190612660565b90915550505b915091565b6001600160a01b038116600090815260356020526040812054610566565b3360009081526001602052604090205460ff16610d625760405162461bcd60e51b81526004016106bc90612591565b80606c6000828254610d7491906126cc565b909155505050565b6060603980546104cf906127d0565b3360009081526001602052604090205460ff16610dba5760405162461bcd60e51b81526004016106bc90612591565b6000610dc583610d15565b905080821115610df557610dd981836127b9565b606d6000828254610dea91906126cc565b925050819055508091505b61091a8383611d42565b3360008181526036602090815260408083206001600160a01b038716845290915281205490919083811015610e845760405162461bcd60e51b815260206004820152602560248201527f45524332303a2064656372656173656420616c6c6f77616e63652062656c6f77604482015264207a65726f60d81b60648201526084016106bc565b6105958286868403611756565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610ec691906004016124a3565b60206040518083038186803b158015610ede57600080fd5b505afa158015610ef2573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f169190612129565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b8152600401610f419190612442565b60206040518083038186803b158015610f5957600080fd5b505afa158015610f6d573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610f91919061222d565b610ff05760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b60648201526084016106bc565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b600254811015611076576002818154811061104257634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561106657600191505b61106f81612805565b9050611017565b50806110c857600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b6000336105608185856118f4565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161110f91906004016124a3565b60206040518083038186803b15801561112757600080fd5b505afa15801561113b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061115f9190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161118a9190612442565b60206040518083038186803b1580156111a257600080fd5b505afa1580156111b6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906111da919061222d565b6111f65760405162461bcd60e51b81526004016106bc90612543565b6110c88282611ab0565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161123591906004016124a3565b60206040518083038186803b15801561124d57600080fd5b505afa158015611261573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906112859190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016112b09190612442565b60206040518083038186803b1580156112c857600080fd5b505afa1580156112dc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611300919061222d565b61131c5760405162461bcd60e51b81526004016106bc90612543565b6068805463ffffffff909216600160a01b0263ffffffff60a01b19909216919091179055565b3360009081526001602052604081205460ff166113715760405162461bcd60e51b81526004016106bc90612591565b606c549050606c6000905590565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916113b491906004016124a3565b60206040518083038186803b1580156113cc57600080fd5b505afa1580156113e0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906114049190612129565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161142f9190612442565b60206040518083038186803b15801561144757600080fd5b505afa15801561145b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061147f919061222d565b61149b5760405162461bcd60e51b81526004016106bc90612543565b6114a86020820182612428565b6069805463ffffffff191663ffffffff929092169190911790556114d26040820160208301612428565b6069805463ffffffff92909216600160201b0263ffffffff60201b1990921691909117905550565b33600090815260016020526040812054819060ff1661152b5760405162461bcd60e51b81526004016106bc90612591565b606b548392506001600160801b031615610d1057606b546115569084906001600160801b0316611d1f565b915061156282846127b9565b606b805491925082916000906115829084906001600160801b0316612791565b92506101000a8154816001600160801b0302191690836001600160801b03160217905550915091565b3360009081526001602052604090205460ff166115da5760405162461bcd60e51b81526004016106bc90612591565b80821115611608576115ec81836127b9565b606a60008282546115fd9190612660565b909155506116319050565b808210156116315761161a82826127b9565b606a600082825461162b9190612752565b90915550505b6067546000906001600160801b03600160801b8204811691611654911684612733565b61165e91906126e4565b9050600061166c82846127b9565b606b8054919250829160009061168c9084906001600160801b03166126a1565b92506101000a8154816001600160801b0302191690836001600160801b0316021790555081606b60000160108282829054906101000a90046001600160801b03166116d791906126a1565b92506101000a8154816001600160801b0302191690836001600160801b0316021790555050505050565b6001600160a01b03918216600090815260366020908152604080832093909416825291909152205490565b6002818154811061173c57600080fd5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b0383166117b85760405162461bcd60e51b8152602060048201526024808201527f45524332303a20617070726f76652066726f6d20746865207a65726f206164646044820152637265737360e01b60648201526084016106bc565b6001600160a01b0382166118195760405162461bcd60e51b815260206004820152602260248201527f45524332303a20617070726f766520746f20746865207a65726f206164647265604482015261737360f01b60648201526084016106bc565b6001600160a01b0383811660008181526036602090815260408083209487168084529482529182902085905590518481527f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925910160405180910390a3505050565b60006118868484611701565b905060001981146118ee57818110156118e15760405162461bcd60e51b815260206004820152601d60248201527f45524332303a20696e73756666696369656e7420616c6c6f77616e636500000060448201526064016106bc565b6118ee8484848403611756565b50505050565b6001600160a01b0383166119585760405162461bcd60e51b815260206004820152602560248201527f45524332303a207472616e736665722066726f6d20746865207a65726f206164604482015264647265737360d81b60648201526084016106bc565b6001600160a01b0382166119ba5760405162461bcd60e51b815260206004820152602360248201527f45524332303a207472616e7366657220746f20746865207a65726f206164647260448201526265737360e81b60648201526084016106bc565b6001600160a01b03831660009081526035602052604090205481811015611a325760405162461bcd60e51b815260206004820152602660248201527f45524332303a207472616e7366657220616d6f756e7420657863656564732062604482015265616c616e636560d01b60648201526084016106bc565b6001600160a01b03808516600090815260356020526040808220858503905591851681529081208054849290611a699084906126cc565b92505081905550826001600160a01b0316846001600160a01b03166000805160206128d683398151915284604051611aa391815260200190565b60405180910390a36118ee565b6001600160a01b038216611b065760405162461bcd60e51b815260206004820152601f60248201527f45524332303a206d696e7420746f20746865207a65726f20616464726573730060448201526064016106bc565b8060376000828254611b1891906126cc565b90915550506001600160a01b03821660009081526035602052604081208054839290611b459084906126cc565b90915550506040518181526001600160a01b038316906000906000805160206128d68339815191529060200160405180910390a35050565b600054610100900460ff16611ba45760405162461bcd60e51b81526004016106bc906125e5565b6110c88282611e7e565b600054610100900460ff16611bd55760405162461bcd60e51b81526004016106bc906125e5565b6001600160a01b038116611bfb5760405162461bcd60e51b81526004016106bc9061251e565b60005b8251811015611c715760006001600160a01b0316838281518110611c3257634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b03161415611c615760405162461bcd60e51b81526004016106bc9061251e565b611c6a81612805565b9050611bfe565b5060005b8251811015611ce5576001806000858481518110611ca357634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff1916911515919091179055611cde81612805565b9050611c75565b508151611cf9906002906020850190611f1d565b506110c881611ecc565b600080821215611d1b57611d1682612820565b610566565b5090565b600082821115611d3157506000610566565b611d3b82846127b9565b9392505050565b6001600160a01b038216611da25760405162461bcd60e51b815260206004820152602160248201527f45524332303a206275726e2066726f6d20746865207a65726f206164647265736044820152607360f81b60648201526084016106bc565b6001600160a01b03821660009081526035602052604090205481811015611e165760405162461bcd60e51b815260206004820152602260248201527f45524332303a206275726e20616d6f756e7420657863656564732062616c616e604482015261636560f01b60648201526084016106bc565b6001600160a01b0383166000908152603560205260408120838303905560378054849290611e459084906127b9565b90915550506040518281526000906001600160a01b038516906000805160206128d68339815191529060200160405180910390a3505050565b600054610100900460ff16611ea55760405162461bcd60e51b81526004016106bc906125e5565b8151611eb8906038906020850190611f7e565b50805161091a906039906020840190611f7e565b600054610100900460ff16611ef35760405162461bcd60e51b81526004016106bc906125e5565b600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b828054828255906000526020600020908101928215611f72579160200282015b82811115611f7257825182546001600160a01b0319166001600160a01b03909116178255602090920191600190910190611f3d565b50611d1b929150611ff2565b828054611f8a906127d0565b90600052602060002090601f016020900481019282611fac5760008555611f72565b82601f10611fc557805160ff1916838001178555611f72565b82800160010185558215611f72579182015b82811115611f72578251825591602001919060010190611fd7565b5b80821115611d1b5760008155600101611ff3565b8035612012816128a8565b919050565b600082601f830112612027578081fd5b81356001600160401b0381111561204057612040612850565b612053601f8201601f1916602001612630565b818152846020838601011115612067578283fd5b816020850160208301379081016020019190915292915050565b600060408284031215612092578081fd5b50919050565b6000604082840312156120a9578081fd5b604080519081016001600160401b03811182821017156120cb576120cb612850565b60405290508082356120dc816128c0565b815260208301356120ec816128c0565b6020919091015292915050565b803563ffffffff8116811461201257600080fd5b60006020828403121561211e578081fd5b8135611d3b816128a8565b60006020828403121561213a578081fd5b8151611d3b816128a8565b60008060408385031215612157578081fd5b8235612162816128a8565b91506020830135612172816128a8565b809150509250929050565b600080600060608486031215612191578081fd5b833561219c816128a8565b925060208401356121ac816128a8565b929592945050506040919091013590565b600080604083850312156121cf578182fd5b82356121da816128a8565b946020939093013593505050565b6000806000608084860312156121fc578283fd5b8335612207816128a8565b9250612215602085016120f9565b91506122248560408601612081565b90509250925092565b60006020828403121561223e578081fd5b81518015158114611d3b578182fd5b6000806020838503121561225f578182fd5b82356001600160401b0380821115612275578384fd5b818501915085601f830112612288578384fd5b813581811115612296578485fd5b8660208285010111156122a7578485fd5b60209290920196919550909350505050565b600080600080600060c086880312156122d0578081fd5b85356001600160401b03808211156122e6578283fd5b6122f289838a01612017565b9650602091508188013581811115612308578384fd5b6123148a828b01612017565b965050604088013581811115612328578384fd5b8801601f81018a13612338578384fd5b80358281111561234a5761234a612850565b8060051b925061235b848401612630565b8181528481019083860185850187018e1015612375578788fd5b8795505b838610156123a3578035945061238e856128a8565b84835260019590950194918601918601612379565b508098505050505050506123b960608701612007565b91506123c88760808801612098565b90509295509295909350565b6000604082840312156123e5578081fd5b611d3b8383612081565b600060208284031215612400578081fd5b5035919050565b60008060408385031215612419578182fd5b50508035926020909101359150565b600060208284031215612439578081fd5b611d3b826120f9565b6001600160a01b0391909116815260200190565b6020808252825182820181905260009190848201906040850190845b818110156124975783516001600160a01b031683529284019291840191600101612472565b50909695505050505050565b60208101600e83106124c557634e487b7160e01b600052602160045260246000fd5b91905290565b6000602080835283518082850152825b818110156124f7578581018301518582016040015282016124db565b818111156125085783604083870101525b50601f01601f1916929092016040019392505050565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b6020808252602e908201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060408201526d34b9903737ba1036b0b730b3b2b960911b606082015260800190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b6020808252602b908201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960408201526a6e697469616c697a696e6760a81b606082015260800190565b604051601f8201601f191681016001600160401b038111828210171561265857612658612850565b604052919050565b600080821280156001600160ff1b03849003851316156126825761268261283a565b600160ff1b839003841281161561269b5761269b61283a565b50500190565b60006001600160801b038281168482168083038211156126c3576126c361283a565b01949350505050565b600082198211156126df576126df61283a565b500190565b6000826126ff57634e487b7160e01b81526012600452602481fd5b500490565b60006001600160801b038281168482168115158284048211161561272a5761272a61283a565b02949350505050565b600081600019048311821515161561274d5761274d61283a565b500290565b60008083128015600160ff1b8501841216156127705761277061283a565b6001600160ff1b038401831381161561278b5761278b61283a565b50500390565b60006001600160801b03838116908316818110156127b1576127b161283a565b039392505050565b6000828210156127cb576127cb61283a565b500390565b600181811c908216806127e457607f821691505b6020821081141561209257634e487b7160e01b600052602260045260246000fd5b60006000198214156128195761281961283a565b5060010190565b6000600160ff1b8214156128365761283661283a565b0390565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b8135612871816128c0565b81546001600160801b03199081166001600160801b03929092169182178355602084013561289e816128c0565b60801b1617905550565b6001600160a01b03811681146128bd57600080fd5b50565b6001600160801b03811681146128bd57600080fdfeddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3efa2646970667358221220b0f2ff5c4e5ea2ce9eec19a56d6bd8260582945440b7774b244b9c280fb917ff64736f6c63430008040033",
+  "devdoc": {
+    "details": "This contract allows YieldManager and UserPositions to sustain synthetic and undelying flow presented below: Conventions: x - hedge percent, y = 1 - x, z = 1 + x, n/m ≡ n [underlying]/ m [synthetic] n/m ∈ account123 means that account123 has n undelying and m synthetic at it's balance ● User calls enterStrategy: x/x goes to hedge pool, y/0 goes to actual strategy, 0/y goes to kernel, -1/0 goes to user     BALANCES: x/x ∈ hedge pool, y/0 ∈ actual strategy, 0/y ∈ kernel, -1/0 ∈ user ... ● User calls withdraw, kernel has no drifting money: swap synthetic for underlying via hedge pool: -1/1 goes to hedge pool, 0/0 goes to actual strategy, 0/-1 goes to kernel, 1/0 goes to user     BALANCES: -y/z ∈ hedge pool, y/0 ∈ actual strategy, 0/-x ∈ kernel, 0/0 ∈ user ● Admin calls YieldManager::deploy(), part 1: withdraw y/0 from the actual strategy and swap underlying for synthetic via hedge pool: y/-y goes to hedge pool, -y/0 goes to actual strategy, 0/y goes to kernel     BALANCES: 0/2 ∈ hedge pool*x, 0/0 ∈ actual strategy, 0/y-x ∈ kernel ● Admin calls YieldManager::deploy(), part 2: withdraw 0/2*x from the hedge pool, 0/2*x goes to kernel     BALANCES: 0/0 ∈ hedge pool, 0/1 ∈ kernel*",
+    "kind": "dev",
+    "methods": {
+      "adjustLiquidityAccordingToUnderlyingDebt(uint256)": {
+        "details": "When we execute UserPositions._findMoney -> SwapManager.gentleSwapExactIn for x synETH: 1) If received x ETH: do not change debt 2) Else if we received x + y ETH: debt -= y 3) Else if we received x - y ETH: debt += y In order to pay this debt before deploy to hedgeIntegration we should adjust deposit amount For example we want to provide z liquidity to hedge pool and we have y underlying debt (z > y): 1) If y == 0:          underlyingDeposit = z          syntheticDeposit = z 2) Else if y > 0:          underlyingDeposit = z - y          syntheticDeposit = z 3) Else if y < 0:          underlyingDeposit = z          syntheticDeposit = z - y*"
+      },
+      "allowance(address,address)": {
+        "details": "See {IERC20-allowance}."
+      },
+      "approve(address,uint256)": {
+        "details": "See {IERC20-approve}. NOTE: If `amount` is the maximum `uint256`, the allowance is not updated on `transferFrom`. This is semantically equivalent to an infinite approval. Requirements: - `spender` cannot be the zero address."
+      },
+      "changePoolDebt(uint256,uint256)": {
+        "details": "After using hedge pool for deploy we will earn 2 debts: 1) Underlying: y = swap(synthetic, underlying, x), y != x 2) StrategiesDebt:     a) SD.swapBackSynthetic: underlying amount holded by actual strategy,         we have to withdraw that amount from integrations and swap it back for synthetic     b) SD.withdrawSynthetic: synthetic amount deposited earlier to the synthetic pool as \"hedge percent\",         we have to withdraw it from the pool*"
+      },
+      "decimals()": {
+        "details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless this function is overridden; NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
+      },
+      "decreaseAllowance(address,uint256)": {
+        "details": "Atomically decreases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`."
+      },
+      "distributeAccordingToStrategiesDebt(uint256)": {
+        "details": "When we perform negative deploy we have to pay our debts to synthetic pool if have any"
+      },
+      "getAndDeleteDelayedRedemptionOfSynthetic()": {
+        "details": "After perfoming delayed swap in YieldManager::deploy() function (check this.increaseRedemptionOfSynthetic description)"
+      },
+      "getAndDeleteStrategiesPoolDebt()": {
+        "details": "Conventions: x - hedge percent, y = 1 - x, z = 1 + x, n/m ≡ (n [underlying]/ m [synthetic]) n/m ∈ account123 means that account123 has n undelying and m synthetic at it's balance ● User calls enterStrategy: x/x goes to hedge pool, y/0 goes to actual strategy, 0/y goes to kernel, -1/0 goes to user     BALANCES: x/x ∈ hedge pool, y/0 ∈ actual strategy, 0/y ∈ kernel, -1/0 ∈ user ... ● User calls withdraw, kernel has no drifting money: swap synthetic for underlying via hedge pool: -1/1 goes to hedge pool, 0/0 goes to actual strategy, 0/-1 goes to kernel, 1/0 goes to user     BALANCES: -y/z ∈ hedge pool, y/0 ∈ actual strategy, 0/-x ∈ kernel, 0/0 ∈ user ● Admin calls YieldManager::deploy(), part 1: withdraw y/0 from the actual strategy and swap underlying for synthetic via hedge pool: y/-y goes to hedge pool, -y/0 goes to actual strategy, 0/y goes to kernel     BALANCES: 0/2 ∈ hedge pool*x, 0/0 ∈ actual strategy, 0/y-x ∈ kernel ● Admin calls YieldManager::deploy(), part 2: withdraw 0/2*x from the hedge pool, 0/2*x goes to kernel     BALANCES: 0/0 ∈ hedge pool, 0/1 ∈ kernel 0/1 kernel will hold until next enterStrategy in order to don't do unnecessary burn(kernel, x), mint(kernel, x) We increase strategiesDebt.withdrawSynthetic by x, but at the last step pool will has 0/2*x, that is why we multiplystrategiesDebt.withdrawSynthetic by 2 below*"
+      },
+      "getHedgeDeployArgs()": {
+        "details": "Get info about hedgeIntegration for deploy (check YieldManager.deploy)"
+      },
+      "getPoolLimit()": {
+        "details": "Get info about limit ratio for synthetic pool (check UserPositions._findMoney) Ratio must take decimals into account, so if desired pool ratio is x:y and tokens decimals is x:18 and y:6 then poolRatioLimit should be x*1e18:y*1e6*"
+      },
+      "increaseAllowance(address,uint256)": {
+        "details": "Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address."
+      },
+      "increaseRedemptionOfSynthetic(uint256)": {
+        "details": "When we use hedge pool when user withdraws his funds, we earn strategies debt and negative deployAmount This debt can be paid two ways: 1) YieldManager::deploy(): move debt from actual strategy to hedge pool 2) Another user enters any strategy and his deposit can be used to pay this debt Problem: in the 2 option we will increase strategy and therefore will rid of negative deployAmount, without paying debt (due to absence of negative deployAmount we can't relay on 1 option), so user have to pay this debt and swap undelying for synthetic, but in order to make enterStrategy function cheaper we will delay this swap until next deploy function*"
+      },
+      "name()": {
+        "details": "Returns the name of the token."
+      },
+      "setPoolRatioLimit((uint32,uint32))": {
+        "details": "Ratio must take decimals into account, so if desired pool ratio is x:y and tokens decimals is x:18 and y:6 then poolRatioLimit should be x*1e18:y*1e6*"
+      },
+      "symbol()": {
+        "details": "Returns the symbol of the token, usually a shorter version of the name."
+      },
+      "transfer(address,uint256)": {
+        "details": "See {IERC20-transfer}. Requirements: - `to` cannot be the zero address. - the caller must have a balance of at least `amount`."
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}. NOTE: Does not update the allowance if the current allowance is the maximum `uint256`. Requirements: - `from` and `to` cannot be the zero address. - `from` must have a balance of at least `amount`. - the caller must have allowance for ``from``'s tokens of at least `amount`."
+      }
+    },
+    "title": "ERC20 + additional debt accounting for hedge pool",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "migrate(address,uint256)": {
+        "notice": "Migration*"
+      },
+      "mint(address,uint256)": {
+        "notice": "Default ERC20*"
+      },
+      "setupCrvPool(address,uint32,(uint32,uint32))": {
+        "notice": "Admin functions*"
+      }
+    },
+    "notice": "Synthetic pool used to get a credit for user withdrawal",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 702,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 705,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 15187,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "moduleMap",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_contract(IModuleMap)24885"
+      },
+      {
+        "astId": 8512,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_controllers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 8515,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "controllers",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 2052,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "__gap",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_array(t_uint256)50_storage"
+      },
+      {
+        "astId": 847,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_balances",
+        "offset": 0,
+        "slot": "53",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 853,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_allowances",
+        "offset": 0,
+        "slot": "54",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+      },
+      {
+        "astId": 855,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_totalSupply",
+        "offset": 0,
+        "slot": "55",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 857,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_name",
+        "offset": 0,
+        "slot": "56",
+        "type": "t_string_storage"
+      },
+      {
+        "astId": 859,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "_symbol",
+        "offset": 0,
+        "slot": "57",
+        "type": "t_string_storage"
+      },
+      {
+        "astId": 1440,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "__gap",
+        "offset": 0,
+        "slot": "58",
+        "type": "t_array(t_uint256)45_storage"
+      },
+      {
+        "astId": 5407,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "hedgePercent",
+        "offset": 0,
+        "slot": "103",
+        "type": "t_struct(Float)27334_storage"
+      },
+      {
+        "astId": 5409,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "hedgeIntegration",
+        "offset": 0,
+        "slot": "104",
+        "type": "t_address"
+      },
+      {
+        "astId": 5411,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "ammPoolID",
+        "offset": 20,
+        "slot": "104",
+        "type": "t_uint32"
+      },
+      {
+        "astId": 5414,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "poolRatioLimit",
+        "offset": 0,
+        "slot": "105",
+        "type": "t_struct(PoolRatioLimit)27329_storage"
+      },
+      {
+        "astId": 5416,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "underlyingDebt",
+        "offset": 0,
+        "slot": "106",
+        "type": "t_int256"
+      },
+      {
+        "astId": 5419,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "strategiesDebt",
+        "offset": 0,
+        "slot": "107",
+        "type": "t_struct(StrategiesDebt)27339_storage"
+      },
+      {
+        "astId": 5421,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "delayedRedemptionOfSynthetic",
+        "offset": 0,
+        "slot": "108",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 5423,
+        "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+        "label": "kernelBurnDebt",
+        "offset": 0,
+        "slot": "109",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_array(t_uint256)45_storage": {
+        "base": "t_uint256",
+        "encoding": "inplace",
+        "label": "uint256[45]",
+        "numberOfBytes": "1440"
+      },
+      "t_array(t_uint256)50_storage": {
+        "base": "t_uint256",
+        "encoding": "inplace",
+        "label": "uint256[50]",
+        "numberOfBytes": "1600"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(IModuleMap)24885": {
+        "encoding": "inplace",
+        "label": "contract IModuleMap",
+        "numberOfBytes": "20"
+      },
+      "t_int256": {
+        "encoding": "inplace",
+        "label": "int256",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => uint256))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_uint256)"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(Float)27334_storage": {
+        "encoding": "inplace",
+        "label": "struct ISyntheticERC20.Float",
+        "members": [
+          {
+            "astId": 27331,
+            "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+            "label": "numerator",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint128"
+          },
+          {
+            "astId": 27333,
+            "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+            "label": "denominator",
+            "offset": 16,
+            "slot": "0",
+            "type": "t_uint128"
+          }
+        ],
+        "numberOfBytes": "32"
+      },
+      "t_struct(PoolRatioLimit)27329_storage": {
+        "encoding": "inplace",
+        "label": "struct ISyntheticERC20.PoolRatioLimit",
+        "members": [
+          {
+            "astId": 27326,
+            "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+            "label": "underlying",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint32"
+          },
+          {
+            "astId": 27328,
+            "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+            "label": "synthetic",
+            "offset": 4,
+            "slot": "0",
+            "type": "t_uint32"
+          }
+        ],
+        "numberOfBytes": "32"
+      },
+      "t_struct(StrategiesDebt)27339_storage": {
+        "encoding": "inplace",
+        "label": "struct ISyntheticERC20.StrategiesDebt",
+        "members": [
+          {
+            "astId": 27336,
+            "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+            "label": "swapBackSynthetic",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint128"
+          },
+          {
+            "astId": 27338,
+            "contract": "contracts/clones/SyntheticERC20.sol:SyntheticERC20",
+            "label": "withdrawSynthetic",
+            "offset": 16,
+            "slot": "0",
+            "type": "t_uint128"
+          }
+        ],
+        "numberOfBytes": "32"
+      },
+      "t_uint128": {
+        "encoding": "inplace",
+        "label": "uint128",
+        "numberOfBytes": "16"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint32": {
+        "encoding": "inplace",
+        "label": "uint32",
+        "numberOfBytes": "4"
+      }
+    }
+  }
+}

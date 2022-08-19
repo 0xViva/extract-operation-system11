@@ -1,0 +1,102 @@
+{
+  "address": "0xB741A69CBD9e2637066ecB5F710b43da13a6ba6D",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "wrappedTokenAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "contract IWeth9",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "unwrap",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0xdc444c81afd9e09ea0f11dd1f7381783277364de7a20b8f62561cb4055fa4c9d",
+  "receipt": {
+    "to": null,
+    "from": "0x92Ff8B5A4c04b55442Ce1A66CfBC56C0F2843091",
+    "contractAddress": "0xB741A69CBD9e2637066ecB5F710b43da13a6ba6D",
+    "transactionIndex": 134,
+    "gasUsed": "181835",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xbe331bf42d8d0eec4aca0fab68beea869125b6fbe2972efd84a4b0a8b84f1074",
+    "transactionHash": "0xdc444c81afd9e09ea0f11dd1f7381783277364de7a20b8f62561cb4055fa4c9d",
+    "logs": [],
+    "blockNumber": 14606738,
+    "cumulativeGasUsed": "20135515",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+  ],
+  "solcInputHash": "5fbe80ece491a67b7bc251cc17a721b8",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"wrappedTokenAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IWeth9\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"unwrap\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"unwrap(uint256)\":{\"details\":\"transfer token and then unwrap\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/core/Unwrapper.sol\":\"Unwrapper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"contracts/core/Unwrapper.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity 0.8.4;\\n\\nimport \\\"../interfaces/IUnwrapper.sol\\\";\\nimport \\\"../interfaces/IWeth9.sol\\\";\\n\\n// Some native tokens can't be unwrapped by upgradeable contracts...\\n// https://forum.openzeppelin.com/t/msg-sender-transfer-runs-out-of-gas-on-a-payable-upgradeable-proxy-contract/3766\\n\\n// To use this, you simply transfer the wrapped token to the contract then call unwrap for the amount\\n// ONLY use this from another contract where you can do those in the same step, otherwise anyone can unwrap your tokens!\\n\\ncontract Unwrapper is IUnwrapper {\\n    IWeth9 public token;\\n\\n    // make sure token contract can send native token back\\n    receive() external payable {}\\n\\n    constructor(address wrappedTokenAddress) {\\n        require(wrappedTokenAddress != address(0), \\\"bad address\\\");\\n        token = IWeth9(wrappedTokenAddress);\\n    }\\n\\n    /// @dev transfer token and then unwrap\\n    // Allows you to unwrap the token in cases where Istanbul causes gas issues\\n    function unwrap(uint256 amount) external override {\\n        token.withdraw(amount);\\n        (bool sent, ) = msg.sender.call{value: amount}(\\\"\\\");\\n        require(sent, \\\"Failed to send unwrapped token\\\");\\n    }\\n}\\n\",\"keccak256\":\"0x2e8c65945e151616a26ee17b8845c9b9b3afcd375104007269a1ca3d6539ffa3\",\"license\":\"UNLICENSED\"},\"contracts/interfaces/IUnwrapper.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity 0.8.4;\\n\\nimport \\\"../interfaces/IWeth9.sol\\\";\\n\\n// Some native tokens can't be unwrapped by upgradeable contracts...\\n// https://forum.openzeppelin.com/t/msg-sender-transfer-runs-out-of-gas-on-a-payable-upgradeable-proxy-contract/3766\\n\\ninterface IUnwrapper {\\n    /// @dev transfer token and then unwrap\\n    // Allows you to unwrap the token in cases where Istanbul causes gas issues\\n    function unwrap(uint256 amount) external;\\n}\\n\",\"keccak256\":\"0x4fd00a1b6e345a119768eb9d944311413cddc6c726a46142298b87b65e7cc7c0\",\"license\":\"UNLICENSED\"},\"contracts/interfaces/IWeth9.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IWeth9 {\\n    event Deposit(address indexed dst, uint256 wad);\\n    event Withdrawal(address indexed src, uint256 wad);\\n\\n    function deposit() external payable;\\n\\n    /// @param wad The amount of wETH to withdraw into ETH\\n    function withdraw(uint256 wad) external;\\n}\\n\",\"keccak256\":\"0x122212ebb8fe6d0190bf812f36fc33de4c1d0539a6d9ef33e34ad05724fa2056\",\"license\":\"GPL-2.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516102bc3803806102bc83398101604081905261002f9161009c565b6001600160a01b0381166100775760405162461bcd60e51b815260206004820152600b60248201526a626164206164647265737360a81b604482015260640160405180910390fd5b600080546001600160a01b0319166001600160a01b03929092169190911790556100ca565b6000602082840312156100ad578081fd5b81516001600160a01b03811681146100c3578182fd5b9392505050565b6101e3806100d96000396000f3fe60806040526004361061002d5760003560e01c8063de0e9a3e14610039578063fc0c546a1461005b57600080fd5b3661003457005b600080fd5b34801561004557600080fd5b50610059610054366004610195565b610097565b005b34801561006757600080fd5b5060005461007b906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600054604051632e1a7d4d60e01b8152600481018390526001600160a01b0390911690632e1a7d4d90602401600060405180830381600087803b1580156100dd57600080fd5b505af11580156100f1573d6000803e3d6000fd5b50506040516000925033915083908381818185875af1925050503d8060008114610137576040519150601f19603f3d011682016040523d82523d6000602084013e61013c565b606091505b50509050806101915760405162461bcd60e51b815260206004820152601e60248201527f4661696c656420746f2073656e6420756e7772617070656420746f6b656e0000604482015260640160405180910390fd5b5050565b6000602082840312156101a6578081fd5b503591905056fea2646970667358221220c65418a3c8c54a19bc09d2b232e3ebeb22b460341e6220801ddff8672366953164736f6c63430008040033",
+  "deployedBytecode": "0x60806040526004361061002d5760003560e01c8063de0e9a3e14610039578063fc0c546a1461005b57600080fd5b3661003457005b600080fd5b34801561004557600080fd5b50610059610054366004610195565b610097565b005b34801561006757600080fd5b5060005461007b906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600054604051632e1a7d4d60e01b8152600481018390526001600160a01b0390911690632e1a7d4d90602401600060405180830381600087803b1580156100dd57600080fd5b505af11580156100f1573d6000803e3d6000fd5b50506040516000925033915083908381818185875af1925050503d8060008114610137576040519150601f19603f3d011682016040523d82523d6000602084013e61013c565b606091505b50509050806101915760405162461bcd60e51b815260206004820152601e60248201527f4661696c656420746f2073656e6420756e7772617070656420746f6b656e0000604482015260640160405180910390fd5b5050565b6000602082840312156101a6578081fd5b503591905056fea2646970667358221220c65418a3c8c54a19bc09d2b232e3ebeb22b460341e6220801ddff8672366953164736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "unwrap(uint256)": {
+        "details": "transfer token and then unwrap"
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 15296,
+        "contract": "contracts/core/Unwrapper.sol:Unwrapper",
+        "label": "token",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_contract(IWeth9)22664"
+      }
+    ],
+    "types": {
+      "t_contract(IWeth9)22664": {
+        "encoding": "inplace",
+        "label": "contract IWeth9",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}

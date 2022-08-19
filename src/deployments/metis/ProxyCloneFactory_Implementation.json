@@ -1,0 +1,453 @@
+{
+  "address": "0x4127fa6DC21437f9Ba21c91b80f1aA527d02FF08",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "implemetationHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "deployedClone",
+          "type": "address"
+        }
+      ],
+      "name": "CloneDeployed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "implemetationHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "proxyAdmin",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "SetImplementation",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "addController",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "controllers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_implementationHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_initData",
+          "type": "bytes"
+        }
+      ],
+      "name": "deployClone",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "deployedCloneAddress_",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAllControllers",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "currentControllers",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_implementationHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getNextCloneAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "implementations",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "proxyAdmin",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "proxy",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        },
+        {
+          "internalType": "uint96",
+          "name": "salt",
+          "type": "uint96"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "controllers_",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "moduleMap_",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "isController",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "status",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "moduleMap",
+      "outputs": [
+        {
+          "internalType": "contract IModuleMap",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_implementationHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "_proxyAdminAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_proxyAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_implementationAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setImplementation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xc0358d3aa7433d5cd1c75b63cdfe3422c27490c758eaee6b48b266639b88f3de",
+  "receipt": {
+    "to": null,
+    "from": "0xB22031425cbC6F09e3D9a87DC5294DCbe788C2A4",
+    "contractAddress": "0x4127fa6DC21437f9Ba21c91b80f1aA527d02FF08",
+    "transactionIndex": 0,
+    "gasUsed": "1140331",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xe427e2831224c1916a664dc12b22b567d046387463d79060d46567b2225049b1",
+    "transactionHash": "0xc0358d3aa7433d5cd1c75b63cdfe3422c27490c758eaee6b48b266639b88f3de",
+    "logs": [],
+    "blockNumber": 2528446,
+    "cumulativeGasUsed": "1140331",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "4290d5bdb7d07b535aef4dff2e9f9e7b",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"implemetationHash\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"deployedClone\",\"type\":\"address\"}],\"name\":\"CloneDeployed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"implemetationHash\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"proxyAdmin\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"proxy\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"}],\"name\":\"SetImplementation\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"addController\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"controllers\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_implementationHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"_initData\",\"type\":\"bytes\"}],\"name\":\"deployClone\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"deployedCloneAddress_\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAllControllers\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"currentControllers\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_implementationHash\",\"type\":\"bytes32\"}],\"name\":\"getNextCloneAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"implementations\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"proxyAdmin\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"proxy\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"salt\",\"type\":\"uint96\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"controllers_\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"moduleMap_\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"isController\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"status\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"moduleMap\",\"outputs\":[{\"internalType\":\"contract IModuleMap\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_implementationHash\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"_proxyAdminAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_proxyAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_implementationAddress\",\"type\":\"address\"}],\"name\":\"setImplementation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Like EIP-1167, but for upgradeable contracts, meaning that clone will delegate to proxy which will delegate to actual implemenation. Address of the proxy is immutable, but implementation can be changed via API supporting EIP-1967*\",\"kind\":\"dev\",\"methods\":{\"deployClone(bytes32,bytes)\":{\"details\":\"Clones implementation according to EIP1167\",\"params\":{\"_implementationHash\":\"keccak256(implementation name)\",\"_initData\":\"Data for deployed token initialize method\"},\"returns\":{\"deployedCloneAddress_\":\"Address of the deployed clone\"}},\"getNextCloneAddress(bytes32)\":{\"params\":{\"_implementationHash\":\"keccak256(implementation name)\"},\"returns\":{\"_0\":\"Predicted address of the next lp token\"}},\"setImplementation(bytes32,address,address,address)\":{\"params\":{\"_implementationAddress\":\"An address of the implementation\",\"_implementationHash\":\"keccak256(implementation name)\",\"_proxyAddress\":\"An address of the proxy\",\"_proxyAdminAddress\":\"An address of the proxy admin\"}}},\"title\":\"Proxy clones factory\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/clones/ProxyCloneFactory.sol\":\"ProxyCloneFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (proxy/utils/Initializable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../utils/AddressUpgradeable.sol\\\";\\n\\n/**\\n * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\\n * behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an\\n * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\\n * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\\n *\\n * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\\n * possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\\n *\\n * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\\n * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\\n *\\n * [CAUTION]\\n * ====\\n * Avoid leaving a contract uninitialized.\\n *\\n * An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation\\n * contract, which may impact the proxy. To initialize the implementation contract, you can either invoke the\\n * initializer manually, or you can include a constructor to automatically mark it as initialized when it is deployed:\\n *\\n * [.hljs-theme-light.nopadding]\\n * ```\\n * /// @custom:oz-upgrades-unsafe-allow constructor\\n * constructor() initializer {}\\n * ```\\n * ====\\n */\\nabstract contract Initializable {\\n    /**\\n     * @dev Indicates that the contract has been initialized.\\n     */\\n    bool private _initialized;\\n\\n    /**\\n     * @dev Indicates that the contract is in the process of being initialized.\\n     */\\n    bool private _initializing;\\n\\n    /**\\n     * @dev Modifier to protect an initializer function from being invoked twice.\\n     */\\n    modifier initializer() {\\n        // If the contract is initializing we ignore whether _initialized is set in order to support multiple\\n        // inheritance patterns, but we only do this in the context of a constructor, because in other contexts the\\n        // contract may have been reentered.\\n        require(_initializing ? _isConstructor() : !_initialized, \\\"Initializable: contract is already initialized\\\");\\n\\n        bool isTopLevelCall = !_initializing;\\n        if (isTopLevelCall) {\\n            _initializing = true;\\n            _initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            _initializing = false;\\n        }\\n    }\\n\\n    /**\\n     * @dev Modifier to protect an initialization function so that it can only be invoked by functions with the\\n     * {initializer} modifier, directly or indirectly.\\n     */\\n    modifier onlyInitializing() {\\n        require(_initializing, \\\"Initializable: contract is not initializing\\\");\\n        _;\\n    }\\n\\n    function _isConstructor() private view returns (bool) {\\n        return !AddressUpgradeable.isContract(address(this));\\n    }\\n}\\n\",\"keccak256\":\"0x372b0bc04e3b4c074559bbbfb1317afddb56de5504158ca25a7f9cd403980445\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20Upgradeable {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 amount\\n    ) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0x6777f3fccb5dab95a9088ef62c41bee0198fd92e50d7c94f0e3733788af4079e\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../IERC20Upgradeable.sol\\\";\\n\\n/**\\n * @dev Interface for the optional metadata functions from the ERC20 standard.\\n *\\n * _Available since v4.1._\\n */\\ninterface IERC20MetadataUpgradeable is IERC20Upgradeable {\\n    /**\\n     * @dev Returns the name of the token.\\n     */\\n    function name() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the symbol of the token.\\n     */\\n    function symbol() external view returns (string memory);\\n\\n    /**\\n     * @dev Returns the decimals places of the token.\\n     */\\n    function decimals() external view returns (uint8);\\n}\\n\",\"keccak256\":\"0x605434219ebbe4653f703640f06969faa5a1d78f0bfef878e5ddbb1ca369ceeb\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.5.0) (utils/Address.sol)\\n\\npragma solidity ^0.8.1;\\n\\n/**\\n * @dev Collection of functions related to the address type\\n */\\nlibrary AddressUpgradeable {\\n    /**\\n     * @dev Returns true if `account` is a contract.\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * It is unsafe to assume that an address for which this function returns\\n     * false is an externally-owned account (EOA) and not a contract.\\n     *\\n     * Among others, `isContract` will return false for the following\\n     * types of addresses:\\n     *\\n     *  - an externally-owned account\\n     *  - a contract in construction\\n     *  - an address where a contract will be created\\n     *  - an address where a contract lived, but was destroyed\\n     * ====\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * You shouldn't rely on `isContract` to protect against flash loan attacks!\\n     *\\n     * Preventing calls from contracts is highly discouraged. It breaks composability, breaks support for smart wallets\\n     * like Gnosis Safe, and does not provide security since it can be circumvented by calling from a contract\\n     * constructor.\\n     * ====\\n     */\\n    function isContract(address account) internal view returns (bool) {\\n        // This method relies on extcodesize/address.code.length, which returns 0\\n        // for contracts in construction, since the code is only stored at the end\\n        // of the constructor execution.\\n\\n        return account.code.length > 0;\\n    }\\n\\n    /**\\n     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to\\n     * `recipient`, forwarding all available gas and reverting on errors.\\n     *\\n     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost\\n     * of certain opcodes, possibly making contracts go over the 2300 gas limit\\n     * imposed by `transfer`, making them unable to receive funds via\\n     * `transfer`. {sendValue} removes this limitation.\\n     *\\n     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].\\n     *\\n     * IMPORTANT: because control is transferred to `recipient`, care must be\\n     * taken to not create reentrancy vulnerabilities. Consider using\\n     * {ReentrancyGuard} or the\\n     * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].\\n     */\\n    function sendValue(address payable recipient, uint256 amount) internal {\\n        require(address(this).balance >= amount, \\\"Address: insufficient balance\\\");\\n\\n        (bool success, ) = recipient.call{value: amount}(\\\"\\\");\\n        require(success, \\\"Address: unable to send value, recipient may have reverted\\\");\\n    }\\n\\n    /**\\n     * @dev Performs a Solidity function call using a low level `call`. A\\n     * plain `call` is an unsafe replacement for a function call: use this\\n     * function instead.\\n     *\\n     * If `target` reverts with a revert reason, it is bubbled up by this\\n     * function (like regular Solidity function calls).\\n     *\\n     * Returns the raw returned data. To convert to the expected return value,\\n     * use https://solidity.readthedocs.io/en/latest/units-and-global-variables.html?highlight=abi.decode#abi-encoding-and-decoding-functions[`abi.decode`].\\n     *\\n     * Requirements:\\n     *\\n     * - `target` must be a contract.\\n     * - calling `target` with `data` must not revert.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(address target, bytes memory data) internal returns (bytes memory) {\\n        return functionCall(target, data, \\\"Address: low-level call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with\\n     * `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, 0, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but also transferring `value` wei to `target`.\\n     *\\n     * Requirements:\\n     *\\n     * - the calling contract must have an ETH balance of at least `value`.\\n     * - the called Solidity function must be `payable`.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, value, \\\"Address: low-level call with value failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but\\n     * with `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        require(address(this).balance >= value, \\\"Address: insufficient balance for call\\\");\\n        require(isContract(target), \\\"Address: call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\\n        return functionStaticCall(target, data, \\\"Address: low-level static call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal view returns (bytes memory) {\\n        require(isContract(target), \\\"Address: static call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.staticcall(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Tool to verifies that a low level call was successful, and revert if it wasn't, either by bubbling the\\n     * revert reason using the provided one.\\n     *\\n     * _Available since v4.3._\\n     */\\n    function verifyCallResult(\\n        bool success,\\n        bytes memory returndata,\\n        string memory errorMessage\\n    ) internal pure returns (bytes memory) {\\n        if (success) {\\n            return returndata;\\n        } else {\\n            // Look for revert reason and bubble it up if present\\n            if (returndata.length > 0) {\\n                // The easiest way to bubble the revert reason is using memory via assembly\\n\\n                assembly {\\n                    let returndata_size := mload(returndata)\\n                    revert(add(32, returndata), returndata_size)\\n                }\\n            } else {\\n                revert(errorMessage);\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x55cf2bd9fc76704ddcdc19834cd288b7de00fc0f298a40ea16a954ae8991db2d\",\"license\":\"MIT\"},\"contracts/clones/ProxyClone.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\n/**\\n * @title Proxy clone implementation\\n * @dev\\n * Like EIP-1167, but for proxies,\\n * meaning that clone will delegate to the proxy which will delegate to the actual implemenation.\\n * Address of the proxy is immutable, but implementation can be changed via API supporting EIP-1967\\n **/\\ncontract ProxyClone {\\n    // bytes32(uint256(keccak256('eip1967.proxy.admin')) - 1)\\n    bytes32 constant PROXY_ADMIN_HASH = 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103;\\n\\n    // bytes32(uint256(keccak256('eip1967.proxy.implementation')) - 1)\\n    bytes32 constant IMPLEMENTATION_HASH = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;\\n\\n    // bytes32(uint256(keccak256('clone.proxy')) - 1)\\n    bytes32 constant PROXY_HASH = 0x12fe31f5c6f7b7eb37c3a9b1bcb2048b5844d6998ddcca840cc9fa541abf2a59;\\n\\n    constructor(\\n        address _proxyAdmin,\\n        address _proxy,\\n        address _implementation\\n    ) {\\n        // set initial proxy parameters using EIP-1967\\n        assembly {\\n            sstore(PROXY_ADMIN_HASH, _proxyAdmin)\\n            sstore(PROXY_HASH, _proxy)\\n            sstore(IMPLEMENTATION_HASH, _implementation)\\n        }\\n    }\\n\\n    fallback() external {\\n        assembly {\\n            // we delegate to the proxy, which handle upgrade logic and delegating to the actual implementation\\n            let proxy := sload(PROXY_HASH)\\n\\n            // Copy msg.data. We take full control of memory in this inline assembly\\n            // block because it will not return to Solidity code. We overwrite the\\n            // Solidity scratch pad at memory position 0.\\n            calldatacopy(0, 0, calldatasize())\\n\\n            // Call the proxy.\\n            // out and outsize are 0 because we don't know the size yet.\\n            let result := delegatecall(gas(), proxy, 0, calldatasize(), 0, 0)\\n\\n            // Copy the returned data.\\n            returndatacopy(0, 0, returndatasize())\\n\\n            switch result\\n            // delegatecall returns 0 on error.\\n            case 0 {\\n                revert(0, returndatasize())\\n            }\\n            default {\\n                return(0, returndatasize())\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0xe4e6c5ec15968b4e8b8975aa997fdb3902eb95514dcf1f854e55296eec3aeed5\",\"license\":\"GPL-2.0\"},\"contracts/clones/ProxyCloneFactory.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol\\\";\\n\\nimport \\\"../interfaces/IProxyCloneFactory.sol\\\";\\nimport \\\"../interfaces/IGenericInitializable.sol\\\";\\nimport \\\"../interfaces/IStrategyMap.sol\\\";\\n\\nimport \\\"./ProxyClone.sol\\\";\\n\\nimport \\\"../core/ModuleMapConsumer.sol\\\";\\nimport \\\"../core/Controlled.sol\\\";\\n\\n/**\\n * @title Proxy clones factory\\n * @dev\\n * Like EIP-1167, but for upgradeable contracts,\\n * meaning that clone will delegate to proxy which will delegate to actual implemenation.\\n * Address of the proxy is immutable, but implementation can be changed via API supporting EIP-1967\\n **/\\ncontract ProxyCloneFactory is Initializable, ModuleMapConsumer, Controlled, IProxyCloneFactory {\\n    // keccak256(implementation contract name) => { proxy; proxyAdmin; implementation; salt }\\n    mapping(bytes32 => Implementation) public implementations;\\n\\n    function initialize(address[] calldata controllers_, address moduleMap_) public initializer {\\n        __Controlled_init(controllers_, moduleMap_);\\n    }\\n\\n    function getNextCloneAddress(bytes32 _implementationHash) external view override returns (address) {\\n        Implementation storage implementation = implementations[_implementationHash];\\n\\n        bytes memory bytecode = getBytecode(\\n            implementation.proxyAdmin,\\n            implementation.proxy,\\n            implementation.implementation\\n        );\\n        bytes32 salt = getSalt(_implementationHash, implementation.salt + 1);\\n\\n        bytes32 hash = keccak256(abi.encodePacked(bytes1(0xFF), address(this), salt, keccak256(bytecode)));\\n\\n        return address(uint160(uint256(hash)));\\n    }\\n\\n    function deployClone(bytes32 _implementationHash, bytes calldata _initData)\\n        external\\n        override\\n        onlyController\\n        returns (address deployedCloneAddress_)\\n    {\\n        Implementation storage implementation = implementations[_implementationHash];\\n        implementation.salt++;\\n\\n        bytes memory bytecode = getBytecode(\\n            implementation.proxyAdmin,\\n            implementation.proxy,\\n            implementation.implementation\\n        );\\n        bytes32 salt = getSalt(_implementationHash, implementation.salt);\\n\\n        assembly {\\n            deployedCloneAddress_ := create2(\\n                callvalue(),\\n                add(bytecode, 0x20), // first 32 bytes occupied by the length\\n                mload(bytecode), // bytecode length\\n                salt\\n            )\\n        }\\n        require(deployedCloneAddress_.code.length > 0, \\\"proxy clone creation failed\\\");\\n\\n        IGenericInitializable(deployedCloneAddress_).initialize(_initData);\\n\\n        emit CloneDeployed(_implementationHash, deployedCloneAddress_);\\n    }\\n\\n    function setImplementation(\\n        bytes32 _implementationHash,\\n        address _proxyAdminAddress,\\n        address _proxyAddress,\\n        address _implementationAddress\\n    ) external override onlyManager {\\n        implementations[_implementationHash].proxyAdmin = _proxyAdminAddress;\\n        implementations[_implementationHash].proxy = _proxyAddress;\\n        implementations[_implementationHash].implementation = _implementationAddress;\\n\\n        emit SetImplementation(_implementationHash, _proxyAdminAddress, _proxyAddress, _implementationAddress);\\n    }\\n\\n    function getBytecode(\\n        address _proxyAdmin,\\n        address _proxy,\\n        address _implementation\\n    ) internal pure returns (bytes memory) {\\n        bytes memory bytecode = type(ProxyClone).creationCode;\\n        return abi.encodePacked(bytecode, abi.encode(_proxyAdmin, _proxy, _implementation));\\n    }\\n\\n    function getSalt(bytes32 _implementationHash, uint256 _rawSalt) internal pure returns (bytes32) {\\n        bytes32 typeUniqueness = keccak256(abi.encodePacked(_implementationHash));\\n        uint256 uintSalt = uint256(typeUniqueness) + _rawSalt;\\n        return keccak256(abi.encodePacked(uintSalt));\\n    }\\n}\\n\",\"keccak256\":\"0x56c4364831e43a0f20fa41403483fb3b530160d6ebe1afb3c3501104f10bc11c\",\"license\":\"GPL-2.0\"},\"contracts/core/Controlled.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"./ModuleMapConsumer.sol\\\";\\nimport \\\"../interfaces/IKernel.sol\\\";\\n\\nabstract contract Controlled is Initializable, ModuleMapConsumer {\\n    // controller address => is a controller\\n    mapping(address => bool) internal _controllers;\\n    address[] public controllers;\\n\\n    function __Controlled_init(address[] memory controllers_, address moduleMap_) internal onlyInitializing {\\n        require(moduleMap_ != address(0), \\\"bad address\\\");\\n        for (uint256 i; i < controllers_.length; ++i) {\\n            require(controllers_[i] != address(0), \\\"bad address\\\");\\n        }\\n        for (uint256 i; i < controllers_.length; ++i) {\\n            _controllers[controllers_[i]] = true;\\n        }\\n        controllers = controllers_;\\n        __ModuleMapConsumer_init(moduleMap_);\\n    }\\n\\n    function addController(address controller) external onlyOwner {\\n        _controllers[controller] = true;\\n        bool added;\\n        for (uint256 i; i < controllers.length; ++i) {\\n            if (controller == controllers[i]) {\\n                added = true;\\n            }\\n        }\\n        if (!added) {\\n            controllers.push(controller);\\n        }\\n    }\\n\\n    modifier onlyOwner() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isOwner(msg.sender),\\n            \\\"Controlled::onlyOwner: Caller is not owner\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyManager() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isManager(msg.sender),\\n            \\\"Controlled::onlyManager: Caller is not manager\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyController() {\\n        require(_controllers[msg.sender], \\\"Controlled::onlyController: Caller is not controller\\\");\\n        _;\\n    }\\n\\n    function isController(address controller) external view returns (bool status) {\\n        status = _controllers[controller];\\n    }\\n\\n    function getAllControllers() external view returns (address[] memory currentControllers) {\\n        return controllers;\\n    }\\n}\\n\",\"keccak256\":\"0xed017271d8ba30d80b8449946ed9ed3c6192d59980f343d26580070da40ede47\",\"license\":\"GPL-2.0\"},\"contracts/core/ModuleMapConsumer.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"../interfaces/IModuleMap.sol\\\";\\n\\nabstract contract ModuleMapConsumer is Initializable {\\n    IModuleMap public moduleMap;\\n\\n    function __ModuleMapConsumer_init(address moduleMap_) internal onlyInitializing {\\n        moduleMap = IModuleMap(moduleMap_);\\n    }\\n}\\n\",\"keccak256\":\"0x562431546443640c950a15ccce0cffedeced3e414c41cc2758bf489f4525d1df\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IGenericInitializable.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IGenericInitializable {\\n    function initialize(bytes calldata _data) external;\\n}\\n\",\"keccak256\":\"0x557f8aadc0b0650c68137884cfc906a99cc546d588337470334db12115aae7e4\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IIntegration.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IIntegration {\\n    event Deploy(address token, uint256 amount);\\n    event HarvestYield(address token, uint256 amount);\\n    event Deposit(address token, uint256 amount);\\n    event Withdraw(address token, uint256 amount);\\n\\n    /**\\n     * Used by YieldManager to deposit funds.\\n     * @param tokenAddress The address of the deposited token\\n     * @param amount The amount being deposited\\n     */\\n    function deposit(address tokenAddress, uint256 amount) external;\\n\\n    /**\\n     * Used by YieldManager to withdraw funds.\\n     * @param tokenAddress The address of the withdrawal token\\n     * @param amount The amount being withdrawn\\n     */\\n    function withdraw(address tokenAddress, uint256 amount) external;\\n\\n    /**\\n     * Used by YieldManager to deploy funds.\\n     * @dev Deploys all tokens held in the integration contract to the integrated protocol\\n     */\\n    function deploy() external;\\n\\n    /**\\n     * Used by YieldManager to harvest funds.\\n     * @dev Harvests token yield from the integration\\n     */\\n    function harvestYield() external;\\n\\n    /**\\n     * Get the integration's balance of a token.\\n     * @dev has been deposited to the integration contract\\n     * @dev This returns the total amount of the underlying token that\\n     * @param tokenAddress The address of the deployed token\\n     * @return The amount of the underlying token that can be withdrawn\\n     */\\n    function getBalance(address tokenAddress) external view returns (uint256);\\n\\n    /**\\n     * Returns the total amount of yield awaing to be harvested\\n     * using the relevant integration's own function\\n     * @param tokenAddress The token to get the pending yield for\\n     * @return amount The amount of available yield for the specified token\\n     */\\n    function getPendingYield(address tokenAddress) external view returns (uint256 amount);\\n}\\n\",\"keccak256\":\"0x5f1c0946f3def553313e240f568096ccf9090659b52c51deed14f56d7559f8b8\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IKernel.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IKernel {\\n    struct WithdrawAllAndClaimResponse {\\n        uint256[] tokenAmounts;\\n        uint256 ethWithdrawn;\\n        uint256 ethClaimed;\\n        uint256 biosClaimed;\\n    }\\n    event Withdraw(address indexed user, address[] tokens, uint256[] tokenAmounts, uint256 ethAmount);\\n    event ClaimEthRewards(address indexed user, uint256[] strategies, uint256 ethRewards);\\n    event ClaimBiosRewards(address indexed user, uint256 biosRewards);\\n    event WithdrawAllAndClaim(\\n        address indexed user,\\n        address[] tokens,\\n        uint256[] strategies,\\n        bool withdrawWethAsEth,\\n        uint256[] tokenAmounts,\\n        uint256 ethWithdrawn,\\n        uint256 ethRewards,\\n        uint256 biosRewards\\n    );\\n    event TokenAdded(\\n        address indexed tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    );\\n\\n    event GasAccountUpdated(address gasAccount);\\n    event TreasuryAccountUpdated(address treasuryAccount);\\n    event IntegrationAdded(address indexed contractAddress, string name);\\n    event SetBiosRewardsDuration(uint32 biosRewardsDuration);\\n    event SeedBiosRewards(uint256 biosAmount);\\n    event Deploy();\\n    event HarvestYield();\\n    event DistributeEth();\\n    event BiosBuyBack();\\n    event EthDistributionWeightsUpdated(\\n        uint32 biosBuyBackEthWeight,\\n        uint32 treasuryEthWeight,\\n        uint32 protocolFeeEthWeight,\\n        uint32 rewardsEthWeight,\\n        uint32 syntheticPoolSupplementWeight\\n    );\\n    event GasAccountTargetEthBalanceUpdated(uint256 gasAccountTargetEthBalance);\\n\\n    /// @param account The address of the account to check if they are a manager\\n    /// @return Bool indicating whether the account is a manger\\n    function isManager(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are an owner\\n    /// @return Bool indicating whether the account is an owner\\n    function isOwner(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are a liquidity provider\\n    /// @return Bool indicating whether the account is a liquidity provider\\n    function isLiquidityProvider(address account) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x6f4529412860cc773b26bca59c78fd12bc066323470b07501c0d1e9e2de0f54a\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IModuleMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nenum Modules {\\n    Kernel, // 0\\n    UserPositions, // 1\\n    YieldManager, // 2\\n    IntegrationMap, // 3\\n    BiosRewards, // 4\\n    EtherRewards, // 5\\n    Strategy1155, // 6\\n    SyntheticMap, // 7\\n    StrategyMap, // 8\\n    StrategyManager, // 9\\n    Interconnects, // 10\\n    SwapManager, // 11\\n    Unwrapper, // 12\\n    BiosEmitter // 13\\n}\\n\\ninterface IModuleMap {\\n    function getModuleAddress(Modules key) external view returns (address);\\n}\\n\",\"keccak256\":\"0x9c79bb5822bea9209419b3c6eaefc40a8fd950184ff4445eb5745f70460f5310\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IProxyCloneFactory.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\ninterface IProxyCloneFactory {\\n    struct Implementation {\\n        address proxyAdmin;\\n        address proxy;\\n        address implementation;\\n        uint96 salt;\\n    }\\n\\n    event SetImplementation(bytes32 implemetationHash, address proxyAdmin, address proxy, address implementation);\\n\\n    event CloneDeployed(bytes32 implemetationHash, address deployedClone);\\n\\n    /// @param _implementationHash keccak256(implementation name)\\n    /// @return Predicted address of the next lp token\\n    function getNextCloneAddress(bytes32 _implementationHash) external view returns (address);\\n\\n    /// @param _implementationHash keccak256(implementation name)\\n    /// @param _initData Data for deployed token initialize method\\n    /// @return deployedAddress_ Address of the deployed clone\\n    /// @dev Clones implementation according to EIP1167\\n    function deployClone(bytes32 _implementationHash, bytes calldata _initData)\\n        external\\n        returns (address deployedAddress_);\\n\\n    /// @param _implementationHash keccak256(implementation name)\\n    /// @param _proxyAdminAddress An address of the proxy admin\\n    /// @param _proxyAddress An address of the proxy\\n    /// @param _implementationAddress An address of the implementation\\n    function setImplementation(\\n        bytes32 _implementationHash,\\n        address _proxyAdminAddress,\\n        address _proxyAddress,\\n        address _implementationAddress\\n    ) external;\\n}\\n\",\"keccak256\":\"0xe4caecf322deea1fe4e66fafc06cdc96d65402dbd2b06ad9020c8b7f5678b30a\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IStrategyMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"./IIntegration.sol\\\";\\nimport \\\"./IUserPositions.sol\\\";\\n\\ninterface IStrategyMap {\\n    /**\\n     *\\n     * structs\\n     *\\n     **/\\n\\n    struct DeployAmount {\\n        int128 deploy;\\n        uint128 hedge;\\n    }\\n\\n    struct Integration {\\n        address integration;\\n        uint32 ammPoolID;\\n    }\\n    struct Token {\\n        uint256 integrationPairIdx;\\n        address token;\\n        uint32 weight;\\n    }\\n\\n    struct Strategy {\\n        string name;\\n        Integration[] integrations;\\n        Token[] tokens;\\n        mapping(address => bool) availableTokens;\\n        mapping(address => uint256) maximumCap;\\n    }\\n\\n    struct StrategySummary {\\n        string name;\\n        Integration[] integrations;\\n        Token[] tokens;\\n    }\\n\\n    struct TokenFunds {\\n        uint256 totalBalance;\\n        // strategy token => strategy balance\\n        mapping(address => uint256) strategyBalance;\\n    }\\n\\n    struct ClosablePosition {\\n        address integration;\\n        uint32 ammPoolID;\\n        uint256 amount;\\n    }\\n\\n    struct ReplaceIntegrationParams {\\n        Integration newIntegration;\\n        address token;\\n        uint256 oldIntegrationIndex;\\n        uint32[] weightAmounts;\\n        uint256[] weightTokenIndexes;\\n    }\\n\\n    /**\\n     *\\n     *\\n     * events\\n     *\\n     *\\n     **/\\n\\n    event NewStrategy(uint256 indexed strategyId, Integration[] integrations, Token[] tokens, string name);\\n\\n    event UpdateName(uint256 indexed strategyId, string name);\\n\\n    event UpdateStrategy(uint256 indexed strategyId, Integration[] integrations, Token[] tokens);\\n\\n    event DeleteStrategy(uint256 indexed strategyId);\\n\\n    event IntegrationWeightAdjustment(\\n        uint256 strategyId,\\n        uint256 sourceIndex,\\n        uint256 destinationIndex,\\n        uint32 amount,\\n        bool rebalance\\n    );\\n\\n    event RemoveIntegration(uint256 strategyId, uint256 integrationIndex, address token);\\n\\n    event AddIntegration(uint256 strategyId, Integration integration, address token);\\n\\n    /**\\n     *\\n     *\\n     * manager's functions\\n     *\\n     *\\n     **/\\n\\n    /**\\n     @notice Adds a new strategy to the list of available strategies\\n     @param name  the name of the new strategy\\n     @param integrations  the integrations and weights that form the strategy\\n     @param maxCap  The maximum amount investable in a strategy\\n     */\\n    function addStrategy(\\n        string calldata name,\\n        Integration[] calldata integrations,\\n        Token[] calldata tokens,\\n        uint256[] memory maxCap\\n    ) external;\\n\\n    /**\\n    @notice Updates the strategy name\\n    @param name  the new name\\n     */\\n    function updateName(uint256 strategyId, string calldata name) external;\\n\\n    function addPairToStrategy(\\n        uint256 strategyId,\\n        Integration calldata integration,\\n        address token\\n    ) external;\\n\\n    /**\\n    @dev Changes weights of integrations,optionally rebalancing the integrations\\n        so that current fund allocation reflects new weights\\n     */\\n    function movePairWeight(\\n        uint256 strategyId,\\n        uint256 sourceIndex,\\n        uint256 destinationIndex,\\n        int256 vectorAmount,\\n        uint32 amount,\\n        bool rebalance\\n    ) external;\\n\\n    function removePairFromStrategy(\\n        uint256 strategyId,\\n        uint256 integrationIndex,\\n        address token\\n    ) external;\\n\\n    /**\\n    @notice Deletes a strategy\\n    @dev This can only be called successfully if the strategy being deleted doesn't have any assets invested in it.\\n    @dev To delete a strategy with funds deployed in it,\\n        first update the strategy so that the existing tokens are no longer available in the strategy,\\n        then delete the strategy. This will unwind the users positions,\\n        and they will be able to withdraw their funds.\\n    @param strategyId  the strategy to delete\\n     */\\n    function deleteStrategy(uint256 strategyId) external;\\n\\n    /**\\n    @notice Sets availability status for the token\\n    @param strategyId The strategy strategyId\\n    @param token The token address\\n    @param available An availability status. Velue \\\"true\\\" will enable token and vice versa\\n    */\\n    function setAvailableTokens(\\n        uint256 strategyId,\\n        address token,\\n        bool available\\n    ) external;\\n\\n    /**\\n    @notice Sets the maximum investment cap for a strategy and token pair\\n    @param strategyId The strategy strategyId\\n    @param token the token address\\n    @param maxCap The maximum amount of funds that can be invested\\n    */\\n    function setMaximumCap(\\n        uint256 strategyId,\\n        address token,\\n        uint256 maxCap\\n    ) external;\\n\\n    /**\\n     *\\n     *\\n     * strategy flow\\n     *\\n     *\\n     **/\\n\\n    /**\\n    @notice Increases the amount of a set of tokens in a strategy\\n    @param strategyId  the strategy to deposit into\\n    @param token Token address\\n    @param amount Amount of the token\\n    @return strategyDebtClosed_ How much negative deploy amount was increased (-x [deploy] + y [amount] = y - x [deploy])\\n     */\\n    function increaseStrategy(\\n        uint256 strategyId,\\n        address token,\\n        uint256 amount\\n    ) external returns (uint256 strategyDebtClosed_);\\n\\n    /**\\n    @notice Decreases the amount of a set of tokens invested in a strategy\\n    @param strategyId  the strategy to withdraw assets from\\n    @param amount  amount of lp token that user have burned\\n     */\\n    function decreaseStrategy(uint256 strategyId, uint256 amount) external;\\n\\n    /**\\n     *\\n     *\\n     * deploy flow\\n     *\\n     *\\n     **/\\n\\n    /**\\n    @notice Decreases the deployable amount after a deployment/withdrawal\\n    @param integration  the integration that was changed\\n    @param poolID  the pool within the integration that handled the tokens\\n    @param token  the token to decrease for\\n    @param deployAmount Amount that went to the corresponding pool\\n    @param hedgeAmount Amount that went to the synthetic pool\\n     */\\n    function decreaseDeployAmountChange(\\n        address integration,\\n        uint32 poolID,\\n        address token,\\n        uint256 deployAmount,\\n        uint256 hedgeAmount\\n    ) external;\\n\\n    /**\\n     *\\n     *\\n     * getters\\n     *\\n     *\\n     **/\\n\\n    /**\\n    @notice Getter function to return the nested arrays as well as the name\\n    @param strategyId  the strategy to return\\n     */\\n    function getStrategy(uint256 strategyId) external view returns (StrategySummary memory);\\n\\n    /**\\n    @notice Returns 1 or more strategies in a single call.\\n    @param strategyIds to return.\\n    */\\n    function getMultipleStrategies(uint256[] calldata strategyIds) external view returns (StrategySummary[] memory);\\n\\n    /**\\n    @notice Returns the amount of a given token currently invested in a strategy\\n    @param strategyId  the strategy strategyId to check\\n    @param token  The token to retrieve the balance for\\n    @return amount  the amount of token that is invested in the strategy\\n     */\\n    function getStrategyTokenBalance(uint256 strategyId, address token) external view returns (uint256 amount);\\n\\n    /**\\n    @notice Returns the total amount of a token invested across all strategies\\n    @param token  the token to fetch the balance for\\n    @param strategies An array of strategies in which total balance will be calculated\\n    @return amount  the amount of the token currently invested\\n    */\\n    function getTokenTotalBalance(address token, uint256[] calldata strategies) external view returns (uint256 amount);\\n\\n    /**\\n    @notice Returns the current amount awaiting deployment\\n    @param integration  the integration to deploy to\\n    @param poolID  the pool within the integration that should receive the tokens\\n    @param token  the token to be deployed\\n    @return deployAmount An amount that should be deployed to the corresponding integration\\n    @return hedgeAmount An amount that should be deployed to the synthetic pool \\n     */\\n    function getDeployAmount(\\n        address integration,\\n        uint32 poolID,\\n        address token\\n    ) external view returns (int256 deployAmount, uint256 hedgeAmount);\\n\\n    /// @notice autogenerated getter definition\\n    function idCounter() external view returns (uint256);\\n\\n    /**\\n    @notice returns the length of the tokens array in a strategy\\n    @param strategy  the strategy to look up\\n    @return the length\\n    */\\n    function getStrategyTokenLength(uint256 strategy) external view returns (uint256);\\n\\n    /// @notice Retrieves the maximum cap for a strategy/token pair\\n    /// @param strategyId  the strategy strategyId\\n    /// @param token  the token address\\n    /// @return cap  the maximum cap for the strategy/token pair\\n    function getMaximumCap(uint256 strategyId, address token) external view returns (uint256 cap);\\n}\\n\",\"keccak256\":\"0x4c029270bde792eec1344723c6303ceb27e969751b3de246c9bdc30d3bd83283\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IUserPositions.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"./IStrategyMap.sol\\\";\\n\\ninterface IUserPositions {\\n    // ##### Structs\\n    struct TokenMovement {\\n        address token;\\n        uint256 amount;\\n    }\\n\\n    struct StrategyRecord {\\n        uint256 strategyId;\\n        uint256 timestamp;\\n    }\\n    struct WithdrawAllAndClaimResponse {\\n        uint256[] tokenAmounts;\\n        uint256 ethWithdrawn;\\n        uint256 ethClaimed;\\n        uint256 biosClaimed;\\n    }\\n\\n    // ##### Events\\n    event EnterStrategy(uint256 indexed strategyId, address indexed user, uint256 amount);\\n    event ExitStrategy(uint256 indexed strategyId, address indexed user, uint256 tokenBurned);\\n    event Deposit(address indexed user, address[] tokens, uint256[] tokenAmounts, uint256 ethAmount);\\n    event Pause(bool isPaused);\\n\\n    /**\\n     *\\n     *\\n     *\\n     * user cycle\\n     *\\n     *\\n     *\\n     **/\\n\\n    /**\\n     * @notice User is allowed to deposit whitelisted tokens\\n     * @param depositor Address of the account depositing\\n     * @param tokens Array of token the token addresses\\n     * @param amounts Array of token amounts\\n     * @param ethAmount The amount of ETH sent with the deposit\\n     * @param migration flag if this is a migration from the old system\\n     **/\\n    function deposit(\\n        address depositor,\\n        address[] memory tokens,\\n        uint256[] memory amounts,\\n        uint256 ethAmount,\\n        bool migration\\n    ) external;\\n\\n    /**\\n     * @notice Adds a user's funds to a strategy to be deployed\\n     * @param strategyId  The strategy to enter\\n     * @param amount Amount of native coin\\n     **/\\n    function enterStrategy(uint256 strategyId, uint256 amount) external;\\n\\n    /**\\n     * @param user The address of the user claiming ETH rewards\\n     * @param strategies An array of ids to claim rewards for\\n     **/\\n    function claimEthRewards(address user, uint256[] calldata strategies) external returns (uint256 ethClaimed);\\n\\n    /**\\n     * @notice Marks a user's funds as withdrawable\\n     * @param strategyId  The strategy to withdrawfrom\\n     * @param amount strategyId amount to burn\\n     **/\\n    function exitStrategy(uint256 strategyId, uint256 amount) external;\\n\\n    /**\\n     * @notice User is allowed to withdraw tokens\\n     * @param recipient The address of the user withdrawing\\n     * @param tokens Array of token the token addresses\\n     * @param amounts Array of token amounts\\n     * @param withdrawWethAsEth Boolean indicating whether should receive WETH balance as ETH\\n     **/\\n    function withdraw(\\n        address recipient,\\n        address[] memory tokens,\\n        uint256[] memory amounts,\\n        bool withdrawWethAsEth\\n    ) external returns (uint256 ethWithdrawn);\\n\\n    /**\\n     * @notice Allows a user to withdraw entire balances of the specified tokens and claim rewards\\n     * @param recipient The address of the user withdrawing tokens\\n     * @param tokens Array of token address that user is exiting positions from\\n     * @param strategies Array of strategy IDs that user is claiming rewards from\\n     * @param withdrawWethAsEth Boolean indicating whether should receive WETH balance as ETH\\n     * @return _withdrawAllAndClaimResponse\\n     * /// WithdrawAllAndClaimResponse.tokenAmounts The amounts of each token being withdrawn\\n     * /// WithdrawAllAndClaimResponse.ethWithdrawn The amount of ETH being withdrawn\\n     * /// WithdrawAllAndClaimResponse.ethClaimed The amount of ETH being claimed from rewards\\n     * /// WithdrawAllAndClaimResponse.biosClaimed The amount of BIOS being claimed from rewards\\n     **/\\n    function withdrawAllAndClaim(\\n        address recipient,\\n        address[] memory tokens,\\n        uint256[] calldata strategies,\\n        bool withdrawWethAsEth\\n    ) external returns (WithdrawAllAndClaimResponse memory _withdrawAllAndClaimResponse);\\n\\n    /**\\n     *\\n     *\\n     *\\n     * getters\\n     *\\n     *\\n     *\\n     **/\\n\\n    /**\\n     * @param asset Address of the ERC20 token contract\\n     * @return The total balance of the asset that is not in the strategy\\n     **/\\n    function totalTokenBalance(address asset) external view returns (uint256);\\n\\n    /**\\n     * @notice Returns the amount that a user has deposited locally, but that isn't in a strategy\\n     * @param asset Address of the ERC20 token contract\\n     * @param account Address of the user account\\n     * @return The amount that a user has deposited locally, but that isn't in the strategy\\n     **/\\n    function userTokenBalance(address asset, address account) external view returns (uint256);\\n\\n    /**\\n     * @param strategyId An id of the strategy\\n     * @dev A passthrough to Strategy1155.totalSupply(strategyId);\\n     **/\\n    function totalStrategyBalance(uint256 strategyId) external view returns (uint256);\\n\\n    /**\\n     * @param account An address of the user\\n     * @param strategyId An id of the strategy\\n     * @dev A passthrough to Strategy1155.balanceOf(account, strategyId)\\n     **/\\n    function userStrategyBalance(address account, uint256 strategyId) external view returns (uint256);\\n\\n    /**\\n     * @notice Returns the amount that a user can use for strategies (local balance + interconnect balance - deployed)\\n     * @param asset Address of the ERC20 token contract\\n     * @param account Address of the user account\\n     **/\\n    function userDeployableBalance(address asset, address account) external view returns (uint256);\\n\\n    /**\\n     * @notice Returns the amount that a user has interconnected\\n     * @param asset Address of the ERC20 token contract\\n     * @param account Address of the user account\\n     **/\\n    function userInterconnectBalance(address asset, address account) external view returns (uint256);\\n\\n    /**\\n     *\\n     *\\n     *\\n     * interconnections\\n     *\\n     *\\n     *\\n     **/\\n\\n    function _remoteStrategyExecution(\\n        uint256 strategyID,\\n        address user,\\n        address token,\\n        uint256 amount,\\n        bool enterStrat // true to enter, false to exit\\n    ) external;\\n\\n    /**\\n     * @notice Updates a user's local balance. Only called by controlled contracts or relayer\\n     * @param assets list of tokens to update\\n     * @param account user\\n     * @param amounts list of amounts to update\\n     **/\\n    function updateUserTokenBalances(\\n        address[] calldata assets,\\n        address account,\\n        uint256[] calldata amounts,\\n        bool[] memory add\\n    ) external;\\n\\n    /**\\n     * @notice Updates a user's interconnected balance. Only called by controlled contracts or relayer\\n     * @param assets list of tokens to update\\n     * @param account user\\n     * @param amounts list of amounts to update\\n     **/\\n    function updateUserInterconnectBalances(\\n        address[] memory assets,\\n        address account,\\n        uint256[] memory amounts,\\n        bool[] memory add\\n    ) external;\\n}\\n\",\"keccak256\":\"0xcb4fd1f1d39f045138f9e727a31da165f99d212b4ef7a8cd0e28f3c7a83c8081\",\"license\":\"GPL-2.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506113ab806100206000396000f3fe608060405234801561001057600080fd5b506004361061008e5760003560e01c806302cfeaca146100935780630f0a1c6f1461011f5780632cdb56db14610145578063337993cb1461015a5780633f78bdf01461016f578063462d0b2e1461018257806356a918aa14610195578063a7fc7a07146101a8578063b429afeb146101bb578063e94b0dd2146101f7575b600080fd5b6100e16100a1366004610ece565b6003602052600090815260409020805460018201546002909201546001600160a01b0391821692821691811690600160a01b90046001600160601b031684565b604080516001600160a01b039586168152938516602085015291909316908201526001600160601b0390911660608201526080015b60405180910390f35b600054610138906201000090046001600160a01b031681565b6040516101169190611004565b610158610153366004610ee6565b61020a565b005b61016261040e565b6040516101169190611018565b61013861017d366004610ece565b610470565b610158610190366004610e2e565b61053f565b6101386101a3366004610f38565b610639565b6101586101b6366004610def565b610868565b6101e76101c9366004610def565b6001600160a01b031660009081526001602052604090205460ff1690565b6040519015158152602001610116565b610138610205366004610ece565b610aa3565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161023f9190600401611094565b60206040518083038186803b15801561025757600080fd5b505afa15801561026b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061028f9190610e12565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016102ba9190611004565b60206040518083038186803b1580156102d257600080fd5b505afa1580156102e6573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061030a9190610eae565b6103725760405162461bcd60e51b815260206004820152602e60248201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060448201526d34b9903737ba1036b0b730b3b2b960911b60648201526084015b60405180910390fd5b60008481526003602090815260409182902080546001600160a01b03199081166001600160a01b0388811691821784556001840180548416898316908117909155600290940180549093169087169081179092558451898152938401529282015260608101919091527fb608982bfcdd204befa232358aec18c4f94927a342487b3ef6e3dc74c077520e9060800160405180910390a150505050565b6060600280548060200260200160405190810160405280929190818152602001828054801561046657602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610448575b5050505050905090565b600081815260036020526040812080546001820154600283015484926104a6926001600160a01b03918216929082169116610acd565b905060006104e0858460020160149054906101000a90046001600160601b031660016104d29190611144565b6001600160601b0316610b56565b8251602093840120604080516001600160f81b0319818701523060601b6001600160601b031916602182015260358101939093526055808401929092528051808403909201825260759092019091528051920191909120949350505050565b600054610100900460ff1661055a5760005460ff161561055e565b303b155b6105c15760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b6064820152608401610369565b600054610100900460ff161580156105e3576000805461ffff19166101011790555b610621848480806020026020016040519081016040528093929190818152602001838360200280828437600092019190915250869250610bc7915050565b8015610633576000805461ff00191690555b50505050565b3360009081526001602052604081205460ff166106b55760405162461bcd60e51b815260206004820152603460248201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60448201527332b91034b9903737ba1031b7b73a3937b63632b960611b6064820152608401610369565b6000848152600360205260409020600281018054600160a01b90046001600160601b03169060146106e58361118a565b82546001600160601b039182166101009390930a928302919092021990911617905550805460018201546002830154600092610731926001600160a01b03918216929082169116610acd565b6002830154909150600090610757908890600160a01b90046001600160601b0316610b56565b90508082516020840134f593506000846001600160a01b03163b116107bc5760405162461bcd60e51b815260206004820152601b60248201527a1c1c9bde1e4818db1bdb994818dc99585d1a5bdb8819985a5b1959602a1b6044820152606401610369565b60405163439fab9160e01b81526001600160a01b0385169063439fab91906107ea9089908990600401611065565b600060405180830381600087803b15801561080457600080fd5b505af1158015610818573d6000803e3d6000fd5b5050604080518a81526001600160a01b03881660208201527fd2b01fce9b359ab6c97383b2d0d8574bd49084b36a0c636ae27ce14592e52737935001905060405180910390a15050509392505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161089d9190600401611094565b60206040518083038186803b1580156108b557600080fd5b505afa1580156108c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108ed9190610e12565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016109189190611004565b60206040518083038186803b15801561093057600080fd5b505afa158015610944573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109689190610eae565b6109c75760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b6064820152608401610369565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b600254811015610a4d5760028181548110610a1957634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b0384811691161415610a3d57600191505b610a468161116f565b90506109ee565b5080610a9f57600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b60028181548110610ab357600080fd5b6000918252602090912001546001600160a01b0316905081565b6060600060405180602001610ae190610d68565b601f1982820381018352601f9091011660408181526001600160a01b0380891660208401528088169183019190915285166060820152909150819060800160408051601f1981840301815290829052610b3d9291602001610fe7565b6040516020818303038152906040529150509392505050565b60008083604051602001610b6c91815260200190565b60408051601f19818403018152919052805160209091012090506000610b92848361112c565b905080604051602001610ba791815260200190565b604051602081830303815290604052805190602001209250505092915050565b600054610100900460ff16610bee5760405162461bcd60e51b8152600401610369906110e1565b6001600160a01b038116610c145760405162461bcd60e51b8152600401610369906110bc565b60005b8251811015610c8a5760006001600160a01b0316838281518110610c4b57634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b03161415610c7a5760405162461bcd60e51b8152600401610369906110bc565b610c838161116f565b9050610c17565b5060005b8251811015610cfe576001806000858481518110610cbc57634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff1916911515919091179055610cf78161116f565b9050610c8e565b508151610d12906002906020850190610d75565b50610a9f81600054610100900460ff16610d3e5760405162461bcd60e51b8152600401610369906110e1565b600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b610196806111e083390190565b828054828255906000526020600020908101928215610dca579160200282015b82811115610dca57825182546001600160a01b0319166001600160a01b03909116178255602090920191600190910190610d95565b50610dd6929150610dda565b5090565b5b80821115610dd65760008155600101610ddb565b600060208284031215610e00578081fd5b8135610e0b816111c7565b9392505050565b600060208284031215610e23578081fd5b8151610e0b816111c7565b600080600060408486031215610e42578182fd5b83356001600160401b0380821115610e58578384fd5b818601915086601f830112610e6b578384fd5b813581811115610e79578485fd5b8760208260051b8501011115610e8d578485fd5b60209283019550935050840135610ea3816111c7565b809150509250925092565b600060208284031215610ebf578081fd5b81518015158114610e0b578182fd5b600060208284031215610edf578081fd5b5035919050565b60008060008060808587031215610efb578081fd5b843593506020850135610f0d816111c7565b92506040850135610f1d816111c7565b91506060850135610f2d816111c7565b939692955090935050565b600080600060408486031215610f4c578283fd5b8335925060208401356001600160401b0380821115610f69578384fd5b818601915086601f830112610f7c578384fd5b813581811115610f8a578485fd5b876020828501011115610f9b578485fd5b6020830194508093505050509250925092565b60008151815b81811015610fce5760208185018101518683015201610fb4565b81811115610fdc5782828601525b509290920192915050565b6000610ffc610ff68386610fae565b84610fae565b949350505050565b6001600160a01b0391909116815260200190565b6020808252825182820181905260009190848201906040850190845b818110156110595783516001600160a01b031683529284019291840191600101611034565b50909695505050505050565b60208152816020820152818360408301376000818301604090810191909152601f909201601f19160101919050565b60208101600e83106110b657634e487b7160e01b600052602160045260246000fd5b91905290565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b6020808252602b908201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960408201526a6e697469616c697a696e6760a81b606082015260800190565b6000821982111561113f5761113f6111b1565b500190565b60006001600160601b03828116848216808303821115611166576111666111b1565b01949350505050565b6000600019821415611183576111836111b1565b5060010190565b60006001600160601b03828116808214156111a7576111a76111b1565b6001019392505050565b634e487b7160e01b600052601160045260246000fd5b6001600160a01b03811681146111dc57600080fd5b5056fe608060405234801561001057600080fd5b5060405161019638038061019683398101604081905261002f916100b9565b7fb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103929092557f12fe31f5c6f7b7eb37c3a9b1bcb2048b5844d6998ddcca840cc9fa541abf2a59557f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc556100fb565b80516001600160a01b03811681146100b457600080fd5b919050565b6000806000606084860312156100cd578283fd5b6100d68461009d565b92506100e46020850161009d565b91506100f26040850161009d565b90509250925092565b608d806101096000396000f3fe6080604052348015600f57600080fd5b507f12fe31f5c6f7b7eb37c3a9b1bcb2048b5844d6998ddcca840cc9fa541abf2a59543660008037600080366000845af490503d6000803e8080156052573d6000f35b3d6000fdfea26469706673582212203fee3b8d6a463b183e13684206ead80b5be2cb4b62b3921beaf3d055caa6137964736f6c63430008040033a26469706673582212200f213e4ca6e7b5df89ac45b0bd30df23b4c3b709031e49e772839ca400110a4364736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061008e5760003560e01c806302cfeaca146100935780630f0a1c6f1461011f5780632cdb56db14610145578063337993cb1461015a5780633f78bdf01461016f578063462d0b2e1461018257806356a918aa14610195578063a7fc7a07146101a8578063b429afeb146101bb578063e94b0dd2146101f7575b600080fd5b6100e16100a1366004610ece565b6003602052600090815260409020805460018201546002909201546001600160a01b0391821692821691811690600160a01b90046001600160601b031684565b604080516001600160a01b039586168152938516602085015291909316908201526001600160601b0390911660608201526080015b60405180910390f35b600054610138906201000090046001600160a01b031681565b6040516101169190611004565b610158610153366004610ee6565b61020a565b005b61016261040e565b6040516101169190611018565b61013861017d366004610ece565b610470565b610158610190366004610e2e565b61053f565b6101386101a3366004610f38565b610639565b6101586101b6366004610def565b610868565b6101e76101c9366004610def565b6001600160a01b031660009081526001602052604090205460ff1690565b6040519015158152602001610116565b610138610205366004610ece565b610aa3565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161023f9190600401611094565b60206040518083038186803b15801561025757600080fd5b505afa15801561026b573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061028f9190610e12565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016102ba9190611004565b60206040518083038186803b1580156102d257600080fd5b505afa1580156102e6573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061030a9190610eae565b6103725760405162461bcd60e51b815260206004820152602e60248201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060448201526d34b9903737ba1036b0b730b3b2b960911b60648201526084015b60405180910390fd5b60008481526003602090815260409182902080546001600160a01b03199081166001600160a01b0388811691821784556001840180548416898316908117909155600290940180549093169087169081179092558451898152938401529282015260608101919091527fb608982bfcdd204befa232358aec18c4f94927a342487b3ef6e3dc74c077520e9060800160405180910390a150505050565b6060600280548060200260200160405190810160405280929190818152602001828054801561046657602002820191906000526020600020905b81546001600160a01b03168152600190910190602001808311610448575b5050505050905090565b600081815260036020526040812080546001820154600283015484926104a6926001600160a01b03918216929082169116610acd565b905060006104e0858460020160149054906101000a90046001600160601b031660016104d29190611144565b6001600160601b0316610b56565b8251602093840120604080516001600160f81b0319818701523060601b6001600160601b031916602182015260358101939093526055808401929092528051808403909201825260759092019091528051920191909120949350505050565b600054610100900460ff1661055a5760005460ff161561055e565b303b155b6105c15760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b6064820152608401610369565b600054610100900460ff161580156105e3576000805461ffff19166101011790555b610621848480806020026020016040519081016040528093929190818152602001838360200280828437600092019190915250869250610bc7915050565b8015610633576000805461ff00191690555b50505050565b3360009081526001602052604081205460ff166106b55760405162461bcd60e51b815260206004820152603460248201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60448201527332b91034b9903737ba1031b7b73a3937b63632b960611b6064820152608401610369565b6000848152600360205260409020600281018054600160a01b90046001600160601b03169060146106e58361118a565b82546001600160601b039182166101009390930a928302919092021990911617905550805460018201546002830154600092610731926001600160a01b03918216929082169116610acd565b6002830154909150600090610757908890600160a01b90046001600160601b0316610b56565b90508082516020840134f593506000846001600160a01b03163b116107bc5760405162461bcd60e51b815260206004820152601b60248201527a1c1c9bde1e4818db1bdb994818dc99585d1a5bdb8819985a5b1959602a1b6044820152606401610369565b60405163439fab9160e01b81526001600160a01b0385169063439fab91906107ea9089908990600401611065565b600060405180830381600087803b15801561080457600080fd5b505af1158015610818573d6000803e3d6000fd5b5050604080518a81526001600160a01b03881660208201527fd2b01fce9b359ab6c97383b2d0d8574bd49084b36a0c636ae27ce14592e52737935001905060405180910390a15050509392505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161089d9190600401611094565b60206040518083038186803b1580156108b557600080fd5b505afa1580156108c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108ed9190610e12565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016109189190611004565b60206040518083038186803b15801561093057600080fd5b505afa158015610944573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906109689190610eae565b6109c75760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b6064820152608401610369565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b600254811015610a4d5760028181548110610a1957634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b0384811691161415610a3d57600191505b610a468161116f565b90506109ee565b5080610a9f57600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b60028181548110610ab357600080fd5b6000918252602090912001546001600160a01b0316905081565b6060600060405180602001610ae190610d68565b601f1982820381018352601f9091011660408181526001600160a01b0380891660208401528088169183019190915285166060820152909150819060800160408051601f1981840301815290829052610b3d9291602001610fe7565b6040516020818303038152906040529150509392505050565b60008083604051602001610b6c91815260200190565b60408051601f19818403018152919052805160209091012090506000610b92848361112c565b905080604051602001610ba791815260200190565b604051602081830303815290604052805190602001209250505092915050565b600054610100900460ff16610bee5760405162461bcd60e51b8152600401610369906110e1565b6001600160a01b038116610c145760405162461bcd60e51b8152600401610369906110bc565b60005b8251811015610c8a5760006001600160a01b0316838281518110610c4b57634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b03161415610c7a5760405162461bcd60e51b8152600401610369906110bc565b610c838161116f565b9050610c17565b5060005b8251811015610cfe576001806000858481518110610cbc57634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff1916911515919091179055610cf78161116f565b9050610c8e565b508151610d12906002906020850190610d75565b50610a9f81600054610100900460ff16610d3e5760405162461bcd60e51b8152600401610369906110e1565b600080546001600160a01b03909216620100000262010000600160b01b0319909216919091179055565b610196806111e083390190565b828054828255906000526020600020908101928215610dca579160200282015b82811115610dca57825182546001600160a01b0319166001600160a01b03909116178255602090920191600190910190610d95565b50610dd6929150610dda565b5090565b5b80821115610dd65760008155600101610ddb565b600060208284031215610e00578081fd5b8135610e0b816111c7565b9392505050565b600060208284031215610e23578081fd5b8151610e0b816111c7565b600080600060408486031215610e42578182fd5b83356001600160401b0380821115610e58578384fd5b818601915086601f830112610e6b578384fd5b813581811115610e79578485fd5b8760208260051b8501011115610e8d578485fd5b60209283019550935050840135610ea3816111c7565b809150509250925092565b600060208284031215610ebf578081fd5b81518015158114610e0b578182fd5b600060208284031215610edf578081fd5b5035919050565b60008060008060808587031215610efb578081fd5b843593506020850135610f0d816111c7565b92506040850135610f1d816111c7565b91506060850135610f2d816111c7565b939692955090935050565b600080600060408486031215610f4c578283fd5b8335925060208401356001600160401b0380821115610f69578384fd5b818601915086601f830112610f7c578384fd5b813581811115610f8a578485fd5b876020828501011115610f9b578485fd5b6020830194508093505050509250925092565b60008151815b81811015610fce5760208185018101518683015201610fb4565b81811115610fdc5782828601525b509290920192915050565b6000610ffc610ff68386610fae565b84610fae565b949350505050565b6001600160a01b0391909116815260200190565b6020808252825182820181905260009190848201906040850190845b818110156110595783516001600160a01b031683529284019291840191600101611034565b50909695505050505050565b60208152816020820152818360408301376000818301604090810191909152601f909201601f19160101919050565b60208101600e83106110b657634e487b7160e01b600052602160045260246000fd5b91905290565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b6020808252602b908201527f496e697469616c697a61626c653a20636f6e7472616374206973206e6f74206960408201526a6e697469616c697a696e6760a81b606082015260800190565b6000821982111561113f5761113f6111b1565b500190565b60006001600160601b03828116848216808303821115611166576111666111b1565b01949350505050565b6000600019821415611183576111836111b1565b5060010190565b60006001600160601b03828116808214156111a7576111a76111b1565b6001019392505050565b634e487b7160e01b600052601160045260246000fd5b6001600160a01b03811681146111dc57600080fd5b5056fe608060405234801561001057600080fd5b5060405161019638038061019683398101604081905261002f916100b9565b7fb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103929092557f12fe31f5c6f7b7eb37c3a9b1bcb2048b5844d6998ddcca840cc9fa541abf2a59557f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc556100fb565b80516001600160a01b03811681146100b457600080fd5b919050565b6000806000606084860312156100cd578283fd5b6100d68461009d565b92506100e46020850161009d565b91506100f26040850161009d565b90509250925092565b608d806101096000396000f3fe6080604052348015600f57600080fd5b507f12fe31f5c6f7b7eb37c3a9b1bcb2048b5844d6998ddcca840cc9fa541abf2a59543660008037600080366000845af490503d6000803e8080156052573d6000f35b3d6000fdfea26469706673582212203fee3b8d6a463b183e13684206ead80b5be2cb4b62b3921beaf3d055caa6137964736f6c63430008040033a26469706673582212200f213e4ca6e7b5df89ac45b0bd30df23b4c3b709031e49e772839ca400110a4364736f6c63430008040033",
+  "devdoc": {
+    "details": "Like EIP-1167, but for upgradeable contracts, meaning that clone will delegate to proxy which will delegate to actual implemenation. Address of the proxy is immutable, but implementation can be changed via API supporting EIP-1967*",
+    "kind": "dev",
+    "methods": {
+      "deployClone(bytes32,bytes)": {
+        "details": "Clones implementation according to EIP1167",
+        "params": {
+          "_implementationHash": "keccak256(implementation name)",
+          "_initData": "Data for deployed token initialize method"
+        },
+        "returns": {
+          "deployedCloneAddress_": "Address of the deployed clone"
+        }
+      },
+      "getNextCloneAddress(bytes32)": {
+        "params": {
+          "_implementationHash": "keccak256(implementation name)"
+        },
+        "returns": {
+          "_0": "Predicted address of the next lp token"
+        }
+      },
+      "setImplementation(bytes32,address,address,address)": {
+        "params": {
+          "_implementationAddress": "An address of the implementation",
+          "_implementationHash": "keccak256(implementation name)",
+          "_proxyAddress": "An address of the proxy",
+          "_proxyAdminAddress": "An address of the proxy admin"
+        }
+      }
+    },
+    "title": "Proxy clones factory",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 702,
+        "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+        "label": "_initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 705,
+        "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+        "label": "_initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 15187,
+        "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+        "label": "moduleMap",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_contract(IModuleMap)24885"
+      },
+      {
+        "astId": 8512,
+        "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+        "label": "_controllers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 8515,
+        "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+        "label": "controllers",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 4408,
+        "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+        "label": "implementations",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_bytes32,t_struct(Implementation)25243_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_contract(IModuleMap)24885": {
+        "encoding": "inplace",
+        "label": "contract IModuleMap",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_bytes32,t_struct(Implementation)25243_storage)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => struct IProxyCloneFactory.Implementation)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Implementation)25243_storage"
+      },
+      "t_struct(Implementation)25243_storage": {
+        "encoding": "inplace",
+        "label": "struct IProxyCloneFactory.Implementation",
+        "members": [
+          {
+            "astId": 25236,
+            "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+            "label": "proxyAdmin",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 25238,
+            "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+            "label": "proxy",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address"
+          },
+          {
+            "astId": 25240,
+            "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+            "label": "implementation",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address"
+          },
+          {
+            "astId": 25242,
+            "contract": "contracts/clones/ProxyCloneFactory.sol:ProxyCloneFactory",
+            "label": "salt",
+            "offset": 20,
+            "slot": "2",
+            "type": "t_uint96"
+          }
+        ],
+        "numberOfBytes": "96"
+      },
+      "t_uint96": {
+        "encoding": "inplace",
+        "label": "uint96",
+        "numberOfBytes": "12"
+      }
+    }
+  }
+}

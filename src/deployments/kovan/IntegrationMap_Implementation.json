@@ -1,0 +1,1343 @@
+{
+  "address": "0xD3f3B6c1052E393a9D6A7C4b79fAE86b1B56b6b2",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "enum TokenConfigs.TokenSettingName",
+          "name": "settingName",
+          "type": "uint8"
+        },
+        {
+          "indexed": true,
+          "internalType": "bool",
+          "name": "newValue",
+          "type": "bool"
+        }
+      ],
+      "name": "TokenSettingToggled",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "controllers_",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "moduleMap_",
+          "type": "address"
+        }
+      ],
+      "name": "__Controlled_init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        }
+      ],
+      "name": "addController",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "contractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "name": "addIntegration",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "acceptingDeposits",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "acceptingWithdrawals",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "acceptingLping",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "acceptingBridging",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "biosRewardWeight",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveRatioNumerator",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "targetLiquidityRatioNumerator",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "transferFeeKValueNumerator",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "transferFeePlatformRatioNumerator",
+          "type": "uint256"
+        }
+      ],
+      "name": "addToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "controllers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "disableTokenBridging",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "disableTokenDeposits",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "disableTokenLping",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "disableTokenWithdrawals",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "enableTokenBridging",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "enableTokenDeposits",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "enableTokenLping",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "enableTokenWithdrawals",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBiosRewardWeightSum",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "rewardWeightSum",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBiosTokenAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "integrationId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getIntegrationAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getIntegrationAddressesLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "integrationAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getIntegrationName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "integrationAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getIsIntegrationAdded",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getIsTokenAdded",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getReserveRatioDenominator",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTargetLiquidityRatioDenominator",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenAcceptingBridging",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenAcceptingDeposits",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenAcceptingLping",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenAcceptingWithdrawals",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTokenAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTokenAddressesLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenBiosRewardWeight",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenReserveRatioNumerator",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenTargetLiquidityRatioNumerator",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenTransferFeeKValueNumerator",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getTokenTransferFeePlatformRatioNumerator",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTransferFeeKValueDenominator",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTransferFeePlatformRatioDenominator",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getWethTokenAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "controllers_",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "moduleMap_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "wethTokenAddress_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "biosTokenAddress_",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "moduleMap",
+      "outputs": [
+        {
+          "internalType": "contract IModuleMap",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "biosAddress",
+          "type": "address"
+        }
+      ],
+      "name": "updateBiosTokenAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reserveRatioNumerator",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTokenReserveRatioNumerator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rewardWeight",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTokenRewardWeight",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "targetLiquidityRatioNumerator",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTokenTargetLiquidityRatioNumerator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "transferFeeKValueNumerator",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTokenTransferFeeKValueNumerator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "transferFeePlatformRatioNumerator",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTokenTransferFeePlatformRatioNumerator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xcd01f3693fb853d2b903f8b8b0f3070f9bc42dfffa9b1b11af281f898773b5cb",
+  "receipt": {
+    "to": null,
+    "from": "0x5bF98cC575E3aBA4756b9000778d3F906681876D",
+    "contractAddress": "0xD3f3B6c1052E393a9D6A7C4b79fAE86b1B56b6b2",
+    "transactionIndex": 1,
+    "gasUsed": "3548583",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x96d2facf3e9e180953fbbc8280cf878a0c7a241d99271abb5b9a84ba93ef73f3",
+    "transactionHash": "0xcd01f3693fb853d2b903f8b8b0f3070f9bc42dfffa9b1b11af281f898773b5cb",
+    "logs": [],
+    "blockNumber": 29442900,
+    "cumulativeGasUsed": "3707976",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "3431e4381f2519326a70e3e5c8d5090e",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"enum TokenConfigs.TokenSettingName\",\"name\":\"settingName\",\"type\":\"uint8\"},{\"indexed\":true,\"internalType\":\"bool\",\"name\":\"newValue\",\"type\":\"bool\"}],\"name\":\"TokenSettingToggled\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"controllers_\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"moduleMap_\",\"type\":\"address\"}],\"name\":\"__Controlled_init\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"}],\"name\":\"addController\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"addIntegration\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"acceptingDeposits\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"acceptingWithdrawals\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"acceptingLping\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"acceptingBridging\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"biosRewardWeight\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"reserveRatioNumerator\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"targetLiquidityRatioNumerator\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"transferFeeKValueNumerator\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"transferFeePlatformRatioNumerator\",\"type\":\"uint256\"}],\"name\":\"addToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"controllers\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"disableTokenBridging\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"disableTokenDeposits\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"disableTokenLping\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"disableTokenWithdrawals\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"enableTokenBridging\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"enableTokenDeposits\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"enableTokenLping\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"enableTokenWithdrawals\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBiosRewardWeightSum\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"rewardWeightSum\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getBiosTokenAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"integrationId\",\"type\":\"uint256\"}],\"name\":\"getIntegrationAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getIntegrationAddressesLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"integrationAddress\",\"type\":\"address\"}],\"name\":\"getIntegrationName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"integrationAddress\",\"type\":\"address\"}],\"name\":\"getIsIntegrationAdded\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getIsTokenAdded\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getReserveRatioDenominator\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTargetLiquidityRatioDenominator\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenAcceptingBridging\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenAcceptingDeposits\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenAcceptingLping\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenAcceptingWithdrawals\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getTokenAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTokenAddressesLength\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenBiosRewardWeight\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenReserveRatioNumerator\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenTargetLiquidityRatioNumerator\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenTransferFeeKValueNumerator\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getTokenTransferFeePlatformRatioNumerator\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTransferFeeKValueDenominator\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTransferFeePlatformRatioDenominator\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getWethTokenAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"controllers_\",\"type\":\"address[]\"},{\"internalType\":\"address\",\"name\":\"moduleMap_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"wethTokenAddress_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"biosTokenAddress_\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"moduleMap\",\"outputs\":[{\"internalType\":\"contract IModuleMap\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"biosAddress\",\"type\":\"address\"}],\"name\":\"updateBiosTokenAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"reserveRatioNumerator\",\"type\":\"uint256\"}],\"name\":\"updateTokenReserveRatioNumerator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"rewardWeight\",\"type\":\"uint256\"}],\"name\":\"updateTokenRewardWeight\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"targetLiquidityRatioNumerator\",\"type\":\"uint256\"}],\"name\":\"updateTokenTargetLiquidityRatioNumerator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"transferFeeKValueNumerator\",\"type\":\"uint256\"}],\"name\":\"updateTokenTransferFeeKValueNumerator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"transferFeePlatformRatioNumerator\",\"type\":\"uint256\"}],\"name\":\"updateTokenTransferFeePlatformRatioNumerator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"addIntegration(address,string)\":{\"params\":{\"contractAddress\":\"The address of the integration contract\",\"name\":\"The name of the protocol being integrated to\"}},\"addToken(address,bool,bool,bool,bool,uint256,uint256,uint256,uint256,uint256)\":{\"params\":{\"acceptingDeposits\":\"Whether token deposits are enabled\",\"acceptingWithdrawals\":\"Whether token withdrawals are enabled\",\"biosRewardWeight\":\"Token weight for BIOS rewards\",\"reserveRatioNumerator\":\"Number that gets divided by reserve ratio denominator to get reserve ratio\",\"tokenAddress\":\"The address of the ERC20 token contract\"}},\"disableTokenBridging(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"disableTokenDeposits(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"disableTokenLping(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"disableTokenWithdrawals(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"enableTokenBridging(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"enableTokenDeposits(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"enableTokenLping(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"enableTokenWithdrawals(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"getBiosRewardWeightSum()\":{\"returns\":{\"rewardWeightSum\":\"reward weight of depositable tokens\"}},\"getBiosTokenAddress()\":{\"returns\":{\"_0\":\"The address of the BIOS token\"}},\"getIntegrationAddress(uint256)\":{\"params\":{\"integrationId\":\"The ID of the integration\"},\"returns\":{\"_0\":\"The address of the integration contract\"}},\"getIntegrationAddressesLength()\":{\"returns\":{\"_0\":\"The quantity of Integrations added\"}},\"getIntegrationName(address)\":{\"params\":{\"integrationAddress\":\"The address of the integration contract\"},\"returns\":{\"_0\":\"The name of the of the protocol being integrated to\"}},\"getReserveRatioDenominator()\":{\"returns\":{\"_0\":\"The token reserve ratio denominator\"}},\"getTargetLiquidityRatioDenominator()\":{\"returns\":{\"_0\":\"The target liquidity ratio denominator\"}},\"getTokenAcceptingBridging(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"bool indicating whether Lping this token is currently enabled\"}},\"getTokenAcceptingDeposits(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"bool indicating whether depositing this token is currently enabled\"}},\"getTokenAcceptingLping(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"bool indicating whether Lping this token is currently enabled\"}},\"getTokenAcceptingWithdrawals(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"bool indicating whether withdrawing this token is currently enabled\"}},\"getTokenAddress(uint256)\":{\"params\":{\"tokenId\":\"The ID of the token\"},\"returns\":{\"_0\":\"The address of the token ERC20 contract\"}},\"getTokenAddressesLength()\":{\"returns\":{\"_0\":\"The quantity of tokens added\"}},\"getTokenBiosRewardWeight(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"The token BIOS reward weight\"}},\"getTokenId(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"The index of the token in the tokens array\"}},\"getTokenReserveRatioNumerator(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"The token reserve ratio numerator\"}},\"getTokenTargetLiquidityRatioNumerator(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"The number that gets divided by target liquidity ratio denominator\"}},\"getTokenTransferFeeKValueNumerator(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"The number that gets divided by transfer fee K-value denominator\"}},\"getTokenTransferFeePlatformRatioNumerator(address)\":{\"params\":{\"tokenAddress\":\"The address of the token ERC20 contract\"},\"returns\":{\"_0\":\"The number that gets divided by transfer fee platform ratio denominator\"}},\"getTransferFeeKValueDenominator()\":{\"returns\":{\"_0\":\"The transfer fee K-value denominator\"}},\"getTransferFeePlatformRatioDenominator()\":{\"returns\":{\"_0\":\"The transfer fee platform ratio denominator\"}},\"getWethTokenAddress()\":{\"returns\":{\"_0\":\"The address of the WETH token\"}},\"updateTokenReserveRatioNumerator(address,uint256)\":{\"params\":{\"reserveRatioNumerator\":\"Number that gets divided by reserve ratio denominator to get reserve ratio\",\"tokenAddress\":\"the address of the token ERC20 contract\"}},\"updateTokenRewardWeight(address,uint256)\":{\"params\":{\"rewardWeight\":\"The updated token BIOS reward weight\",\"tokenAddress\":\"The address of the token ERC20 contract\"}},\"updateTokenTargetLiquidityRatioNumerator(address,uint256)\":{\"params\":{\"targetLiquidityRatioNumerator\":\"Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\",\"tokenAddress\":\"the address of the token ERC20 contract\"}},\"updateTokenTransferFeeKValueNumerator(address,uint256)\":{\"params\":{\"tokenAddress\":\"the address of the token ERC20 contract\",\"transferFeeKValueNumerator\":\"Number that gets divided by transfer fee K-value denominator to get K-value\"}},\"updateTokenTransferFeePlatformRatioNumerator(address,uint256)\":{\"params\":{\"tokenAddress\":\"the address of the token ERC20 contract\",\"transferFeePlatformRatioNumerator\":\"Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getIntegrationAddressesLength()\":{\"notice\":\"Gets the length of supported integrations\"},\"getTokenAddressesLength()\":{\"notice\":\"Gets the length of supported tokens\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/core/IntegrationMap.sol\":\"IntegrationMap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (proxy/utils/Initializable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../../utils/AddressUpgradeable.sol\\\";\\n\\n/**\\n * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\\n * behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an\\n * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\\n * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\\n *\\n * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\\n * possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\\n *\\n * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\\n * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\\n *\\n * [CAUTION]\\n * ====\\n * Avoid leaving a contract uninitialized.\\n *\\n * An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation\\n * contract, which may impact the proxy. To initialize the implementation contract, you can either invoke the\\n * initializer manually, or you can include a constructor to automatically mark it as initialized when it is deployed:\\n *\\n * [.hljs-theme-light.nopadding]\\n * ```\\n * /// @custom:oz-upgrades-unsafe-allow constructor\\n * constructor() initializer {}\\n * ```\\n * ====\\n */\\nabstract contract Initializable {\\n    /**\\n     * @dev Indicates that the contract has been initialized.\\n     */\\n    bool private _initialized;\\n\\n    /**\\n     * @dev Indicates that the contract is in the process of being initialized.\\n     */\\n    bool private _initializing;\\n\\n    /**\\n     * @dev Modifier to protect an initializer function from being invoked twice.\\n     */\\n    modifier initializer() {\\n        // If the contract is initializing we ignore whether _initialized is set in order to support multiple\\n        // inheritance patterns, but we only do this in the context of a constructor, because in other contexts the\\n        // contract may have been reentered.\\n        require(_initializing ? _isConstructor() : !_initialized, \\\"Initializable: contract is already initialized\\\");\\n\\n        bool isTopLevelCall = !_initializing;\\n        if (isTopLevelCall) {\\n            _initializing = true;\\n            _initialized = true;\\n        }\\n\\n        _;\\n\\n        if (isTopLevelCall) {\\n            _initializing = false;\\n        }\\n    }\\n\\n    /**\\n     * @dev Modifier to protect an initialization function so that it can only be invoked by functions with the\\n     * {initializer} modifier, directly or indirectly.\\n     */\\n    modifier onlyInitializing() {\\n        require(_initializing, \\\"Initializable: contract is not initializing\\\");\\n        _;\\n    }\\n\\n    function _isConstructor() private view returns (bool) {\\n        return !AddressUpgradeable.isContract(address(this));\\n    }\\n}\\n\",\"keccak256\":\"0x68861bcc80cacbd498efde75aab6c74a486cc48262660d326c8d7530d9752097\",\"license\":\"MIT\"},\"@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/Address.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Collection of functions related to the address type\\n */\\nlibrary AddressUpgradeable {\\n    /**\\n     * @dev Returns true if `account` is a contract.\\n     *\\n     * [IMPORTANT]\\n     * ====\\n     * It is unsafe to assume that an address for which this function returns\\n     * false is an externally-owned account (EOA) and not a contract.\\n     *\\n     * Among others, `isContract` will return false for the following\\n     * types of addresses:\\n     *\\n     *  - an externally-owned account\\n     *  - a contract in construction\\n     *  - an address where a contract will be created\\n     *  - an address where a contract lived, but was destroyed\\n     * ====\\n     */\\n    function isContract(address account) internal view returns (bool) {\\n        // This method relies on extcodesize, which returns 0 for contracts in\\n        // construction, since the code is only stored at the end of the\\n        // constructor execution.\\n\\n        uint256 size;\\n        assembly {\\n            size := extcodesize(account)\\n        }\\n        return size > 0;\\n    }\\n\\n    /**\\n     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to\\n     * `recipient`, forwarding all available gas and reverting on errors.\\n     *\\n     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost\\n     * of certain opcodes, possibly making contracts go over the 2300 gas limit\\n     * imposed by `transfer`, making them unable to receive funds via\\n     * `transfer`. {sendValue} removes this limitation.\\n     *\\n     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].\\n     *\\n     * IMPORTANT: because control is transferred to `recipient`, care must be\\n     * taken to not create reentrancy vulnerabilities. Consider using\\n     * {ReentrancyGuard} or the\\n     * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].\\n     */\\n    function sendValue(address payable recipient, uint256 amount) internal {\\n        require(address(this).balance >= amount, \\\"Address: insufficient balance\\\");\\n\\n        (bool success, ) = recipient.call{value: amount}(\\\"\\\");\\n        require(success, \\\"Address: unable to send value, recipient may have reverted\\\");\\n    }\\n\\n    /**\\n     * @dev Performs a Solidity function call using a low level `call`. A\\n     * plain `call` is an unsafe replacement for a function call: use this\\n     * function instead.\\n     *\\n     * If `target` reverts with a revert reason, it is bubbled up by this\\n     * function (like regular Solidity function calls).\\n     *\\n     * Returns the raw returned data. To convert to the expected return value,\\n     * use https://solidity.readthedocs.io/en/latest/units-and-global-variables.html?highlight=abi.decode#abi-encoding-and-decoding-functions[`abi.decode`].\\n     *\\n     * Requirements:\\n     *\\n     * - `target` must be a contract.\\n     * - calling `target` with `data` must not revert.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(address target, bytes memory data) internal returns (bytes memory) {\\n        return functionCall(target, data, \\\"Address: low-level call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with\\n     * `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, 0, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but also transferring `value` wei to `target`.\\n     *\\n     * Requirements:\\n     *\\n     * - the calling contract must have an ETH balance of at least `value`.\\n     * - the called Solidity function must be `payable`.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value\\n    ) internal returns (bytes memory) {\\n        return functionCallWithValue(target, data, value, \\\"Address: low-level call with value failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but\\n     * with `errorMessage` as a fallback revert reason when `target` reverts.\\n     *\\n     * _Available since v3.1._\\n     */\\n    function functionCallWithValue(\\n        address target,\\n        bytes memory data,\\n        uint256 value,\\n        string memory errorMessage\\n    ) internal returns (bytes memory) {\\n        require(address(this).balance >= value, \\\"Address: insufficient balance for call\\\");\\n        require(isContract(target), \\\"Address: call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\\n        return functionStaticCall(target, data, \\\"Address: low-level static call failed\\\");\\n    }\\n\\n    /**\\n     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],\\n     * but performing a static call.\\n     *\\n     * _Available since v3.3._\\n     */\\n    function functionStaticCall(\\n        address target,\\n        bytes memory data,\\n        string memory errorMessage\\n    ) internal view returns (bytes memory) {\\n        require(isContract(target), \\\"Address: static call to non-contract\\\");\\n\\n        (bool success, bytes memory returndata) = target.staticcall(data);\\n        return verifyCallResult(success, returndata, errorMessage);\\n    }\\n\\n    /**\\n     * @dev Tool to verifies that a low level call was successful, and revert if it wasn't, either by bubbling the\\n     * revert reason using the provided one.\\n     *\\n     * _Available since v4.3._\\n     */\\n    function verifyCallResult(\\n        bool success,\\n        bytes memory returndata,\\n        string memory errorMessage\\n    ) internal pure returns (bytes memory) {\\n        if (success) {\\n            return returndata;\\n        } else {\\n            // Look for revert reason and bubble it up if present\\n            if (returndata.length > 0) {\\n                // The easiest way to bubble the revert reason is using memory via assembly\\n\\n                assembly {\\n                    let returndata_size := mload(returndata)\\n                    revert(add(32, returndata), returndata_size)\\n                }\\n            } else {\\n                revert(errorMessage);\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x3f0f878c796dfc7feba6d3c4e3e526c14c7deae8b7bfc71088e3f38fab0d77b3\",\"license\":\"MIT\"},\"contracts/core/Controlled.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"./ModuleMapConsumer.sol\\\";\\nimport \\\"../interfaces/IKernel.sol\\\";\\n\\nabstract contract Controlled is Initializable, ModuleMapConsumer {\\n    // controller address => is a controller\\n    mapping(address => bool) internal _controllers;\\n    address[] public controllers;\\n\\n    function __Controlled_init(address[] memory controllers_, address moduleMap_) public initializer {\\n        require(moduleMap_ != address(0), \\\"bad address\\\");\\n        for (uint256 i = 0; i < controllers_.length; i++) {\\n            require(controllers_[i] != address(0), \\\"bad address\\\");\\n        }\\n        for (uint256 i; i < controllers_.length; i++) {\\n            _controllers[controllers_[i]] = true;\\n        }\\n        controllers = controllers_;\\n        __ModuleMapConsumer_init(moduleMap_);\\n    }\\n\\n    function addController(address controller) external onlyOwner {\\n        _controllers[controller] = true;\\n        bool added;\\n        for (uint256 i; i < controllers.length; i++) {\\n            if (controller == controllers[i]) {\\n                added = true;\\n            }\\n        }\\n        if (!added) {\\n            controllers.push(controller);\\n        }\\n    }\\n\\n    modifier onlyOwner() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isOwner(msg.sender),\\n            \\\"Controlled::onlyOwner: Caller is not owner\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyManager() {\\n        require(\\n            IKernel(moduleMap.getModuleAddress(Modules.Kernel)).isManager(msg.sender),\\n            \\\"Controlled::onlyManager: Caller is not manager\\\"\\n        );\\n        _;\\n    }\\n\\n    modifier onlyController() {\\n        require(_controllers[msg.sender], \\\"Controlled::onlyController: Caller is not controller\\\");\\n        _;\\n    }\\n}\\n\",\"keccak256\":\"0x215a65d03cab95bbf6c6e9ba9df39f78c71bdd50ab3a29be989236c9074cc357\",\"license\":\"GPL-2.0\"},\"contracts/core/IntegrationMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"./ModuleMapConsumer.sol\\\";\\nimport \\\"./Controlled.sol\\\";\\nimport \\\"../interfaces/IIntegrationMap.sol\\\";\\n\\ncontract IntegrationMap is Initializable, ModuleMapConsumer, Controlled, IIntegrationMap {\\n    uint32 private constant RESERVE_RATIO_DENOMINATOR = 1_000_000;\\n    address private wethTokenAddress;\\n    address private biosTokenAddress;\\n    address[] private tokenAddresses;\\n    address[] private integrationAddresses;\\n\\n    // Integration address => Integration details\\n    mapping(address => Integration) private integrations;\\n    // Token address => Token details\\n    mapping(address => Token) private tokens;\\n\\n    uint32 private constant TARGET_LIQUIDITY_RATIO_DENOMINATOR = 1_000_000;\\n    uint32 private constant TRANSFER_FEE_K_VALUE_DENOMINATOR = 1_000_000;\\n    uint32 private constant TRANSFER_FEE_PLATFORM_RATIO_DENOMINATOR = 1_000_000;\\n\\n    function initialize(\\n        address[] memory controllers_,\\n        address moduleMap_,\\n        address wethTokenAddress_,\\n        address biosTokenAddress_\\n    ) public initializer {\\n        require(wethTokenAddress_ != address(0), \\\"bad address\\\");\\n        require(biosTokenAddress_ != address(0), \\\"bad address\\\");\\n        __Controlled_init(controllers_, moduleMap_);\\n        wethTokenAddress = wethTokenAddress_;\\n        biosTokenAddress = biosTokenAddress_;\\n\\n        _addToken(wethTokenAddress_, true, true, true, true, 1_000, 50_000, 100_000, 40_000, 50_000);\\n        _addToken(biosTokenAddress_, true, true, true, true, 1_000, 0, 100_000, 40_000, 50_00);\\n    }\\n\\n    /// @param contractAddress The address of the integration contract\\n    /// @param name The name of the protocol being integrated to\\n    function addIntegration(address contractAddress, string memory name) external override onlyController {\\n        require(!integrations[contractAddress].added, \\\"IntegrationMap::addIntegration: Integration already added\\\");\\n        integrations[contractAddress].added = true;\\n        integrations[contractAddress].name = name;\\n        integrationAddresses.push(contractAddress);\\n    }\\n\\n    /// @param tokenAddress The address of the ERC20 token contract\\n    /// @param acceptingDeposits Whether token deposits are enabled\\n    /// @param acceptingWithdrawals Whether token withdrawals are enabled\\n    /// @param biosRewardWeight Token weight for BIOS rewards\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    function _addToken(\\n        address tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) internal {\\n        // We skip instead of error when you re-add a token due to great migration of 2021\\n        if (tokens[tokenAddress].added) {\\n            return;\\n        }\\n\\n        require(\\n            reserveRatioNumerator <= RESERVE_RATIO_DENOMINATOR,\\n            \\\"IntegrationMap::addToken: reserveRatioNumerator must be less than or equal to reserve ratio denominator\\\"\\n        );\\n        require(\\n            targetLiquidityRatioNumerator <= TARGET_LIQUIDITY_RATIO_DENOMINATOR,\\n            \\\"IntegrationMap::addToken: targetLiquidityRatioNumerator must be less than or equal to target liquidity ratio denominator\\\"\\n        );\\n        require(\\n            transferFeeKValueNumerator <= TRANSFER_FEE_K_VALUE_DENOMINATOR,\\n            \\\"IntegrationMap::addToken: transferFeeKValueNumerator must be less than or equal to transfer fee K-value denominator\\\"\\n        );\\n        require(\\n            transferFeePlatformRatioNumerator <= TRANSFER_FEE_PLATFORM_RATIO_DENOMINATOR,\\n            \\\"IntegrationMap::addToken: transferFeePlatformRatioNumerator must be less than or equal to transfer fee platform ratio denominator\\\"\\n        );\\n\\n        tokens[tokenAddress].id = tokenAddresses.length;\\n        tokens[tokenAddress].added = true;\\n        tokens[tokenAddress].acceptingDeposits = acceptingDeposits;\\n        tokens[tokenAddress].acceptingWithdrawals = acceptingWithdrawals;\\n        tokens[tokenAddress].acceptingLping = acceptingLping;\\n        tokens[tokenAddress].acceptingBridging = acceptingBridging;\\n        tokens[tokenAddress].biosRewardWeight = biosRewardWeight;\\n        tokens[tokenAddress].reserveRatioNumerator = reserveRatioNumerator;\\n        tokens[tokenAddress].targetLiquidityRatioNumerator = targetLiquidityRatioNumerator;\\n        tokens[tokenAddress].transferFeeKValueNumerator = transferFeeKValueNumerator;\\n        tokens[tokenAddress].transferFeePlatformRatioNumerator = transferFeePlatformRatioNumerator;\\n        tokenAddresses.push(tokenAddress);\\n    }\\n\\n    /// @param tokenAddress The address of the ERC20 token contract\\n    /// @param acceptingDeposits Whether token deposits are enabled\\n    /// @param acceptingWithdrawals Whether token withdrawals are enabled\\n    /// @param biosRewardWeight Token weight for BIOS rewards\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n\\n    function addToken(\\n        address tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external override onlyController {\\n        _addToken(\\n            tokenAddress,\\n            acceptingDeposits,\\n            acceptingWithdrawals,\\n            acceptingLping,\\n            acceptingBridging,\\n            biosRewardWeight,\\n            reserveRatioNumerator,\\n            targetLiquidityRatioNumerator,\\n            transferFeeKValueNumerator,\\n            transferFeePlatformRatioNumerator\\n        );\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenDeposits(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::enableTokenDeposits: Token does not exist\\\");\\n        require(\\n            !tokens[tokenAddress].acceptingDeposits,\\n            \\\"IntegrationMap::enableTokenDeposits: Token already accepting deposits\\\"\\n        );\\n\\n        tokens[tokenAddress].acceptingDeposits = true;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.deposit, true);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenDeposits(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::disableTokenDeposits: Token does not exist\\\");\\n        require(\\n            tokens[tokenAddress].acceptingDeposits,\\n            \\\"IntegrationMap::disableTokenDeposits: Token deposits already disabled\\\"\\n        );\\n\\n        tokens[tokenAddress].acceptingDeposits = false;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.deposit, false);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenWithdrawals(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::enableTokenWithdrawals: Token does not exist\\\");\\n        require(\\n            !tokens[tokenAddress].acceptingWithdrawals,\\n            \\\"IntegrationMap::enableTokenWithdrawals: Token already accepting withdrawals\\\"\\n        );\\n\\n        tokens[tokenAddress].acceptingWithdrawals = true;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.withdraw, true);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenWithdrawals(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::disableTokenWithdrawals: Token does not exist\\\");\\n        require(\\n            tokens[tokenAddress].acceptingWithdrawals,\\n            \\\"IntegrationMap::disableTokenWithdrawals: Token withdrawals already disabled\\\"\\n        );\\n\\n        tokens[tokenAddress].acceptingWithdrawals = false;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.withdraw, false);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenLping(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::enableTokenLping: Token does not exist\\\");\\n        require(\\n            !tokens[tokenAddress].acceptingLping,\\n            \\\"IntegrationMap::enableTokenLping: Token already accepting LPing\\\"\\n        );\\n\\n        tokens[tokenAddress].acceptingLping = true;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.lp, true);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenLping(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::disableTokenLping: Token does not exist\\\");\\n        require(tokens[tokenAddress].acceptingLping, \\\"IntegrationMap::disableTokenLping: Token LPing already disabled\\\");\\n\\n        tokens[tokenAddress].acceptingLping = false;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.lp, false);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenBridging(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::enableTokenBridging: Token does not exist\\\");\\n        require(\\n            !tokens[tokenAddress].acceptingBridging,\\n            \\\"IntegrationMap::enableTokenBridging: Token already accepting bridging\\\"\\n        );\\n\\n        tokens[tokenAddress].acceptingBridging = true;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.bridge, true);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenBridging(address tokenAddress) external override onlyManager {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::disableTokenBridging: Token does not exist\\\");\\n        require(\\n            tokens[tokenAddress].acceptingBridging,\\n            \\\"IntegrationMap::disableTokenBridging: Token bridging already disabled\\\"\\n        );\\n\\n        tokens[tokenAddress].acceptingBridging = false;\\n        emit TokenSettingToggled(tokenAddress, TokenConfigs.TokenSettingName.bridge, false);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @param rewardWeight The updated token BIOS reward weight\\n    function updateTokenRewardWeight(address tokenAddress, uint256 rewardWeight) external override onlyController {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::updateTokenRewardWeight: Token does not exist\\\");\\n\\n        tokens[tokenAddress].biosRewardWeight = rewardWeight;\\n    }\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    function updateTokenReserveRatioNumerator(address tokenAddress, uint256 reserveRatioNumerator)\\n        external\\n        override\\n        onlyController\\n    {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::updateTokenReserveRatioNumerator: Token does not exist\\\");\\n        require(\\n            reserveRatioNumerator <= RESERVE_RATIO_DENOMINATOR,\\n            \\\"IntegrationMap::updateTokenReserveRatioNumerator: reserveRatioNumerator must be less than or equal to reserve ratio denominator\\\"\\n        );\\n\\n        tokens[tokenAddress].reserveRatioNumerator = reserveRatioNumerator;\\n    }\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param targetLiquidityRatioNumerator Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\\n    function updateTokenTargetLiquidityRatioNumerator(address tokenAddress, uint256 targetLiquidityRatioNumerator)\\n        external\\n        override\\n        onlyController\\n    {\\n        require(\\n            tokens[tokenAddress].added,\\n            \\\"IntegrationMap::updateTokenTargetLiquidityRatioNumerator: Token does not exist\\\"\\n        );\\n        require(\\n            targetLiquidityRatioNumerator <= TARGET_LIQUIDITY_RATIO_DENOMINATOR,\\n            \\\"IntegrationMap::updateTokenTargetLiquidityRatioNumerator: targetLiquidityRatioNumerator must be less than or equal to target liquidity ratio denominator\\\"\\n        );\\n\\n        tokens[tokenAddress].targetLiquidityRatioNumerator = targetLiquidityRatioNumerator;\\n    }\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeeKValueNumerator Number that gets divided by transfer fee K-value denominator to get K-value\\n    function updateTokenTransferFeeKValueNumerator(address tokenAddress, uint256 transferFeeKValueNumerator)\\n        external\\n        override\\n        onlyController\\n    {\\n        require(\\n            tokens[tokenAddress].added,\\n            \\\"IntegrationMap::updateTokenTransferFeeKValueNumerator: Token does not exist\\\"\\n        );\\n        require(\\n            transferFeeKValueNumerator <= TRANSFER_FEE_K_VALUE_DENOMINATOR,\\n            \\\"IntegrationMap::updateTokenTransferFeeKValueNumerator: transferFeeKValueNumerator must be less than or equal to transfer fee K-value denominator\\\"\\n        );\\n\\n        tokens[tokenAddress].transferFeeKValueNumerator = transferFeeKValueNumerator;\\n    }\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeePlatformRatioNumerator Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\\n    function updateTokenTransferFeePlatformRatioNumerator(\\n        address tokenAddress,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external override onlyController {\\n        require(\\n            tokens[tokenAddress].added,\\n            \\\"IntegrationMap::updateTokenTransferFeePlatformRatioNumerator: Token does not exist\\\"\\n        );\\n        require(\\n            transferFeePlatformRatioNumerator <= TRANSFER_FEE_PLATFORM_RATIO_DENOMINATOR,\\n            \\\"IntegrationMap::updateTokenTransferFeePlatformRatioNumerator: transferFeePlatformRatioNumerator must be less than or equal to transfer fee platform ratio denominator\\\"\\n        );\\n\\n        tokens[tokenAddress].transferFeePlatformRatioNumerator = transferFeePlatformRatioNumerator;\\n    }\\n\\n    function updateBiosTokenAddress(address biosAddress) external onlyManager {\\n        biosTokenAddress = biosAddress;\\n    }\\n\\n    /// @param integrationId The ID of the integration\\n    /// @return The address of the integration contract\\n    function getIntegrationAddress(uint256 integrationId) external view override returns (address) {\\n        require(\\n            integrationId < integrationAddresses.length,\\n            \\\"IntegrationMap::getIntegrationAddress: Integration does not exist\\\"\\n        );\\n\\n        return integrationAddresses[integrationId];\\n    }\\n\\n    /// @param integrationAddress The address of the integration contract\\n    /// @return The name of the of the protocol being integrated to\\n    function getIntegrationName(address integrationAddress) external view override returns (string memory) {\\n        require(\\n            integrations[integrationAddress].added,\\n            \\\"IntegrationMap::getIntegrationName: Integration does not exist\\\"\\n        );\\n\\n        return integrations[integrationAddress].name;\\n    }\\n\\n    /// @return The address of the WETH token\\n    function getWethTokenAddress() external view override returns (address) {\\n        return wethTokenAddress;\\n    }\\n\\n    /// @return The address of the BIOS token\\n    function getBiosTokenAddress() external view override returns (address) {\\n        return biosTokenAddress;\\n    }\\n\\n    /// @param tokenId The ID of the token\\n    /// @return The address of the token ERC20 contract\\n    function getTokenAddress(uint256 tokenId) external view override returns (address) {\\n        require(tokenId < tokenAddresses.length, \\\"IntegrationMap::getTokenAddress: Token does not exist\\\");\\n        return (tokenAddresses[tokenId]);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The index of the token in the tokens array\\n    function getTokenId(address tokenAddress) external view override returns (uint256) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenId: Token does not exist\\\");\\n        return (tokens[tokenAddress].id);\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The token BIOS reward weight\\n    function getTokenBiosRewardWeight(address tokenAddress) external view override returns (uint256) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenBiosRewardWeight: Token does not exist\\\");\\n        return (tokens[tokenAddress].biosRewardWeight);\\n    }\\n\\n    /// @return rewardWeightSum reward weight of depositable tokens\\n    function getBiosRewardWeightSum() external view override returns (uint256 rewardWeightSum) {\\n        for (uint256 tokenId; tokenId < tokenAddresses.length; tokenId++) {\\n            rewardWeightSum += tokens[tokenAddresses[tokenId]].biosRewardWeight;\\n        }\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether depositing this token is currently enabled\\n    function getTokenAcceptingDeposits(address tokenAddress) external view override returns (bool) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenAcceptingDeposits: Token does not exist\\\");\\n        return tokens[tokenAddress].acceptingDeposits;\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether withdrawing this token is currently enabled\\n    function getTokenAcceptingWithdrawals(address tokenAddress) external view override returns (bool) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenAcceptingWithdrawals: Token does not exist\\\");\\n        return tokens[tokenAddress].acceptingWithdrawals;\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether Lping this token is currently enabled\\n    function getTokenAcceptingLping(address tokenAddress) external view override returns (bool) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenAcceptingLping: Token does not exist\\\");\\n        return tokens[tokenAddress].acceptingLping;\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether Lping this token is currently enabled\\n    function getTokenAcceptingBridging(address tokenAddress) external view override returns (bool) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenAcceptingBridging: Token does not exist\\\");\\n        return tokens[tokenAddress].acceptingBridging;\\n    }\\n\\n    // @param tokenAddress The address of the token ERC20 contract\\n    // @return bool indicating whether the token has been added\\n    function getIsTokenAdded(address tokenAddress) external view override returns (bool) {\\n        return tokens[tokenAddress].added;\\n    }\\n\\n    // @param integrationAddress The address of the integration contract\\n    // @return bool indicating whether the integration has been added\\n    function getIsIntegrationAdded(address integrationAddress) external view override returns (bool) {\\n        return integrations[integrationAddress].added;\\n    }\\n\\n    /// @notice Gets the length of supported tokens\\n    /// @return The quantity of tokens added\\n    function getTokenAddressesLength() external view override returns (uint256) {\\n        return tokenAddresses.length;\\n    }\\n\\n    /// @notice Gets the length of supported integrations\\n    /// @return The quantity of Integrations added\\n    function getIntegrationAddressesLength() external view override returns (uint256) {\\n        return integrationAddresses.length;\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The token reserve ratio numerator\\n    function getTokenReserveRatioNumerator(address tokenAddress) external view override returns (uint256) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenReserveRatioNumerator: Token does not exist\\\");\\n        return tokens[tokenAddress].reserveRatioNumerator;\\n    }\\n\\n    /// @return The token reserve ratio denominator\\n    function getReserveRatioDenominator() external pure override returns (uint32) {\\n        return RESERVE_RATIO_DENOMINATOR;\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by target liquidity ratio denominator\\n    function getTokenTargetLiquidityRatioNumerator(address tokenAddress) external view override returns (uint256) {\\n        require(\\n            tokens[tokenAddress].added,\\n            \\\"IntegrationMap::getTokenTargetLiquidityRatioNumerator: Token does not exist\\\"\\n        );\\n        return tokens[tokenAddress].targetLiquidityRatioNumerator;\\n    }\\n\\n    /// @return The target liquidity ratio denominator\\n    function getTargetLiquidityRatioDenominator() external pure override returns (uint32) {\\n        return TARGET_LIQUIDITY_RATIO_DENOMINATOR;\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee K-value denominator\\n    function getTokenTransferFeeKValueNumerator(address tokenAddress) external view override returns (uint256) {\\n        require(tokens[tokenAddress].added, \\\"IntegrationMap::getTokenTransferFeeKValueNumerator: Token does not exist\\\");\\n        return tokens[tokenAddress].transferFeeKValueNumerator;\\n    }\\n\\n    /// @return The transfer fee K-value denominator\\n    function getTransferFeeKValueDenominator() external pure override returns (uint32) {\\n        return TRANSFER_FEE_K_VALUE_DENOMINATOR;\\n    }\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee platform ratio denominator\\n    function getTokenTransferFeePlatformRatioNumerator(address tokenAddress) external view override returns (uint256) {\\n        require(\\n            tokens[tokenAddress].added,\\n            \\\"IntegrationMap::getTokenTransferFeePlatformRatioNumerator: Token does not exist\\\"\\n        );\\n        return tokens[tokenAddress].transferFeePlatformRatioNumerator;\\n    }\\n\\n    /// @return The transfer fee platform ratio denominator\\n    function getTransferFeePlatformRatioDenominator() external pure override returns (uint32) {\\n        return TRANSFER_FEE_PLATFORM_RATIO_DENOMINATOR;\\n    }\\n}\\n\",\"keccak256\":\"0xb57f73f79c6f87b6ef41dd17bca996e08beb12715ead98bbd738acc64aa78675\",\"license\":\"GPL-2.0\"},\"contracts/core/ModuleMapConsumer.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nimport \\\"@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol\\\";\\nimport \\\"../interfaces/IModuleMap.sol\\\";\\n\\nabstract contract ModuleMapConsumer is Initializable {\\n    IModuleMap public moduleMap;\\n\\n    function __ModuleMapConsumer_init(address moduleMap_) internal initializer {\\n        moduleMap = IModuleMap(moduleMap_);\\n    }\\n}\\n\",\"keccak256\":\"0xb229e8c09ab0a6b5f517c3537adfe08d26a46fc3ea46031ace67a00fb1900840\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IIntegrationMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"../libraries/TokenConfigs.sol\\\";\\n\\ninterface IIntegrationMap {\\n    event TokenSettingToggled(\\n        address indexed token,\\n        TokenConfigs.TokenSettingName indexed settingName,\\n        bool indexed newValue\\n    );\\n\\n    struct Integration {\\n        bool added;\\n        string name;\\n    }\\n\\n    struct Token {\\n        uint256 id;\\n        bool added;\\n        bool acceptingDeposits;\\n        bool acceptingWithdrawals;\\n        bool acceptingLping;\\n        bool acceptingBridging;\\n        uint256 biosRewardWeight;\\n        uint256 reserveRatioNumerator;\\n        uint256 targetLiquidityRatioNumerator;\\n        uint256 transferFeeKValueNumerator;\\n        uint256 transferFeePlatformRatioNumerator;\\n    }\\n\\n    /// @param contractAddress The address of the integration contract\\n    /// @param name The name of the protocol being integrated to\\n    function addIntegration(address contractAddress, string memory name) external;\\n\\n    /// @param tokenAddress The address of the ERC20 token contract\\n    /// @param acceptingDeposits Whether token deposits are enabled\\n    /// @param acceptingWithdrawals Whether token withdrawals are enabled\\n    /// @param acceptingLping Whether LPing is enabled\\n    /// @param acceptingBridging Whether bridging is enabled\\n    /// @param biosRewardWeight Token weight for BIOS rewards\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    /// @param targetLiquidityRatioNumerator Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\\n    /// @param transferFeeKValueNumerator Number that gets divided by transfer fee K-value denominator to get K-value\\n    /// @param transferFeePlatformRatioNumerator Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\\n    function addToken(\\n        address tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenDeposits(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenDeposits(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenWithdrawals(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenWithdrawals(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenLping(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenLping(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function enableTokenBridging(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    function disableTokenBridging(address tokenAddress) external;\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @param rewardWeight The updated token BIOS reward weight\\n    function updateTokenRewardWeight(address tokenAddress, uint256 rewardWeight) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param reserveRatioNumerator Number that gets divided by reserve ratio denominator to get reserve ratio\\n    function updateTokenReserveRatioNumerator(address tokenAddress, uint256 reserveRatioNumerator) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param targetLiquidityRatioNumerator Number that gets divided by target liquidity ratio denominator to get target liquidity ratio\\n    function updateTokenTargetLiquidityRatioNumerator(address tokenAddress, uint256 targetLiquidityRatioNumerator)\\n        external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeeKValueNumerator Number that gets divided by transfer fee K-value denominator to get K-value\\n    function updateTokenTransferFeeKValueNumerator(address tokenAddress, uint256 transferFeeKValueNumerator) external;\\n\\n    /// @param tokenAddress the address of the token ERC20 contract\\n    /// @param transferFeePlatformRatioNumerator Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers\\n    function updateTokenTransferFeePlatformRatioNumerator(\\n        address tokenAddress,\\n        uint256 transferFeePlatformRatioNumerator\\n    ) external;\\n\\n    /// @param integrationId The ID of the integration\\n    /// @return The address of the integration contract\\n    function getIntegrationAddress(uint256 integrationId) external view returns (address);\\n\\n    /// @param integrationAddress The address of the integration contract\\n    /// @return The name of the of the protocol being integrated to\\n    function getIntegrationName(address integrationAddress) external view returns (string memory);\\n\\n    /// @return The address of the WETH token\\n    function getWethTokenAddress() external view returns (address);\\n\\n    /// @return The address of the BIOS token\\n    function getBiosTokenAddress() external view returns (address);\\n\\n    /// @param tokenId The ID of the token\\n    /// @return The address of the token ERC20 contract\\n    function getTokenAddress(uint256 tokenId) external view returns (address);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The index of the token in the tokens array\\n    function getTokenId(address tokenAddress) external view returns (uint256);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The token BIOS reward weight\\n    function getTokenBiosRewardWeight(address tokenAddress) external view returns (uint256);\\n\\n    /// @return rewardWeightSum reward weight of depositable tokens\\n    function getBiosRewardWeightSum() external view returns (uint256 rewardWeightSum);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether depositing this token is currently enabled\\n    function getTokenAcceptingDeposits(address tokenAddress) external view returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether withdrawing this token is currently enabled\\n    function getTokenAcceptingWithdrawals(address tokenAddress) external view returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether Lping this token is currently enabled\\n    function getTokenAcceptingLping(address tokenAddress) external view returns (bool);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return bool indicating whether bridging this token is currently enabled\\n    function getTokenAcceptingBridging(address tokenAddress) external view returns (bool);\\n\\n    // @param tokenAddress The address of the token ERC20 contract\\n    // @return bool indicating whether the token has been added\\n    function getIsTokenAdded(address tokenAddress) external view returns (bool);\\n\\n    // @param integrationAddress The address of the integration contract\\n    // @return bool indicating whether the integration has been added\\n    function getIsIntegrationAdded(address tokenAddress) external view returns (bool);\\n\\n    /// @notice get the length of supported tokens\\n    /// @return The quantity of tokens added\\n    function getTokenAddressesLength() external view returns (uint256);\\n\\n    /// @notice get the length of supported integrations\\n    /// @return The quantity of integrations added\\n    function getIntegrationAddressesLength() external view returns (uint256);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by reserve ratio denominator\\n    function getTokenReserveRatioNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The reserve ratio denominator\\n    function getReserveRatioDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by target liquidity ratio denominator\\n    function getTokenTargetLiquidityRatioNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The target liquidity ratio denominator\\n    function getTargetLiquidityRatioDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee K-value denominator\\n    function getTokenTransferFeeKValueNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The transfer fee K-value denominator\\n    function getTransferFeeKValueDenominator() external view returns (uint32);\\n\\n    /// @param tokenAddress The address of the token ERC20 contract\\n    /// @return The number that gets divided by transfer fee platform ratio denominator\\n    function getTokenTransferFeePlatformRatioNumerator(address tokenAddress) external view returns (uint256);\\n\\n    /// @return The transfer fee platform ratio denominator\\n    function getTransferFeePlatformRatioDenominator() external view returns (uint32);\\n}\\n\",\"keccak256\":\"0xb9f86d6d7faa6a506c1b9c74c023e55873687d8b54823c9d5ab1f3244ff6ac7a\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IKernel.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\nimport \\\"../libraries/TokenConfigs.sol\\\";\\n\\ninterface IKernel {\\n    event Withdraw(address indexed user, address[] tokens, uint256[] tokenAmounts, uint256 ethAmount);\\n    event ClaimEthRewards(address indexed user, uint256[] strategies, uint256 ethRewards);\\n    event ClaimBiosRewards(address indexed user, uint256 biosRewards);\\n    event WithdrawAllAndClaim(\\n        address indexed user,\\n        address[] tokens,\\n        uint256[] strategies,\\n        bool withdrawWethAsEth,\\n        uint256[] tokenAmounts,\\n        uint256 ethWithdrawn,\\n        uint256 ethRewards,\\n        uint256 biosRewards\\n    );\\n    event TokenAdded(\\n        address indexed tokenAddress,\\n        bool acceptingDeposits,\\n        bool acceptingWithdrawals,\\n        bool acceptingLping,\\n        bool acceptingBridging,\\n        uint256 biosRewardWeight,\\n        uint256 reserveRatioNumerator,\\n        uint256 targetLiquidityRatioNumerator,\\n        uint256 transferFeeKValueNumerator,\\n        uint256 transferFeePlatformRatioNumerator\\n    );\\n\\n    event TokenSettingUpdated(\\n        address indexed token,\\n        TokenConfigs.TokenSettingName indexed settingName,\\n        uint256 indexed newValue\\n    );\\n    event GasAccountUpdated(address gasAccount);\\n    event TreasuryAccountUpdated(address treasuryAccount);\\n    event IntegrationAdded(address indexed contractAddress, string name);\\n    event SetBiosRewardsDuration(uint32 biosRewardsDuration);\\n    event SeedBiosRewards(uint256 biosAmount);\\n    event Deploy();\\n    event HarvestYield();\\n    event DistributeEth();\\n    event BiosBuyBack();\\n    event EthDistributionWeightsUpdated(\\n        uint32 biosBuyBackEthWeight,\\n        uint32 treasuryEthWeight,\\n        uint32 protocolFeeEthWeight,\\n        uint32 rewardsEthWeight\\n    );\\n    event GasAccountTargetEthBalanceUpdated(uint256 gasAccountTargetEthBalance);\\n\\n    /// @param account The address of the account to check if they are a manager\\n    /// @return Bool indicating whether the account is a manger\\n    function isManager(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are an owner\\n    /// @return Bool indicating whether the account is an owner\\n    function isOwner(address account) external view returns (bool);\\n\\n    /// @param account The address of the account to check if they are a liquidity provider\\n    /// @return Bool indicating whether the account is a liquidity provider\\n    function isLiquidityProvider(address account) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x021ed6a77e66a7b95b3e6ea1e11bec9502fee63daa96f3cea9bdc68edcc28eaf\",\"license\":\"GPL-2.0\"},\"contracts/interfaces/IModuleMap.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0\\npragma solidity 0.8.4;\\n\\nenum Modules {\\n    Kernel, // 0\\n    UserPositions, // 1\\n    YieldManager, // 2\\n    IntegrationMap, // 3\\n    BiosRewards, // 4\\n    EtherRewards, // 5\\n    SushiSwapTrader, // 6\\n    UniswapTrader, // 7\\n    StrategyMap, // 8\\n    StrategyManager, // 9\\n    Interconnects, // 10\\n    SwapManager // 11\\n}\\n\\ninterface IModuleMap {\\n    function getModuleAddress(Modules key) external view returns (address);\\n}\\n\",\"keccak256\":\"0xd39d052a3b0788f77f806435622f4cef19d8b3c0c734d44d8a3f3b85bd3b48a3\",\"license\":\"GPL-2.0\"},\"contracts/libraries/TokenConfigs.sol\":{\"content\":\"// SPDX-License-Identifier: GPL-2.0-or-later\\npragma solidity >=0.7.6;\\n\\n/// @title TokenConfigs contains enum and events for the different token settings used in events in Kernel and IntegrationMap\\nlibrary TokenConfigs {\\n    enum TokenSettingName {\\n        rewardWeight,\\n        reserveRatioNumerator,\\n        targetLiquidityRatioNumerator,\\n        transferFeeKValueNumerator,\\n        transferFeePlatformRatioNumerator,\\n        deposit,\\n        withdraw,\\n        lp,\\n        bridge\\n    }\\n\\n    event TokenSettingUpdated(address indexed token, TokenSettingName indexed settingName, uint256 indexed newValue);\\n\\n    event TokenSettingToggled(address indexed token, TokenSettingName indexed settingName, bool indexed newValue);\\n}\\n\",\"keccak256\":\"0x1e10d6652aa09a586757c89df6c6c380db109589bb9f9d6e625711a153b1461e\",\"license\":\"GPL-2.0-or-later\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50613f39806100206000396000f3fe608060405234801561001057600080fd5b506004361061020f5760003560e01c80630b03cc6d146102145780630b3972cb146102295780630b883388146102515780630f0a1c6f146102645780631605691a1461028a5780631ba19e3e1461029d5780631de4fe13146102b0578063212c86b9146102dc5780632866547a146102ef5780632be5b673146103025780633c43134d146103155780634153db4e1461033657806344fc9b561461034957806348f115361461035a57806350e7fc371461036d57806357c5f3171461037e57806358fcf37a1461039157806367ccdf38146103a457806372836bcf146103b75780637d471f97146103ca5780637d6145d3146103dd5780637faa0597146103e5578063804773c81461036d57806382cb0b671461041457806385cce6ca14610427578063886560551461043a5780638b9c94891461044d5780638e591f871461045e5780638e7a4b181461047e57806394085f1c14610486578063967cb96e1461036d57806398c671ce14610499578063a703b729146104ac578063a7fc7a07146104bf578063b17f0b63146104d2578063bca5048f146104e5578063cb8a5842146104f8578063d46005b11461050b578063e87e53aa1461036d578063e94b0dd21461051e578063ea0db29614610531578063eab12c9514610544578063eec60c6e14610557578063f15376861461056a578063f35823731461057d575b600080fd5b61022761022236600461394f565b610585565b005b61023c6102373660046137d3565b61073b565b60405190151581526020015b60405180910390f35b61022761025f3660046137d3565b6107ed565b60005461027d906201000090046001600160a01b031681565b6040516102489190613a6f565b6102276102983660046137d3565b610a7b565b61027d6102ab366004613a57565b610cd0565b61023c6102be3660046137d3565b6001600160a01b031660009081526007602052604090205460ff1690565b6102276102ea3660046137d3565b610d90565b6102276102fd36600461394f565b610ff7565b6102276103103660046137d3565b61118b565b6103286103233660046137d3565b6112c9565b604051908152602001610248565b61022761034436600461394f565b611379565b6004546001600160a01b031661027d565b61022761036836600461394f565b611549565b604051620f42408152602001610248565b61022761038c3660046137d3565b611628565b61023c61039f3660046137d3565b611878565b61027d6103b2366004613a57565b61191e565b6103286103c53660046137d3565b6119b1565b6103286103d83660046137d3565b611a60565b600654610328565b61023c6103f33660046137d3565b6001600160a01b031660009081526008602052604090206001015460ff1690565b6102276104223660046137d3565b611b24565b6103286104353660046137d3565b611d7d565b6102276104483660046138ae565b611e39565b6003546001600160a01b031661027d565b61047161046c3660046137d3565b611f82565b6040516102489190613aab565b6103286120be565b6102276104943660046137d3565b61213b565b6102276104a736600461397a565b61239e565b6102276104ba366004613812565b612544565b6102276104cd3660046137d3565b612591565b61023c6104e03660046137d3565b6127ce565b6102276104f336600461394f565b612875565b6102276105063660046137d3565b612a04565b6102276105193660046139c9565b612c4c565b61027d61052c366004613a57565b612d82565b61023c61053f3660046137d3565b612dac565b6103286105523660046137d3565b612e54565b6102276105653660046137d3565b612f0a565b6103286105783660046137d3565b61316a565b600554610328565b3360009081526001602052604090205460ff166105bd5760405162461bcd60e51b81526004016105b490613bbf565b60405180910390fd5b6001600160a01b03821660009081526008602052604090206001015460ff166106505760405162461bcd60e51b815260206004820152604b6024820152600080516020613e8483398151915260448201527f6665724665654b56616c75654e756d657261746f723a20546f6b656e20646f6560648201526a1cc81b9bdd08195e1a5cdd60aa1b608482015260a4016105b4565b620f424081111561071c5760405162461bcd60e51b81526020600482015260906024820152600080516020613e8483398151915260448201527f6665724665654b56616c75654e756d657261746f723a207472616e736665724660648201527f65654b56616c75654e756d657261746f72206d757374206265206c657373207460848201527f68616e206f7220657175616c20746f207472616e7366657220666565204b2d7660a48201526f30b63ab2903232b737b6b4b730ba37b960811b60c482015260e4016105b4565b6001600160a01b03909116600090815260086020526040902060050155565b6001600160a01b03811660009081526008602052604081206001015460ff166107c55760405162461bcd60e51b81526020600482015260426024820152600080516020613d4483398151915260448201527f675769746864726177616c733a20546f6b656e20646f6573206e6f74206578696064820152611cdd60f21b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206001015462010000900460ff1690565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916108229190600401613a83565b60206040518083038186803b15801561083a57600080fd5b505afa15801561084e573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061087291906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161089d9190613a6f565b60206040518083038186803b1580156108b557600080fd5b505afa1580156108c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108ed9190613a3b565b6109095760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166109845760405162461bcd60e51b81526020600482015260396024820152600080516020613d648339815191526044820152781a5d1cce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd603a1b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154610100900460ff1615610a175760405162461bcd60e51b81526020600482015260456024820152600080516020613d6483398151915260448201527f6974733a20546f6b656e20616c726561647920616363657074696e67206465706064820152646f7369747360d81b608482015260a4016105b4565b6001600160a01b03811660009081526008602052604090206001908101805461ff00191661010017905560055b6040516001600160a01b038416907f964eb5cca489ded8042998dce63b255765605f648f384b9f282a95e4cbf829a290600090a450565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610ab09190600401613a83565b60206040518083038186803b158015610ac857600080fd5b505afa158015610adc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b0091906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401610b2b9190613a6f565b60206040518083038186803b158015610b4357600080fd5b505afa158015610b57573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b7b9190613a3b565b610b975760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16610c135760405162461bcd60e51b815260206004820152603a6024820152600080516020613dc48339815191526044820152791cda5d1cce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60321b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154610100900460ff16610ca55760405162461bcd60e51b81526020600482015260456024820152600080516020613dc483398151915260448201527f736974733a20546f6b656e206465706f7369747320616c72656164792064697360648201526418589b195960da1b608482015260a4016105b4565b6001600160a01b0381166000908152600860205260408120600101805461ff00191690556005610a44565b6006546000908210610d545760405162461bcd60e51b815260206004820152604160248201527f496e746567726174696f6e4d61703a3a676574496e746567726174696f6e416460448201527f64726573733a20496e746567726174696f6e20646f6573206e6f7420657869736064820152601d60fa1b608482015260a4016105b4565b60068281548110610d7557634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b031692915050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610dc59190600401613a83565b60206040518083038186803b158015610ddd57600080fd5b505afa158015610df1573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e1591906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401610e409190613a6f565b60206040518083038186803b158015610e5857600080fd5b505afa158015610e6c573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e909190613a3b565b610eac5760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16610f2a5760405162461bcd60e51b815260206004820152603c6024820152600080516020613e0483398151915260448201527b1c985dd85b1cce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60221b60648201526084016105b4565b6001600160a01b03811660009081526008602052604090206001015462010000900460ff1615610fc45760405162461bcd60e51b815260206004820152604b6024820152600080516020613e0483398151915260448201527f726177616c733a20546f6b656e20616c726561647920616363657074696e672060648201526a7769746864726177616c7360a81b608482015260a4016105b4565b6001600160a01b03811660009081526008602052604090206001908101805462ff00001916620100001790556006610a44565b3360009081526001602052604090205460ff166110265760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166110bc5760405162461bcd60e51b815260206004820152604e6024820152600080516020613e2483398151915260448201527f744c6971756964697479526174696f4e756d657261746f723a20546f6b656e2060648201526d191bd95cc81b9bdd08195e1a5cdd60921b608482015260a4016105b4565b620f424081111561116c5760405162461bcd60e51b81526020600482015260986024820152600080516020613e2483398151915260448201527f744c6971756964697479526174696f4e756d657261746f723a207461726765746064820152600080516020613de48339815191526084820152600080516020613da483398151915260a4820152773ab4b234ba3c903930ba34b7903232b737b6b4b730ba37b960411b60c482015260e4016105b4565b6001600160a01b03909116600090815260086020526040902060040155565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916111c09190600401613a83565b60206040518083038186803b1580156111d857600080fd5b505afa1580156111ec573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061121091906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161123b9190613a6f565b60206040518083038186803b15801561125357600080fd5b505afa158015611267573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061128b9190613a3b565b6112a75760405162461bcd60e51b81526004016105b490613b71565b600480546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b03811660009081526008602052604081206001015460ff1661135a5760405162461bcd60e51b815260206004820152603e60248201527f496e746567726174696f6e4d61703a3a676574546f6b656e42696f735265776160448201527f72645765696768743a20546f6b656e20646f6573206e6f74206578697374000060648201526084016105b4565b506001600160a01b031660009081526008602052604090206002015490565b3360009081526001602052604090205460ff166113a85760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166114425760405162461bcd60e51b81526020600482015260526024820152600080516020613e8483398151915260448201527f666572466565506c6174666f726d526174696f4e756d657261746f723a20546f6064820152711ad95b88191bd95cc81b9bdd08195e1a5cdd60721b608482015260a4016105b4565b620f424081111561152a5760405162461bcd60e51b81526020600482015260a56024820152600080516020613e8483398151915260448201527f666572466565506c6174666f726d526174696f4e756d657261746f723a20747260648201527f616e73666572466565506c6174666f726d526174696f4e756d657261746f722060848201527f6d757374206265206c657373207468616e206f7220657175616c20746f20747260a48201527f616e736665722066656520706c6174666f726d20726174696f2064656e6f6d6960c4820152643730ba37b960d91b60e4820152610104016105b4565b6001600160a01b03909116600090815260086020526040902060060155565b3360009081526001602052604090205460ff166115785760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166116095760405162461bcd60e51b815260206004820152603d60248201527f496e746567726174696f6e4d61703a3a757064617465546f6b656e526577617260448201527f645765696768743a20546f6b656e20646f6573206e6f7420657869737400000060648201526084016105b4565b6001600160a01b03909116600090815260086020526040902060020155565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161165d9190600401613a83565b60206040518083038186803b15801561167557600080fd5b505afa158015611689573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906116ad91906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016116d89190613a6f565b60206040518083038186803b1580156116f057600080fd5b505afa158015611704573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906117289190613a3b565b6117445760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166117bc5760405162461bcd60e51b81526020600482015260366024820152600080516020613d848339815191526044820152750e88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60521b60648201526084016105b4565b6001600160a01b0381166000908152600860205260409020600101546301000000900460ff16156118435760405162461bcd60e51b815260206004820152603f6024820152600080516020613d8483398151915260448201527f3a20546f6b656e20616c726561647920616363657074696e67204c50696e670060648201526084016105b4565b6001600160a01b03811660009081526008602052604090206001908101805463ff000000191663010000001790556007610a44565b6001600160a01b03811660009081526008602052604081206001015460ff166118f75760405162461bcd60e51b815260206004820152603f6024820152600080516020613d4483398151915260448201527f674465706f736974733a20546f6b656e20646f6573206e6f742065786973740060648201526084016105b4565b506001600160a01b0316600090815260086020526040902060010154610100900460ff1690565b60055460009082106119905760405162461bcd60e51b815260206004820152603560248201527f496e746567726174696f6e4d61703a3a676574546f6b656e416464726573733a60448201527408151bdad95b88191bd95cc81b9bdd08195e1a5cdd605a1b60648201526084016105b4565b60058281548110610d7557634e487b7160e01b600052603260045260246000fd5b6001600160a01b03811660009081526008602052604081206001015460ff16611a415760405162461bcd60e51b81526020600482015260486024820152600080516020613ea483398151915260448201527f4665654b56616c75654e756d657261746f723a20546f6b656e20646f6573206e6064820152671bdd08195e1a5cdd60c21b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206005015490565b6001600160a01b03811660009081526008602052604081206001015460ff16611b055760405162461bcd60e51b815260206004820152604b60248201527f496e746567726174696f6e4d61703a3a676574546f6b656e5461726765744c6960448201527f71756964697479526174696f4e756d657261746f723a20546f6b656e20646f6560648201526a1cc81b9bdd08195e1a5cdd60aa1b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206004015490565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91611b599190600401613a83565b60206040518083038186803b158015611b7157600080fd5b505afa158015611b85573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611ba991906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401611bd49190613a6f565b60206040518083038186803b158015611bec57600080fd5b505afa158015611c00573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611c249190613a3b565b611c405760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16611cbc5760405162461bcd60e51b815260206004820152603a6024820152600080516020613ec483398151915260448201527919da5b99ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60321b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154600160201b900460ff16611d505760405162461bcd60e51b81526020600482015260456024820152600080516020613ec483398151915260448201527f67696e673a20546f6b656e206272696467696e6720616c72656164792064697360648201526418589b195960da1b608482015260a4016105b4565b6001600160a01b03811660009081526008602081905260408220600101805460ff60201b19169055610a44565b6001600160a01b03811660009081526008602052604081206001015460ff16611e1a5760405162461bcd60e51b815260206004820152604360248201527f496e746567726174696f6e4d61703a3a676574546f6b656e526573657276655260448201527f6174696f4e756d657261746f723a20546f6b656e20646f6573206e6f742065786064820152621a5cdd60ea1b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206003015490565b3360009081526001602052604090205460ff16611e685760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526007602052604090205460ff1615611ef35760405162461bcd60e51b815260206004820152603960248201527f496e746567726174696f6e4d61703a3a616464496e746567726174696f6e3a20604482015278125b9d1959dc985d1a5bdb88185b1c9958591e481859191959603a1b60648201526084016105b4565b6001600160a01b0382166000908152600760209081526040909120805460ff1916600190811782558351611f2e93929091019184019061365e565b5050600680546001810182556000919091527ff652222313e28459528d920b65115c16c04f3efc82aaedc97be59f3f377c0d3f0180546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b03811660009081526007602052604090205460609060ff166120135760405162461bcd60e51b815260206004820152603e60248201527f496e746567726174696f6e4d61703a3a676574496e746567726174696f6e4e6160448201527f6d653a20496e746567726174696f6e20646f6573206e6f74206578697374000060648201526084016105b4565b6001600160a01b0382166000908152600760205260409020600101805461203990613c5b565b80601f016020809104026020016040519081016040528092919081815260200182805461206590613c5b565b80156120b25780601f10612087576101008083540402835291602001916120b2565b820191906000526020600020905b81548152906001019060200180831161209557829003601f168201915b50505050509050919050565b6000805b6005548110156121375760086000600583815481106120f157634e487b7160e01b600052603260045260246000fd5b60009182526020808320909101546001600160a01b031683528201929092526040019020600201546121239083613c43565b91508061212f81613c96565b9150506120c2565b5090565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916121709190600401613a83565b60206040518083038186803b15801561218857600080fd5b505afa15801561219c573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906121c091906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016121eb9190613a6f565b60206040518083038186803b15801561220357600080fd5b505afa158015612217573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061223b9190613a3b565b6122575760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166122d25760405162461bcd60e51b81526020600482015260396024820152600080516020613ee48339815191526044820152781a5b99ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd603a1b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154600160201b900460ff16156123675760405162461bcd60e51b81526020600482015260456024820152600080516020613ee483398151915260448201527f696e673a20546f6b656e20616c726561647920616363657074696e67206272696064820152646467696e6760d81b608482015260a4016105b4565b6001600160a01b03811660009081526008602081905260409091206001908101805460ff60201b1916600160201b17905590610a44565b600054610100900460ff166123b95760005460ff16156123bd565b303b155b6123d95760405162461bcd60e51b81526004016105b490613afe565b600054610100900460ff161580156123fb576000805461ffff19166101011790555b6001600160a01b0382166124215760405162461bcd60e51b81526004016105b490613b4c565b60005b83518110156124995760006001600160a01b031684828151811061245857634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b031614156124875760405162461bcd60e51b81526004016105b490613b4c565b8061249181613c96565b915050612424565b5060005b835181101561250f5760018060008684815181106124cb57634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff19169115159190911790558061250781613c96565b91505061249d565b5082516125239060029060208601906136de565b5061252d8261320a565b801561253f576000805461ff00191690555b505050565b3360009081526001602052604090205460ff166125735760405162461bcd60e51b81526004016105b490613bbf565b6125858a8a8a8a8a8a8a8a8a8a61329e565b50505050505050505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916125c69190600401613a83565b60206040518083038186803b1580156125de57600080fd5b505afa1580156125f2573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061261691906137f6565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016126419190613a6f565b60206040518083038186803b15801561265957600080fd5b505afa15801561266d573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906126919190613a3b565b6126f05760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b60648201526084016105b4565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b600254811015612778576002818154811061274257634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561276657600191505b8061277081613c96565b915050612717565b50806127ca57600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b6001600160a01b03811660009081526008602052604081206001015460ff1661284c5760405162461bcd60e51b815260206004820152603c6024820152600080516020613d4483398151915260448201527b19d31c1a5b99ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60221b60648201526084016105b4565b506001600160a01b03166000908152600860205260409020600101546301000000900460ff1690565b3360009081526001602052604090205460ff166128a45760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166129325760405162461bcd60e51b81526020600482015260466024820152600080516020613e6483398151915260448201527f7665526174696f4e756d657261746f723a20546f6b656e20646f6573206e6f7460648201526508195e1a5cdd60d21b608482015260a4016105b4565b620f42408111156129e55760405162461bcd60e51b815260206004820152607f6024820152600080516020613e6483398151915260448201527f7665526174696f4e756d657261746f723a2072657365727665526174696f4e7560648201527f6d657261746f72206d757374206265206c657373207468616e206f722065717560848201527f616c20746f207265736572766520726174696f2064656e6f6d696e61746f720060a482015260c4016105b4565b6001600160a01b03909116600090815260086020526040902060030155565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91612a399190600401613a83565b60206040518083038186803b158015612a5157600080fd5b505afa158015612a65573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190612a8991906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401612ab49190613a6f565b60206040518083038186803b158015612acc57600080fd5b505afa158015612ae0573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190612b049190613a3b565b612b205760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16612b995760405162461bcd60e51b81526020600482015260376024820152600080516020613e4483398151915260448201527619ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd604a1b60648201526084016105b4565b6001600160a01b0381166000908152600860205260409020600101546301000000900460ff16612c1f5760405162461bcd60e51b815260206004820152603f6024820152600080516020613e4483398151915260448201527f673a20546f6b656e204c50696e6720616c72656164792064697361626c65640060648201526084016105b4565b6001600160a01b0381166000908152600860205260408120600101805463ff000000191690556007610a44565b600054610100900460ff16612c675760005460ff1615612c6b565b303b155b612c875760405162461bcd60e51b81526004016105b490613afe565b600054610100900460ff16158015612ca9576000805461ffff19166101011790555b6001600160a01b038316612ccf5760405162461bcd60e51b81526004016105b490613b4c565b6001600160a01b038216612cf55760405162461bcd60e51b81526004016105b490613b4c565b612cff858561239e565b600380546001600160a01b038086166001600160a01b0319928316179092556004805492851692909116919091179055612d4b8360018080806103e861c350620186a0619c408261329e565b612d69826001806001806103e86000620186a0619c4061138861329e565b8015612d7b576000805461ff00191690555b5050505050565b60028181548110612d9257600080fd5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b03811660009081526008602052604081206001015460ff16612e2b5760405162461bcd60e51b815260206004820152603f6024820152600080516020613d4483398151915260448201527f674272696467696e673a20546f6b656e20646f6573206e6f742065786973740060648201526084016105b4565b506001600160a01b0316600090815260086020526040902060010154600160201b900460ff1690565b6001600160a01b03811660009081526008602052604081206001015460ff16612eeb5760405162461bcd60e51b815260206004820152604f6024820152600080516020613ea483398151915260448201527f466565506c6174666f726d526174696f4e756d657261746f723a20546f6b656e60648201526e08191bd95cc81b9bdd08195e1a5cdd608a1b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206006015490565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91612f3f9190600401613a83565b60206040518083038186803b158015612f5757600080fd5b505afa158015612f6b573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190612f8f91906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401612fba9190613a6f565b60206040518083038186803b158015612fd257600080fd5b505afa158015612fe6573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061300a9190613a3b565b6130265760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166130a55760405162461bcd60e51b815260206004820152603d6024820152600080516020613d2483398151915260448201527f64726177616c733a20546f6b656e20646f6573206e6f7420657869737400000060648201526084016105b4565b6001600160a01b03811660009081526008602052604090206001015462010000900460ff1661313e5760405162461bcd60e51b815260206004820152604b6024820152600080516020613d2483398151915260448201527f64726177616c733a20546f6b656e207769746864726177616c7320616c72656160648201526a191e48191a5cd8589b195960aa1b608482015260a4016105b4565b6001600160a01b0381166000908152600860205260408120600101805462ff0000191690556006610a44565b6001600160a01b03811660009081526008602052604081206001015460ff166131ee5760405162461bcd60e51b815260206004820152603060248201527f496e746567726174696f6e4d61703a3a676574546f6b656e49643a20546f6b6560448201526f1b88191bd95cc81b9bdd08195e1a5cdd60821b60648201526084016105b4565b506001600160a01b031660009081526008602052604090205490565b600054610100900460ff166132255760005460ff1615613229565b303b155b6132455760405162461bcd60e51b81526004016105b490613afe565b600054610100900460ff16158015613267576000805461ffff19166101011790555b6000805462010000600160b01b031916620100006001600160a01b0385160217905580156127ca576000805461ff00191690555050565b6001600160a01b038a1660009081526008602052604090206001015460ff16156132c757612585565b620f42408411156133765760405162461bcd60e51b815260206004820152606760248201527f496e746567726174696f6e4d61703a3a616464546f6b656e3a2072657365727660448201527f65526174696f4e756d657261746f72206d757374206265206c6573732074686160648201527f6e206f7220657175616c20746f207265736572766520726174696f2064656e6f60848201526636b4b730ba37b960c91b60a482015260c4016105b4565b620f42408311156134125760405162461bcd60e51b815260206004820152607860248201527f496e746567726174696f6e4d61703a3a616464546f6b656e3a207461726765746044820152600080516020613de48339815191526064820152600080516020613da48339815191526084820152773ab4b234ba3c903930ba34b7903232b737b6b4b730ba37b960411b60a482015260c4016105b4565b620f42408211156134bb5760405162461bcd60e51b81526020600482015260736024820152600080516020613d0483398151915260448201527f65724665654b56616c75654e756d657261746f72206d757374206265206c657360648201527f73207468616e206f7220657175616c20746f207472616e7366657220666565206084820152722596bb30b63ab2903232b737b6b4b730ba37b960691b60a482015260c4016105b4565b620f42408111156135785760405162461bcd60e51b81526020600482015260816024820152600080516020613d0483398151915260448201527f6572466565506c6174666f726d526174696f4e756d657261746f72206d75737460648201527f206265206c657373207468616e206f7220657175616c20746f207472616e736660848201527f65722066656520706c6174666f726d20726174696f2064656e6f6d696e61746f60a4820152603960f91b60c482015260e4016105b4565b600580546001600160a01b03909b1660008181526008602052604081209c8d556001808e0180549a1515600160201b0260ff60201b199c151563010000000263ff000000199e151562010000029e909e1663ffff0000199f15156101000261ffff19909d169c909c1783179e909e169a909a179b909b17999099169a909a1790965560028a0194909455600389019290925560048801558683015560069095019490945583549182018455929092527f036b6384b5eca791c62761152d0c79bb0604c104a5fb6f4eb0703f3154bb3db090910180546001600160a01b0319169091179055565b82805461366a90613c5b565b90600052602060002090601f01602090048101928261368c57600085556136d2565b82601f106136a557805160ff19168380011785556136d2565b828001600101855582156136d2579182015b828111156136d25782518255916020019190600101906136b7565b50612137929150613733565b8280548282559060005260206000209081019282156136d2579160200282015b828111156136d257825182546001600160a01b0319166001600160a01b039091161782556020909201916001909101906136fe565b5b808211156121375760008155600101613734565b600082601f830112613758578081fd5b813560206001600160401b0382111561377357613773613cc7565b8160051b613782828201613c13565b83815282810190868401838801850189101561379c578687fd5b8693505b858410156137c75780356137b381613cdd565b8352600193909301929184019184016137a0565b50979650505050505050565b6000602082840312156137e4578081fd5b81356137ef81613cdd565b9392505050565b600060208284031215613807578081fd5b81516137ef81613cdd565b6000806000806000806000806000806101408b8d031215613831578586fd5b8a3561383c81613cdd565b995060208b013561384c81613cf5565b985060408b013561385c81613cf5565b975060608b013561386c81613cf5565b965060808b013561387c81613cf5565b999c989b50969995989760a0870135975060c08701359660e08101359650610100810135955061012001359350915050565b600080604083850312156138c0578182fd5b82356138cb81613cdd565b91506020838101356001600160401b03808211156138e7578384fd5b818601915086601f8301126138fa578384fd5b81358181111561390c5761390c613cc7565b61391e601f8201601f19168501613c13565b91508082528784828501011115613933578485fd5b8084840185840137810190920192909252919491935090915050565b60008060408385031215613961578182fd5b823561396c81613cdd565b946020939093013593505050565b6000806040838503121561398c578182fd5b82356001600160401b038111156139a1578283fd5b6139ad85828601613748565b92505060208301356139be81613cdd565b809150509250929050565b600080600080608085870312156139de578384fd5b84356001600160401b038111156139f3578485fd5b6139ff87828801613748565b9450506020850135613a1081613cdd565b92506040850135613a2081613cdd565b91506060850135613a3081613cdd565b939692955090935050565b600060208284031215613a4c578081fd5b81516137ef81613cf5565b600060208284031215613a68578081fd5b5035919050565b6001600160a01b0391909116815260200190565b60208101600c8310613aa557634e487b7160e01b600052602160045260246000fd5b91905290565b6000602080835283518082850152825b81811015613ad757858101830151858201604001528201613abb565b81811115613ae85783604083870101525b50601f01601f1916929092016040019392505050565b6020808252602e908201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160408201526d191e481a5b9a5d1a585b1a5e995960921b606082015260800190565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b6020808252602e908201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060408201526d34b9903737ba1036b0b730b3b2b960911b606082015260800190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b604051601f8201601f191681016001600160401b0381118282101715613c3b57613c3b613cc7565b604052919050565b60008219821115613c5657613c56613cb1565b500190565b600181811c90821680613c6f57607f821691505b60208210811415613c9057634e487b7160e01b600052602260045260246000fd5b50919050565b6000600019821415613caa57613caa613cb1565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b6001600160a01b0381168114613cf257600080fd5b50565b8015158114613cf257600080fdfe496e746567726174696f6e4d61703a3a616464546f6b656e3a207472616e7366496e746567726174696f6e4d61703a3a64697361626c65546f6b656e57697468496e746567726174696f6e4d61703a3a676574546f6b656e416363657074696e496e746567726174696f6e4d61703a3a656e61626c65546f6b656e4465706f73496e746567726174696f6e4d61703a3a656e61626c65546f6b656e4c70696e676c657373207468616e206f7220657175616c20746f20746172676574206c6971496e746567726174696f6e4d61703a3a64697361626c65546f6b656e4465706f4c6971756964697479526174696f4e756d657261746f72206d75737420626520496e746567726174696f6e4d61703a3a656e61626c65546f6b656e5769746864496e746567726174696f6e4d61703a3a757064617465546f6b656e5461726765496e746567726174696f6e4d61703a3a64697361626c65546f6b656e4c70696e496e746567726174696f6e4d61703a3a757064617465546f6b656e5265736572496e746567726174696f6e4d61703a3a757064617465546f6b656e5472616e73496e746567726174696f6e4d61703a3a676574546f6b656e5472616e73666572496e746567726174696f6e4d61703a3a64697361626c65546f6b656e42726964496e746567726174696f6e4d61703a3a656e61626c65546f6b656e4272696467a264697066735822122016d208c88373278e14ef235c90eb4f0c2119a406e83e120db8f9d11ad274e85664736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061020f5760003560e01c80630b03cc6d146102145780630b3972cb146102295780630b883388146102515780630f0a1c6f146102645780631605691a1461028a5780631ba19e3e1461029d5780631de4fe13146102b0578063212c86b9146102dc5780632866547a146102ef5780632be5b673146103025780633c43134d146103155780634153db4e1461033657806344fc9b561461034957806348f115361461035a57806350e7fc371461036d57806357c5f3171461037e57806358fcf37a1461039157806367ccdf38146103a457806372836bcf146103b75780637d471f97146103ca5780637d6145d3146103dd5780637faa0597146103e5578063804773c81461036d57806382cb0b671461041457806385cce6ca14610427578063886560551461043a5780638b9c94891461044d5780638e591f871461045e5780638e7a4b181461047e57806394085f1c14610486578063967cb96e1461036d57806398c671ce14610499578063a703b729146104ac578063a7fc7a07146104bf578063b17f0b63146104d2578063bca5048f146104e5578063cb8a5842146104f8578063d46005b11461050b578063e87e53aa1461036d578063e94b0dd21461051e578063ea0db29614610531578063eab12c9514610544578063eec60c6e14610557578063f15376861461056a578063f35823731461057d575b600080fd5b61022761022236600461394f565b610585565b005b61023c6102373660046137d3565b61073b565b60405190151581526020015b60405180910390f35b61022761025f3660046137d3565b6107ed565b60005461027d906201000090046001600160a01b031681565b6040516102489190613a6f565b6102276102983660046137d3565b610a7b565b61027d6102ab366004613a57565b610cd0565b61023c6102be3660046137d3565b6001600160a01b031660009081526007602052604090205460ff1690565b6102276102ea3660046137d3565b610d90565b6102276102fd36600461394f565b610ff7565b6102276103103660046137d3565b61118b565b6103286103233660046137d3565b6112c9565b604051908152602001610248565b61022761034436600461394f565b611379565b6004546001600160a01b031661027d565b61022761036836600461394f565b611549565b604051620f42408152602001610248565b61022761038c3660046137d3565b611628565b61023c61039f3660046137d3565b611878565b61027d6103b2366004613a57565b61191e565b6103286103c53660046137d3565b6119b1565b6103286103d83660046137d3565b611a60565b600654610328565b61023c6103f33660046137d3565b6001600160a01b031660009081526008602052604090206001015460ff1690565b6102276104223660046137d3565b611b24565b6103286104353660046137d3565b611d7d565b6102276104483660046138ae565b611e39565b6003546001600160a01b031661027d565b61047161046c3660046137d3565b611f82565b6040516102489190613aab565b6103286120be565b6102276104943660046137d3565b61213b565b6102276104a736600461397a565b61239e565b6102276104ba366004613812565b612544565b6102276104cd3660046137d3565b612591565b61023c6104e03660046137d3565b6127ce565b6102276104f336600461394f565b612875565b6102276105063660046137d3565b612a04565b6102276105193660046139c9565b612c4c565b61027d61052c366004613a57565b612d82565b61023c61053f3660046137d3565b612dac565b6103286105523660046137d3565b612e54565b6102276105653660046137d3565b612f0a565b6103286105783660046137d3565b61316a565b600554610328565b3360009081526001602052604090205460ff166105bd5760405162461bcd60e51b81526004016105b490613bbf565b60405180910390fd5b6001600160a01b03821660009081526008602052604090206001015460ff166106505760405162461bcd60e51b815260206004820152604b6024820152600080516020613e8483398151915260448201527f6665724665654b56616c75654e756d657261746f723a20546f6b656e20646f6560648201526a1cc81b9bdd08195e1a5cdd60aa1b608482015260a4016105b4565b620f424081111561071c5760405162461bcd60e51b81526020600482015260906024820152600080516020613e8483398151915260448201527f6665724665654b56616c75654e756d657261746f723a207472616e736665724660648201527f65654b56616c75654e756d657261746f72206d757374206265206c657373207460848201527f68616e206f7220657175616c20746f207472616e7366657220666565204b2d7660a48201526f30b63ab2903232b737b6b4b730ba37b960811b60c482015260e4016105b4565b6001600160a01b03909116600090815260086020526040902060050155565b6001600160a01b03811660009081526008602052604081206001015460ff166107c55760405162461bcd60e51b81526020600482015260426024820152600080516020613d4483398151915260448201527f675769746864726177616c733a20546f6b656e20646f6573206e6f74206578696064820152611cdd60f21b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206001015462010000900460ff1690565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916108229190600401613a83565b60206040518083038186803b15801561083a57600080fd5b505afa15801561084e573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061087291906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161089d9190613a6f565b60206040518083038186803b1580156108b557600080fd5b505afa1580156108c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906108ed9190613a3b565b6109095760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166109845760405162461bcd60e51b81526020600482015260396024820152600080516020613d648339815191526044820152781a5d1cce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd603a1b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154610100900460ff1615610a175760405162461bcd60e51b81526020600482015260456024820152600080516020613d6483398151915260448201527f6974733a20546f6b656e20616c726561647920616363657074696e67206465706064820152646f7369747360d81b608482015260a4016105b4565b6001600160a01b03811660009081526008602052604090206001908101805461ff00191661010017905560055b6040516001600160a01b038416907f964eb5cca489ded8042998dce63b255765605f648f384b9f282a95e4cbf829a290600090a450565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610ab09190600401613a83565b60206040518083038186803b158015610ac857600080fd5b505afa158015610adc573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b0091906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401610b2b9190613a6f565b60206040518083038186803b158015610b4357600080fd5b505afa158015610b57573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610b7b9190613a3b565b610b975760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16610c135760405162461bcd60e51b815260206004820152603a6024820152600080516020613dc48339815191526044820152791cda5d1cce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60321b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154610100900460ff16610ca55760405162461bcd60e51b81526020600482015260456024820152600080516020613dc483398151915260448201527f736974733a20546f6b656e206465706f7369747320616c72656164792064697360648201526418589b195960da1b608482015260a4016105b4565b6001600160a01b0381166000908152600860205260408120600101805461ff00191690556005610a44565b6006546000908210610d545760405162461bcd60e51b815260206004820152604160248201527f496e746567726174696f6e4d61703a3a676574496e746567726174696f6e416460448201527f64726573733a20496e746567726174696f6e20646f6573206e6f7420657869736064820152601d60fa1b608482015260a4016105b4565b60068281548110610d7557634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b031692915050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91610dc59190600401613a83565b60206040518083038186803b158015610ddd57600080fd5b505afa158015610df1573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e1591906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401610e409190613a6f565b60206040518083038186803b158015610e5857600080fd5b505afa158015610e6c573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610e909190613a3b565b610eac5760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16610f2a5760405162461bcd60e51b815260206004820152603c6024820152600080516020613e0483398151915260448201527b1c985dd85b1cce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60221b60648201526084016105b4565b6001600160a01b03811660009081526008602052604090206001015462010000900460ff1615610fc45760405162461bcd60e51b815260206004820152604b6024820152600080516020613e0483398151915260448201527f726177616c733a20546f6b656e20616c726561647920616363657074696e672060648201526a7769746864726177616c7360a81b608482015260a4016105b4565b6001600160a01b03811660009081526008602052604090206001908101805462ff00001916620100001790556006610a44565b3360009081526001602052604090205460ff166110265760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166110bc5760405162461bcd60e51b815260206004820152604e6024820152600080516020613e2483398151915260448201527f744c6971756964697479526174696f4e756d657261746f723a20546f6b656e2060648201526d191bd95cc81b9bdd08195e1a5cdd60921b608482015260a4016105b4565b620f424081111561116c5760405162461bcd60e51b81526020600482015260986024820152600080516020613e2483398151915260448201527f744c6971756964697479526174696f4e756d657261746f723a207461726765746064820152600080516020613de48339815191526084820152600080516020613da483398151915260a4820152773ab4b234ba3c903930ba34b7903232b737b6b4b730ba37b960411b60c482015260e4016105b4565b6001600160a01b03909116600090815260086020526040902060040155565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916111c09190600401613a83565b60206040518083038186803b1580156111d857600080fd5b505afa1580156111ec573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061121091906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b815260040161123b9190613a6f565b60206040518083038186803b15801561125357600080fd5b505afa158015611267573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061128b9190613a3b565b6112a75760405162461bcd60e51b81526004016105b490613b71565b600480546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b03811660009081526008602052604081206001015460ff1661135a5760405162461bcd60e51b815260206004820152603e60248201527f496e746567726174696f6e4d61703a3a676574546f6b656e42696f735265776160448201527f72645765696768743a20546f6b656e20646f6573206e6f74206578697374000060648201526084016105b4565b506001600160a01b031660009081526008602052604090206002015490565b3360009081526001602052604090205460ff166113a85760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166114425760405162461bcd60e51b81526020600482015260526024820152600080516020613e8483398151915260448201527f666572466565506c6174666f726d526174696f4e756d657261746f723a20546f6064820152711ad95b88191bd95cc81b9bdd08195e1a5cdd60721b608482015260a4016105b4565b620f424081111561152a5760405162461bcd60e51b81526020600482015260a56024820152600080516020613e8483398151915260448201527f666572466565506c6174666f726d526174696f4e756d657261746f723a20747260648201527f616e73666572466565506c6174666f726d526174696f4e756d657261746f722060848201527f6d757374206265206c657373207468616e206f7220657175616c20746f20747260a48201527f616e736665722066656520706c6174666f726d20726174696f2064656e6f6d6960c4820152643730ba37b960d91b60e4820152610104016105b4565b6001600160a01b03909116600090815260086020526040902060060155565b3360009081526001602052604090205460ff166115785760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166116095760405162461bcd60e51b815260206004820152603d60248201527f496e746567726174696f6e4d61703a3a757064617465546f6b656e526577617260448201527f645765696768743a20546f6b656e20646f6573206e6f7420657869737400000060648201526084016105b4565b6001600160a01b03909116600090815260086020526040902060020155565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a9161165d9190600401613a83565b60206040518083038186803b15801561167557600080fd5b505afa158015611689573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906116ad91906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016116d89190613a6f565b60206040518083038186803b1580156116f057600080fd5b505afa158015611704573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906117289190613a3b565b6117445760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166117bc5760405162461bcd60e51b81526020600482015260366024820152600080516020613d848339815191526044820152750e88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60521b60648201526084016105b4565b6001600160a01b0381166000908152600860205260409020600101546301000000900460ff16156118435760405162461bcd60e51b815260206004820152603f6024820152600080516020613d8483398151915260448201527f3a20546f6b656e20616c726561647920616363657074696e67204c50696e670060648201526084016105b4565b6001600160a01b03811660009081526008602052604090206001908101805463ff000000191663010000001790556007610a44565b6001600160a01b03811660009081526008602052604081206001015460ff166118f75760405162461bcd60e51b815260206004820152603f6024820152600080516020613d4483398151915260448201527f674465706f736974733a20546f6b656e20646f6573206e6f742065786973740060648201526084016105b4565b506001600160a01b0316600090815260086020526040902060010154610100900460ff1690565b60055460009082106119905760405162461bcd60e51b815260206004820152603560248201527f496e746567726174696f6e4d61703a3a676574546f6b656e416464726573733a60448201527408151bdad95b88191bd95cc81b9bdd08195e1a5cdd605a1b60648201526084016105b4565b60058281548110610d7557634e487b7160e01b600052603260045260246000fd5b6001600160a01b03811660009081526008602052604081206001015460ff16611a415760405162461bcd60e51b81526020600482015260486024820152600080516020613ea483398151915260448201527f4665654b56616c75654e756d657261746f723a20546f6b656e20646f6573206e6064820152671bdd08195e1a5cdd60c21b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206005015490565b6001600160a01b03811660009081526008602052604081206001015460ff16611b055760405162461bcd60e51b815260206004820152604b60248201527f496e746567726174696f6e4d61703a3a676574546f6b656e5461726765744c6960448201527f71756964697479526174696f4e756d657261746f723a20546f6b656e20646f6560648201526a1cc81b9bdd08195e1a5cdd60aa1b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206004015490565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91611b599190600401613a83565b60206040518083038186803b158015611b7157600080fd5b505afa158015611b85573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611ba991906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401611bd49190613a6f565b60206040518083038186803b158015611bec57600080fd5b505afa158015611c00573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190611c249190613a3b565b611c405760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16611cbc5760405162461bcd60e51b815260206004820152603a6024820152600080516020613ec483398151915260448201527919da5b99ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60321b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154600160201b900460ff16611d505760405162461bcd60e51b81526020600482015260456024820152600080516020613ec483398151915260448201527f67696e673a20546f6b656e206272696467696e6720616c72656164792064697360648201526418589b195960da1b608482015260a4016105b4565b6001600160a01b03811660009081526008602081905260408220600101805460ff60201b19169055610a44565b6001600160a01b03811660009081526008602052604081206001015460ff16611e1a5760405162461bcd60e51b815260206004820152604360248201527f496e746567726174696f6e4d61703a3a676574546f6b656e526573657276655260448201527f6174696f4e756d657261746f723a20546f6b656e20646f6573206e6f742065786064820152621a5cdd60ea1b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206003015490565b3360009081526001602052604090205460ff16611e685760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526007602052604090205460ff1615611ef35760405162461bcd60e51b815260206004820152603960248201527f496e746567726174696f6e4d61703a3a616464496e746567726174696f6e3a20604482015278125b9d1959dc985d1a5bdb88185b1c9958591e481859191959603a1b60648201526084016105b4565b6001600160a01b0382166000908152600760209081526040909120805460ff1916600190811782558351611f2e93929091019184019061365e565b5050600680546001810182556000919091527ff652222313e28459528d920b65115c16c04f3efc82aaedc97be59f3f377c0d3f0180546001600160a01b0319166001600160a01b0392909216919091179055565b6001600160a01b03811660009081526007602052604090205460609060ff166120135760405162461bcd60e51b815260206004820152603e60248201527f496e746567726174696f6e4d61703a3a676574496e746567726174696f6e4e6160448201527f6d653a20496e746567726174696f6e20646f6573206e6f74206578697374000060648201526084016105b4565b6001600160a01b0382166000908152600760205260409020600101805461203990613c5b565b80601f016020809104026020016040519081016040528092919081815260200182805461206590613c5b565b80156120b25780601f10612087576101008083540402835291602001916120b2565b820191906000526020600020905b81548152906001019060200180831161209557829003601f168201915b50505050509050919050565b6000805b6005548110156121375760086000600583815481106120f157634e487b7160e01b600052603260045260246000fd5b60009182526020808320909101546001600160a01b031683528201929092526040019020600201546121239083613c43565b91508061212f81613c96565b9150506120c2565b5090565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916121709190600401613a83565b60206040518083038186803b15801561218857600080fd5b505afa15801561219c573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906121c091906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b81526004016121eb9190613a6f565b60206040518083038186803b15801561220357600080fd5b505afa158015612217573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061223b9190613a3b565b6122575760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166122d25760405162461bcd60e51b81526020600482015260396024820152600080516020613ee48339815191526044820152781a5b99ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd603a1b60648201526084016105b4565b6001600160a01b038116600090815260086020526040902060010154600160201b900460ff16156123675760405162461bcd60e51b81526020600482015260456024820152600080516020613ee483398151915260448201527f696e673a20546f6b656e20616c726561647920616363657074696e67206272696064820152646467696e6760d81b608482015260a4016105b4565b6001600160a01b03811660009081526008602081905260409091206001908101805460ff60201b1916600160201b17905590610a44565b600054610100900460ff166123b95760005460ff16156123bd565b303b155b6123d95760405162461bcd60e51b81526004016105b490613afe565b600054610100900460ff161580156123fb576000805461ffff19166101011790555b6001600160a01b0382166124215760405162461bcd60e51b81526004016105b490613b4c565b60005b83518110156124995760006001600160a01b031684828151811061245857634e487b7160e01b600052603260045260246000fd5b60200260200101516001600160a01b031614156124875760405162461bcd60e51b81526004016105b490613b4c565b8061249181613c96565b915050612424565b5060005b835181101561250f5760018060008684815181106124cb57634e487b7160e01b600052603260045260246000fd5b6020908102919091018101516001600160a01b03168252810191909152604001600020805460ff19169115159190911790558061250781613c96565b91505061249d565b5082516125239060029060208601906136de565b5061252d8261320a565b801561253f576000805461ff00191690555b505050565b3360009081526001602052604090205460ff166125735760405162461bcd60e51b81526004016105b490613bbf565b6125858a8a8a8a8a8a8a8a8a8a61329e565b50505050505050505050565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a916125c69190600401613a83565b60206040518083038186803b1580156125de57600080fd5b505afa1580156125f2573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061261691906137f6565b6001600160a01b0316632f54bf6e336040518263ffffffff1660e01b81526004016126419190613a6f565b60206040518083038186803b15801561265957600080fd5b505afa15801561266d573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906126919190613a3b565b6126f05760405162461bcd60e51b815260206004820152602a60248201527f436f6e74726f6c6c65643a3a6f6e6c794f776e65723a2043616c6c6572206973604482015269103737ba1037bbb732b960b11b60648201526084016105b4565b6001600160a01b03811660009081526001602081905260408220805460ff19169091179055805b600254811015612778576002818154811061274257634e487b7160e01b600052603260045260246000fd5b6000918252602090912001546001600160a01b038481169116141561276657600191505b8061277081613c96565b915050612717565b50806127ca57600280546001810182556000919091527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b0319166001600160a01b0384161790555b5050565b6001600160a01b03811660009081526008602052604081206001015460ff1661284c5760405162461bcd60e51b815260206004820152603c6024820152600080516020613d4483398151915260448201527b19d31c1a5b99ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd60221b60648201526084016105b4565b506001600160a01b03166000908152600860205260409020600101546301000000900460ff1690565b3360009081526001602052604090205460ff166128a45760405162461bcd60e51b81526004016105b490613bbf565b6001600160a01b03821660009081526008602052604090206001015460ff166129325760405162461bcd60e51b81526020600482015260466024820152600080516020613e6483398151915260448201527f7665526174696f4e756d657261746f723a20546f6b656e20646f6573206e6f7460648201526508195e1a5cdd60d21b608482015260a4016105b4565b620f42408111156129e55760405162461bcd60e51b815260206004820152607f6024820152600080516020613e6483398151915260448201527f7665526174696f4e756d657261746f723a2072657365727665526174696f4e7560648201527f6d657261746f72206d757374206265206c657373207468616e206f722065717560848201527f616c20746f207265736572766520726174696f2064656e6f6d696e61746f720060a482015260c4016105b4565b6001600160a01b03909116600090815260086020526040902060030155565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91612a399190600401613a83565b60206040518083038186803b158015612a5157600080fd5b505afa158015612a65573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190612a8991906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401612ab49190613a6f565b60206040518083038186803b158015612acc57600080fd5b505afa158015612ae0573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190612b049190613a3b565b612b205760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff16612b995760405162461bcd60e51b81526020600482015260376024820152600080516020613e4483398151915260448201527619ce88151bdad95b88191bd95cc81b9bdd08195e1a5cdd604a1b60648201526084016105b4565b6001600160a01b0381166000908152600860205260409020600101546301000000900460ff16612c1f5760405162461bcd60e51b815260206004820152603f6024820152600080516020613e4483398151915260448201527f673a20546f6b656e204c50696e6720616c72656164792064697361626c65640060648201526084016105b4565b6001600160a01b0381166000908152600860205260408120600101805463ff000000191690556007610a44565b600054610100900460ff16612c675760005460ff1615612c6b565b303b155b612c875760405162461bcd60e51b81526004016105b490613afe565b600054610100900460ff16158015612ca9576000805461ffff19166101011790555b6001600160a01b038316612ccf5760405162461bcd60e51b81526004016105b490613b4c565b6001600160a01b038216612cf55760405162461bcd60e51b81526004016105b490613b4c565b612cff858561239e565b600380546001600160a01b038086166001600160a01b0319928316179092556004805492851692909116919091179055612d4b8360018080806103e861c350620186a0619c408261329e565b612d69826001806001806103e86000620186a0619c4061138861329e565b8015612d7b576000805461ff00191690555b5050505050565b60028181548110612d9257600080fd5b6000918252602090912001546001600160a01b0316905081565b6001600160a01b03811660009081526008602052604081206001015460ff16612e2b5760405162461bcd60e51b815260206004820152603f6024820152600080516020613d4483398151915260448201527f674272696467696e673a20546f6b656e20646f6573206e6f742065786973740060648201526084016105b4565b506001600160a01b0316600090815260086020526040902060010154600160201b900460ff1690565b6001600160a01b03811660009081526008602052604081206001015460ff16612eeb5760405162461bcd60e51b815260206004820152604f6024820152600080516020613ea483398151915260448201527f466565506c6174666f726d526174696f4e756d657261746f723a20546f6b656e60648201526e08191bd95cc81b9bdd08195e1a5cdd608a1b608482015260a4016105b4565b506001600160a01b031660009081526008602052604090206006015490565b600080546040516337c61fc560e11b8152620100009091046001600160a01b031691636f8c3f8a91612f3f9190600401613a83565b60206040518083038186803b158015612f5757600080fd5b505afa158015612f6b573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190612f8f91906137f6565b6001600160a01b031663f3ae2415336040518263ffffffff1660e01b8152600401612fba9190613a6f565b60206040518083038186803b158015612fd257600080fd5b505afa158015612fe6573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061300a9190613a3b565b6130265760405162461bcd60e51b81526004016105b490613b71565b6001600160a01b03811660009081526008602052604090206001015460ff166130a55760405162461bcd60e51b815260206004820152603d6024820152600080516020613d2483398151915260448201527f64726177616c733a20546f6b656e20646f6573206e6f7420657869737400000060648201526084016105b4565b6001600160a01b03811660009081526008602052604090206001015462010000900460ff1661313e5760405162461bcd60e51b815260206004820152604b6024820152600080516020613d2483398151915260448201527f64726177616c733a20546f6b656e207769746864726177616c7320616c72656160648201526a191e48191a5cd8589b195960aa1b608482015260a4016105b4565b6001600160a01b0381166000908152600860205260408120600101805462ff0000191690556006610a44565b6001600160a01b03811660009081526008602052604081206001015460ff166131ee5760405162461bcd60e51b815260206004820152603060248201527f496e746567726174696f6e4d61703a3a676574546f6b656e49643a20546f6b6560448201526f1b88191bd95cc81b9bdd08195e1a5cdd60821b60648201526084016105b4565b506001600160a01b031660009081526008602052604090205490565b600054610100900460ff166132255760005460ff1615613229565b303b155b6132455760405162461bcd60e51b81526004016105b490613afe565b600054610100900460ff16158015613267576000805461ffff19166101011790555b6000805462010000600160b01b031916620100006001600160a01b0385160217905580156127ca576000805461ff00191690555050565b6001600160a01b038a1660009081526008602052604090206001015460ff16156132c757612585565b620f42408411156133765760405162461bcd60e51b815260206004820152606760248201527f496e746567726174696f6e4d61703a3a616464546f6b656e3a2072657365727660448201527f65526174696f4e756d657261746f72206d757374206265206c6573732074686160648201527f6e206f7220657175616c20746f207265736572766520726174696f2064656e6f60848201526636b4b730ba37b960c91b60a482015260c4016105b4565b620f42408311156134125760405162461bcd60e51b815260206004820152607860248201527f496e746567726174696f6e4d61703a3a616464546f6b656e3a207461726765746044820152600080516020613de48339815191526064820152600080516020613da48339815191526084820152773ab4b234ba3c903930ba34b7903232b737b6b4b730ba37b960411b60a482015260c4016105b4565b620f42408211156134bb5760405162461bcd60e51b81526020600482015260736024820152600080516020613d0483398151915260448201527f65724665654b56616c75654e756d657261746f72206d757374206265206c657360648201527f73207468616e206f7220657175616c20746f207472616e7366657220666565206084820152722596bb30b63ab2903232b737b6b4b730ba37b960691b60a482015260c4016105b4565b620f42408111156135785760405162461bcd60e51b81526020600482015260816024820152600080516020613d0483398151915260448201527f6572466565506c6174666f726d526174696f4e756d657261746f72206d75737460648201527f206265206c657373207468616e206f7220657175616c20746f207472616e736660848201527f65722066656520706c6174666f726d20726174696f2064656e6f6d696e61746f60a4820152603960f91b60c482015260e4016105b4565b600580546001600160a01b03909b1660008181526008602052604081209c8d556001808e0180549a1515600160201b0260ff60201b199c151563010000000263ff000000199e151562010000029e909e1663ffff0000199f15156101000261ffff19909d169c909c1783179e909e169a909a179b909b17999099169a909a1790965560028a0194909455600389019290925560048801558683015560069095019490945583549182018455929092527f036b6384b5eca791c62761152d0c79bb0604c104a5fb6f4eb0703f3154bb3db090910180546001600160a01b0319169091179055565b82805461366a90613c5b565b90600052602060002090601f01602090048101928261368c57600085556136d2565b82601f106136a557805160ff19168380011785556136d2565b828001600101855582156136d2579182015b828111156136d25782518255916020019190600101906136b7565b50612137929150613733565b8280548282559060005260206000209081019282156136d2579160200282015b828111156136d257825182546001600160a01b0319166001600160a01b039091161782556020909201916001909101906136fe565b5b808211156121375760008155600101613734565b600082601f830112613758578081fd5b813560206001600160401b0382111561377357613773613cc7565b8160051b613782828201613c13565b83815282810190868401838801850189101561379c578687fd5b8693505b858410156137c75780356137b381613cdd565b8352600193909301929184019184016137a0565b50979650505050505050565b6000602082840312156137e4578081fd5b81356137ef81613cdd565b9392505050565b600060208284031215613807578081fd5b81516137ef81613cdd565b6000806000806000806000806000806101408b8d031215613831578586fd5b8a3561383c81613cdd565b995060208b013561384c81613cf5565b985060408b013561385c81613cf5565b975060608b013561386c81613cf5565b965060808b013561387c81613cf5565b999c989b50969995989760a0870135975060c08701359660e08101359650610100810135955061012001359350915050565b600080604083850312156138c0578182fd5b82356138cb81613cdd565b91506020838101356001600160401b03808211156138e7578384fd5b818601915086601f8301126138fa578384fd5b81358181111561390c5761390c613cc7565b61391e601f8201601f19168501613c13565b91508082528784828501011115613933578485fd5b8084840185840137810190920192909252919491935090915050565b60008060408385031215613961578182fd5b823561396c81613cdd565b946020939093013593505050565b6000806040838503121561398c578182fd5b82356001600160401b038111156139a1578283fd5b6139ad85828601613748565b92505060208301356139be81613cdd565b809150509250929050565b600080600080608085870312156139de578384fd5b84356001600160401b038111156139f3578485fd5b6139ff87828801613748565b9450506020850135613a1081613cdd565b92506040850135613a2081613cdd565b91506060850135613a3081613cdd565b939692955090935050565b600060208284031215613a4c578081fd5b81516137ef81613cf5565b600060208284031215613a68578081fd5b5035919050565b6001600160a01b0391909116815260200190565b60208101600c8310613aa557634e487b7160e01b600052602160045260246000fd5b91905290565b6000602080835283518082850152825b81811015613ad757858101830151858201604001528201613abb565b81811115613ae85783604083870101525b50601f01601f1916929092016040019392505050565b6020808252602e908201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160408201526d191e481a5b9a5d1a585b1a5e995960921b606082015260800190565b6020808252600b908201526a626164206164647265737360a81b604082015260600190565b6020808252602e908201527f436f6e74726f6c6c65643a3a6f6e6c794d616e616765723a2043616c6c65722060408201526d34b9903737ba1036b0b730b3b2b960911b606082015260800190565b60208082526034908201527f436f6e74726f6c6c65643a3a6f6e6c79436f6e74726f6c6c65723a2043616c6c60408201527332b91034b9903737ba1031b7b73a3937b63632b960611b606082015260800190565b604051601f8201601f191681016001600160401b0381118282101715613c3b57613c3b613cc7565b604052919050565b60008219821115613c5657613c56613cb1565b500190565b600181811c90821680613c6f57607f821691505b60208210811415613c9057634e487b7160e01b600052602260045260246000fd5b50919050565b6000600019821415613caa57613caa613cb1565b5060010190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052604160045260246000fd5b6001600160a01b0381168114613cf257600080fd5b50565b8015158114613cf257600080fdfe496e746567726174696f6e4d61703a3a616464546f6b656e3a207472616e7366496e746567726174696f6e4d61703a3a64697361626c65546f6b656e57697468496e746567726174696f6e4d61703a3a676574546f6b656e416363657074696e496e746567726174696f6e4d61703a3a656e61626c65546f6b656e4465706f73496e746567726174696f6e4d61703a3a656e61626c65546f6b656e4c70696e676c657373207468616e206f7220657175616c20746f20746172676574206c6971496e746567726174696f6e4d61703a3a64697361626c65546f6b656e4465706f4c6971756964697479526174696f4e756d657261746f72206d75737420626520496e746567726174696f6e4d61703a3a656e61626c65546f6b656e5769746864496e746567726174696f6e4d61703a3a757064617465546f6b656e5461726765496e746567726174696f6e4d61703a3a64697361626c65546f6b656e4c70696e496e746567726174696f6e4d61703a3a757064617465546f6b656e5265736572496e746567726174696f6e4d61703a3a757064617465546f6b656e5472616e73496e746567726174696f6e4d61703a3a676574546f6b656e5472616e73666572496e746567726174696f6e4d61703a3a64697361626c65546f6b656e42726964496e746567726174696f6e4d61703a3a656e61626c65546f6b656e4272696467a264697066735822122016d208c88373278e14ef235c90eb4f0c2119a406e83e120db8f9d11ad274e85664736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "addIntegration(address,string)": {
+        "params": {
+          "contractAddress": "The address of the integration contract",
+          "name": "The name of the protocol being integrated to"
+        }
+      },
+      "addToken(address,bool,bool,bool,bool,uint256,uint256,uint256,uint256,uint256)": {
+        "params": {
+          "acceptingDeposits": "Whether token deposits are enabled",
+          "acceptingWithdrawals": "Whether token withdrawals are enabled",
+          "biosRewardWeight": "Token weight for BIOS rewards",
+          "reserveRatioNumerator": "Number that gets divided by reserve ratio denominator to get reserve ratio",
+          "tokenAddress": "The address of the ERC20 token contract"
+        }
+      },
+      "disableTokenBridging(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "disableTokenDeposits(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "disableTokenLping(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "disableTokenWithdrawals(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "enableTokenBridging(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "enableTokenDeposits(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "enableTokenLping(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "enableTokenWithdrawals(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "getBiosRewardWeightSum()": {
+        "returns": {
+          "rewardWeightSum": "reward weight of depositable tokens"
+        }
+      },
+      "getBiosTokenAddress()": {
+        "returns": {
+          "_0": "The address of the BIOS token"
+        }
+      },
+      "getIntegrationAddress(uint256)": {
+        "params": {
+          "integrationId": "The ID of the integration"
+        },
+        "returns": {
+          "_0": "The address of the integration contract"
+        }
+      },
+      "getIntegrationAddressesLength()": {
+        "returns": {
+          "_0": "The quantity of Integrations added"
+        }
+      },
+      "getIntegrationName(address)": {
+        "params": {
+          "integrationAddress": "The address of the integration contract"
+        },
+        "returns": {
+          "_0": "The name of the of the protocol being integrated to"
+        }
+      },
+      "getReserveRatioDenominator()": {
+        "returns": {
+          "_0": "The token reserve ratio denominator"
+        }
+      },
+      "getTargetLiquidityRatioDenominator()": {
+        "returns": {
+          "_0": "The target liquidity ratio denominator"
+        }
+      },
+      "getTokenAcceptingBridging(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "bool indicating whether Lping this token is currently enabled"
+        }
+      },
+      "getTokenAcceptingDeposits(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "bool indicating whether depositing this token is currently enabled"
+        }
+      },
+      "getTokenAcceptingLping(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "bool indicating whether Lping this token is currently enabled"
+        }
+      },
+      "getTokenAcceptingWithdrawals(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "bool indicating whether withdrawing this token is currently enabled"
+        }
+      },
+      "getTokenAddress(uint256)": {
+        "params": {
+          "tokenId": "The ID of the token"
+        },
+        "returns": {
+          "_0": "The address of the token ERC20 contract"
+        }
+      },
+      "getTokenAddressesLength()": {
+        "returns": {
+          "_0": "The quantity of tokens added"
+        }
+      },
+      "getTokenBiosRewardWeight(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "The token BIOS reward weight"
+        }
+      },
+      "getTokenId(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "The index of the token in the tokens array"
+        }
+      },
+      "getTokenReserveRatioNumerator(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "The token reserve ratio numerator"
+        }
+      },
+      "getTokenTargetLiquidityRatioNumerator(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "The number that gets divided by target liquidity ratio denominator"
+        }
+      },
+      "getTokenTransferFeeKValueNumerator(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "The number that gets divided by transfer fee K-value denominator"
+        }
+      },
+      "getTokenTransferFeePlatformRatioNumerator(address)": {
+        "params": {
+          "tokenAddress": "The address of the token ERC20 contract"
+        },
+        "returns": {
+          "_0": "The number that gets divided by transfer fee platform ratio denominator"
+        }
+      },
+      "getTransferFeeKValueDenominator()": {
+        "returns": {
+          "_0": "The transfer fee K-value denominator"
+        }
+      },
+      "getTransferFeePlatformRatioDenominator()": {
+        "returns": {
+          "_0": "The transfer fee platform ratio denominator"
+        }
+      },
+      "getWethTokenAddress()": {
+        "returns": {
+          "_0": "The address of the WETH token"
+        }
+      },
+      "updateTokenReserveRatioNumerator(address,uint256)": {
+        "params": {
+          "reserveRatioNumerator": "Number that gets divided by reserve ratio denominator to get reserve ratio",
+          "tokenAddress": "the address of the token ERC20 contract"
+        }
+      },
+      "updateTokenRewardWeight(address,uint256)": {
+        "params": {
+          "rewardWeight": "The updated token BIOS reward weight",
+          "tokenAddress": "The address of the token ERC20 contract"
+        }
+      },
+      "updateTokenTargetLiquidityRatioNumerator(address,uint256)": {
+        "params": {
+          "targetLiquidityRatioNumerator": "Number that gets divided by target liquidity ratio denominator to get target liquidity ratio",
+          "tokenAddress": "the address of the token ERC20 contract"
+        }
+      },
+      "updateTokenTransferFeeKValueNumerator(address,uint256)": {
+        "params": {
+          "tokenAddress": "the address of the token ERC20 contract",
+          "transferFeeKValueNumerator": "Number that gets divided by transfer fee K-value denominator to get K-value"
+        }
+      },
+      "updateTokenTransferFeePlatformRatioNumerator(address,uint256)": {
+        "params": {
+          "tokenAddress": "the address of the token ERC20 contract",
+          "transferFeePlatformRatioNumerator": "Number that gets divided by transfer fee platform ratio denominator to get the ratio of transfer fees sent to the platform instead of LPers"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getIntegrationAddressesLength()": {
+        "notice": "Gets the length of supported integrations"
+      },
+      "getTokenAddressesLength()": {
+        "notice": "Gets the length of supported tokens"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 723,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "_initialized",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 726,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "_initializing",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 10143,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "moduleMap",
+        "offset": 2,
+        "slot": "0",
+        "type": "t_contract(IModuleMap)20736"
+      },
+      {
+        "astId": 4667,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "_controllers",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 4670,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "controllers",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 5473,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "wethTokenAddress",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_address"
+      },
+      {
+        "astId": 5475,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "biosTokenAddress",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_address"
+      },
+      {
+        "astId": 5478,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "tokenAddresses",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 5481,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "integrationAddresses",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_array(t_address)dyn_storage"
+      },
+      {
+        "astId": 5486,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "integrations",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_mapping(t_address,t_struct(Integration)19724_storage)"
+      },
+      {
+        "astId": 5491,
+        "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+        "label": "tokens",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_mapping(t_address,t_struct(Token)19747_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)dyn_storage": {
+        "base": "t_address",
+        "encoding": "dynamic_array",
+        "label": "address[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(IModuleMap)20736": {
+        "encoding": "inplace",
+        "label": "contract IModuleMap",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_address,t_struct(Integration)19724_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct IIntegrationMap.Integration)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Integration)19724_storage"
+      },
+      "t_mapping(t_address,t_struct(Token)19747_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct IIntegrationMap.Token)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Token)19747_storage"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(Integration)19724_storage": {
+        "encoding": "inplace",
+        "label": "struct IIntegrationMap.Integration",
+        "members": [
+          {
+            "astId": 19721,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "added",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 19723,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "name",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_struct(Token)19747_storage": {
+        "encoding": "inplace",
+        "label": "struct IIntegrationMap.Token",
+        "members": [
+          {
+            "astId": 19726,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 19728,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "added",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_bool"
+          },
+          {
+            "astId": 19730,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "acceptingDeposits",
+            "offset": 1,
+            "slot": "1",
+            "type": "t_bool"
+          },
+          {
+            "astId": 19732,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "acceptingWithdrawals",
+            "offset": 2,
+            "slot": "1",
+            "type": "t_bool"
+          },
+          {
+            "astId": 19734,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "acceptingLping",
+            "offset": 3,
+            "slot": "1",
+            "type": "t_bool"
+          },
+          {
+            "astId": 19736,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "acceptingBridging",
+            "offset": 4,
+            "slot": "1",
+            "type": "t_bool"
+          },
+          {
+            "astId": 19738,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "biosRewardWeight",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 19740,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "reserveRatioNumerator",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 19742,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "targetLiquidityRatioNumerator",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 19744,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "transferFeeKValueNumerator",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 19746,
+            "contract": "contracts/core/IntegrationMap.sol:IntegrationMap",
+            "label": "transferFeePlatformRatioNumerator",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "224"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
