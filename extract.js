@@ -1,13 +1,14 @@
 //chain you want to extract from:
+
 const currentChain = 'mainnet';
 
 const fs = require('fs-extra');
-const web3 = require('./web3.js');
-const userbase = require('./userbase/' + currentChain + '/users.json');
-const { tokens, symbols } = require('./tokens/' +
+const web3 = require('./src/web3.js');
+const userbase = require('./src/userbase/' + currentChain + '/users.json');
+const { tokens, symbols } = require('./src/tokens/' +
   currentChain +
   '/tokens.json');
-const { abi, address } = require('./deployments/' +
+const { abi, address } = require('./src/deployments/' +
   currentChain +
   '/UserPositions.json');
 
@@ -56,7 +57,13 @@ const extract = async () => {
     './extracts/' + currentChain + '/UserBalances.json',
     JSON.stringify(UserBalances)
   );
-  console.log('User balances saved to file: UserBalances.json\n');
+  console.log(
+    'User balances from ' +
+      currentChain +
+      ' saved to file: ./extracts/' +
+      currentChain +
+      '/UserBalances.json\n'
+  );
 };
 
 extract();
