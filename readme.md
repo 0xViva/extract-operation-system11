@@ -13,10 +13,9 @@ Setup:
 Get UserBalances:
 
 1. make sure you have the '.env' file in src dir and put the right infura api in.
-2. go to src dir
-3. 'node extract.js'
+2. 'node extract.js'
 
 Wanna compile contracts in /contracts folder?
 
 1. go to src dir
-2. 'node compile.js
+2. 'node compile.js'
