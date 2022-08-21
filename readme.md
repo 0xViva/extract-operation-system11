@@ -14,8 +14,15 @@ Get UserBalances:
 
 1. make sure you have the '.env' file in src dir and put the right infura api in.
 2. 'node extract.js'
+3. UserBalaces ends up in ./extracts
 
 Wanna compile contracts in /contracts folder?
 
 1. go to src dir
 2. 'node compile.js'
+
+Wanna get and look at contract events? 
+
+1. be in dir /
+2. 'node events.js'
+3. events.json can be found in ./extracts
