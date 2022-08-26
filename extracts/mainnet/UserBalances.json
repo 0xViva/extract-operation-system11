@@ -1,0 +1,1389 @@
+{
+  "0x2E762Cd33842b5E97E5D29485E4822f26ac1d267": [
+    { "EnterStrategy:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": 1080923364 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 300000000000000000
+    },
+    { "ExitStrategy:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": 1080923364 },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 300000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xE31Ab61D2F8434654e022F6575201e6EB00537DC": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 22500000000 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 22500000000 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 9000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1500000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 6500000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 2000000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x026995D5BF3eD2b55E05312260E46B5fe263b8d6": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 5081482455 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 5081482455 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x8430BFECC29BF6A28a8fE431bb6EDB3c19c91d34": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 2462425649 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 2462425649 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xb67620E8C9E19592b616942F895153e2dcF9CcB6": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 25000000000 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3000000000000000000
+    },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 25000000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x44B987081d9de5F0d3D9cbB672a4993FfDc90F8A": [
+    { "EnterStrategy:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": 5000000000 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    { "ExitStrategy:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": 5000000000 },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x7a9f080C0bD4bc7a3153E4D61365D264a7A20C6d": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 7134879222 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 7134879222 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x0d1555531622cf39cC623dca214972BD8E587715": [
+    { "EnterStrategy:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": 5193295697 },
+    {
+      "ExitStrategy:0x853d955aCEf822Db058eb8505911ED77F175b99e": 2.99999966493111e22
+    },
+    { "ExitStrategy:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": 5193295697 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x4099f69114c1fbaA8E420cc975F7fB3ECb08e563": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 1592836269 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 1592836269 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x57CcE7B95aFfbf5Fb6B3C8e6c71F4C77124EF3Cd": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x679f4A92100b65A97EE5f3cAe7DBBa42dBACb7d5": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 69093525767290310
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 69093525767290310
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 825000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 300000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1125000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1125000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1700000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2825000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 8171711601 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 8171711601 },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 6277375122 },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 2358357752 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 8635732874 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xe51Faa4859A0Ce71a978e01b092f3c749E1bE9ab": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 400000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 400000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xe85c71088435A9771f9b68C6C70270318Bc4Cf57": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 23000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 506733370803846800
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 300000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x546F2DF53F938a3ef93564233a509f9d4e47eAAc": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 450000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 853859816371621500
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1303859816371621400
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1500000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xE60a9FD5fe190de7620341636C3f02AbF5b20EA5": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xc593E4df56dc8267D55876CDDac3D36D74978618": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 50000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1353951720837869800
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 300000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 498216706 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 60000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 13219798977 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x96e8eed3F44bD5b051d4423B4Cf1a22E6CDAB02a": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 348830000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x88E429Bf788fF8FeF2108Faa817cD8DC41aCa2E4": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 480000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 480000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xF5B0Af852e3dEdc03B551f7050b616b5C77c7645": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x2479493E18cb729e940443a5589c358Cef835647": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 150000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 150000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x558EDFEF58a5037AA287b8F4fFb0a6690CdcBF5d": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 275000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 225000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xB7504AD0d4513eFa270648F464fD5728CA0180Db": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10100000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10100000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x43ce45127B92D08D078d1C7643Cb45F4A21C9ae2": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 30000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 32000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 62000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 62000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 50000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 80000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 80000000000000000000,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x32ddDd527C295CFf53a368f30f5EA33f9F1d172B": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 50000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 50000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x0dd71E71c48086ebb867cFdC2773867Ff59c809E": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 4000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x61810CcaA7cC4170FA564e4Dd274b06Cd041cb41": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1646794540081984800
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1646794540081984800
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xb8C1f214E853d13AAAAc97D84E6DF71DDcD30023": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x1d3dc9aAFc9EB95d7DF1cC84468A40979db6a4cD": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 125000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 125000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x7CE244e2812f3f73dd3294b0e71397ab819B57ee": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 50000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 50000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 50000000000000000000,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x43CefB2Fe7EC94581677D2a17300AD4edf92cC79": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x7AF8650508f043804d5e94db481C8EcF2A713550": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 35385611,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xe524c3C12fa04F132b3c3C71072f8932a352F270": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x5DF4CF5bB7702ac274489Cc445f673910f1b8322": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 560000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 380000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x627C125475d70bbB7eb138bd243851824c0865a1": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 200000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 200000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 200000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 200000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x71c9eBf83f2C1749dC1649DeE1F159AD7216FaaF": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 400000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x0F13B090eFcCEEB2ffb6711a5326546E25142709": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1500000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3500000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x34d4ECD77D6378EbddA1C62A38881E4587109181": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 6800000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 6800000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xB713433Cb2f2631775039eAEB0A0f40C81FE46A4": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 250000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 250000000000000000
+    },
+    {
+      "KernelBalance:wETH": 250000000000000000,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xc47d9a086c5674905b7a75460a0d8A3B1030CAcc": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 4000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 4000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xedF6E65e51D63bF8c7DE15aC3a2901A589C7F4cD": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 250000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 250000000000000000
+    },
+    {
+      "KernelBalance:wETH": 250000000000000000,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x980C9b472500f3bB6c08d876f45Df3A1E3298496": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 6214812990800318000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3785200000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 9952442270 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 9952442270 },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x0E938f234CFf703624a24770A18094CD71e2B37B": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2500000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2500000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 11000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 16000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5340000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5340000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x7Ec6e81C1aDF304187655c87a3d8ac61ED7B12b6": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 900000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 900000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x3251a5f525d3475fa509A081230AaeC52A518e8D": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 500000000000000000
+    },
+    {
+      "KernelBalance:wETH": 500000000000000000,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x132A26c0E815704cE64283f4aab7333CCdc175dC": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 6217110780316819000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 6217110780316819000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x923B00bB691C58656Dd811c5576AdA5d878F7803": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20000000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 50000000000 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 50000000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x2C62D107d8975456F61789EcBcb42928AeD55fB6": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 491300578308169150
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 491300578308169150
+    },
+    {
+      "KernelBalance:wETH": 491300578308169150,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x6249a2692b5dC0e75408A20aA6b5275A0e3E327f": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x598455BdcB5480FD87BA16ee1d895C168dB7EC0c": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1100000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1100000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xd0D704C5C11c4d31BEeda9CcC5Df586d5a2314c9": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3800000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3800000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 3800000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 4800000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x68FC52b4f98A562F2338C6B38F752E599Eaa9de6": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20300000000065974000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20300000000065974000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xF77259F9584d6C1EECAA4C77AfbAccEA63d7E226": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 25000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 25000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xd2c69Cd5D740BC735eB30188d3B406e2774A1D21": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 32000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 80000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 28000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 80000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 120000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 196000000000000000000,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x15962221e0E7A41dE9Da1615f9cb64cBfFF83408": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x4ab52c1d3188708568C73F26c65A8d6AbD2907aA": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 100000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 100000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x7A88A91cCCf33773b5172d12Ad341B3575aC85e4": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x6E4D8279F71F417A80F7A951DFa2bBDd2A7A3f2a": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2037277089331648500
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2037277089331648500
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xd9873df817AE38dbeE1D2aF25d3c206E1F826F44": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xC1E8Cb20317aE543804Ab1D58e954A9C0B44b7F0": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 75000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 75000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xe39b04500d45D489CbD2d44D33AaA71e4b044208": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 195865845781149540
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 195865845781149540
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x4728a5e81775eb49F54d93895D51f564B9F815C2": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 7000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 7000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 5000000000
+    }
+  ],
+  "0xE22bD7774BEDaa31207A5f1de123142eaaF6BD33": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 9613174795601586000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 9613174795601586000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 9613174795601586000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 8613174795601587000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 8800000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 8800000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xafeD99FcB86f4148b1e933aa45CDD46F2D2355E0": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 900000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 100000000 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1900000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xFB43A848b4c0d189821058644A81933736b098a4": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 5300000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 15300000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 15300000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 15300000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 17300000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 17300000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x26a78cd6FE2f363d138ADdBBEd469E1B491d4A9B": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2800000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 6900000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10700000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10700000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10700000000000000000
+    },
+    {
+      "KernelBalance:wETH": 9200000000000000000,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xf12093b5bA0E98466b28CD0eC612FeC565b91Eb9": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 200000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xF78fE967EAD6007C8f16E07FBb0f2626F88aD0DF": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xb28336fDeDc00FD794eDe5D4d41d3279A2E4ABc7": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1390000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xe7D960Ee16d6fCddeB66B0AFBBfa051f61ef0e6C": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 51770921382723270
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 51770921382723270
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x751d9Dfa524789F6d3eb2Ff4D93713DDD23366Ef": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 200000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 200000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 60946328,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x45204A4637b14785e1A1099A7857e05196C68710": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 180000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 180000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x57823effc8062e6382Cb5B0d2D9ba3B140cd2fA1": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 310000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 310000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xEB3ed320353710cFb1Cc17E0670DCDd334EfA449": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 1000000000 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xA27EC45fa707acadc0909A88A0eCAF2D08BA9375": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 270759000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x05A84DAC7d722E3313b5C94E2681BAac3427ba76": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 313771163793141100
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xB759D06D46Cd700d06DBc174475FB9dA35f52047": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 50000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x3CdA30BD84DB976BFabb64b622D74d38E78EDFd3": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 16000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 16000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 16000000000000000000
+    },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 60202759016 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 48000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 48000000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 48000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 24000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 24000000000000000000
+    },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 60202759016 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x1fD6e15cD7548ec27443690cE5aa3320b1869c3D": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 35778199743781773000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 10000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 20000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 25778199743781773000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 25778199743781773000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x2f45724d7E384b38D5C97206e78470544304887F": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 15000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 15000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xad9cBD4B9b1a9cC08B32e09a7961bF5B07E52bF3": [
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2000000000000000000
+    },
+    {
+      "ExitStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 2000000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xBf98f6DF65dfa2f2b50d4a806cF134A209C7D364": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 800000000 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 800000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x072155dBef6FCa96E8a66c07228d1Fb974997901": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 5005235457 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 5005235457 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xE3e12D344C356bf32f2A56999f6B1FDB9e8FfAA0": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 310831372 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x438a650693bda869F82C54145f4BAd57dAc714D1": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 3531175022 },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1500000000000000000
+    },
+    {
+      "EnterStrategy:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": 1500000000000000000
+    },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x79457A036ba1C59399353233C765F004e7c06adf": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 50000000000 },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 50000000000 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 100000000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 100000000000,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xf661103151192fB1753469D5961C4b1221E070b4": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 50000000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0xF5FF296D4b9c856Bed217eAd0373cBD6480CcE8B": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 11558796026 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 11558796026 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x4779a9B22a1fb68d856987E6E774eAAe86104916": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 643023378 },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 613000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x58Bc1BF38977897A9C195fB8424a1FC744Bdc92E": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 50000000000 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 50000000000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x53B830b24038021F266401F8618e7c5Cb1abB623": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 1980871468 },
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 3550580000 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x391bF92B788150d6E8f23ecc9624499552E2A092": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 197638966 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x41E8AdcC6084c9703CA446445fe58B893075788c": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 64049326121 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 64049326121 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x99829C7FD07F4E9CC9337D8f08d65aba84423a9d": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 991123929 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 991123929 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ],
+  "0x421A8A0C6388FaA1550E2636538d8d7605a8cEde": [
+    { "EnterStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 2504019885 },
+    { "ExitStrategy:0xdAC17F958D2ee523a2206206994597C13D831ec7": 2504019885 },
+    {
+      "KernelBalance:wETH": 0,
+      "KernelBalance:USDT": 0,
+      "KernelBalance:USDC": 0
+    }
+  ]
+}
