@@ -38,16 +38,16 @@ const events = async () => {
         }
       }
 
-      console.log(users);
       uniqueArray = users.filter(function (item, pos) {
         return users.indexOf(item) == pos;
       });
+      console.log('length of userbase: ' + uniqueArray.length + '\n');
       fs.writeFile(
         './src/userbase/' + currentChain + '/users.json',
         JSON.stringify(uniqueArray)
       );
       console.log(
-        'Usersfrom ' +
+        'Users from ' +
           currentChain +
           ' saved to file: ./src/userbase/' +
           currentChain +

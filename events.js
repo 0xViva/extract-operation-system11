@@ -33,6 +33,7 @@ const events = async () => {
     (err, events) => {
       RelevantEvents = [];
       console.log(events);
+      console.log(err);
       for (e in events) {
         obj = [];
         if (events[e].event == 'EnterStrategy') {

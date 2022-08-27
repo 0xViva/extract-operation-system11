@@ -5,7 +5,7 @@ const currentChain = 'mainnet';
 const fs = require('fs-extra');
 const web3 = require('./src/web3.js');
 const userbase = require('./src/userbase/' + currentChain + '/users.json');
-const { tokens, symbols } = require('./src/tokens/' +
+const { tokens, symbols, decimals } = require('./src/tokens/' +
   currentChain +
   '/tokens.json');
 const { abi, address } = require('./src/deployments/' +
@@ -51,12 +51,52 @@ const extract = async () => {
         const result = await UserPosition.methods
           .userTokenBalance(tokens[token], users[user])
           .call();
-        obj['KernelBalance' + ':' + symbols[tokens[token]]] = Number(result);
+        obj['KernelBalance' + ':' + tokens[token]] = Number(result);
       }
       console.log('pushing balances of ' + users[user] + ' to UserBalances');
       UserBalances[users[user]].push(obj);
     }
   }
+  for (user in UserBalances) {
+    obj = {};
+    total = {};
+    for (i in UserBalances[user]) {
+      key = Object.keys(UserBalances[user][i])[0];
+      value = Object.values(UserBalances[user][i])[0];
+      var [action, token] = key.split(':');
+      if (action == 'EnterStrategy') {
+        if (total['total' + ':' + token] == undefined) {
+          total['total' + ':' + token] = +value;
+        } else {
+          total['total' + ':' + token] = total['total' + ':' + token] + value;
+        }
+      }
+      if (action == 'ExitStrategy') {
+        if (total['total' + ':' + token] == undefined) {
+          total['total' + ':' + token] = -value;
+        } else {
+          total['total' + ':' + token] = total['total' + ':' + token] - value;
+        }
+      }
+      if (action == 'KernelBalance') {
+        if (total['total' + ':' + token] == undefined) {
+          total['total' + ':' + token] = +value;
+        } else {
+          total['total' + ':' + token] = total['total' + ':' + token] + value;
+        }
+      }
+    }
+    for (t in total) {
+      var [action, token] = t.split(':');
+      if (token === '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83') {
+        total[t] = total[t] / 10 ** 18;
+      } else {
+        total[t] = total[t] / 10 ** 6;
+      }
+    }
+    UserBalances[user].push(total);
+  }
+
   console.log('\nStore user balances...\n');
   fs.writeFile(
     './extracts/' + currentChain + '/UserBalances.json',
