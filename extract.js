@@ -88,7 +88,7 @@ const extract = async () => {
     }
     for (t in total) {
       var [action, token] = t.split(':');
-      if (token === '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7') {
+      if (token === '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270') {
         total[t] = total[t] / 10 ** 18;
       } else {
         total[t] = total[t] / 10 ** 6;
