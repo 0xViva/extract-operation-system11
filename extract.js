@@ -1,6 +1,6 @@
 //chain you want to extract from:
 
-const currentChain = 'bsc';
+const currentChain = 'metis';
 
 const fs = require('fs-extra');
 const web3 = require('./src/web3.js');
@@ -66,34 +66,35 @@ const extract = async () => {
       var [action, token] = key.split(':');
       if (action == 'EnterStrategy') {
         if (total['total' + ':' + token] == undefined) {
-          total['total' + ':' + token] = +value;
+          total['total' + ':' + token] = +value / 10 ** 18;
         } else {
-          total['total' + ':' + token] = total['total' + ':' + token] + value;
+          total['total' + ':' + token] =
+            total['total' + ':' + token] + value / 10 ** 18;
         }
       }
       if (action == 'ExitStrategy') {
         if (total['total' + ':' + token] == undefined) {
-          total['total' + ':' + token] = -value;
+          total['total' + ':' + token] = -value / 10 ** 18;
         } else {
-          total['total' + ':' + token] = total['total' + ':' + token] - value;
+          total['total' + ':' + token] =
+            total['total' + ':' + token] - value / 10 ** 18;
         }
       }
       if (action == 'KernelBalance') {
         if (total['total' + ':' + token] == undefined) {
-          total['total' + ':' + token] = +value;
+          total['total' + ':' + token] = +value / 10 ** 18;
         } else {
-          total['total' + ':' + token] = total['total' + ':' + token] + value;
+          total['total' + ':' + token] =
+            total['total' + ':' + token] + value / 10 ** 18;
         }
       }
     }
-    for (t in total) {
+    /*     for (t in total) {
       var [action, token] = t.split(':');
-      if (token === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c') {
+      if (token === '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000') {
         total[t] = total[t] / 10 ** 18;
-      } else {
-        total[t] = total[t] / 10 ** 6;
       }
-    }
+    } */
     UserBalances[user].push(total);
   }
 

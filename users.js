@@ -1,4 +1,4 @@
-const currentChain = 'polygon';
+const currentChain = 'metis';
 
 const fs = require('fs-extra');
 const web3 = require('./src/web3.js');
