@@ -24,6 +24,13 @@ const events = async () => {
 
   var Exit = {};
 
+  const typesArray = [
+    {type: 'uint256', name: 'strategyId'}, 
+    {type: 'address', name: 'user'},
+    {type: 'address', name: 'token'},
+    {type: 'uint256', name: 'amount'},
+  ];
+
   UserPos.getPastEvents(
     'AllEvents',
     {
@@ -35,18 +42,20 @@ const events = async () => {
       console.log(events);
       console.log(err);
       for (e in events) {
+        let data = events[e].raw.data
+        let decodedParameters = web3.eth.abi.decodeParameters(typesArray, data);
         obj = [];
-        if (events[e].event == 'EnterStrategy') {
-          obj.push(events[e].returnValues.user);
-          obj.push(events[e].event);
-          obj.push(events[e].returnValues.tokens[0][0]);
-          obj.push(Number(events[e].returnValues.tokens[0][1]));
+        if (events[e].raw.topics[0] == '0x334bb5f87e7c3a4187387befedac3205b6e6516e347d3a9142aae21a2ef12214') {
+          obj.push(events[e].raw.topics[2]);
+          obj.push('EnterStrategy');
+          obj.push(decodedParameters.token);
+          obj.push(decodedParameters.amount);
           RelevantEvents.push(obj);
-        } else if (events[e].event == 'ExitStrategy') {
-          obj.push(events[e].returnValues.user);
-          obj.push(events[e].event);
-          obj.push(events[e].returnValues.tokens[0][0]);
-          obj.push(Number(events[e].returnValues.tokens[0][1]));
+        } else if (events[e].raw.topics[0] == '0x3ad24ebe8503084720eb1ca09347e684215bd91ce405e748489d5d7551544171') {
+          obj.push(events[e].raw.topics[2]);
+          obj.push('ExitStrategy');
+          obj.push(decodedParameters.token);
+          obj.push(decodedParameters.amount);
           RelevantEvents.push(obj);
         }
       }
