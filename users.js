@@ -2,7 +2,6 @@ const currentChain = 'polygon';
 
 const fs = require('fs-extra');
 const web3 = require('./src/web3.js');
-const userbase = require('./src/userbase/' + currentChain + '/users.json');
 const events = require('./extracts/' + currentChain + '/events.json');
 
 let { abi, address } = require('./src/deployments/' +

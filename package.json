@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@truffle/hdwallet-provider": "^1.5.1",
+    "abi-decoder": "^2.4.0",
     "dotenv": "^16.0.1",
     "ethers": "^5.7.0",
     "fs-extra": "^10.0.0",

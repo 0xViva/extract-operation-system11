@@ -1,6 +1,6 @@
 //chain you want to extract from:
 
-const currentChain = 'polygon';
+const currentChain = 'bsc';
 
 const fs = require('fs-extra');
 const web3 = require('./src/web3.js');
@@ -88,7 +88,7 @@ const extract = async () => {
     }
     for (t in total) {
       var [action, token] = t.split(':');
-      if (token === '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270') {
+      if (token === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c') {
         total[t] = total[t] / 10 ** 18;
       } else {
         total[t] = total[t] / 10 ** 6;

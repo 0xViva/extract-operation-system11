@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const provider = new HDWalletProvider(
   'grant bag anchor cook mule tourist surprise father label safe sustain cigar',
-  process.env.POLYGON //make a .env inside /src and insert MAINNET_INFURA_API_KEY=https://mainnet.infura.io/v3/YOUR_KEY_HERE
+  process.env.BSC //make a .env inside /src and insert MAINNET_INFURA_API_KEY=https://mainnet.infura.io/v3/YOUR_KEY_HERE
 );
 const web3 = new Web3(provider);
 
