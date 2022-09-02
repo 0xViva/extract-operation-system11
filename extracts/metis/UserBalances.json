@@ -4,7 +4,8 @@
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 669227834028889600
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 669227834028889600,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1.6692278340288897 }
   ],
@@ -27,7 +28,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     {
       "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1.942890293094024e-16
     }
@@ -45,7 +49,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "42000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x90F15E09B8Fb5BC080B968170C638920Db3A3446": [
@@ -67,7 +74,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x7069283809EA43d0fABe6D114f7149Ac10679Bf3": [
@@ -77,7 +87,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xD6ee257dC510fF6682fa54689D87ace46c8C79Cf": [
@@ -87,7 +100,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xDb5ee516B26F70739eC1A18b155ace18A1168d00": [
@@ -98,7 +114,8 @@
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2000000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2000000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2000000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2 }
   ],
@@ -109,7 +126,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xA2BFC42c0000A4f97a09783979A73844f43635BB": [
@@ -120,7 +140,8 @@
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1000000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1000000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
@@ -128,7 +149,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
   "0xB176689920343698b0372d578ba7a5Bd06990439": [
@@ -138,7 +162,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "400000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x6c495E23969ba440D3B7d010A1268bdC098DCba5": [
@@ -187,14 +214,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "94000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x82cDf7374219d70AfFa019D39e5f99Bd288B6B74": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5 }
   ],
   "0x9151790E3D7A45f7ec0aC8AB8bf1B4ba42ac31DB": [
@@ -210,7 +243,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "43500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x7c1f28fA927a2C0327b9C0f67B3ae5C3b91f9464": [
@@ -223,7 +259,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1200000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xdfCeC744c8417d2A0Ef72fE520438dd20F368369": [
@@ -266,7 +305,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "200000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x578d94356092F21e28d8782fc224f16032560c55": [
@@ -279,7 +321,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xb0151D256ee16d847F080691C3529F316b2D54b3": [
@@ -295,7 +340,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "15000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x603e02f4D63EC598d0805f5E4656D6205D23fBfd": [
@@ -306,7 +354,8 @@
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1000000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1000000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
@@ -317,7 +366,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x5b1F521c0a97F340901F0Fce23b708F87B3c791d": [
@@ -363,7 +415,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "101500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xEa16545cF2E4C30b38B156CDA0972BE63cE71d50": [
@@ -373,7 +428,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x8BC8E9944FA3624223dD3a351A8e3b3E49f1962D": [
@@ -383,7 +441,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x9c9a9F0cBb069Cda2c1b552883E3d76C5d817CEe": [
@@ -417,7 +478,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "157000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x6909122dA7c402AFCC3593787b2cC190Eb3A8137": [
@@ -427,7 +491,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "4500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xD797530b9293B951C470B24ebb6571bdF599e44B": [
@@ -443,7 +510,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1400000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xc45D05CDc809d20c7B14959E8cd4a1199E3e966F": [
@@ -451,7 +521,8 @@
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2200000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1300000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1300000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 3.5 }
   ],
@@ -463,7 +534,8 @@
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5000000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5000000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5 }
   ],
@@ -495,7 +567,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x058E66a2DE4ab8663979d6DEF6f1471598081f55": [
@@ -505,7 +580,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2800000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x0Dc3B66a3A6b9415C8041e4B77b7dfd041a9c30C": [
@@ -515,7 +593,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "50000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x02359349bA115B26FE715C18288C3F19dfe9f1cd": [
@@ -531,7 +612,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 10 }
   ],
   "0x7Dba8B857E1b9293e74Abac71577056d295bB998": [
@@ -547,7 +631,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "70000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xe12D731750E222eC53b001E00d978901B134CFC9": [
@@ -557,7 +644,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xd0D704C5C11c4d31BEeda9CcC5Df586d5a2314c9": [
@@ -567,7 +657,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "50000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 11.15 }
   ],
   "0x4F4Ee62565E898BeE92bae48890A31a6F38C2C2E": [
@@ -577,7 +670,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "25000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xAED0577301DFb0Df8DAD5ebB65C3895D59708c3f": [
@@ -587,7 +683,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x8bace3A49A375027868CDd34e84521EeD1f1B01D": [
@@ -597,7 +696,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x721Bd7ea7CC17EcF88503b1E7F54532246dd6348": [
@@ -607,7 +709,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x8fE8686b254E6685d38eaBdC88235d74bF0cbeaD": [
@@ -620,7 +725,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "6800000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x6403584E4e70F97C8c241ACA1483BBd84C183d1e": [
@@ -630,7 +738,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x96bff5EbAe3bA7D93F8a3336c68fce474D67cb02": [
@@ -646,7 +757,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "445000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x4a19a616c867e7B0100da702F69136E9A057Ff93": [
@@ -665,7 +779,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xFAe73E896f6e35Bf60a52C4F7275381e8d0F6344": [
@@ -675,7 +792,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3610000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xF28F70db1d85A7688BE07EBece757A9C964A426F": [
@@ -685,7 +805,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x8F85b2D9C1d762Ab319e1510Af4062165D6a56a6": [
@@ -704,14 +827,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xaFb548909e139689f3f265397cf2E7C3a569DbE4": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.5 }
   ],
   "0xea2C034b98F412bD80822C6543592C5C1e49D147": [
@@ -721,7 +850,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xD49A1d51c7a871DDd65B338D508613DA60041e93": [
@@ -732,7 +864,8 @@
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1000000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1000000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
@@ -746,7 +879,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "200000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.2 }
   ],
   "0xee27B8031b51575Ae9Aaaa7c21b93FEA242A82Ce": [
@@ -756,7 +892,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x00930997315A635fE90c3c89665d03099Ab0AC14": [
@@ -772,7 +911,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "6000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x43eD63322703Ca6249DDD5A094D9bee0A3E8aaF7": [
@@ -791,14 +933,20 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1006428913577091469"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 20.1097785107964 }
   ],
   "0xA78ee613da60Edd9C63ae9E9db4EcFb26aE109Ea": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.1 }
   ],
   "0x56a356c378C5FA08Dfd32ee4Ca0Dce93F328BA37": [
@@ -817,7 +965,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 7.300000000000001 }
   ],
   "0xafeD99FcB86f4148b1e933aa45CDD46F2D2355E0": [
@@ -833,7 +984,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2800000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xF1E1C52BCfC167dfc871DD6A0F02ce3F54485726": [
@@ -858,8 +1012,17 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "4000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 1
+    }
   ],
   "0xd223C8A60f448204DCbff5652EFC2ABf56db17C7": [
     {
@@ -868,7 +1031,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "370000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x133e9241Aac55967884d7A141f60Da4da2Fb7B50": [
@@ -914,7 +1080,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "20000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x1d3dc9aAFc9EB95d7DF1cC84468A40979db6a4cD": [
@@ -927,8 +1096,17 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "11000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 11 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "8700000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 11,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 8.7
+    }
   ],
   "0x955E52D9Ee380b49B21221E69Cf9a0b2e3cBf92b": [
     {
@@ -943,15 +1121,27 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2201891001925096027"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x74C8c6Ce9766C5f77e3E1aD5c75FE7Da07199fC8": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2 }
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "2000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -2
+    }
   ],
   "0x6D15EFf7c4d740c4683a23aBeb432f0A1B255a12": [
     {
@@ -978,8 +1168,17 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "800000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.8 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "130000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.8,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0.13
+    }
   ],
   "0xa892744Bef21efe19540372Fa9E612c27beBb841": [
     {
@@ -988,28 +1187,40 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "150000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xB2Fb1E31bAFFaCeE52D4B9AB79009EcCCCB856e5": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "15000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 15 }
   ],
   "0x9Bc86996822381b9dC51D367A6bF088d397d9F68": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "400000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.4 }
   ],
   "0x8Ac2D9B6CdCeC11F60F983610cF0B9Ac80F0DA6f": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "12000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 12 }
   ],
   "0xFB8A7286FAbA378a15F321Cd82425B6B5E855B27": [
@@ -1028,7 +1239,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "25000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x8f972fdCf52B81597f54DF59534874c831b3fd85": [
@@ -1038,7 +1252,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xFB43A848b4c0d189821058644A81933736b098a4": [
@@ -1054,7 +1271,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "56600000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 56.6 }
   ],
   "0xc19eD1FA9FA3968FE12e97Aa4d511aB6bCE1320F": [
@@ -1064,14 +1284,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xB759D06D46Cd700d06DBc174475FB9dA35f52047": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
   "0xf53D0fEC09fe4EAbF97144f8C3418ca350c90B14": [
@@ -1084,7 +1310,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "252400000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 578.9 }
   ],
   "0xB376ba77FaAf74CA93E3a75F7f61d2e76B1F73A9": [
@@ -1094,7 +1323,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "7000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xB70C48717d4Ab13E8AeCE621B34B514d10dc9579": [
@@ -1104,7 +1336,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "8500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x178dE81556C9cf6653547FC98FC18B76588B4820": [
@@ -1132,7 +1367,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10368611690801527466"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 10.400392835332587 }
   ],
   "0x9702219A295801852357994DbfAEA84fcE3590Ca": [
@@ -1142,7 +1380,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "28000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xEbdecF468a75c95BB3f2195c53AB1727DF2DF544": [
@@ -1155,7 +1396,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "19500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 39 }
   ],
   "0x6E699211b9D87f914c7a424bfafdFB5D5B817e8E": [
@@ -1169,7 +1413,8 @@
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 100000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 100000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 9 }
   ],
@@ -1204,14 +1449,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "8500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xa309734d0fc1a3a65454D60C1142B644db9C809c": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 3 }
   ],
   "0x679f4A92100b65A97EE5f3cAe7DBBa42dBACb7d5": [
@@ -1233,7 +1484,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "56000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x951f16c9fcAbDa6ae2781fE0F3E9ebb23BF8BA64": [
@@ -1243,7 +1497,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xb7D8dDeCee44a9f0d5136830c50ED7397FB41614": [
@@ -1253,7 +1510,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xE72994419480d9A0B3AB38E53Ef7d7c28c48193D": [
@@ -1284,7 +1544,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "346000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xe0233c1cB406691515aC9A1bcf9a133D2D550dD3": [
@@ -1294,7 +1557,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xB7663803Ce63E2bb6D276AA4e56Fe27E6A9b2244": [
@@ -1304,7 +1570,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "13950000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x58ec4a83B46037FeF8D50b795B8Fe980d4590CfC": [
@@ -1356,14 +1625,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "475000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x17Ee630D8aa0e9f44fBA41aF50C6B2966349ff17": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.01 }
   ],
   "0xaF616dABa40f81b75aF5373294d4dBE29DD0E0f6": [
@@ -1373,7 +1648,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "78000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xC0e6760f96AcD3b5c71C8bdB3a120CE4fC5cF497": [
@@ -1404,7 +1682,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "512000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xffD3d38372bbc0868C183E754C9218aBEf4e0ecb": [
@@ -1423,7 +1704,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "850000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xbd3449B07F81B3c9E9D4042868aaD3A9d926D2Fa": [
@@ -1448,7 +1732,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1500000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x1a85e60e43e330f4DbbECCEbeB3a27aafD558500": [
@@ -1458,7 +1745,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x0565978e02bb9bdAe46D599a55Ab1cBC0df45E9C": [
@@ -1474,7 +1764,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "20000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x2EE15Dd4EBf755c50c883A31E10C1c6aA5A1145a": [
@@ -1487,7 +1780,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "385000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x82B0be96fEF4553B31294405b7E7A828bD237aEB": [
@@ -1497,7 +1793,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xffCC63dF68c544E5104a1b4287a96C9e27dc75e1": [
@@ -1540,7 +1839,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5 }
   ],
   "0xCDf0AF571C1c020a69AaD9b2dF49dCBb9c6D41E3": [
@@ -1553,7 +1855,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "62150000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x3D94249c540EEE0174042d9F535BCAa219D7cbF4": [
@@ -1563,7 +1868,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "70000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xad30bf6CB89fd9FA707d74d8FA5b32aBDE2B8d71": [
@@ -1573,28 +1881,40 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "500000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x45354Ba7fd880CB247F0940818Dcc136B282ad3f": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 5 }
   ],
   "0x661D70B1382372cAe652D86c5784625C1bb4C2B7": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 10 }
   ],
   "0x1e121993b4A8bC79D18A4C409dB84c100FFf25F5": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "50000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 50 }
   ],
   "0xfe58ee86fEdCC697fE0c1bf7DB783B1B1848F0AA": [
@@ -1604,7 +1924,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "31400000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xf08979C344Bc81Ae1D0C3B5D15370266bdEeA315": [
@@ -1614,14 +1937,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x90e8b3d37788F707dDCCCC5780d8429Abf1bAC22": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.1 }
   ],
   "0x524a36cf39810B51205240481A397D966c4fa7df": [
@@ -1631,7 +1960,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "97000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x869A2F72dE1eD090557ca547aBd3B6804d9771A3": [
@@ -1656,7 +1988,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1800000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x88C0EB26a270293c0655640bcB777b46D52DFD52": [
@@ -1678,7 +2013,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "63000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 135 }
   ],
   "0x054abbE9D02376D764a496c94BFA79d52dFd081F": [
@@ -1703,7 +2041,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "400000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 500 }
   ],
   "0xC77848cDD3D3C91A7c3b25d6443d2871bcbaFFc1": [
@@ -1713,7 +2054,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "400000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x44884619a7F2dDD0106551D7563f983d9E606854": [
@@ -1723,7 +2067,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x48Ee69490345c7080240dB090E65a4Ae1049E16A": [
@@ -1763,7 +2110,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "335000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x271D8B45E092813793c62687522135AcE330beaC": [
@@ -1773,7 +2123,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "369000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xA3a21aB1339E84Ec739fAe58325d87a3a609365f": [
@@ -1783,7 +2136,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "50000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x02F2613f44Ed6ed02e78b40EeFB34059e72187C3": [
@@ -1793,7 +2149,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "53000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x4E34C10567807f596C07427D794e16eF69f4bFcb": [
@@ -1818,7 +2177,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "35000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x51fD44BA77B3066949B874f24C374819eF78809a": [
@@ -1828,7 +2190,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x678F293406c46e025EC1FDA10D3a240F02c37C23": [
@@ -1838,7 +2203,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "15500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xa2b55C22c85b9E2C461309297E842fD865d5EfF5": [
@@ -1848,7 +2216,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xB9f8A193D408103bBFabAE7BD0995eB6241aD0F8": [
@@ -1868,7 +2239,8 @@
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 100000000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 100000000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 100 }
   ],
@@ -1876,7 +2248,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "34900000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 34.9 }
   ],
   "0xCAD15C02eCbB282F6da101Db2d78c4429444A381": [
@@ -1886,7 +2261,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "13690000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x2F2F665974261C4129b1DC6c359BD259CD66f78A": [
@@ -1902,7 +2280,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "237000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x467209ffaB158A3447D88f66Ee7717e3B8494DE6": [
@@ -1921,8 +2302,17 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "400000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 36.4 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "300000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 36.4,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0.3
+    }
   ],
   "0x2f24610415cdDF5D230C19297F37Df9C57B46AFe": [
     {
@@ -1931,7 +2321,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xa57e31BA99a010BbafE08F58E46a520bc9fF82E4": [
@@ -1941,7 +2334,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x121771eBb50FfFc270Bc1C1E40E5BF0e44C34716": [
@@ -1951,28 +2347,46 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "172000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xEF330d6F0B4375c39D8eD3d0D690a5B69e9EcD0c": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "110000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 110 }
   ],
   "0x993220d8CC0E48e7B88c96EC7F37CC3B6E6009CE": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1870000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1.87 }
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1870000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1.87,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -1.87
+    }
   ],
   "0x47Eeb072A8DAE3aB80b1E6123a44eCc80d2c49fF": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "22000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 22 }
   ],
   "0xeCae00863Ba72D39F531bf0AcfA70fbd6985fA33": [
@@ -1985,7 +2399,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "20000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x99829C7FD07F4E9CC9337D8f08d65aba84423a9d": [
@@ -2028,9 +2445,19 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "38000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
     {
-      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": -7.105427357601002e-15
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "54400000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "54400000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": -7.105427357601002e-15,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     }
   ],
   "0xFc13d2A2dcF38F1e9Dd60b0da5307440f82Fe9d7": [
@@ -2041,7 +2468,8 @@
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "454872168244827644"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 454872168244827650
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 454872168244827650,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.4548721682448276 }
   ],
@@ -2052,7 +2480,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "380000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 4.68 }
   ],
   "0x9d9cF0a22584e3aFc597c979f7B6B235510934f9": [
@@ -2062,7 +2493,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "43000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 78 }
   ],
   "0x535B4Ee17d5AD6A4D35A0D8037e99eEf8fA5Ace6": [
@@ -2070,7 +2504,8 @@
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "190750000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1600000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1600000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 192.35 }
   ],
@@ -2096,7 +2531,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "148500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x084a9A6805C2F4Aea5Acef568D3E25d7cAfeBfE0": [
@@ -2112,7 +2550,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "49000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x8cC140E41f064079F921f53A1c36e765DB4B7e59": [
@@ -2122,7 +2563,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "400000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x421A8A0C6388FaA1550E2636538d8d7605a8cEde": [
@@ -2144,8 +2588,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "86000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "46000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "36000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 10
+    }
   ],
   "0x7A88A91cCCf33773b5172d12Ad341B3575aC85e4": [
     {
@@ -2202,14 +2658,29 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "75000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 200 }
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "20000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "30000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 200,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -50
+    }
   ],
   "0x7d38b3B62282384f2d0142b6E2CCffBDA0794583": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2.5 }
   ],
   "0x14Bd6d35a22D8Cd6cAC3E2bD2B336b991Bd8cEA9": [
@@ -2267,7 +2738,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "800000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xAA39012D0c022A8A4882F0CfD411b73bC4d0C42E": [
@@ -2286,7 +2760,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "52130000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     {
       "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": -7.105427357601002e-15
     }
@@ -2298,21 +2775,30 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 200 }
   ],
   "0x3FB03A65f00C51c815cbdB54dE843992332C5131": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
   "0x47aa210A6b43575dBa07996Cdf66Ab5932595BD6": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "148000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 148 }
   ],
   "0x0Dd3Ac57eE19Af4C55A957d5cf57b914b677Cf3D": [
@@ -2322,7 +2808,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "151000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x48CF1Cba8Cd942818aAb23f1AF48470020138891": [
@@ -2344,7 +2833,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5237000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xb0CF08A27350Ab428cA44e6Cc245D216D628d936": [
@@ -2354,7 +2846,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2410000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xd794F5C8C68D40A7Dd0F4e33C019619a58A3cD9B": [
@@ -2367,7 +2862,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "490000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x851497cf9B1362858C095CdD577B506d24F57336": [
@@ -2377,7 +2875,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 3 }
   ],
   "0x44AAc8a5450461B39eaBfa1ca0758ff73498d7f9": [
@@ -2396,7 +2897,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2000000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x1fD6e15cD7548ec27443690cE5aa3320b1869c3D": [
@@ -2409,8 +2913,17 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "43000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 257 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "92000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 257,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 92
+    }
   ],
   "0x6FDD0205e8C87582E01BE7c9FDF63d11DDb876e3": [
     {
@@ -2425,7 +2938,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2368000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x627f0EA1dcfF610ac59c5B74C509A506185bF9eb": [
@@ -2456,7 +2972,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10580000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     {
       "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1.7763568394002505e-15
     }
@@ -2465,14 +2984,20 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "41000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 41 }
   ],
   "0x3761B9eaF25003491588FDc8018D4d10cdaa20df": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
   "0xA7349a7E848077D286b9972c8fB0Bf81Da87EF3E": [
@@ -2482,7 +3007,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x10dc3243E53732849330b595B986be267D2f2649": [
@@ -2492,7 +3020,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x4d2A353Dcd9B25A241382241C9b9a27B7cD08f20": [
@@ -2502,7 +3033,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1512400000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 8.5124 }
   ],
   "0x4BB801c17562b6d40Ff1C2c99276b2FcC345F01D": [
@@ -2512,7 +3046,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 3.1 }
   ],
   "0x90596592C622d7e1464353D9183b2F2C0c2ac2b9": [
@@ -2609,7 +3146,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xf4707D7A6b330821CE557994D8dEe46863F36bd6": [
@@ -2619,7 +3159,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "99000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x121F63bA95a39753c32EEfdF3B2216F8EF84344B": [
@@ -2632,7 +3175,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2800000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2.8 }
   ],
   "0x2a3D8C382974e00Dc31e1A75722570f6fCAdE1E6": [
@@ -2642,7 +3188,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "19500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x3ddFe01209F257032F98e7759b618a5Fc03617db": [
@@ -2652,7 +3201,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "40000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x1C9E03317269bB63cA75AF7368DE33492193e282": [
@@ -2660,7 +3212,8 @@
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3600000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 110000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 110000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 3.71 }
   ],
@@ -2671,14 +3224,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xfD5ba988BB58b2b3aA5Dad02B921fe1dDA2db5A8": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "670000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.67 }
   ],
   "0x474F92EB6E3E447A7fb27c01d0625DcF4cBb8646": [
@@ -2691,7 +3250,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "109000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xF5f61157f3c13e4bbC5C42E75Ae80946b72de83F": [
@@ -2701,8 +3263,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "9000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "9000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    }
   ],
   "0xF6d74D44917f9eDCba177C42F5C3F761503db52F": [
     {
@@ -2717,7 +3291,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "195864399067127386195"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x0b5BB0172514f5D18A06642F91B974Bd6Ff9b12D": [
@@ -2739,7 +3316,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3914167641728464196"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     {
       "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": -4.440892098500626e-16
     }
@@ -2748,7 +3328,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
   "0x3C4cd9AD8Eb5E686dBF1cC56C762e2fc656bd24e": [
@@ -2758,8 +3341,20 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "195155254105032334"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.7451552541050324 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "340000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1085155254105032334"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.7451552541050324,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -0.7451552541050321
+    }
   ],
   "0x5786b05e3b7EE260c766D4110a76D93598b6aF16": [
     {
@@ -2768,7 +3363,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "250000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xD894aeC80203bA964F2De6943F05a018E905506e": [
@@ -2781,7 +3379,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "800000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x934Adeb25b26690E7DFD45bDCca03f698caD4f62": [
@@ -2791,7 +3392,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "87000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x83Ff66742EC4800032dCFa356c85b63f16afD4bC": [
@@ -2801,7 +3405,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "662000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xbCa2aEfFEc2758e765A8ACbA38dDB6a6f039d72D": [
@@ -2811,7 +3418,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "5500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 16.3 }
   ],
   "0xBbE62Dd0D72818b31d6cAf5E6367D0547bB0782F": [
@@ -2824,15 +3434,25 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 36.5 }
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "36500000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 36.5,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -36.5
+    }
   ],
   "0x5b4b59CFE9D5bF1ac734f3F0f5bCdf19B53ADD64": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "350000000000000000"
     },
     {
-      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 220000000000000000
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 220000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
     },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.57 }
   ],
@@ -2840,7 +3460,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "14000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 14 }
   ],
   "0x6Df585caD836e6B1f22d5D7bED46e2B460474Af9": [
@@ -2853,7 +3476,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2056850000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xFBCB109357177F7C134D08Cf9667E7B299eeB9a7": [
@@ -2866,8 +3492,17 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "4000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 141 }
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "141000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 141,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -141
+    }
   ],
   "0x01fB86A7973e06Dd38c85e230FF782475e41e1Bb": [
     {
@@ -2879,7 +3514,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "10800000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 10.8 }
   ],
   "0xb25024c421D4F8BEbE468d3dC353e07868C99901": [
@@ -2892,8 +3530,20 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "105360000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 105.36 }
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "105360000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "105529253757395224644"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 105.36,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0.16925375739522508
+    }
   ],
   "0xf837Fab1211D12542a725AaA9aa5Ac013768a333": [
     {
@@ -2902,35 +3552,56 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1800000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x7619fD90f24B06d1D8Ce9DD5346e2C3fDEf5Dd79": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "25000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 25 }
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "25000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 25,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -25
+    }
   ],
   "0xf0964230F94B58811722212b8BEd150Ba888c856": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "65000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 65 }
   ],
   "0x0DcF4e60dBB7D5d3a68aF53AEd52c36D90bC776d": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "37000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 37 }
   ],
   "0x57a369Fb872796150fE4c3ba08B0cE98b3c2A621": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.1 }
   ],
   "0x41EBE0C0BB4333e5cf92A9B0D3536eEa4aDe5C8D": [
@@ -2940,14 +3611,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "108559723055000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xc0Fb8603281bDF968905939e573DB0Cc3942722E": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "2600000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 2.6 }
   ],
   "0x8326Bec85a197C814E1834EcEf7C042bf2e910DC": [
@@ -2963,7 +3640,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "91000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x96994bF5B336AcF66fE533b87c39E08e8e41A77b": [
@@ -2973,7 +3653,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "30090000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 96.44500000000001 }
   ],
   "0xFA34C6ef094Bc9E6693C9A6130F521755CEb5BcB": [
@@ -2983,7 +3666,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "13000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x1f4D088464A0175c8DDb90BC7a510B1d5A0dA1A6": [
@@ -2993,7 +3679,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xcA319Aa4E349eA1AEBe8f84C93Da593d5EF9553f": [
@@ -3003,7 +3692,10 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "390000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 10.39 }
   ],
   "0x2026F1C47698D9bf302151B7f12007Dc06Bdb8d1": [
@@ -3019,8 +3711,32 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1600000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 199.26 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "681470452259366460"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1050000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "4000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "7991470000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "190000000452259366460"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 199.26,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -199.26
+    }
   ],
   "0x8A809606147CE5eD2759eB918F19b04dD95c6e6e": [
     {
@@ -3029,7 +3745,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "19000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x257162c5b9e19eF9ECe0A944454af17de6cB4547": [
@@ -3042,7 +3761,10 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "110000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x7DB0A3B33ae8a1142dC72BcEe61C5B4f7BE09186": [
@@ -3058,21 +3780,39 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1401000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1400000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1400000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    }
   ],
   "0xd455712e43582134F101a0C686d26548B5438A3b": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "30000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.03 }
   ],
   "0xCAeF884b8165f5dEDFdDE0F117c8dcaa8cb17Db3": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "23000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 23 }
   ],
   "0xfC0D01790e1825480C77ee8f3DE8822d2Fdc5a87": [
@@ -3082,21 +3822,39 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "501000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "2000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 503
+    }
   ],
   "0xD96076c83B96d54633C44410722877865daE4Fa6": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "100000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 100 }
   ],
   "0xe43785a2106572cfb54F087f2606Ede005ed9a61": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "6000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 6 }
   ],
   "0xD98a1b4082052b57e5688A69d07263c4b7963C5D": [
@@ -3115,8 +3873,26 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "4000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 543 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "3000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "546000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "546000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "546000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 543,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -543
+    }
   ],
   "0x7D1E4181A793F25111Fa1BfE59F0508F12E17bCD": [
     {
@@ -3128,21 +3904,30 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "71000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 71 }
   ],
   "0x670b3b004D1568E33CED31C4cf9103a05F0b44E5": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "20000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 20 }
   ],
   "0x70283F84713F1BFefb9181873217407413b0A186": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1 }
   ],
   "0xcae8fE29A3414A0027Cd33c1d76C49748367b3e2": [
@@ -3152,22 +3937,37 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "30000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0xdEaeF1638e88E60C31aF445d971e5A6cEcD72957": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "110000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 110 }
   ],
   "0x391bF92B788150d6E8f23ecc9624499552E2A092": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "900000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.9 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "15200000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.9,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 15.2
+    }
   ],
   "0x2E801A8a71dF16ceb33B61ca715dA1c1A8236A5e": [
     {
@@ -3200,14 +4000,20 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "14000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x8F860088F04819021D4a019492FeDED10476448d": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "50500000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 50.5 }
   ],
   "0x18f1b973705B00ed01Bf41Fb4A877Be5628b1778": [
@@ -3217,15 +4023,36 @@
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1700000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 3 }
   ],
   "0xb7D4cc582BF137166E1499960754d32558e18440": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "20000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 20 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "11000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "58000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "10000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "99000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 20,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -20
+    }
   ],
   "0x3E38Ef489af0E780fB1A18dB36B47EFCb6A859B5": [
     {
@@ -3234,21 +4061,39 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "4000000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
   ],
   "0x86Ae3575794695b9865507aDF08a29401fc20a4c": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "1300000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1.3 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "160000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1460000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 1.3,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -1.3
+    }
   ],
   "0xc593E4df56dc8267D55876CDDac3D36D74978618": [
     {
       "EnterStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "3330000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
     { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 3.33 }
   ],
   "0xb3334C3c7d2f7da1585dCa8dD20FF04076e4D943": [
@@ -3258,7 +4103,275 @@
     {
       "ExitStrategy:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": "34900000000000000000"
     },
-    { "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 },
-    { "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0 }
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "83553957794563784580"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "83553957794563784580"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    }
+  ],
+  "0xf12093b5bA0E98466b28CD0eC612FeC565b91Eb9": [
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "500000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 560000000000000000,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": -0.5,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0.56
+    }
+  ],
+  "0x8B7F82A03ca1592D9ea99A63F89989fd0e0373Df": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "5000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "3000000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1668663172000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1646749304000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "2566938764000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1789523304000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "15671874544000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xCc5AC4E116A5149328E89B369A2Dd8643861DEEd": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "3500000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 3.5,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xF1412c17f604F0948B3724df793ceBD7F734471b": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0x92BdeDD978b497950C69Be6F3FE124242cd4e8a8": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "62000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "62000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xCc8B643e43CAc03889d6ca82c2B96B1926eAA932": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "11500000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 11.5,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xbBCC64557B530665A3c3A051538055A214a22193": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "1000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 1,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xAE52784931eD6826Bfd9147FE6eb19Fc6bb269eF": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "34000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 34,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xa16951aB46688a4E1779165CA10B60439AbD1a94": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "49800000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "49800000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xcB91d6549c3c88B36d52E43C019713E2053B4fEf": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "40000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "40000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0x686484D0dc882c1E75652d9c3e525fE54381A588": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "17000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "17000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0x5b83aB13830EaaA0D3c272A486BDF4b0A34FFdE1": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "5500000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 5.5,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0x5d480A6044b12bA3d2C1Eec51606067904434Ad8": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "70000000000000000"
+    },
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "49600000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "49670000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xAC63D7D9C4E112feb40D17a89a7874dB5f4bD2CB": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "59019724943964696282"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 59.01972494396469,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xeef86CE597bD32F1e90cB3dD6A8Ffbc784e83dA9": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "12200000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 12.2,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
+  ],
+  "0xc300121088d4a71F5a0564Da280b5D8defa21EA5": [
+    {
+      "EnterStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "5000000000000000000"
+    },
+    {
+      "ExitStrategy:0xdac06561cb25a4d7f49fce926caa239f4102648e": "5000000000000000000"
+    },
+    {
+      "KernelBalance:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0,
+      "KernelBalance:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0
+    },
+    {
+      "total:0xdac06561cb25a4d7f49fce926caa239f4102648e": 0,
+      "total:0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000": 0
+    }
   ]
 }

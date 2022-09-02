@@ -83,12 +83,34 @@ const events = async () => {
           obj.push(decodedParameters.token);
           obj.push(decodedParameters.amount);
           RelevantEvents.push(obj);
+        } else if (
+          events[e].raw.topics[0] ==
+          '0xe9ceb6923f66ce66f692cfd9bf46a170a01c38ebc349d2b97b51543f1053cb44'
+        ) {
+          obj.push(events[e].returnValues.user);
+          obj.push('EnterStrategy');
+          obj.push('0xdac06561cb25a4d7f49fce926caa239f4102648e');
+          obj.push(events[e].returnValues.amount);
+          RelevantEvents.push(obj);
+        } else if (
+          events[e].raw.topics[0] ==
+          '0x916be3abd388904389fdac371952ee3867ef9b5ff5ab9eb5b685ff504db60c30'
+        ) {
+          obj.push(events[e].returnValues.user);
+          obj.push('ExitStrategy');
+          obj.push('0xdac06561cb25a4d7f49fce926caa239f4102648e');
+          obj.push(events[e].returnValues.tokenBurned);
+          RelevantEvents.push(obj);
         }
       }
 
       fs.writeFile(
         './extracts/' + currentChain + '/events.json',
         JSON.stringify(RelevantEvents)
+      );
+      fs.writeFile(
+        './extracts/' + currentChain + '/rawEvents.json',
+        JSON.stringify(events)
       );
       console.log(
         'Enter and Exit events from ' +
